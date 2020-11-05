@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayouth_h1h_vw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/aboutUsToolBarn_vw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mBackArrowh_vw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@+id/mBackArrowh_vw"
+                    android:text="A.E  în R.M"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayouth_h_vw"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/mRelativeLayouth_h1h_vw"
+        android:background="@color/colorPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mRelativeLayouth_h_vw"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h3_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabel_h_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabel_h_vw"
+
+                        android:text="De unde luăm datele?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h4_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h3_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Aplicatia  Level stat in compartimentul (A.E  în R.M) utilizează datele deschise din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova publicate de către Ministerul Tehnologiei Informţiei şi Comunicaţiilor pe portalul guvernamental al datelor deschise date.gov.md. " />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h5_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h4_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe2_h_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe2_h_vw"
+
+                        android:text="Cât de des se actualizează datele?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h6_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h5_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Datele despre companii sunt actualizate pe portalul date.gov.md o data pe saptamana, respectiv şi in Level stat  acestea sunt reînnoite saptamanal. " />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h7_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h6_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe3_h_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe3_h_vw"
+
+                        android:text="Identitatea administratorilor şi fondatorilor"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h8_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h7_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Pe Level stat, in compartimentul A.E  în R.M  veţi găsi doar numele şi prenumele fondatorilor şi administratorilor companiilor deoarece în prezent nu sunt disponibile alte informaţii în format deschis. " />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h9_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h8_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe4_h_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe4_h_vw"
+
+                        android:text="Ce este cautarea  in Level Stat in compartimentul A.E  în R.M ?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h10_h_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h9_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Opţiunea “Căutarea” permite căutarea companiilor în baza mai multor câmpuri. Dacă cunoaşteţi IDNO-ul, Denumirea, Numele fondatorilor sau conducătorilor, Localitatea, Anul Înregistrării sau Genul de activitate ale companiei,si statutul le puteţi introduce în motorul de căutare.
+De exemplu – Daca cautati dupa (lichidata) – Vor fi gasite toate intreprinderile care sunt lichidate.
+In cautare nu se cauta cu diacritice (ș,â.î,ă,î.ț)
+ " />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h11_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h10_h_vw"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe5_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe5_h"
+
+                        android:text="Cum se instaleaza aplicatia Level stat?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h12_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h11_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Pentru a  instala pe telefon (Android) Instalează Winrar pentru Android, apoi dezinstalezi precedenta versiune daca exista si instalezi versiunea actualizata. Aplicația functionează dacă este conexiune la internet. Funcționează non stop." />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h13_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h12_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe6_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe6_h"
+
+                        android:text="Ce semnifica butonul share in compartimentul despre unitatea de drept"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h14_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h13_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="In compartimentul despre Unitatea de drept  a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie deschise despre unitatea de drept." />
+                </RelativeLayout>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h15_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h14_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe7_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="7"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe7_h"
+
+                        android:text="Sa adaugat posibilitatea cautarii AE dupa data inregistrarii."
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h16_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h15_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Мы вводим 2020-09, и вы также найдете AE, которые были зарегистрированы в 2020-09. Если мы введем 2020-09-04, мы найдем точно все AE, которые были зарегистрированы на эту дату." />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

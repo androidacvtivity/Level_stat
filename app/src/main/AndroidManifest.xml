@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bancusoft.levelstat">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.bancusoft.levelstat.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:vmSafeMode="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.bancusoft.levelstat.Views.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bancusoft.levelstat.Views.DashboardActivity" android:theme="@style/HomeTheme">
+        </activity>
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclprodmold"
+            android:label="Cl. PRODMOLD"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivity"
+            android:label="Angajații BNS"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivity_dgti"
+            android:label="Angajații DGTI "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclcfoj"
+            android:label="Cl. CFOJ "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclcaem2"
+            android:label="Cl. CAEM2 "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclcaem"
+            android:label="Cl. CAEM "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityvw"
+            android:label="Agentii Economici "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitycu"
+            android:label="AE după CUATM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitycucaem"
+            android:label="AE după CAEM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitycuatm"
+            android:label="Cl. CUATM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitycfp"
+            android:label="AE după CFP"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclcfp"
+            android:label="Cl. CFP"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivityclcocm"
+            android:label="Cl. COCM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.ScientistsActivityclservicii"
+        android:label="Cl. CSPM"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitycltari"
+            android:label="Cl. tarilor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.CRUDActivity"
+            android:theme="@style/CRUDTheme"
+            android:label="Adaugă  "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.DetailActivity"
+        android:label="Despre angajat "
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dgti"
+            android:label="Despre angajat "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.DetailActivityclcaem2"
+        android:label="Despre codul  CAEM2 "
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclcaem"
+            android:label="Despre codul CAEM "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityvw"
+            android:label="Despre AE "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitycu"
+            android:label="AE după CUATM "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitycaem"
+            android:label="AE după CAEM "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitycuatm"
+            android:label="Despre codul CUATM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.DetailActivitycfp"
+        android:label="AE după CFP "
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclcfoj"
+            android:label="Despre codul CFOJ"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclcfp"
+            android:label="Despre codul CFP"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclcocm"
+            android:label="Despre codul COCM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclservicii"
+            android:label="Despre CSPM"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitycltari"
+            android:label="Despre cod"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivityclprodmold"
+            android:label="Despre cod"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.AboutUsActivity"
+            android:label="About Us "
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+
+
+
+<!--Stru-->
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud_taraclia"
+            android:label="Ser. stat. Taraclia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud_leova"
+            android:label="Ser. stat. Leova"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud_uta_gagauzia"
+            android:label="CRS SUD UTA Gagauzia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud_cantemir"
+            android:label="Serv. stat. Cantemir"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud_cahul"
+            android:label="Dir. stat. Cahul"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sd_basarabeasca"
+            android:label="Serv. stat. Basarabeasca"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_sud"
+            android:label="CRS SUD"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_ungheni"
+            android:label="Dir. stat. Ungheni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_stefan_voda"
+            android:label="Sec. stat.Ștefan-Vodă"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_straseni"
+            android:label="Dir. stat. Strășeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_orhei"
+            android:label="Dir. stat. Orhei"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_nisporeni"
+            android:label="Ser. stat. Nisporeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_ialoveni"
+            android:label="Dir. stat. Ialoveni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_hancesti"
+            android:label="Dir. stat. Hâncești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_dubasari"
+            android:label="Sec. stat. Dubasari"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_criuleni"
+            android:label="Sec. stat. Criuleni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_cimislia"
+            android:label="Sec. stat. Cimișlia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru_causeni"
+            android:label="Dir. stat. Căușeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_calarasi"
+            android:label="Sec. stat. Călărași"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_anenii_noi"
+            android:label="Dir. stat. Anenii-Noi"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_centru"
+            android:label="CRS CENTRU"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_telenesti"
+            android:label="Serviciul stat.  Telenești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_soldanesti"
+            android:label="Serviciul stat. Șoldănești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_soroca"
+            android:label="Direcția stat. Soroca"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_sangerei"
+            android:label="Secția stat.  Sângerei"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_rascani"
+            android:label="Secția stat. Râșcani"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_rezina"
+            android:label="Serviciul  stat. Rezina"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_ocnita"
+            android:label="Serviciul  stat. Ocnița"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_glodeni"
+            android:label="Secția stat. Glodeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_floresti"
+            android:label="Secția stat. Florești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_falesti"
+            android:label="Secția stat. Fălești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_edinet"
+            android:label="Direcția stat. Edineț"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_drochia"
+            android:label="Secția stat. Drochia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_donduseni"
+            android:label="Serviciu stat. Dondușeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_briceni"
+            android:label="Secția stat. Briceni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_balti"
+            android:label="Direcția stat. Bălți"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord"
+            android:label="CRS NORD"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_cer_gospodarii"
+            android:label="Dr.cercetări gospodării"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_sit_fin_rascani"
+            android:label="sit fin Râșcani"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_sit_fin_ciocana"
+            android:label="sit fin Ciocana"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_sit_fin_centru"
+            android:label="sit fin Centru"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_sit_fin_buiucani"
+            android:label="sit fin Buiucani"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_sit_fin_botanica"
+            android:label="sit fin Botanica"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_servicii"
+            android:label="serviciilor de piață"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_chi_pm"
+            android:label="CRS Chișinău pieței muncii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_chi_industrie"
+            android:label="CRS Chișinău industrie"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_chi_generalizare"
+            android:label="CRS Chișinău generalizare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_chisinau_admin"
+            android:label="Chișinău administratia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_mun_chisinau"
+            android:label="CRS Chișinău"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_poligrafica"
+            android:label="deservire poligrafică"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_ser_instruire"
+            android:label="instruire în statistica"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_admin_sistem"
+            android:label="admin a sist inform"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_app"
+            android:label="proiectare aplicații"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_it"
+            android:label="tehnologii informaționale"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_ser_men_doc"
+            android:label="management document"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_juridica"
+            android:label="juridică și resurse umane"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_admin_achiz"
+            android:label="administrare și achiziţii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_finante"
+            android:label="finanţe şi evidenţă contabilă"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_mamagement_fin"
+            android:label="management financiar"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_colect_data_gosp"
+            android:label="colect date în gosp"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_ser_sistem_geografic"
+            android:label="sisteme inform geogr"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_ser_surse_date_admin"
+            android:label="surse de date admin."
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_cer_sondaj"
+            android:label="cercetări prin sondaj"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_met_stat"
+            android:label="metode statistice"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_diseminare"
+            android:label="diseminare și comunicare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_recesaminte"
+            android:label="Dir. recensăminte"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_edu"
+            android:label="educația, știința și cultura"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_servicii_sociale"
+            android:label="serviciile sociale"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_stat_pop_mig"
+            android:label="stat pop. și migratie"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_stat_salariu"
+            android:label="statistica salariilor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_stat_ocuparii"
+            android:label="stat. ocupării"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_nivel_trai"
+            android:label=" nivelul de trai"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_social_demo"
+            android:label="social şi demografie"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_colect_data_pret"
+            android:label="colect date preț"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_colect_valid_data"
+            android:label="colect și valid data"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dr_sit_fin"
+            android:label="situații financiare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_colect_data"
+            android:label="colectarea datelor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_stat_med"
+            android:label="statistica mediului"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_cer_selective_agricult"
+            android:label="cer. selective agr."
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_sec_stat_agric"
+            android:label="statistica agriculturii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_agricultura"
+            android:label="agricultura și mediu"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_registre"
+            android:label="registre și clasificatoare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_transport"
+            android:label="Transport,turism si TIC"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_com_intern"
+            android:label="comerțului interior"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dir_structurala"
+            android:label="statistica structurală"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dir_constructie"
+            android:label="Construcție, Investiție"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_industrie"
+            android:label="Industria"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_stat_int"
+            android:label="statistica întreprinderilor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dir_com_ext"
+            android:label="comerțul exterior"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dir_pret"
+            android:label="preț. de consum"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_cont_national"
+            android:label="conturi naționale"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dir_macro"
+            android:label="Dir. macroeconomică"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivity_sec_audit"
+            android:label=""
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitystr"
+            android:label="Director general"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitystr2"
+            android:label="Directori generali adjuncţi"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivitystr3"
+            android:label="Cab. dire. gen"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.ScientistsActivity_direc_international"
+            android:label="cooperare internaţională"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structurabns"
+            android:label="Structura BNS"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitystr"
+            android:label="Director general"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitystr2"
+            android:label="Director general adjunct"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.DetailActivitystr3"
+            android:label="Cab. dire. gen"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.DetailActivitydirectia_internationala"
+        android:label="cooperare internaţională"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.DetailActivity_sec_audit"
+        android:label=""
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dir_macro"
+            android:label="Dir. macroeconomică"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_comt_national"
+            android:label="conturi naționale"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dir_pret"
+            android:label="preț. de consum"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dir_com_ext"
+            android:label="comerțul exterior"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.DetailActivity_dg_stat_int"
+            android:label="statistica întreprinderilor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_industrie"
+        android:label="Industria"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_constructie"
+            android:label="Construcție, Investiție"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_structurala"
+            android:label="statistica structurală"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_com_intern"
+            android:label="comerțului interior"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_transport"
+            android:label="Transport,turism si TIC"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_registre"
+            android:label="registre și clasificatoare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_agricultura"
+            android:label="agricultura și mediu"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_stat_agric"
+            android:label="statistica agriculturii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_cer_selective_agricult"
+            android:label="cer. selective agr."
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_stat_med"
+            android:label="statistica mediului"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_colect_data"
+            android:label="colectarea datelor"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_sit_fin"
+            android:label="situații financiare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_colect_valid_data"
+            android:label="colect și valid data"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_colect_data_pret"
+            android:label="colect dat preț"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_social_demo"
+            android:label="social şi demografie"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_nivel_trai"
+        android:label="nivelul de trai"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_stat_ocuparii"
+            android:label="stat. ocupării"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_stat_salariu"
+        android:label="statistica salariilor"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_stat_pop_mig"
+            android:label="stat pop. și migrației"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_servicii_sociale"
+            android:label="serviciile sociale"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_edu"
+            android:label="educația, știința și cultura"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_recesaminte"
+            android:label="Dir. recensăminte"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_diseminare"
+            android:label="diseminare și comunicare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_met_stat"
+            android:label="metode statistice"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_cer_sondaj"
+        android:label="cercetări prin sondaj"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_ser_surse_date_admin"
+            android:label="surse de date admin."
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_ser_sistem_geografic"
+            android:label=" sisteme inform geogr"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_colect_data_gosp"
+            android:label="colect date în gosp"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_management_financiar"
+            android:label="management financiar"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_finante"
+            android:label="finanţe şi evidenţă contabilă"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_admin_achiz"
+            android:label="administrare și achiziţii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_juridica"
+            android:label="juridică și resurse umane"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_ser_man_doc"
+            android:label="managemet document"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_it"
+        android:label="tehnologii informaționale"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_app"
+        android:label="proiectare aplicații"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_admin_sistem"
+            android:label="admin. a sist. inf."
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_sec_instruire"
+            android:label="instruire în statistica"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dr_poligrafica"
+            android:label="deservire poligrafică"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chisinau"
+            android:label="CRS Chișinău"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chisinau_admin"
+        android:label="Chișinău administratia"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_generalizare"
+            android:label="CRS Chișinău generalizare"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_industrie"
+            android:label="CRS Chișinău  industriei"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_pm"
+            android:label="CRS Chișinău pieței muncii"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_servicii"
+            android:label="serviciilor de piață"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_sit_fin_botanica"
+            android:label="sit fin Botanica"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_sit_fin_buiucani"
+        android:label="sit fin Buiucani"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_sit_fin_centru"
+            android:label="sit fin Centru"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_sit_fin_ciocana"
+            android:label="sit fin Ciocana"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_sit_fin_rascani"
+        android:label="sit fin Râșcani"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_mun_chi_cer_gospodarii"
+            android:label="Dr.cercetări gospodării"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord"
+            android:label="CRS NORD"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_balti"
+            android:label="Direcția stat. Bălți"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_briceni"
+            android:label="Secția stat. Briceni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_donduseni"
+            android:label="Serviciu stat. Dondușeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_drochia"
+            android:label="Secția stat. Drochia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_edinet"
+            android:label="Direcția  stat. Edineț"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_falesti"
+            android:label="Secția stat. Fălești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_floresti"
+            android:label="Secția stat. Florești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_glodeni"
+            android:label="Secția stat. Glodeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_ocnita"
+            android:label="Serviciul  stat. Ocnița"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_rezina"
+            android:label="Serviciul  stat. Rezina"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_rascani"
+            android:label="Secția stat. Râșcani"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_sangerei"
+            android:label="Secția stat.  Sângerei"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_soroca"
+            android:label="Direcția stat. Soroca"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_soldanesti"
+            android:label="Serviciul stat. Șoldănești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_telenesti"
+            android:label="Serviciul stat.  Telenești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru"
+            android:label="CRS CENTRU"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_nord_anenii_noi2"
+            android:label="Dir. stat. Anenii-Noi"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_calarasi"
+            android:label="Sec. stat. Călărași"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_causeni"
+            android:label="Dir, stat. Căușeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_cimislia"
+            android:label="Sec. stat. Cimișlia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_criuleni"
+            android:label="Sec. stat. Criuleni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_dubasari"
+            android:label="Sec. stat. Dubasari"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_hancesti"
+            android:label="Dir. stat. Hâncești"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_ialoveni"
+        android:label="Dir. stat. Ialoveni"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_nisporeni"
+            android:label="Ser. stat. Nisporeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_orhei"
+            android:label="Dir. stat. Orhei"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_straseni"
+            android:label="Dir. stat. Strășeni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_stefanvoda"
+            android:label="Sec. stat. Ștefan-Vodă"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_centru_ungheni"
+            android:label="Dir. stat. Ungheni"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud"
+            android:label="CRS SUD"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_basarabeasca"
+            android:label="Serv. stat. Basarabeasca"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+        android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_cahul"
+        android:label="Dir. stat. Cahul"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_cantemir"
+            android:label="Serv. stat. Cantemir"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_uta_gagauzia"
+            android:label="CRS SUD UTA Gagauzia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_leova"
+            android:label="Serv. stat. Leova"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.structbns.ScientistsActivity_crs_sud_taraclia"
+            android:label="Serv. stat.  Taraclia"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+
+
+        <!--       -->
+
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.help"
+            android:label="Help"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.help_vw"
+            android:label="Help"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.helpen"
+            android:label="Help en"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.help_vw_en"
+            android:label="Help en"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.helpru"
+            android:label="Help ru"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.help_vw_ru"
+            android:label="Help ru"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+    </application>
+
+</manifest>

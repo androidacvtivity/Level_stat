@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayouth_h1h"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/aboutUsToolBarn_ru_vw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mBackArrowh_ru"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/mBackArrowh_ru"
+                    android:text="О  юридических лиц"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:layout_marginStart="20dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayouth_h"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/mRelativeLayouth_h1h"
+        android:background="@color/colorPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mRelativeLayouth_h"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h3_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabel_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabel_h"
+
+                        android:text="Откуда мы получаем данные ?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h4_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h3_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Приложение Level stat  использует открытые данные из Государственного реестра юридических лиц, зарегистрированных в Республике Молдова, опубликованные Министерством информационных технологий и связи на правительственном портале открытых данных date.gov.md." />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h5_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h4_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe2_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe2_h"
+
+                        android:text="Как часто обновляются данные ?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h6_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h5_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Данные о компаниях обновляются на портале date.gov.md раз в неделю, соответственно в Level stat они обновляются еженедельно. " />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h7_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h6_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe3_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe3_h"
+
+                        android:text="Личность администраторов и учредителей"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h8_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h7_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="В Regview вы найдете только имена и фамилии основателей и администраторов компаний, поскольку в настоящее время нет другой информации открытого формата." />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h9_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h8_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe4_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/websiteLabe4_h"
+
+                        android:text="Как осуществляется поиск в приложении"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h10_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h9_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Опция «Поиск» позволяет искать компании по нескольким полям. Если вам известны IDNO, ФИО, Имя учредителей или руководителей, Город, Год регистрации или Вид деятельности компании, а также статус, вы можете ввести их в поисковик.
+Например - Если вы ищете после (lichidata) - будут найдены все ликвидированные компании.
+Не испльзовать поиске  диакритические знаки (ș, â.î, ă, î.ț)
+ " />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h11_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h10_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe5_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe5_h"
+
+                        android:text="Как установить приложение Level stat?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h12_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h11_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Для установки на телефон (Android) Установите Winrar для Android, затем удалите предыдущую версию, если она существует, и установите обновленную версию. Приложение работает, если есть подключение к интернету" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h13_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h12_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe6_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe6_h"
+
+                        android:text="Что означает кнопка поделиться в отсеке юридического подразделения.?"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h14_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h13_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="В раздел Юридического подразделения добавлена ​​кнопка - ПОДЕЛИТЬСЯ, которая позволяет распространять и сохранять контактную информацию юридического подразделения." />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h15_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h14_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/websiteLabe7_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="7"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/websiteLabe7_h"
+
+                        android:text="Добавлена ​​возможность поиска AE после даты регистрации."
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayouth_h16_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mRelativeLayouth_h15_h"
+                    android:background="@drawable/shadow_bottom">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/currentCityLabel_h"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:text="Division"-->
+                    <!--                        android:textColor="@android:color/black"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Introducem 2020-09 si vor fi  gasiti tot AE care au fost inregistrati in  2020-09. Daca introducem 2020-09-04 vor fi gasiti exact toti AE care au fost inregistrati in aceasta data. " />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

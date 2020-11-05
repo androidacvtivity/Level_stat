@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".Views.helpvw">
+
+    <!--    <item-->
+
+    <!--        android:id="@+id/action_search"-->
+    <!--        android:orderInCategory="1"-->
+    <!--        myapp:showAsAction="always"-->
+    <!--        myapp:actionViewClass="android.widget.SearchView"-->
+    <!--        android:title="Searcher"-->
+    <!--        android:visibility="invisible"-->
+    <!--        />-->
+
+    <item
+        android:id="@+id/viewAllMenuItem_vw"
+        android:title="VIEW ALL"
+        android:icon="@drawable/m_list"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/enlang_vw"
+
+        android:title="english language"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rolang_vw"
+
+        android:title="romanian language"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rulang_vw"
+
+        android:title="russian language"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/link1_vw"
+
+        android:title="Video tutorial" />
+
+</menu>

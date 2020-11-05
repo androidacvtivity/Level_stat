@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mDENUMIRE_cfp_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_cfp"
+            android:padding="5dp"
+            android:text="Forma organizatorico-juridică"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968" />
+
+        <TextView
+            android:id="@+id/mVALUE_cfp_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mDENUMIRE_cfp_Txt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_cfp"
+            android:maxLines="3"
+            android:text="Număr(care au codulIDNO)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/mact_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mVALUE_cfp_Txt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+
+            android:maxLines="3"
+            android:text="Source and actualization"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/mact_cfp_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mVALUE_cfp_Txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/mact_Txt"
+            android:maxLines="3"
+            android:text="Source and actualization"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mLISTA_FOND_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mDEN_COM_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="80dp"-->
+        <!--            android:maxLines="20"-->
+        <!--            android:text="LISTA FOND"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mADRESA_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/mLISTA_FOND_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+
+        <!--            android:maxLines="3"-->
+        <!--            android:text="Adresa"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mGEN_ACT_NE_LIC_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mADRESA_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="26dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+
+        <!--            android:maxLines="5"-->
+        <!--            android:text="GEN ACT NE LIC"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mSTATUTUL_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mADRESA_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="76dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+
+        <!--            android:maxLines="5"-->
+        <!--            android:text="STATUTUL"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mGEN_ACT_LIC_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mADRESA_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="120dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+
+        <!--            android:maxLines="3"-->
+        <!--            android:text="GEN ACT LIC"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mDATA_REG_VW_Txt"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mADRESA_VW_Txt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="160dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+
+        <!--            android:maxLines="3"-->
+        <!--            android:text="DATA REG"-->
+        <!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--            android:textStyle="italic" />-->
+
+        <TextView
+            android:id="@+id/mNOTICE_VW_hTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mact_Txt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+
+            android:maxLines="3"
+            android:text="Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+
+            android:textStyle="bold"
+            android:textColor="@color/darkGreen"
+
+            />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mLIST_COND_VW_Txt"-->
+        <!--            fontPath="fonts/RobotoCondensed-Regular.ttf"-->
+
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginStart="2dp"-->
+        <!--            android:layout_marginEnd="2dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:text="LIST COND"-->
+        <!--            android:textColor="@color/colorAccent"-->
+        <!--            android:textStyle="italic"-->
+        <!--            tools:ignore="MissingPrefix" />-->
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/mMaterialLetterIcon_cfp"
+            android:layout_width="@dimen/list_item_avatar_size"
+            android:layout_height="@dimen/list_item_avatar_size"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

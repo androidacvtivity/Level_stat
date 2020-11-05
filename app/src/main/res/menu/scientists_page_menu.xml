@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="invisible"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.ScientistsActivity">
+
+    <item
+
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        myapp:showAsAction="always"
+        myapp:actionViewClass="android.widget.SearchView"
+        android:title="Searcher"
+        android:visibility="invisible"
+        />
+
+
+    <item
+    android:id="@+id/action_new"
+    android:visibility="invisible"
+    android:title="Despre aplicatie"
+    app:showAsAction="never" />
+
+
+    <item
+    android:id="@+id/action_new_en"
+    android:visibility="invisible"
+    android:title="About application"
+    app:showAsAction="never" />
+
+
+    <item
+    android:id="@+id/action_new_ru"
+    android:visibility="invisible"
+    android:title="О программе"
+    app:showAsAction="never" />
+
+<!--    <item-->
+<!--        android:id="@+id/dgti"-->
+<!--        android:visibility="invisible"-->
+<!--        android:title="DGTI"-->
+<!--        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/video2"
+        android:visibility="invisible"
+        android:title="Video tutorial"
+        app:showAsAction="never" />
+
+</menu>

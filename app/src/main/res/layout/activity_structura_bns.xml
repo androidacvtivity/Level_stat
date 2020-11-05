@@ -1,0 +1,3740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayout1_str"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/aboutUsToolBar_str"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mBackArrow_str"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/mBackArrow_str"
+                    android:text="structura BNS"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:layout_marginStart="20dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayout_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mRelativeLayout1_str"
+        android:background="@color/colorPrimary">
+
+        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+            android:id="@+id/mImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/m_waterfall"
+
+            app:stroke_color="@color/darkDeepOrange"
+            app:stroke_width="3dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/nameTV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/mImageView"-->
+        <!--            android:layout_marginTop="13dp"-->
+        <!--            android:text="Vitalie Bancu"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/nameTV"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:text="Software Engineer\n Programmer"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="12sp" />-->
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:layout_toRightOf="@+id/mImageView"
+            android:src="@drawable/ic_call" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/mImageView"
+            android:src="@drawable/ic_email" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mRelativeLayout_str"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout3_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/director_str"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Director general"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+
+<!--                        android:layout_toRightOf="@+id/addressTV"-->
+<!--                        android:text="National Bureau of \nStatistics of the \n Republic of Moldova" />-->
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/locatebtn"-->
+                    <!--                        android:layout_width="70dp"-->
+                    <!--                        android:layout_height="30dp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginRight="5dp"-->
+                    <!--                        android:background="@drawable/locate_btn_background"-->
+                    <!--                        android:text="LOCATE"-->
+                    <!--                        android:textColor="@color/white" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout4_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout3_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginLeft="10dp"-->
+
+                    <!--                        android:layout_toRightOf="@+id/addressTV"-->
+                    <!--                        android:text="National Bureau of \nStatistics of the \n Republic of Moldova" />-->
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/locatebtn"-->
+                    <!--                        android:layout_width="70dp"-->
+                    <!--                        android:layout_height="30dp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginRight="5dp"-->
+                    <!--                        android:background="@drawable/locate_btn_background"-->
+                    <!--                        android:text="LOCATE"-->
+                    <!--                        android:textColor="@color/white" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout5_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mRelativeLayout4_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/director_adj_str"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Directori generali adjuncţi"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout6_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout5_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout7_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mRelativeLayout6_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/cab_director"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Cabinetul directorului general"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout8_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout7_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout9_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout8_str"
+                    android:layout_marginTop="-12dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_international"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Direcţia coordonare statistică şi cooperare internaţională"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout10_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout9_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mRelativeLayout11_str"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/mRelativeLayout10_str"
+                android:background="@drawable/shadow_bottom">
+
+                <TextView
+                    android:id="@+id/sec_audit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="***  Secția audit intern și managementul calității"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout12_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout11_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout13_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout12_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_macroeconomica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Direcţia generală statistica macroeconomică"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout14_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout13_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout15_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout14_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_comt_nationae"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția conturi naționale"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout16_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout15_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout17_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout16_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_pert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția statistica prețurilor de consum"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout18_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout17_str"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dir_comert_exter"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout18_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_comert_ecter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția statistica comerțului exterior"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout19_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dir_comert_exter"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_stat_int"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout19_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_stat_ind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*  Direcţia generală statistica întreprinderilor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout20_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_stat_int"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_industrie"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout20_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_industrie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția statistica industriei și energeticii"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout21_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_industrie"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_constructie"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout21_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_constructie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția statistica investițiilor și construcțiilor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout22_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_constructie"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_structurala"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout22_str"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_structurala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="**  Direcția statistica structurală"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout23_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_structurala"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_com_intern"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout23_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_com_intern"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția statistica comerțului interior"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout24_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_com_intern"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_transpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout24_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_transport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția statistica transporturilor, turismului și TIC"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout25_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_transpost"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout25_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_registre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția registre și clasificatoare"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout26_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_registre"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_agricultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout26_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir__agricultura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția statistica agriculturii și mediului"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout27_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_agricultura"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_stat_agriculturii"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout27_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_stat_agriculturii"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistica agriculturii"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout28_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_stat_agriculturii"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_cer_selec_agr"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout28_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_cer_selec_agr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția cercetări selective în agricultură"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout29_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_cer_selec_agr"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_stat_med"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout29_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dir_sec_stat_med"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistica mediului"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout30_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_stat_med"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dg_col_tata"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout30_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/dg_col_tata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Direcţia generală colectarea datelor entităţi economice"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout31_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dg_col_tata"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_sit_fin"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout31_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_sit_fin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția situații financiare "
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout32_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_sit_fin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_colect_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout32_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_colect_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția colectarea și validarea datelor "
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout33_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_colect_data"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_colect_data_pret"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout33_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_colect_data_pret"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția colectarea datelor prețuri"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout34_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_colect_data_pret"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_sociala_demografie"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout34_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_sociala_demografie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Direcţia generală statistica socială şi demografie"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout35_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_sociala_demografie"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_niv_trai"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout35_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_niv_trai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistica nivelului de trai"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout36_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_niv_trai"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_stat_ocuparii"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout36_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_stat_ocuparii"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistica ocupării"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout37_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_stat_ocuparii"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_stat_salariu"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout37_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_stat_salariu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistica salariilor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout38_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_stat_salariu"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_pop_migratie"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout38_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_pop_migratie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistica populației și migrației"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout39_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_pop_migratie"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_serv_social"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout39_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_serv_social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistica serviciilor sociale"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout40_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_serv_social"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_serv_edu"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout40_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_serv_edu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistica educației, științei și culturii"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout41_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_serv_edu"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_recesaminte"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout41_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_recesaminte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția recensăminte"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout42_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_recesaminte"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_diseminare"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout42_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_diseminare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția diseminare și comunicare"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout43_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_diseminare"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_met_statistice"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout43_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_met_statistice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția metode statistice"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout44_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_met_statistice"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_cer_sondaj"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout44_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_sec_cer_sondaj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secţia cercetări prin sondaj"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout45_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_cer_sondaj"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_servicu_sur_date_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout45_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_servicu_sur_date_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul surse de date administrative"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout46_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_servicu_sur_date_admin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_servicu_sist_geografic"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout46_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_servicu_sist_geografic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul sisteme informaţionale geografice"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout47_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_servicu_sist_geografic"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_colect_data_gosp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout47_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_sec_colect_data_gosp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția colectarea datelor în gospodării"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout48_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_colect_data_gosp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_management_fin"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout48_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_management_fin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcţia management financiar"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout49_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_management_fin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_finante"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout49_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tvsec_finante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secţia finanţe şi evidenţă contabilă"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout50_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_finante"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_admin_achiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout50_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_sec_admin_achiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secţia administrare și achiziţii"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout51_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_admin_achiz"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_juridica"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout51_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_sec_juridica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția juridică și resurse umane"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout52_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_juridica"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_ser_man_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout52_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_ser_man_doc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul managementul documentelor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout53_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_ser_man_doc"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dg_it"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout53_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dg_it"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*  Direcția generală tehnologii informaționale"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout54_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dg_it"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dg_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout54_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dg_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția proiectare aplicații informatice"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout55_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dg_app"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_dr_admin_sis_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout55_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_dr_admin_sis_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**  Direcția administrare a sistemului informațional"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout56_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_dr_admin_sis_info"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_sec_instruire_stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout56_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__sec_instruire_stat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="***  Secția instruire în statistica oficială"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout57_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_sec_instruire_stat"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_des_poligrafica"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout57_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_des_poligrafica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția deservire poligrafică"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout58_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_des_poligrafica"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet48"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout58_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Centrul regional pentru statistică mun. Chișinău"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout60_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet49"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout60_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Administratia"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout61_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_admin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_dr_generalizare"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout61_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_dr_generalizare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția generalizare date statistice cercetări economice "
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout62_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_dr_generalizare"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_dr_industrie"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout62_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_dr_industrie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica industriei, energeticii  investițiilor și construcțiilor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout63_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_dr_industrie"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_dr_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout63_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_dr_pm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica pieței muncii"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout64_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_dr_pm"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_dr_servicii"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout64_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_dr_servicii"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica serviciilor de piață"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout65_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_dr_servicii"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_Botanica"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout65_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_Botanica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Botanica"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout66_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_Botanica"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_Buiucani"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout66_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_Buiucani"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Buiucani"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout67_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_Buiucani"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_Centru"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout67_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_Centru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Centru"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout68_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_Centru"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_Ciocana"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout68_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_ciocana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Ciocana"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout69_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_Ciocana"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_Rascani"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout69_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_rascani"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Râșcani"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout70_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_Rascani"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_mun_Chisinau_cercetari_gosp"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/mRelativeLayout70_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_mun_Chisinau_cercetari_gosp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția cercetări gospodării."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout71_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_mun_Chisinau_cercetari_gosp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout71_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Centrul regional pentru statistică NORD."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout72_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_balti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout72_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_balti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Bălți."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout73_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_balti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_briceni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout73_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_briceni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Briceni."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout74_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_briceni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet63"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_donduseni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout74_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_donduseni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistică Dondușeni."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout75_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_donduseni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_drochia"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout75_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_drochia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Drochia."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout76_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_drochia"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_edinet"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout76_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_edinet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Edineț."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout77_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_edinet"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_falesti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout77_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_falesti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Fălești."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout78_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_falesti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_floresti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout78_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv__crs_nord_floresti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Florești."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout79_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_floresti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_glodeni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout79_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_glodeni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Glodeni."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout80_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_glodeni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_ocnnita"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout80_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_ocnita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistică Ocnița."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout81_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_ocnnita"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_rezina"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout81_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_rezina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistică Rezina."
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout82_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_rezina"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_rascani"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout82_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_rascani"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Râșcani"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout83_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_rascani"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet73"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_sangerei"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout83_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_sangerei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Sângerei"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout84_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_sangerei"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_soroca"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout84_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_soroca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Soroca"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout85_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_soroca"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet75"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_soldanesti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout85_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_soldanesti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistică Șoldănești"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout86_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_soldanesti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet76"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_nord_telenesti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout86_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_nord_telenesti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistică  Telenești"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout87_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_nord_telenesti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet77"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout87_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Centrul regional pentru statistică CENTRU"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout88_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet78"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_aneniinoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout88_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_aneniinoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Anenii-Noi"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout89_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_aneniinoi"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet79"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_calarasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout89_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_calarasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Călărași"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout90_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_calarasi"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet80"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_causeni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout90_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_causeni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Căușeni"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout91_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_causeni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet81"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_cimislia"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout91_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_cimislia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Cimișlia"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout92_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_cimislia"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet82"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_criuleni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout92_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_criuleni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică  Criuleni"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout93_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_criuleni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet83"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_dubasari"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout93_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_dubasari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistică Dubăsari (Cocieri)"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout94_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_dubasari"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet84"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_hancesti"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout94_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_hancesti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Hâncești"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout95_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_hancesti"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet85"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                android:id="@+id/mRelativeLayout_crs_centru_ialoveni"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/mRelativeLayout95_str"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/shadow_bottom">
+
+                <TextView
+                    android:id="@+id/tv_crs_centru_ialoveni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="** Direcția statistică Ialoveni"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout96_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_ialoveni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet86"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_nisporeni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout96_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_nisporeni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistica Nisporeni"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout97_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_nisporeni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet87"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_orhei"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout97_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_orhei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Orhei"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout98_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_orhei"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet88"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_straseni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout98_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_straseni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Strășeni"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout99_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_straseni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet89"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_stefan_voda"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout99_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_stefan_voda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Secția statistică Ștefan-Vodă"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout100_str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_stefan_voda"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet90"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_centru_ungheni"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout100_str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_centru_ungheni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Ungheni"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout101str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_centru_ungheni"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_sud"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout101str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* Centrul regional pentru statistică SUD"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout102str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_sud"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet92"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_sud_basarabeasca"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout102str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_basarabeasca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistică Basarabeasca"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout103str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_sud_basarabeasca"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet93"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_sud_cahul"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout103str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_cahul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică Cahul"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout104str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_sud_cahul"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet94"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_sud_cantemir"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout104str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_cantemir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="**** Serviciul statistică Cantemir"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout105str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_sud_cantemir"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet95"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_sud_uta_gagauzia"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout105str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_uta_gagauzia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="** Direcția statistică UTA Găgăuzia"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout106str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_sud_uta_gagauzia"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet96"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_leova"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout106str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_uta_leova"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistică Leova"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout107str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_leova"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet97"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout_crs_taraclia"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/mRelativeLayout107str"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sud_uta_taraclia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*** Serviciul statistică  Taraclia"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout108str"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mRelativeLayout_crs_taraclia"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bet98"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

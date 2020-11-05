@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Views.DetailActivityclcaem">
+
+    <item
+        android:visibility="invisible"
+        android:id="@+id/action_edit_caem"
+        android:title="Despre aplicatie"
+        app:showAsAction="never" />
+
+    <item
+        android:visibility="invisible"
+        android:id="@+id/action_edit_en_caem"
+        android:title="About application"
+        app:showAsAction="never" />
+
+
+    <item
+        android:visibility="invisible"
+        android:id="@+id/action_edit_ru_caem"
+        android:title="О программе"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/video3_caem"
+        android:visibility="invisible"
+        android:title="Video tutorial"
+        app:showAsAction="never" />
+
+
+
+    <!--    <item-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:id="@+id/action_edit1"-->
+    <!--        android:title="Aplicația  dezvoltată de DTI al BNS"-->
+    <!--        app:showAsAction="never" />-->
+</menu>
