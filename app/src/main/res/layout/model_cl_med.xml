@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mdenumirea_intTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+
+            android:padding="5dp"
+            android:text="@string/denumirea_int"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968" />
+
+        <TextView
+            android:id="@+id/mnoticeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mMaterialLetterIcon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+
+            android:maxLines="5"
+            android:text="Notice"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/darkGreen"
+            />
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/mMaterialLetterIcon"
+            android:layout_width="@dimen/list_item_avatar_size"
+            android:layout_height="@dimen/list_item_avatar_size"
+            android:layout_below="@id/mdenumirea_intTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
