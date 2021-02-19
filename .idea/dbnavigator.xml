@@ -8,6 +8,7 @@
   <component name="DBNavigator.Project.DataExportManager">
     <export-instructions>
       <create-header value="true" />
+      <friendly-headers value="false" />
       <quote-values-containing-separator value="true" />
       <quote-all-values value="false" />
       <value-separator value="" />
@@ -23,12 +24,16 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="caf75947-3088-475f-9e42-6eabfa83d598">
+        <schema name="u331875177_db2" object-types="column, function, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="caf75947-3088-475f-9e42-6eabfa83d598">
-      <console name="Connection" type="STANDARD" schema="bns" session="Main"><![CDATA[SELECT *
-		FROM bns.start_registruver1;]]></console>
+      <console name="Connection" type="STANDARD" schema="bns" session="Main">SELECT *
+		FROM bns.start_registruver1;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -43,8 +48,13 @@
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/PHP/Database-Table/start.sql" connection-id="virtual-mysql-connection" session-id="MAIN" current-schema="" />
+    <mapping file-url="file://$PROJECT_DIR$/app/SQL/SQL1.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="u331875177_db2" />
+    <mapping file-url="file://$PROJECT_DIR$/app/SQL/cl_med_10_07_19_2.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="u331875177_db2" />
+    <mapping file-url="file://$PROJECT_DIR$/app/SQL/cl_med_10_07_19.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="mysql" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -62,24 +72,26 @@
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="caf75947-3088-475f-9e42-6eabfa83d598" active="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
+          <name value="MySQL" />
+          <description value="u331875177_db2" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
-          <database-version value="5.7" />
+          <database-version value="8.0" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="127.0.0.1" />
           <port value="3306" />
-          <database value="mysql" />
+          <database value="u331875177_db2" />
           <type value="USER_PASSWORD" />
           <user value="oracle" />
           <deprecated-pwd value="b3JhY2xl" />
@@ -112,6 +124,7 @@
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
+          <connectivity-timeout value="5" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
