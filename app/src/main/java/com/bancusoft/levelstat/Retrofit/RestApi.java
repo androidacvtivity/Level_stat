@@ -70,6 +70,9 @@ public interface RestApi {
     @GET("index_cl_prodmold.php.php")
     Call<ResponseModelCl_prodmold> retrieveclprodmold();
 
+
+
+
     /**
      * This method will allow us perform a HTTP POST request to the specified url.In the process
      * we will insert data to mysql and return a ResponseModel object
