@@ -63,12 +63,15 @@ public interface RestApi {
     Call<ResponseModelCl_servicii> retrieveclservicii();
 
 
-    @GET("index_cl_tari.php.php")
+    @GET("index_cl_tari.php")
     Call<ResponseModelCl_tari> retrievecltari();
 
 
-    @GET("index_cl_prodmold.php.php")
+    @GET("index_cl_prodmold.php")
     Call<ResponseModelCl_prodmold> retrieveclprodmold();
+
+    @GET("index_cl_medicament.php")
+    Call<ResponseModel_Cl_medicament> retrievecl_medicament();
 
 
 
@@ -306,7 +309,16 @@ public interface RestApi {
 
 
 
-
+    /**
+     * This method will allow us to search our data while paginating the search results. We
+     * specify the search and pagination parameters as fields.
+     */
+    @FormUrlEncoded
+    @POST("index_cl_prodmold.php")
+    Call<ResponseModel_Cl_medicament> search_cl_medicament(@Field("actioncu") String actioncu,
+                                                      @Field("querycu") String querycu,
+                                                      @Field("startcu") String startcu,
+                                                      @Field("limitcu") String limitcu);
 
 
 
