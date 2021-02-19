@@ -157,6 +157,105 @@ public class Cl_medicament {
         this.divizarea =  divizarea;
     }
 
+ //-7-tara
 
-    
+    public  String getTara () {
+
+        return tara;
+    }
+
+    public void setTara(String tara) {
+        this.tara =  tara;
+    }
+
+
+ //--producatorul
+
+    public  String getProducatorul () {
+
+        return producatorul;
+    }
+
+    public void setProducatorul(String producatorul) {
+        this.producatorul =  producatorul;
+    }
+
+    //--nr_inregistrare
+
+    public  String getNr_inregistrare () {
+
+        return nr_inregistrare;
+    }
+
+    public void setNr_inregistrare(String nr_inregistrare) {
+        this.nr_inregistrare =  nr_inregistrare;
+    }
+
+    //--codul_atc
+
+    public  String getCodul_atc () {
+
+        return codul_atc;
+    }
+
+    public void setCodul_atc(String codul_atc) {
+        this.codul_atc =  codul_atc;
+    }
+
+
+    //--denumirea_int
+
+    public  String getDenumirea_int () {
+
+        return denumirea_int;
+    }
+
+    public void setDenumirea_int(String denumirea_int) {
+        this.denumirea_int =  denumirea_int;
+    }
+
+
+
+    //--termen_valabilitate
+
+    public  String getTermen_valabilitate () {
+
+        return termen_valabilitate;
+    }
+
+    public void setTermen_valabilitate(String termen_valabilitate) {
+        this.termen_valabilitate =  termen_valabilitate;
+    }
+
+
+
+    //--codul_cu_bare
+
+    public  String getCodul_cu_bare () {
+
+        return codul_cu_bare;
+    }
+
+    public void setCodul_cu_bare(String codul_cu_bare) {
+        this.codul_cu_bare =  codul_cu_bare;
+    }
+
+
+    //--notice
+
+    public  String getNotice () {
+
+        return notice;
+    }
+
+    public void setNotice(String notice) {
+        this.notice =  notice;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return getden_come();
+    }
 }
