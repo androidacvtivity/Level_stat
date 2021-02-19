@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Level_stat.iml" filepath="$PROJECT_DIR$/.idea/modules/Level_stat.iml" group="Level_stat" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Level_stat/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Level_stat.iml" filepath="$PROJECT_DIR$/.idea/modules/Level_stat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Level_stat.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Level_stat.app.iml" />
     </modules>
   </component>
 </project>
