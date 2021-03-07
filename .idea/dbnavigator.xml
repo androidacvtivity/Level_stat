@@ -24,16 +24,12 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="caf75947-3088-475f-9e42-6eabfa83d598">
-        <schema name="u331875177_db2" object-types="column, function, table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="caf75947-3088-475f-9e42-6eabfa83d598">
-      <console name="Connection" type="STANDARD" schema="bns" session="Main">SELECT *
-		FROM bns.start_registruver1;</console>
+      <console name="Connection" type="STANDARD" schema="bns" session="Main"><![CDATA[SELECT *
+		FROM bns.start_registruver1;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

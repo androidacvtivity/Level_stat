@@ -2,6 +2,7 @@ package com.bancusoft.levelstat.Helpers;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -11,11 +12,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bancusoft.levelstat.Retrofit.Cl_medicament;
 import com.bancusoft.levelstat.Retrofit.Scientistscaem;
 import com.bancusoft.levelstat.Retrofit.Scientistscfp;
 import com.yarolegovich.lovelydialog.LovelyChoiceDialog;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,6 +37,7 @@ import com.bancusoft.levelstat.Retrofit.Cl_tari;
 import com.bancusoft.levelstat.Retrofit.Cl_prodmold;
 import com.bancusoft.levelstat.Retrofit.Cl_caem2;
 import com.bancusoft.levelstat.Retrofit.Cl_caem;
+import com.bancusoft.levelstat.Retrofit.Cl_medicament;
 import com.bancusoft.levelstat.Views.DashboardActivity;
 import com.bancusoft.levelstat.Views.helpru;
 import com.bancusoft.levelstat.Views.helpen;
@@ -61,7 +65,7 @@ public class Utils {
   //
   public   static  final  String  youtube_level_stat = "https://www.youtube.com/watch?v=GovpbmgZY_E";
 
-      private  static  final String base_url = "http://bancusoft.online/PHP/bns/";
+      private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
     //http://192.168.1.2/PHP/bns/
 
    // private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
@@ -350,6 +354,22 @@ public class Utils {
     }
 
 
+
+    /**
+     * This method will allow us send a serialized Cl_medicament objec  to a specified
+     *  activity
+     */
+
+    public static void sendCl_medicamentToActivity(Context c, Cl_medicament cl_medicament,
+                                             Class clazz){
+        Intent i=new Intent(c,clazz);
+
+        i.putExtra("SCIENTIST_KEY", (Serializable) cl_medicament);
+        c.startActivity(i);
+    }
+
+
+
     /**
      * This method will allow us send a serialized Cl_tari objec  to a specified
      *  activity
@@ -359,7 +379,7 @@ public class Utils {
                                              Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_tari);
+        i.putExtra("SCIENTIST_KEY", (Serializable) cl_tari);
         c.startActivity(i);
     }
 
@@ -372,7 +392,7 @@ public class Utils {
                                              Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_prodmold);
+        i.putExtra("SCIENTIST_KEY",(Serializable) cl_prodmold);
         c.startActivity(i);
     }
 
@@ -385,7 +405,7 @@ public class Utils {
                                               Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_cfoj);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfoj);
         c.startActivity(i);
     }
 
@@ -399,7 +419,7 @@ public class Utils {
                                              Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_cocm);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cocm);
         c.startActivity(i);
     }
 
@@ -413,7 +433,7 @@ public class Utils {
                                              Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_cfp);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfp);
         c.startActivity(i);
     }
 
@@ -427,7 +447,7 @@ public class Utils {
                                             Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_servicii);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_servicii);
         c.startActivity(i);
     }
 
@@ -441,7 +461,7 @@ public class Utils {
                                               Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_caem2);
+        i.putExtra("SCIENTIST_KEY",(Serializable) cl_caem2);
         c.startActivity(i);
     }
 
@@ -455,7 +475,7 @@ public class Utils {
                                               Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",cl_caem);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_caem);
         c.startActivity(i);
     }
 
@@ -471,7 +491,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //                "",scientist);
-        i.putExtra("SCIENTIST_KEY",scientist);
+        i.putExtra("SCIENTIST_KEY",(Serializable)scientist);
         c.startActivity(i);
     }
 
@@ -487,7 +507,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",scientistvw);
+        i.putExtra("SCIENTIST_KEY",(Serializable)scientistvw);
         c.startActivity(i);
     }
     /**
@@ -498,7 +518,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",scientistscu);
+        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscu);
         c.startActivity(i);
     }
 
@@ -512,7 +532,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",scientistscaem);
+        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscaem);
         c.startActivity(i);
     }
 
@@ -522,7 +542,7 @@ public class Utils {
     public static void sendCl_cuatm_allToActivity(Context c, Cl_cuatm_all cl_cuatm_all,
                                                     Class clazz){
         Intent i=new Intent(c,clazz);
-        i.putExtra("SCIENTIST_KEY",cl_cuatm_all);
+        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cuatm_all);
         c.startActivity(i);
     }
 
@@ -534,7 +554,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",scientistscfp);
+        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscfp);
         c.startActivity(i);
     }
 
@@ -755,6 +775,21 @@ public class Utils {
         }catch (Exception e){
             e.printStackTrace();
             show(c," -SCIENTIST ERROR: "+e.getMessage());
+        }
+        return null;
+    }
+
+    /**
+     * This method will allow us receive a serialized cl_medicament, deserialize it and return it,.
+     */
+
+    public  static Cl_medicament receiveCl_medicament(Intent intent,Context c) {
+        try {
+            Cl_medicament cl_medicament= (Cl_medicament) intent.getSerializableExtra("SCIENTIST_KEY");
+            return cl_medicament;
+        }catch (Exception e){
+            e.printStackTrace();
+            show(c," -Medicament ERROR: "+e.getMessage());
         }
         return null;
     }
