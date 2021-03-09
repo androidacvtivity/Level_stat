@@ -19,6 +19,7 @@ import com.github.ivbaranov.mli.MaterialLetterIcon;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
 public class MyAdapter_crs_sud_cantemir  extends RecyclerView.Adapter<MyAdapter_crs_sud_cantemir.ViewHolder>{
     private Context c;
     private final TypedValue mTypedValue = new TypedValue();
