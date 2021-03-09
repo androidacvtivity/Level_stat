@@ -627,40 +627,40 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_margin">
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/card_margin">-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
 
 
-                        <TextView
-                            android:id="@+id/textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="@dimen/text_padding"
-                            android:text="Notice about error in list of contacts of employers"
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="@dimen/text_padding"-->
+<!--                            android:text="Notice about error in list of contacts of employers"-->
 
-                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                            android:textColor="@color/colorAccent"
-                            android:textAlignment="center"
+<!--                            android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+<!--                            android:textColor="@color/colorAccent"-->
+<!--                            android:textAlignment="center"-->
 
-                            />
+<!--                            />-->
 
-                        <Button
-                            android:id="@+id/btnnNtice"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Send"
-                            android:textColor="@color/colorAccent" />
+<!--                        <Button-->
+<!--                            android:id="@+id/btnnNtice"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Send"-->
+<!--                            android:textColor="@color/colorAccent" />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
-                </androidx.cardview.widget.CardView>
+<!--                </androidx.cardview.widget.CardView>-->
 
 
                 <!--                <TextView-->
