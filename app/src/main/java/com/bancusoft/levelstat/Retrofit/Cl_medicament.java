@@ -191,6 +191,20 @@ public class Cl_medicament {
         this.nr_inregistrare =  nr_inregistrare;
     }
 
+
+
+    //--data_inregistrarii
+
+    public  String getData_inregistrarii () {
+
+        return data_inregistrarii;
+    }
+
+    public void setData_inregistrarii (String data_inregistrarii) {
+        this.data_inregistrarii =  data_inregistrarii;
+    }
+
+
     //--codul_atc
 
     public  String getCodul_atc () {
