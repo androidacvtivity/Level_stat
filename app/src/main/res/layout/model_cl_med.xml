@@ -31,7 +31,7 @@
             android:id="@+id/mnoticeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mMaterialLetterIcon"
+            android:layout_below="@id/mMaterialLetterIcon_med"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="30dp"
 
@@ -43,7 +43,7 @@
             />
 
         <com.github.ivbaranov.mli.MaterialLetterIcon
-            android:id="@+id/mMaterialLetterIcon"
+            android:id="@+id/mMaterialLetterIcon_med"
             android:layout_width="@dimen/list_item_avatar_size"
             android:layout_height="@dimen/list_item_avatar_size"
             android:layout_below="@id/mdenumirea_intTxt"

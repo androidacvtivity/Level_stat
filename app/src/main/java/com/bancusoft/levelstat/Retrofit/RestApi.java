@@ -314,7 +314,7 @@ public interface RestApi {
      * specify the search and pagination parameters as fields.
      */
     @FormUrlEncoded
-    @POST("index_cl_prodmold.php")
+    @POST("index_cl_medicament.php")
     Call<ResponseModel_Cl_medicament> search_cl_medicament(@Field("actioncu") String actioncu,
                                                       @Field("querycu") String querycu,
                                                       @Field("startcu") String startcu,
