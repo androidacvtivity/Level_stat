@@ -41,7 +41,7 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView denumirea_intTxt;
+        private TextView mdenumirea_intTxt, mnoticeTxt;
         private MaterialLetterIcon mIcon;
         private MyAdapter_cl_med.ItemClickListener itemClickListener;
         /**
@@ -51,7 +51,8 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
             super(itemView);
             mIcon = itemView.findViewById(R.id.mMaterialLetterIcon_med);
 
-            denumirea_intTxt = itemView.findViewById(R.id.mdenumirea_intTxt);
+            mdenumirea_intTxt = itemView.findViewById(R.id.mdenumirea_intTxt);
+            mnoticeTxt = itemView.findViewById(R.id.mnoticeTxt);
 
 
             itemView.setOnClickListener(this);
@@ -99,12 +100,13 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
         final Cl_medicament s = cl_medicament.get(position);
 
         //bind data to widgets
-        holder.denumirea_intTxt.setText(s.getDenumirea_int());
+        holder.mdenumirea_intTxt.setText(s.getDenumirea_int());
+        holder.mnoticeTxt.setText(s.getNotice());
 
 
 
         holder.mIcon.setInitials(true);
-        holder.mIcon.setInitialsNumber(2);
+        holder.mIcon.setInitialsNumber(1);
         holder.mIcon.setLetterSize(25);
         holder.mIcon.setShapeColor(mMaterialColors[new Random().nextInt(
                 mMaterialColors.length)]);
@@ -113,7 +115,7 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
 
 
         //open detailactivity when clicked
-        holder.setItemClickListener(pos -> Utils.sendCl_medicamentToActivity(c, s,
+        holder.setItemClickListener(pos -> Utils.sendCl_mediToActivity(c, s,
                 DetailActivity_cl_med.class));
     }
 

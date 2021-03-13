@@ -37,7 +37,7 @@ import com.bancusoft.levelstat.Retrofit.Cl_tari;
 import com.bancusoft.levelstat.Retrofit.Cl_prodmold;
 import com.bancusoft.levelstat.Retrofit.Cl_caem2;
 import com.bancusoft.levelstat.Retrofit.Cl_caem;
-import com.bancusoft.levelstat.Retrofit.Cl_medicament;
+
 import com.bancusoft.levelstat.Views.DashboardActivity;
 import com.bancusoft.levelstat.Views.helpru;
 import com.bancusoft.levelstat.Views.helpen;
@@ -68,7 +68,7 @@ public class Utils {
       private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
     //http://192.168.1.2/PHP/bns/
 
-   // private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
+  //  private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
 
 
    //   private  static  final String base_url =   "http://192.168.1.2/PHP/bns/";
@@ -360,11 +360,10 @@ public class Utils {
      *  activity
      */
 
-    public static void sendCl_medicamentToActivity(Context c, Cl_medicament cl_medicament,
+    public static void sendCl_mediToActivity(Context c, Cl_medicament cl_medicament,
                                              Class clazz){
         Intent i=new Intent(c,clazz);
-
-        i.putExtra("SCIENTIST_KEY", (Serializable) cl_medicament);
+        i.putExtra("SCIENTIST_KEY",  cl_medicament);
         c.startActivity(i);
     }
 
@@ -379,7 +378,7 @@ public class Utils {
                                              Class clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY", (Serializable) cl_tari);
+        i.putExtra("SCIENTIST_KEY",  cl_tari);
         c.startActivity(i);
     }
 

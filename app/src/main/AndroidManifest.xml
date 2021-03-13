@@ -27,7 +27,7 @@
 
         <activity
             android:name="com.bancusoft.levelstat.Views.med.CL_medicament_Activity"
-            android:label="CL. MED"
+            android:label="CLASIF. MED."
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
 
 

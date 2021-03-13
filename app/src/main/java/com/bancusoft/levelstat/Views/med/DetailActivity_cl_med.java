@@ -24,14 +24,27 @@ import com.bancusoft.levelstat.Retrofit.Cl_medicament;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
+import static com.bancusoft.levelstat.R.id.mCollapsingToolbarLayout;
 
 
 public class DetailActivity_cl_med extends AppCompatActivity  {
 
     //Let's define our instance fields
-    private TextView codul_medTV, codul_vamalTV, den_comeTV, forma_farmaceuticaTV, doza_concentratiaTV, volumTV, divizareaTV, taraTV, producatorulTV, nr_inregistrareTV,
-            data_inregistrariiTV,
-            codul_atcTV,denumirea_intTV, termen_valabilitateTV, codul_cu_bareTV;
+    private TextView codul_medTV,   //1
+                     codul_vamalTV, //2
+                     den_comeTV,    //3
+                     forma_farmaceuticaTV, // forma_farmaceuticaTV
+                     doza_concentratiaTV,  // doza_concentratiaTV
+                     volumTV, // volumTV
+                     divizareaTV, // divizareaTV
+                     taraTV, // taraTV
+                     producatorulTV, // producatorulTV
+                     nr_inregistrareTV, // nr_inregistrareTV
+                     data_inregistrariiTV, //data_inregistrariiTV
+                     codul_atcTV, // codul_atcTV
+                     denumirea_intTV, // denumirea_intTV
+                     termen_valabilitateTV, // termen_valabilitateTV
+                      codul_cu_bareTV; // codul_cu_bareTV
     //  private FloatingActionButton editFAB;
     private Cl_medicament receivedCl_medicament;
     private Scientist receivedScientist;
@@ -64,7 +77,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
 
         //	editFAB.setOnClickListener(this);
 
-        mCollapsingToolbarLayout=findViewById(R.id.mCollapsingToolbarLayout);
+        mCollapsingToolbarLayout=findViewById(R.id.mCollapsingToolbarLayout_med);
     }
 
     /**
@@ -75,21 +88,21 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
         receivedCl_medicament = Utils.receiveCl_medicament(getIntent(), DetailActivity_cl_med.this);
 
         if(receivedCl_medicament != null){
-            codul_medTV.setText(receivedCl_medicament.getcodul_med().trim());
-            codul_vamalTV.setText(receivedCl_medicament.getcodul_vamal().trim());
-            den_comeTV.setText(receivedCl_medicament.getden_come().trim());
-            forma_farmaceuticaTV.setText(receivedCl_medicament.getforma_farmaceutica().trim());
-            doza_concentratiaTV.setText(receivedCl_medicament.getdoza_concentratia().trim());
-            volumTV.setText(receivedCl_medicament.getvolum().trim());
-            divizareaTV.setText(receivedCl_medicament.getdivizarea().trim());
-            taraTV.setText(receivedCl_medicament.getTara().trim());
-            producatorulTV.setText(receivedCl_medicament.getProducatorul().trim());
-            nr_inregistrareTV.setText(receivedCl_medicament.getNr_inregistrare().trim());
-            data_inregistrariiTV.setText(receivedCl_medicament.getData_inregistrarii().trim());
-            codul_atcTV.setText(receivedCl_medicament.getCodul_atc().trim());
-            denumirea_intTV.setText(receivedCl_medicament.getDenumirea_int().trim());
-            termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
-            codul_cu_bareTV.setText(receivedCl_medicament.getCodul_cu_bare().trim());
+            codul_medTV.setText(receivedCl_medicament.getCodul_med().trim());
+//            codul_vamalTV.setText(receivedCl_medicament.getcodul_vamal().trim());
+//            den_comeTV.setText(receivedCl_medicament.getden_come().trim());
+//            forma_farmaceuticaTV.setText(receivedCl_medicament.getforma_farmaceutica().trim());
+//            doza_concentratiaTV.setText(receivedCl_medicament.getdoza_concentratia().trim());
+//            volumTV.setText(receivedCl_medicament.getvolum().trim());
+//            divizareaTV.setText(receivedCl_medicament.getdivizarea().trim());
+//            taraTV.setText(receivedCl_medicament.getTara().trim());
+//            producatorulTV.setText(receivedCl_medicament.getProducatorul().trim());
+//            nr_inregistrareTV.setText(receivedCl_medicament.getNr_inregistrare().trim());
+//            data_inregistrariiTV.setText(receivedCl_medicament.getData_inregistrarii().trim());
+//            codul_atcTV.setText(receivedCl_medicament.getCodul_atc().trim());
+//            denumirea_intTV.setText(receivedCl_medicament.getDenumirea_int().trim());
+//            termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
+//            codul_cu_bareTV.setText(receivedCl_medicament.getCodul_cu_bare().trim());
 
 //             dobTV.setText(receivedScientist.getDob());
 //             diedTV.setText(receivedScientist.getDied());
