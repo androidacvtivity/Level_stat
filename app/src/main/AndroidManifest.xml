@@ -25,6 +25,11 @@
         </activity>
 
 
+        <activity
+            android:name="com.bancusoft.levelstat.Views.med.CL_medicament_Activity"
+            android:label="CL. MED"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
 
         <activity
             android:name="com.bancusoft.levelstat.Views.ScientistsActivityclprodmold"
@@ -194,8 +199,13 @@
 
 
         <activity
-            android:name="com.bancusoft.levelstat.Views.DetailActivityclprodmold"
-            android:label="Despre cod"
+        android:name="com.bancusoft.levelstat.Views.DetailActivityclprodmold"
+        android:label="Despre cod"
+        android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
+
+        <activity
+            android:name="com.bancusoft.levelstat.Views.med.DetailActivity_cl_med"
+            android:label="Despre med"
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
 
 

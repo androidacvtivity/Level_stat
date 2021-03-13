@@ -4,4 +4,5 @@
 
     <string name="denumirea_int">Denumirea comună internaţională</string>
     <string name="list_of_employees">Lista angajaților</string>
+    <string name="list_of_med">Lista medicamentelor</string>
 </resources>
