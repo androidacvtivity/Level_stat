@@ -27,7 +27,7 @@
 
         <activity
             android:name="com.bancusoft.levelstat.Views.med.CL_medicament_Activity"
-            android:label="CLASIF. MED."
+            android:label="CLASIF. MEDICAMENT."
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
 
 
@@ -205,7 +205,7 @@
 
         <activity
             android:name="com.bancusoft.levelstat.Views.med.DetailActivity_cl_med"
-            android:label="Despre med"
+            android:label="Despre medicament"
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
 
 
