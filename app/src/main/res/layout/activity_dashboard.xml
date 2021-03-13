@@ -342,7 +342,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="250dp"
+                    android:layout_height="290dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -358,7 +358,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:layout_gravity="center_horizontal"
-                            android:background="@drawable/m_circle_bg_green"
+                            android:background="@mipmap/ic_medicament"
                             android:padding="10dp"
                             android:src="@drawable/m_list" />
 
@@ -368,6 +368,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
                             android:text="Clasificatorul medicamentelor"
+                            android:textAlignment="center"
                             android:textStyle="bold" />
 
 
@@ -377,7 +378,7 @@
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Către agenţii economici implicaţi în circulaţia medicamentelor"
+                            android:text="Ordinul MSPS RM nr. 271 din 04.07.2006 „Cu privire la aprobarea Clasificatorului medicamentelor înregistrate în Republica Moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -386,7 +387,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="250dp"
+                    android:layout_height="290dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -438,7 +439,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="220dp"
+                    android:layout_height="280dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
