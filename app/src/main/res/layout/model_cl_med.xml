@@ -15,13 +15,22 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/mdenumirea_intTxt_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Denumirea Internationala"
+            android:textStyle="bold" />
+        <TextView
             android:id="@+id/mdenumirea_intTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="20dp"
-
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/mdenumirea_intTxt_m"
             android:padding="5dp"
             android:text="@string/denumirea_int"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -31,7 +40,7 @@
             android:id="@+id/mnoticeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mMaterialLetterIcon_med"
+            android:layout_below="@id/mProducatorulTxt_view"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="30dp"
 
@@ -42,6 +51,92 @@
             android:textColor="@color/darkGreen"
             />
 
+
+        <TextView
+            android:id="@+id/mdenumirea_comercialaTxt_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:text="Denumirea Comerciala"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/mdenumirea_comercialaTxt_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="110dp"
+            android:text="Denumirea Comerciala"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/mdcodul_medicalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mdenumirea_comercialaTxt_View"
+            android:text="Codul medical"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/mdcodul_medicalTxt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mdcodul_medicalTxt"
+            android:text="Codul medical"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+
+            />
+
+
+        <TextView
+            android:id="@+id/mproducatorulTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mdcodul_medicalTxt_view"
+            android:text="Producatorul"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/mProducatorulTxt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mproducatorulTxt"
+            android:text="Producatorul"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+
+            />
         <com.github.ivbaranov.mli.MaterialLetterIcon
             android:id="@+id/mMaterialLetterIcon_med"
             android:layout_width="@dimen/list_item_avatar_size"
