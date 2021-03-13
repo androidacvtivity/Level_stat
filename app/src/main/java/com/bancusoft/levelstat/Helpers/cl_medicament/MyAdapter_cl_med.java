@@ -44,7 +44,8 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mdenumirea_intTxt, mnoticeTxt, mdenumirea_comercialaTxt_View, mdcodul_medicalTxt_view, mProducatorulTxt_view;
+        private TextView mdenumirea_intTxt, mnoticeTxt, mdenumirea_comercialaTxt_View, mdcodul_medicalTxt_view, mProducatorulTxt_view,
+                mnrinregistrareTxt_view, mcountryTxt_view, mcodul_ATC_Txt_view;
         private MaterialLetterIcon mIcon;
         private MyAdapter_cl_med.ItemClickListener itemClickListener;
         /**
@@ -58,6 +59,9 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
             mdenumirea_comercialaTxt_View = itemView.findViewById(R.id.mdenumirea_comercialaTxt_View);
             mdcodul_medicalTxt_view = itemView.findViewById(R.id.mdcodul_medicalTxt_view);
             mProducatorulTxt_view = itemView.findViewById(R.id.mProducatorulTxt_view);
+            mnrinregistrareTxt_view = itemView.findViewById(R.id.mnrinregistrareTxt_view);
+            mcountryTxt_view = itemView.findViewById(R.id.mcountryTxt_view);
+            mcodul_ATC_Txt_view = itemView.findViewById(R.id.mcodul_ATC_Txt_view);
             mnoticeTxt = itemView.findViewById(R.id.mnoticeTxt);
 
 
@@ -110,6 +114,9 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
         holder.mdenumirea_comercialaTxt_View.setText(s.getden_come());
         holder.mdcodul_medicalTxt_view.setText(s.getCodul_med());
         holder.mProducatorulTxt_view.setText(s.getProducatorul());
+        holder.mnrinregistrareTxt_view.setText(s.getNr_inregistrare());
+        holder.mcountryTxt_view.setText(s.getTara());
+        holder.mcodul_ATC_Txt_view.setText(s.getCodul_atc());
         holder.mnoticeTxt.setText(s.getNotice());
 
 
@@ -125,6 +132,57 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
         String denumirea_comerciala = s.getden_come().toLowerCase(Locale.getDefault()).trim();
         String codul_medical = s.getCodul_med().toLowerCase(Locale.getDefault()).trim();
         String producatorul = s.getProducatorul().toLowerCase(Locale.getDefault()).trim();
+        String nrinregistrare = s.getNr_inregistrare().toLowerCase(Locale.getDefault()).trim();
+        String country = s.getTara().toLowerCase(Locale.getDefault()).trim();
+        String codul_ATC = s.getCodul_atc().toLowerCase(Locale.getDefault()).trim();
+
+
+        //highlight nrinregistrare country while searching
+        if (codul_ATC.contains(searchString) && !(searchString.isEmpty())) {
+            int startPos = codul_ATC.indexOf(searchString);
+            int endPos = startPos + searchString.length();
+
+            Spannable spanString = Spannable.Factory.getInstance().
+                    newSpannable(holder.mcodul_ATC_Txt_view.getText());
+            spanString.setSpan(new ForegroundColorSpan(Color.BLUE), startPos, endPos,
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+            holder.mcodul_ATC_Txt_view.setText(spanString);
+        } else {
+            //Utils.show(ctx, "Search string empty");
+        }
+
+
+        //highlight nrinregistrare country while searching
+        if (country.contains(searchString) && !(searchString.isEmpty())) {
+            int startPos = country.indexOf(searchString);
+            int endPos = startPos + searchString.length();
+
+            Spannable spanString = Spannable.Factory.getInstance().
+                    newSpannable(holder.mcountryTxt_view.getText());
+            spanString.setSpan(new ForegroundColorSpan(Color.BLUE), startPos, endPos,
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+            holder.mcountryTxt_view.setText(spanString);
+        } else {
+            //Utils.show(ctx, "Search string empty");
+        }
+
+
+        //highlight nrinregistrare text while searching
+        if (nrinregistrare.contains(searchString) && !(searchString.isEmpty())) {
+            int startPos = nrinregistrare.indexOf(searchString);
+            int endPos = startPos + searchString.length();
+
+            Spannable spanString = Spannable.Factory.getInstance().
+                    newSpannable(holder.mnrinregistrareTxt_view.getText());
+            spanString.setSpan(new ForegroundColorSpan(Color.BLUE), startPos, endPos,
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+            holder.mnrinregistrareTxt_view.setText(spanString);
+        } else {
+            //Utils.show(ctx, "Search string empty");
+        }
 
 
 

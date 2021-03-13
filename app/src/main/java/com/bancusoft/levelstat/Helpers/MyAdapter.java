@@ -156,6 +156,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
 
 
+
         //highlight name text while searching
         if (name.contains(searchString) && !(searchString.isEmpty())) {
             int startPos = name.indexOf(searchString);
