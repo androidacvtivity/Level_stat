@@ -40,7 +40,7 @@
             android:id="@+id/mnoticeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mProducatorulTxt_view"
+            android:layout_below="@id/mcodul_ATC_Txt_view"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="30dp"
 
@@ -117,7 +117,7 @@
             android:layout_marginTop="10dp"
             android:layout_below="@id/mdcodul_medicalTxt_view"
             android:text="Producatorul"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+
             android:textStyle="bold" />
 
 
@@ -131,12 +131,100 @@
             android:layout_marginTop="10dp"
             android:layout_below="@id/mproducatorulTxt"
             android:text="Producatorul"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
 
             />
+
+
+
+        <TextView
+            android:id="@+id/mnrinregistrareTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mProducatorulTxt_view"
+            android:text="Nr. Inregistrare"
+
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/mnrinregistrareTxt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mnrinregistrareTxt"
+            android:text="Nr. Inregistrare"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mcountryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnrinregistrareTxt_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Țara"
+
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/mcountryTxt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcountryTxt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Țara"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/mcodul_ATC_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcountryTxt_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Codul ATC"
+
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/mcodul_ATC_Txt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcodul_ATC_Txt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Codul ATC"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968"
+            android:textStyle="bold" />
+
+
         <com.github.ivbaranov.mli.MaterialLetterIcon
             android:id="@+id/mMaterialLetterIcon_med"
             android:layout_width="@dimen/list_item_avatar_size"
