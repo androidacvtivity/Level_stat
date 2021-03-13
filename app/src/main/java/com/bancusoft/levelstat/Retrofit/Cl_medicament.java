@@ -1,8 +1,9 @@
 package com.bancusoft.levelstat.Retrofit;
 
 import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 
-public class Cl_medicament {
+public class Cl_medicament implements Serializable{
 
     @SerializedName("id")
     private String mId;
@@ -74,24 +75,26 @@ public class Cl_medicament {
     }
 
 //-1--nr_ordine
-    public  String getnr_ordine () {
+    public  String getNr_ordine () {
 
         return nr_ordine;
     }
 
-    public void setnr_ordine(String nr_ordine) {
+    public void setNr_ordine(String nr_ordine) {
         this.nr_ordine =  nr_ordine; }
 
     //-2--codul_med
 
-    public  String getcodul_med () {
+    public  String getCodul_med () {
 
         return codul_med;
     }
 
-    public void setcodul_med(String codul_med) {
+    public void setCodul_med(String codul_med) {
         this.codul_med =  codul_med;
     }
+
+
 
     //-3--codul_vamal
     public  String getcodul_vamal () {
