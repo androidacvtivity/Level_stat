@@ -2,8 +2,6 @@ package com.bancusoft.levelstat.Helpers.cl_medicament;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.text.Spannable;
-import android.text.style.ForegroundColorSpan;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,14 +19,13 @@ import com.github.ivbaranov.mli.MaterialLetterIcon;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Random;
 
 import com.bancusoft.levelstat.R;
 
 import com.bancusoft.levelstat.Views.med.DetailActivity_cl_med;
 
-public class MyAdapter_cl_medicament extends RecyclerView.Adapter<MyAdapter_cl_medicament.ViewHolder>{
+public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.ViewHolder>{
     private Context c;
     private final TypedValue mTypedValue = new TypedValue();
     private int mBackground;
@@ -46,7 +43,7 @@ public class MyAdapter_cl_medicament extends RecyclerView.Adapter<MyAdapter_cl_m
             View.OnClickListener {
         private TextView denumirea_intTxt;
         private MaterialLetterIcon mIcon;
-        private MyAdapter_cl_medicament.ItemClickListener itemClickListener;
+        private MyAdapter_cl_med.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
          */
@@ -64,7 +61,7 @@ public class MyAdapter_cl_medicament extends RecyclerView.Adapter<MyAdapter_cl_m
             this.itemClickListener.onItemClick(this.getLayoutPosition());
         }
 
-        public void setItemClickListener(MyAdapter_cl_medicament.ItemClickListener itemClickListener) {
+        public void setItemClickListener(MyAdapter_cl_med.ItemClickListener itemClickListener) {
             this.itemClickListener = itemClickListener;
         }
     }
@@ -72,7 +69,7 @@ public class MyAdapter_cl_medicament extends RecyclerView.Adapter<MyAdapter_cl_m
     /**
      * Our MyAdapter_cl_medicament's costructor
      */
-    public MyAdapter_cl_medicament(Context mContext, ArrayList<Cl_medicament> cl_medicament) {
+    public MyAdapter_cl_med(Context mContext, ArrayList<Cl_medicament> cl_medicament) {
         this.c = mContext;
         this.cl_medicament = cl_medicament;
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
@@ -85,17 +82,17 @@ public class MyAdapter_cl_medicament extends RecyclerView.Adapter<MyAdapter_cl_m
      */
     @NonNull
     @Override
-    public MyAdapter_cl_medicament.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAdapter_cl_med.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_med, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapter_cl_medicament.ViewHolder vh = new MyAdapter_cl_medicament.ViewHolder(view);
+        MyAdapter_cl_med.ViewHolder vh = new MyAdapter_cl_med.ViewHolder(view);
         return vh;
     }
     /**
      * Our onBindViewHolder method
      */
     @Override
-    public void onBindViewHolder(@NonNull MyAdapter_cl_medicament.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyAdapter_cl_med.ViewHolder holder, int position) {
 
         holder.itemView.setBackgroundColor(Color.parseColor("#efefef"));
         //get current scientist
