@@ -485,7 +485,7 @@ din Registrul de stat al unităţilor de drept
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="220dp"
+                    android:layout_height="280dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
