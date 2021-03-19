@@ -101,8 +101,8 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
                data_inregistrariiTV.setText(receivedCl_medicament.getData_inregistrarii().trim());
                codul_atcTV.setText(receivedCl_medicament.getCodul_atc().trim());
               denumirea_intTV.setText(receivedCl_medicament.getDenumirea_int().trim());
-//             termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
-//            codul_cu_bareTV.setText(receivedCl_medicament.getCodul_cu_bare().trim());
+             termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
+             codul_cu_bareTV.setText(receivedCl_medicament.getCodul_cu_bare().trim());
 
 //             dobTV.setText(receivedScientist.getDob());
 //             diedTV.setText(receivedScientist.getDied());
@@ -265,6 +265,9 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
                         + " - Numărul de înregistrare :  " + s_nr_inregistrareTV  + "  - Data înregistrării :  " +  s_data_inregistrariiTV
                         + " -  Codul ATC :  " +  s_codul_atcTV + " - Denumirea comună internaţională  :  " + s_denumirea_intTV
                         +  " -  Termenul de valabilitate :   " +  s_termen_valabilitateTV  +  " -  Codul cu bare :   " +  s_codul_cu_bareTV
+                        + "-- Informatia este preluata din sursa deschisa (https://amdm.gov.md/ro/clasificator-medicamente) - " +
+                        "Ordinul MSPS RM nr. 271 din 04.07.2006 „Cu privire la aprobarea Clasificatorului medicamentelor înregistrate în Republica Moldova” " +
+                        "Clasificatorul medicamentelor (Format EXCEL)  Actualizat la data de 10.07.2019"
                         ;
 
 
