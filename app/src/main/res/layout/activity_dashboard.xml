@@ -420,7 +420,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="despre accesarea datelor deschise a Unitaților de Drept din Rep. Moldova "
+                            android:text="despre accesarea datelor deschise si către agenţii economici implicaţi în circulaţia medicamentelor din Rep. Moldova "
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
