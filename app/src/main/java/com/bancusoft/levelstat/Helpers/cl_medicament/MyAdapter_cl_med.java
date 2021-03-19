@@ -128,6 +128,7 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
                 mMaterialColors.length)]);
         holder.mIcon.setLetter(s.getDenumirea_int());
 
+
         String denumirea_int = s.getDenumirea_int().toLowerCase(Locale.getDefault()).trim();
         String denumirea_comerciala = s.getden_come().toLowerCase(Locale.getDefault()).trim();
         String codul_medical = s.getCodul_med().toLowerCase(Locale.getDefault()).trim();
