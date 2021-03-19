@@ -342,7 +342,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="290dp"
+                    android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -387,7 +387,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
-                    android:layout_height="290dp"
+                    android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">

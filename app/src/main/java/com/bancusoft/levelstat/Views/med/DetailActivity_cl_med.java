@@ -89,19 +89,19 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
 
         if(receivedCl_medicament != null){
             codul_medTV.setText(receivedCl_medicament.getCodul_med().trim());
-//            codul_vamalTV.setText(receivedCl_medicament.getcodul_vamal().trim());
-//            den_comeTV.setText(receivedCl_medicament.getden_come().trim());
-//            forma_farmaceuticaTV.setText(receivedCl_medicament.getforma_farmaceutica().trim());
-//            doza_concentratiaTV.setText(receivedCl_medicament.getdoza_concentratia().trim());
-//            volumTV.setText(receivedCl_medicament.getvolum().trim());
-//            divizareaTV.setText(receivedCl_medicament.getdivizarea().trim());
-//            taraTV.setText(receivedCl_medicament.getTara().trim());
-//            producatorulTV.setText(receivedCl_medicament.getProducatorul().trim());
-//            nr_inregistrareTV.setText(receivedCl_medicament.getNr_inregistrare().trim());
-//            data_inregistrariiTV.setText(receivedCl_medicament.getData_inregistrarii().trim());
-//            codul_atcTV.setText(receivedCl_medicament.getCodul_atc().trim());
-//            denumirea_intTV.setText(receivedCl_medicament.getDenumirea_int().trim());
-//            termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
+            codul_vamalTV.setText(receivedCl_medicament.getcodul_vamal().trim());
+             den_comeTV.setText(receivedCl_medicament.getden_come().trim());
+              forma_farmaceuticaTV.setText(receivedCl_medicament.getforma_farmaceutica().trim());
+               doza_concentratiaTV.setText(receivedCl_medicament.getdoza_concentratia().trim());
+               volumTV.setText(receivedCl_medicament.getvolum().trim());
+               divizareaTV.setText(receivedCl_medicament.getdivizarea().trim());
+               taraTV.setText(receivedCl_medicament.getTara().trim());
+               producatorulTV.setText(receivedCl_medicament.getProducatorul().trim());
+               nr_inregistrareTV.setText(receivedCl_medicament.getNr_inregistrare().trim());
+               data_inregistrariiTV.setText(receivedCl_medicament.getData_inregistrarii().trim());
+               codul_atcTV.setText(receivedCl_medicament.getCodul_atc().trim());
+              denumirea_intTV.setText(receivedCl_medicament.getDenumirea_int().trim());
+//             termen_valabilitateTV.setText(receivedCl_medicament.getTermen_valabilitate().trim());
 //            codul_cu_bareTV.setText(receivedCl_medicament.getCodul_cu_bare().trim());
 
 //             dobTV.setText(receivedScientist.getDob());
@@ -109,7 +109,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
 
             mCollapsingToolbarLayout.setTitle(receivedCl_medicament.getden_come());
             mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+                    getColor(R.color.darkRed));
         }
     }
     /**

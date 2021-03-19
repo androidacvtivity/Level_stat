@@ -58,8 +58,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="10dp"
             android:text="Denumirea Comerciala"
+            android:layout_below="@id/mdenumirea_intTxt"
             android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
             android:textStyle="bold" />
 
@@ -70,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mdenumirea_comercialaTxt_m"
             android:text="Denumirea Comerciala"
             android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
             android:textAppearance="?android:attr/textAppearanceMedium"
