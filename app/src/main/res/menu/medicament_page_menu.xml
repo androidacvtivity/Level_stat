@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:myapp="http://schemas.android.com/apk/res-auto"
-    tools:context=".Views.med.DetailActivity_cl_med">
+    tools:context=".Views.med.CL_medicament_Activity">
 
     <item
 
@@ -18,21 +18,21 @@
 
 
     <item
-        android:id="@+id/action_new"
+        android:id="@+id/action_new_med"
         android:visibility="invisible"
         android:title="Despre aplicatie"
         app:showAsAction="never" />
 
 
     <item
-        android:id="@+id/action_new_en"
+        android:id="@+id/action_new_en_med"
         android:visibility="invisible"
         android:title="About application"
         app:showAsAction="never" />
 
 
     <item
-        android:id="@+id/action_new_ru"
+        android:id="@+id/action_new_ru_med"
         android:visibility="invisible"
         android:title="О программе"
         app:showAsAction="never" />
@@ -44,7 +44,7 @@
     <!--        app:showAsAction="never" />-->
 
     <item
-        android:id="@+id/video2"
+        android:id="@+id/video2_med"
         android:visibility="invisible"
         android:title="Video tutorial"
         app:showAsAction="never" />

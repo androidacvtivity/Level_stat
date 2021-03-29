@@ -194,7 +194,7 @@ public class CL_medicament_Activity extends AppCompatActivity  implements Search
         SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setOnQueryTextListener(this);
         searchView.setIconified(true);
-        searchView.setQueryHint("Căutare");
+        searchView.setQueryHint("Căutare med.");
         return true;
     }
 
@@ -242,18 +242,18 @@ public class CL_medicament_Activity extends AppCompatActivity  implements Search
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_new:
+            case R.id.action_new_med:
                 Utils.sendScientistToActivity(this,receivedScientist, help.class);
                 finish();
                 return true;
 
 
-            case R.id.action_new_en:
+            case R.id.action_new_en_med:
                 Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
                 finish();
                 return true;
 
-            case R.id.action_new_ru:
+            case R.id.action_new_ru_med:
                 Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
                 finish();
                 return true;
@@ -276,7 +276,7 @@ public class CL_medicament_Activity extends AppCompatActivity  implements Search
 //                finish();
 //                return true;
 
-            case R.id.video2:
+            case R.id.video2_med:
                 //   String test_url = "https://www.youtube.com/watch?v=GovpbmgZY_E";
                 //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=GovpbmgZY_E"));
                 //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(test_url));

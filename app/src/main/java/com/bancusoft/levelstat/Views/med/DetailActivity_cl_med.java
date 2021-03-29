@@ -117,7 +117,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.detail_page_menu, menu);
+        getMenuInflater().inflate(R.menu.detail_page_menu_cl_med, menu);
         return true;
     }
 
@@ -127,18 +127,18 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_edit:
+            case R.id.action_edit_med:
                 Utils.sendScientistToActivity(this,receivedScientist, help.class);
                 finish();
                 return true;
 
 
-            case R.id.action_edit_en:
+            case R.id.action_edit_en_med:
                 Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
                 finish();
                 return true;
 
-            case R.id.action_edit_ru:
+            case R.id.action_edit_ru_med:
                 Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
                 finish();
                 return true;
@@ -157,7 +157,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
                 return true;
 
 
-            case R.id.video3:
+            case R.id.video3_med:
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
                 startActivity(browserIntent);
                 break;
