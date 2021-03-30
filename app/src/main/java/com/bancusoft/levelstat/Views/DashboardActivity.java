@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Views.med.CL_medicament_Activity;
+import com.bancusoft.levelstat.Views.med.help_medicament;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -36,6 +37,7 @@ public class DashboardActivity extends AppCompatActivity {
     LinearLayout layout_cl_prodmild;
     LinearLayout layout_view_structura;
     LinearLayout layout_view_cl_med;
+    LinearLayout help_cl_med;
 
     /**
      * Let's initialize our cards  and listen to their click events
@@ -61,7 +63,17 @@ public class DashboardActivity extends AppCompatActivity {
         layout_cl_prodmild   =   findViewById(R.id.cl_prodmild);
         layout_view_structura = findViewById(R.id.view_structura);
         layout_view_cl_med = findViewById(R.id.view_list_of_med);
+        help_cl_med = findViewById(R.id.help_cl_med);
 
+
+
+        help_cl_med.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Utils.openActivity(DashboardActivity.this, help_medicament.class);
+            }
+        });
 
 
         layout_view_cl_med.setOnClickListener(new View.OnClickListener() {
@@ -238,6 +250,9 @@ public class DashboardActivity extends AppCompatActivity {
                 Utils.openActivity(DashboardActivity.this,help.class);
             }
         });
+
+
+
         closeCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
