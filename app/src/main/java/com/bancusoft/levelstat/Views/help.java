@@ -13,7 +13,7 @@ import com.bancusoft.levelstat.R;
 
 public class help extends BaseActivity{
 
-   private Scientist receivedScientist;
+    private Scientist receivedScientist;
     private Toolbar toolbar;
 
     @Override
