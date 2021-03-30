@@ -15,7 +15,7 @@ import com.bancusoft.levelstat.Views.help;
 import com.bancusoft.levelstat.Views.helpen;
 import com.bancusoft.levelstat.Views.helpru;
 
-public class help_medicament extends BaseActivity {
+public class help_medicament_en extends BaseActivity{
 
     private Scientist receivedScientist;
     private Toolbar toolbar;
@@ -23,19 +23,20 @@ public class help_medicament extends BaseActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.help_med);
-        Toolbar toolbar = findViewById(R.id.aboutUsToolBarn_med);
+        setContentView(R.layout.help_en_med);
+        Toolbar toolbar = findViewById(R.id.aboutUsToolBarn_en_med);
+
         setSupportActionBar(toolbar);
 
         //findViewById(R.id.mBackArrowh).setOnClickListener(v -> finish());
-        findViewById(R.id.mBackArrowh_med).setOnClickListener( v -> Utils.showInfoDialog_help_ro(this,
+        findViewById(R.id.mBackArrowh_en_med_en).setOnClickListener( v -> Utils.showInfoDialog_help_en(this,
                 "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.") );
     }
 
 
     @Override
     public void onBackPressed() {
-        Utils.showInfoDialog_help_ro(this,
+        Utils.showInfoDialog_help_en(this,
                 "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.");
         //this.finish();
     }
@@ -92,4 +93,5 @@ public class help_medicament extends BaseActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

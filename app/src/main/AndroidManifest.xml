@@ -1254,6 +1254,11 @@
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity
+            android:name="com.bancusoft.levelstat.Views.med.help_medicament_en"
+            android:label="Help en med"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
 
 
