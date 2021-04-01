@@ -89,7 +89,7 @@
                         android:layout_marginLeft="10dp"
 
 
-                        android:text="The application for the list of employees was developed to facilitate access to contact information via mobile phone (Operating system: Android)." />
+                        android:text="The medicamention  classifier application has been developed to facilitate access to the medicamention  classifier through a mobile phone (operating system: Android). " />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -126,7 +126,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
 
-                        android:text="The application includes the list of employee profiles with contact information." />
+                        android:text="The classifier is downloaded from the official website of the Agency for Medicines and Medical Devices." />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -150,9 +150,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
+                        android:text="https://amdm.gov.md/ro/clasificator-medicamente"
+                        android:autoLink="web"
 
 
-                        android:text="The functions provided by the program (List of officials from the NBS (conventional name)) have been grouped into categories and are presented below." />
+                        />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -167,7 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="1"
+                        android:text=""
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -178,15 +180,17 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/websiteLabel_h"
 
-                        android:text="Displays the list of NBS officials and territorial structures. (By connecting to the MySQL database, the data is stored here. Why is a client-server application? The client-server principle is used as in the intranet.statistica.md web application). The employee information is updated in the database. And any employee who has this application installed on their mobile phone, Android OS, accesses the updated data."
+                        android:text="The excel file can be downloaded here."
                         />
                 </RelativeLayout>
+
 
                 <RelativeLayout
                     android:id="@+id/mRelativeLayouth_h5_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/mRelativeLayouth_h4_h"
+                    android:layout_marginTop="0dp"
                     android:background="@drawable/shadow_bottom">
 
                     <TextView
@@ -195,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="2"
+                        android:text=""
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -205,9 +209,12 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/address_h"
-                        android:text="List of open data that are displayed about (NBS civil servant / employee) and territorial structures." />
-                </RelativeLayout>
+                        android:text="http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls"
+                        android:autoLink="web"
 
+
+                        />
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativeLayouth_h6_h"
@@ -222,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.1"
+                        android:text="1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -233,7 +240,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/emailLabel_h"
 
-                        android:text="Name,  Surname" />
+                        android:text="In the application the drug is searched for the following fields" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -249,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.2"
+                        android:text="1.1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -260,7 +267,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/locatia_h"
 
-                        android:text="Location - Address" />
+                        android:text="Medicamention  code" />
                 </RelativeLayout>
 
 
