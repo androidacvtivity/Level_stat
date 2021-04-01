@@ -243,18 +243,18 @@ public class CL_medicament_Activity extends AppCompatActivity  implements Search
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_new_med:
-                Utils.sendScientistToActivity(this,receivedScientist, help.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament.class);
                 finish();
                 return true;
 
 
             case R.id.action_new_en_med:
-                Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_en.class);
                 finish();
                 return true;
 
             case R.id.action_new_ru_med:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
                 finish();
                 return true;
 
