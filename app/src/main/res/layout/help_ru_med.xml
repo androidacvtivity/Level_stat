@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh_ru"
+                    android:layout_toRightOf="@+id/mBackArrowh_ru_med"
                     android:text="Классиф. лекарст. преп."
                     android:textColor="@color/white"
                     android:textSize="21sp" />
