@@ -36,7 +36,7 @@ public class help_medicament_ru extends BaseActivity{
 
     @Override
     public void onBackPressed() {
-        Utils.showInfoDialog_help_ru(this,
+        Utils.showInfoDialog_help_ru_med(this,
                 "Atenție", "Вы уверены, что хотите выйти? В справочнике к классификатору препаратов есть перевод на английский и румынский  языки.");
         //this.finish();
     }
@@ -79,7 +79,7 @@ public class help_medicament_ru extends BaseActivity{
                 return true;
 
             case R.id.link1_med:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level ));
                 startActivity(browserIntent);
                 break;
 

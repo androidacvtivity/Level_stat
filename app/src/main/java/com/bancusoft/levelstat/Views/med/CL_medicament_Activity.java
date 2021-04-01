@@ -282,7 +282,7 @@ public class CL_medicament_Activity extends AppCompatActivity  implements Search
                 //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(test_url));
 
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level));
 
                 startActivity(browserIntent);
                 break;
