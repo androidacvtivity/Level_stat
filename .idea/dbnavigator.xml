@@ -24,7 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="caf75947-3088-475f-9e42-6eabfa83d598">
+        <schema name="u331875177_db2" object-types="view, table, function, column" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="caf75947-3088-475f-9e42-6eabfa83d598">
@@ -50,7 +54,6 @@
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/app/SQL/SQL1.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="u331875177_db2" />
     <mapping file-url="file://$PROJECT_DIR$/app/SQL/cl_med_10_07_19_2.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="u331875177_db2" />
-    <mapping file-url="file://$PROJECT_DIR$/app/SQL/cl_med_10_07_19.sql" connection-id="caf75947-3088-475f-9e42-6eabfa83d598" session-id="MAIN" current-schema="mysql" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />

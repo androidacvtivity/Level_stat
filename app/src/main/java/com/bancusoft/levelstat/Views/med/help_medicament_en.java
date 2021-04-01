@@ -74,7 +74,7 @@ public class help_medicament_en extends BaseActivity{
 
 
             case R.id.rulang_med:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
                 finish();
                 return true;
 

@@ -1260,6 +1260,12 @@
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity
+            android:name="com.bancusoft.levelstat.Views.med.help_medicament_ru"
+            android:label="Help ru med"
+            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
 
 
 
