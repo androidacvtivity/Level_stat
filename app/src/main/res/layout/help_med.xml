@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh"
+
                     android:text="Despre clasificatorul Med"
                     android:textColor="@color/white"
                     android:textSize="21sp"
@@ -491,197 +491,196 @@ In compartimentul despre medicament a fost adaugat un buton - SHARE - care permi
                 </RelativeLayout>
 
 
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h16_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/mRelativeLayouth_h15_h"
-                    android:background="@drawable/shadow_bottom">
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h16_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h15_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
 
-                    <TextView
-                        android:id="@+id/phonemobile_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
+<!--                    <TextView-->
+<!--                        android:id="@+id/phonemobile_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
 
-                        android:text="2.11"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+<!--                        android:text="2.11"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phonemobile_h"
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/phonemobile_h"-->
 
-                        android:text=" Telefonul mobil de sreviciu. " />
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h17_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/mRelativeLayouth_h16_h"
-                    android:background="@drawable/shadow_bottom">
-
-                    <TextView
-                        android:id="@+id/phonemobileintern_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-
-                        android:text="2.12"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phonemobileintern_h"
-
-                        android:text=" Telefon intern " />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h18_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/mRelativeLayouth_h17_h"
-                    android:background="@drawable/shadow_bottom">
-
-                    <TextView
-                        android:id="@+id/cercetare_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-
-                        android:text="2.13"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/cercetare_h"
-
-                        android:text=" Cercetări Statistice - Daca functinarul este administratorul/curatorul unei sau catorva Cercetări Statistice - se poate indica Cercetarea Statistica" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h19_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/mRelativeLayouth_h18_h"
-                    android:background="@drawable/shadow_bottom">
-
-                    <TextView
-                        android:id="@+id/email_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-
-                        android:text="2.14"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/email_h"
-
-                        android:text="E-mail" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h20_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/mRelativeLayouth_h19_h"
-                    android:background="@drawable/shadow_bottom">
-
-                    <TextView
-                        android:id="@+id/info_gen_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-
-                        android:text="2.15"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/info_gen_h"
-
-                        android:text="Informații personale - Un camp cu sens foarte general. " />
-                </RelativeLayout>
+<!--                        android:text=" Telefonul mobil de sreviciu. " />-->
+<!--                </RelativeLayout>-->
 
 
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h17_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h16_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
 
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h21_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/mRelativeLayouth_h20_h"
-                    android:background="@drawable/shadow_bottom">
+<!--                    <TextView-->
+<!--                        android:id="@+id/phonemobileintern_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
 
-                    <TextView
-                        android:id="@+id/chapter3_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
+<!--                        android:text="2.12"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
 
-                        android:text="3.0"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/phonemobileintern_h"-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter3_h"
+<!--                        android:text=" Telefon intern " />-->
+<!--                </RelativeLayout>-->
 
-                        android:text="Functia de cautarea permite cautarea dupa urmatoarele campuri" />
-                </RelativeLayout>
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h18_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h17_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
 
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h22_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/mRelativeLayouth_h21_h"
-                    android:background="@drawable/shadow_bottom">
+<!--                    <TextView-->
+<!--                        android:id="@+id/cercetare_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
 
-                    <TextView
-                        android:id="@+id/chapter4_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
+<!--                        android:text="2.13"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
 
-                        android:text="4.0"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/cercetare_h"-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter4_h"
+<!--                        android:text=" Cercetări Statistice - Daca functinarul este administratorul/curatorul unei sau catorva Cercetări Statistice - se poate indica Cercetarea Statistica" />-->
+<!--                </RelativeLayout>-->
 
-                        android:text="In compartimentul despre medicament a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie despre medicament." />
-                </RelativeLayout>
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h19_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h18_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/email_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+
+<!--                        android:text="2.14"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/email_h"-->
+
+<!--                        android:text="E-mail" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h20_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h19_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/info_gen_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+
+<!--                        android:text="2.15"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/info_gen_h"-->
+
+<!--                        android:text="Informații personale - Un camp cu sens foarte general. " />-->
+<!--                </RelativeLayout>-->
+
+
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h21_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h20_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/chapter3_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+
+<!--                        android:text="3.0"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/chapter3_h"-->
+
+<!--                        android:text="Functia de cautarea permite cautarea dupa urmatoarele campuri" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h22_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h21_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/chapter4_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+
+<!--                        android:text="4.0"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/chapter4_h"-->
+
+<!--                        android:text="In compartimentul despre medicament a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie despre medicament." />-->
+<!--                </RelativeLayout>-->
 
 <!--                <RelativeLayout-->
 <!--                    android:id="@+id/mRelativeLayouth_h23_h"-->
