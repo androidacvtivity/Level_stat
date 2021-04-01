@@ -15,6 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bancusoft.levelstat.Retrofit.Cl_medicament;
 import com.bancusoft.levelstat.Retrofit.Scientistscaem;
 import com.bancusoft.levelstat.Retrofit.Scientistscfp;
+import com.bancusoft.levelstat.Views.med.help_medicament;
+import com.bancusoft.levelstat.Views.med.help_medicament_en;
+import com.bancusoft.levelstat.Views.med.help_medicament_ru;
 import com.yarolegovich.lovelydialog.LovelyChoiceDialog;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
@@ -65,10 +68,10 @@ public class Utils {
   //
   public   static  final  String  youtube_level_stat = "https://www.youtube.com/watch?v=GovpbmgZY_E";
 
-      private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
+      //private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
     //http://192.168.1.2/PHP/bns/
 
-   // private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
+    private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
 
 
     //  private  static  final String base_url =   "http://192.168.0.100/PHP/bns/";
@@ -166,6 +169,28 @@ public class Utils {
     }
 
 
+
+
+    /**
+     * This method will allow us show an Info dialog anywhere in our app.
+     */
+    public static void showInfoDialog_help_ro_med(final AppCompatActivity activity, String title,
+                                              String message) {
+
+        new LovelyStandardDialog(activity, LovelyStandardDialog.ButtonLayout.HORIZONTAL)
+                .setTopColorRes(R.color.indigo)
+                .setButtonsColorRes(R.color.darkDeepOrange)
+                .setIcon(R.drawable.m_info)
+
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton("en", v -> openActivity(activity, help_medicament_en.class))
+                .setNeutralButton("La inceput", v -> openActivity(activity, DashboardActivity.class))
+                .setNegativeButton("ru", v -> openActivity(activity, help_medicament_ru.class))
+
+                .show();
+    }
+
     /**
      * This method will allow us show an Info dialog anywhere in our app.
      */
@@ -232,6 +257,27 @@ public class Utils {
     /**
      * This method will allow us show an Info dialog anywhere in our app.
      */
+    public static void showInfoDialog_help_en_med(final AppCompatActivity activity, String title,
+                                              String message) {
+
+        new LovelyStandardDialog(activity, LovelyStandardDialog.ButtonLayout.HORIZONTAL)
+                .setTopColorRes(R.color.indigo)
+                .setButtonsColorRes(R.color.darkDeepOrange)
+                .setIcon(R.drawable.m_info)
+                .setTitle(title)
+                .setMessage(message)
+
+                .setPositiveButton("ro", v -> openActivity(activity, help_medicament.class))
+                .setNeutralButton("Dashboard", v -> openActivity(activity, DashboardActivity.class))
+                .setNegativeButton("ru", v -> openActivity(activity, help_medicament_ru.class))
+
+                .show();
+    }
+
+
+    /**
+     * This method will allow us show an Info dialog anywhere in our app.
+     */
     public static void showInfoDialog_help_en_vw(final AppCompatActivity activity, String title,
                                               String message) {
 
@@ -269,6 +315,29 @@ public class Utils {
 
                 .show();
     }
+
+    /**
+     * This method will allow us show an Info dialog anywhere in our app.
+     */
+    public static void showInfoDialog_help_ru_med(final AppCompatActivity activity, String title,
+                                              String message) {
+
+        new LovelyStandardDialog(activity, LovelyStandardDialog.ButtonLayout.HORIZONTAL)
+                .setTopColorRes(R.color.indigo)
+                .setButtonsColorRes(R.color.darkDeepOrange)
+                .setIcon(R.drawable.m_info)
+                .setTitle(title)
+                .setMessage(message)
+
+                .setPositiveButton("ro", v -> openActivity(activity, help_medicament.class))
+                .setNeutralButton("В начало", v -> openActivity(activity, DashboardActivity.class))
+                .setNegativeButton("en", v -> openActivity(activity, help_medicament_en.class))
+
+
+                .show();
+    }
+
+
 
     /**
      * This method will allow us show an Info dialog anywhere in our app.

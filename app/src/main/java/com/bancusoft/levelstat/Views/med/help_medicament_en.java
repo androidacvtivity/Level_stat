@@ -30,14 +30,14 @@ public class help_medicament_en extends BaseActivity{
 
         //findViewById(R.id.mBackArrowh).setOnClickListener(v -> finish());
         findViewById(R.id.mBackArrowh_en_med_en).setOnClickListener( v -> Utils.showInfoDialog_help_en(this,
-                "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.") );
+                "Atenție", "Are you sure you want to go out? There is a translation in the guide for the medicament classifier in English and Russian.") );
     }
 
 
     @Override
     public void onBackPressed() {
         Utils.showInfoDialog_help_en(this,
-                "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.");
+                "Atenție", "Are you sure you want to go out? There is a translation in the guide for the medicament classifier in English and Russian.");
         //this.finish();
     }
 

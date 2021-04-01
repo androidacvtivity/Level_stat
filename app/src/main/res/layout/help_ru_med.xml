@@ -88,7 +88,7 @@
                         android:layout_marginLeft="10dp"
 
 
-                        android:text="Приложение для списка сотрудников было разработано для облегчения доступа к контактной информации через мобильный телефон (Операционная система: Android)." />
+                        android:text=" Приложение-классификатор лекарств было разработано для облегчения доступа к классификатору лекарств через мобильный телефон (операционная система: Android)." />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -125,7 +125,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
 
-                        android:text="Приложение включает в себя список профилей сотрудников с контактной информацией." />
+                        android:text="Классификатор загружен с официального сайта Агентства лекарственных средств и медицинских изделий." />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -150,8 +150,10 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
 
+                        android:text="https://amdm.gov.md/ro/clasificator-medicamente"
+                        android:autoLink="web"
 
-                        android:text="Функции, предоставляемые программой (Список должностных лиц НБС (условное название)), сгруппированы по категориям и представлены ниже." />
+                        />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -166,7 +168,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="1"
+                        android:text=""
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -176,7 +178,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/websiteLabel_h"
 
-                        android:text="Отображает список сотрудников НБС и территориальных структур. (При подключении к базе данных MySQL данные хранятся здесь. Почему это приложение клиент-сервер? Принцип клиент-сервер используется как в веб-приложении intranet.statistica.md). Информация о сотруднике обновляется в базе данных. И любой сотрудник, у которого установлено это приложение на мобильном телефоне с ОС Android, получает доступ к обновленным данным." />
+                        android:text="Файл Excel можно скачать здесь." />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -192,7 +194,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="2"
+                        android:text=""
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -202,7 +204,10 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/address_h"
-                        android:text="Список открытых данных, которые отображаются о (государственный служащий / сотрудник НБС) и территориальных структурах." />
+                        android:text="http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls"
+                        android:autoLink="web"
+
+                        />
                 </RelativeLayout>
 
 
@@ -219,7 +224,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.1"
+                        android:text="1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -230,7 +235,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/emailLabel_h"
 
-                        android:text="Имя, Фамилия" />
+                        android:text=" В приложении ищется препарат по следующим полям." />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -246,7 +251,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.2"
+                        android:text="1.1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -257,7 +262,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/locatia_h"
 
-                        android:text="Расположение - Адрес" />
+                        android:text="Код лекарства" />
                 </RelativeLayout>
 
 
@@ -1002,32 +1007,32 @@
                         android:text="В отделении сотрудника добавлена ​​кнопка ПОДЕЛИТЬСЯ, которая позволяет передавать и сохранять контактную информацию сотрудника. " />
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayouth_h35_h"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/mRelativeLayouth_h34_h"
-                    android:background="@drawable/shadow_bottom">
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/mRelativeLayouth_h35_h"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/mRelativeLayouth_h34_h"-->
+<!--                    android:background="@drawable/shadow_bottom">-->
 
-                    <TextView
-                        android:id="@+id/chapter18_h"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
+<!--                    <TextView-->
+<!--                        android:id="@+id/chapter18_h"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
 
-                        android:text="6"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+<!--                        android:text="6"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textStyle="bold" />-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter18_h"
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/chapter18_h"-->
 
-                        android:text="В отделении сотрудника добавлена ​​кнопка (Notice about error in list of contacts of employers) , которая позволяет предупредить администратора что есть некорректная информация о сотруднике. " />
-                </RelativeLayout>
+<!--                        android:text="В отделении сотрудника добавлена ​​кнопка (Notice about error in list of contacts of employers) , которая позволяет предупредить администратора что есть некорректная информация о сотруднике. " />-->
+<!--                </RelativeLayout>-->
 
 
             </RelativeLayout>

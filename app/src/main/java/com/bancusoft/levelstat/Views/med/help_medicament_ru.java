@@ -29,15 +29,15 @@ public class help_medicament_ru extends BaseActivity{
         setSupportActionBar(toolbar);
 
         //findViewById(R.id.mBackArrowh).setOnClickListener(v -> finish());
-        findViewById(R.id.mBackArrowh_ru_med).setOnClickListener( v -> Utils.showInfoDialog_help_ru(this,
-                "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.") );
+        findViewById(R.id.mBackArrowh_ru_med).setOnClickListener( v -> Utils.showInfoDialog_help_ru_med(this,
+                "Atenție", "Вы уверены, что хотите выйти? В справочнике к классификатору препаратов есть перевод на английский и румынский  языки.") );
     }
 
 
     @Override
     public void onBackPressed() {
         Utils.showInfoDialog_help_ru(this,
-                "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar in limba engleza si rusa.");
+                "Atenție", "Вы уверены, что хотите выйти? В справочнике к классификатору препаратов есть перевод на английский и румынский  языки.");
         //this.finish();
     }
 
