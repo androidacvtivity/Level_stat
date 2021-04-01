@@ -128,18 +128,18 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_edit_med:
-                Utils.sendScientistToActivity(this,receivedScientist, help.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament.class);
                 finish();
                 return true;
 
 
             case R.id.action_edit_en_med:
-                Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_en.class);
                 finish();
                 return true;
 
             case R.id.action_edit_ru_med:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
+                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
                 finish();
                 return true;
 
@@ -158,7 +158,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
 
 
             case R.id.video3_med:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level ));
                 startActivity(browserIntent);
                 break;
         }

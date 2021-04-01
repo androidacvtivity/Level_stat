@@ -29,14 +29,14 @@ public class help_medicament_en extends BaseActivity{
         setSupportActionBar(toolbar);
 
         //findViewById(R.id.mBackArrowh).setOnClickListener(v -> finish());
-        findViewById(R.id.mBackArrowh_en_med_en).setOnClickListener( v -> Utils.showInfoDialog_help_en(this,
+        findViewById(R.id.mBackArrowh_en_med_en).setOnClickListener( v -> Utils.showInfoDialog_help_en_med(this,
                 "Atenție", "Are you sure you want to go out? There is a translation in the guide for the medicament classifier in English and Russian.") );
     }
 
 
     @Override
     public void onBackPressed() {
-        Utils.showInfoDialog_help_en(this,
+        Utils.showInfoDialog_help_en_med(this,
                 "Atenție", "Are you sure you want to go out? There is a translation in the guide for the medicament classifier in English and Russian.");
         //this.finish();
     }
@@ -79,7 +79,7 @@ public class help_medicament_en extends BaseActivity{
                 return true;
 
             case R.id.link1_med:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level ));
                 startActivity(browserIntent);
                 break;
 

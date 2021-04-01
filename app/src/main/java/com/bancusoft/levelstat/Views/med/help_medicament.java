@@ -78,7 +78,7 @@ public class help_medicament extends BaseActivity {
                 return true;
 
             case R.id.link1_med:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level ));
                 startActivity(browserIntent);
                 break;
 
