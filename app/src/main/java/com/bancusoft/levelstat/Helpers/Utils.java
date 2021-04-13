@@ -76,7 +76,7 @@ public class Utils {
    // private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
 
 
-    //  private  static  final String base_url =   "http://192.168.0.100/PHP/bns/";
+   //   private  static  final String base_url =   "http://192.168.0.102/PHP/bns/";
 
 
     private static Retrofit retrofit = null;
