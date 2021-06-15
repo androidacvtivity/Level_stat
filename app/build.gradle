@@ -4,10 +4,10 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.bancusoft.levelstat"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
-        versionName "22_28"
+        versionName "23_30"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -29,7 +29,7 @@ android {
         // for view binding :
         // viewBinding = true
     }
-    buildToolsVersion '30.0.2'
+    buildToolsVersion '30.0.3'
 
 }
 
@@ -66,7 +66,7 @@ dependencies {
     implementation 'io.github.inflationx:calligraphy3:3.1.1'
     implementation 'io.github.inflationx:viewpump:2.0.3'
     //Material dialogs
-    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.1'
     //OPTIONAL: Circular imageview
     implementation 'cn.gavinliu:ShapedImageView:0.8.7'
 
