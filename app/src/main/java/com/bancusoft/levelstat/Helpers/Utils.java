@@ -70,9 +70,10 @@ public class Utils {
 
     public   static  final  String  youtube_Stat_Level = "https://www.youtube.com/watch?v=Mn4AV9exZJ0";
 
-      //private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
+      private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
 
-      private  static  final String base_url = "http://192.168.8.140/bns/";
+
+  //   private  static  final String base_url = "http://192.168.0.100/bns/";
 
     //http://192.168.1.2/PHP/bns/
 
