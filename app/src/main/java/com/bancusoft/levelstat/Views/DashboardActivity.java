@@ -2,7 +2,7 @@ package com.bancusoft.levelstat.Views;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
+
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -84,174 +84,69 @@ help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, h
 
         layout_view_structura.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,structurabns.class));
 
-        layout_cl_prodmild.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclprodmold.class);
-
-            }
-        });
+        layout_cl_prodmild.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclprodmold.class));
 
 
-        layout_cl_tari.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivitycltari.class);
-
-            }
-        });
+        layout_cl_tari.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycltari.class));
 
 
-        layout_cl_servicii.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclservicii.class);
-
-            }
-        });
+        layout_cl_servicii.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclservicii.class));
 
 
-        layout_cl_cocm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclcocm.class);
-
-            }
-        });
+        layout_cl_cocm.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcocm.class));
 
 
-        layout_cl_cfp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfp.class);
-
-            }
-        });
+        layout_cl_cfp.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfp.class));
 
 
 
-        layout_cl_cfoj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfoj.class);
-
-            }
-        });
+        layout_cl_cfoj.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfoj.class));
 
 
-        caem_cl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem.class);
+        caem_cl.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem.class));
 
-            }
+
+
+        layout_caem2.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem2.class));
+
+        layout_cuatm_next.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycuatm.class));
+
+
+        layout_cfp_next.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycfp.class));
+
+
+
+
+
+        layout_caem.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycucaem.class));
+
+
+
+
+		viewScientistsCard.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivity.class));
+
+
+
+
+        layout_viewCUATM.setOnClickListener(v -> {
+            Utils.openActivity(DashboardActivity.this,ScientistsActivitycu.class);
+          //  Utils.openActivity(DashboardActivity.this,ScientistsActivity_dgti.class);
+
         });
 
 
 
-        layout_caem2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem2.class);
+        ScientistsvwCard.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class));
 
-            }
-        });
+        third1.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,AboutUsActivity.class));
 
-        layout_cuatm_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivitycuatm.class);
+        layout_helpvw.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help_vw.class));
 
-            }
-        });
-
-
-        layout_cfp_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivitycfp.class);
-
-            }
-        });
+        third.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help.class));
 
 
 
-
-
-        layout_caem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivitycucaem.class);
-
-            }
-        });
-
-
-
-
-		viewScientistsCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-				Utils.openActivity(DashboardActivity.this,ScientistsActivity.class);
-
-            }
-        });
-
-
-
-
-        layout_viewCUATM.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivitycu.class);
-              //  Utils.openActivity(DashboardActivity.this,ScientistsActivity_dgti.class);
-
-            }
-        });
-
-
-
-        ScientistsvwCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class);
-
-            }
-        });
-
-        third1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,AboutUsActivity.class);
-
-            }
-        });
-
-        layout_helpvw.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Utils.openActivity(DashboardActivity.this,help_vw.class);
-            }
-        });
-
-        third.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Utils.openActivity(DashboardActivity.this,help.class);
-            }
-        });
-
-
-
-        closeCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-				finish();
-
-            }
-        });
+        closeCard.setOnClickListener(v -> finish());
     }
     /**
      * Let's override the attachBaseContext() method
