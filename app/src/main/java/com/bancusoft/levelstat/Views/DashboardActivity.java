@@ -21,7 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
     LinearLayout third1;
     LinearLayout third;
     LinearLayout closeCard;
-    LinearLayout viewScientistsvwCard;
+    LinearLayout ScientistsvwCard;
     LinearLayout layout_helpvw;
     LinearLayout layout_viewCUATM;
     LinearLayout layout_caem;
@@ -47,7 +47,7 @@ public class DashboardActivity extends AppCompatActivity {
         third1 = findViewById(R.id.third);
         third = findViewById(R.id.help);
         closeCard = findViewById(R.id.closeCard);
-        viewScientistsvwCard = findViewById(R.id.viewScientistsvwCard);
+        ScientistsvwCard = findViewById(R.id.viewScientistsvwCard);
         layout_helpvw = findViewById(R.id.helpvw);
         layout_viewCUATM = findViewById(R.id.viewCUATM);
         layout_caem  = findViewById(R.id.caem);
@@ -66,31 +66,23 @@ public class DashboardActivity extends AppCompatActivity {
         help_cl_med = findViewById(R.id.help_cl_med);
 
 
+//
+//        help_cl_med.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Utils.openActivity(DashboardActivity.this, help_medicament.class);
+//            }
+//        });
 
-        help_cl_med.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Utils.openActivity(DashboardActivity.this, help_medicament.class);
-            }
-        });
+help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, help_medicament.class));
 
 
-        layout_view_cl_med.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this, CL_medicament_Activity.class);
 
-            }
-        });
 
-        layout_view_structura.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(DashboardActivity.this,structurabns.class);
+        layout_view_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, CL_medicament_Activity.class));
 
-            }
-        });
+        layout_view_structura.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,structurabns.class));
 
         layout_cl_prodmild.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -219,7 +211,7 @@ public class DashboardActivity extends AppCompatActivity {
 
 
 
-        viewScientistsvwCard.setOnClickListener(new View.OnClickListener() {
+        ScientistsvwCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class);
