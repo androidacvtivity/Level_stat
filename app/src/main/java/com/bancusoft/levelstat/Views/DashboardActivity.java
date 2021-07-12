@@ -21,21 +21,21 @@ public class DashboardActivity extends AppCompatActivity {
     LinearLayout third1;
     LinearLayout third;
     LinearLayout closeCard;
-    LinearLayout ScientistsvwCard;
-    LinearLayout layout_helpvw;
+    LinearLayout ScientistsCard;
+    LinearLayout layout_help;
     LinearLayout layout_viewCUATM;
-    LinearLayout layout_caem;
+    LinearLayout layout_cam;
     LinearLayout layout_cfp_next;
-    LinearLayout layout_cuatm_next;
-    LinearLayout layout_caem2;
-    LinearLayout caem_cl;
-    LinearLayout layout_cl_cfoj;
+    LinearLayout layout_cut_next;
+    LinearLayout layout_cam2;
+    LinearLayout cam_cl;
+    LinearLayout layout_foj;
     LinearLayout layout_cl_cfp;
-    LinearLayout layout_cl_cocm;
-    LinearLayout layout_cl_servicii;
-    LinearLayout layout_cl_tari;
-    LinearLayout layout_cl_prodmild;
-    LinearLayout layout_view_structura;
+    LinearLayout layout_cl_coco;
+    LinearLayout layout_cl_service;
+    LinearLayout layout_cl_taro;
+    LinearLayout layout_cl_prodded;
+    LinearLayout layout_view_structure;
     LinearLayout layout_view_cl_med;
     LinearLayout help_cl_med;
 
@@ -47,33 +47,26 @@ public class DashboardActivity extends AppCompatActivity {
         third1 = findViewById(R.id.third);
         third = findViewById(R.id.help);
         closeCard = findViewById(R.id.closeCard);
-        ScientistsvwCard = findViewById(R.id.viewScientistsvwCard);
-        layout_helpvw = findViewById(R.id.helpvw);
+        ScientistsCard = findViewById(R.id.viewScientistsvwCard);
+        layout_help = findViewById(R.id.helpvw);
         layout_viewCUATM = findViewById(R.id.viewCUATM);
-        layout_caem  = findViewById(R.id.caem);
+        layout_cam = findViewById(R.id.caem);
         layout_cfp_next = findViewById(R.id.cfp);
-        layout_cuatm_next = findViewById(R.id.cuatm_next);
-        layout_caem2 = findViewById(R.id.caem2);
-        caem_cl = findViewById(R.id.cl_caem);
-        layout_cl_cfoj = findViewById(R.id.cl_cfoj);
+        layout_cut_next = findViewById(R.id.cuatm_next);
+        layout_cam2 = findViewById(R.id.caem2);
+        cam_cl = findViewById(R.id.cl_caem);
+        layout_foj = findViewById(R.id.cl_cfoj);
         layout_cl_cfp = findViewById(R.id.cl_cfp);
-        layout_cl_cocm = findViewById(R.id.cl_cocm);
-        layout_cl_servicii = findViewById(R.id.cl_servicii);
-        layout_cl_tari =   findViewById(R.id.cl_tari);
-        layout_cl_prodmild   =   findViewById(R.id.cl_prodmild);
-        layout_view_structura = findViewById(R.id.view_structura);
+        layout_cl_coco = findViewById(R.id.cl_cocm);
+        layout_cl_service = findViewById(R.id.cl_servicii);
+        layout_cl_taro =   findViewById(R.id.cl_tari);
+        layout_cl_prodded =   findViewById(R.id.cl_prodmild);
+        layout_view_structure = findViewById(R.id.view_structura);
         layout_view_cl_med = findViewById(R.id.view_list_of_med);
         help_cl_med = findViewById(R.id.help_cl_med);
 
 
-//
-//        help_cl_med.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Utils.openActivity(DashboardActivity.this, help_medicament.class);
-//            }
-//        });
+
 
 help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, help_medicament.class));
 
@@ -82,34 +75,34 @@ help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, h
 
         layout_view_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, CL_medicament_Activity.class));
 
-        layout_view_structura.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,structurabns.class));
+        layout_view_structure.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,structurabns.class));
 
-        layout_cl_prodmild.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclprodmold.class));
-
-
-        layout_cl_tari.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycltari.class));
+        layout_cl_prodded.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclprodmold.class));
 
 
-        layout_cl_servicii.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclservicii.class));
+        layout_cl_taro.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycltari.class));
 
 
-        layout_cl_cocm.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcocm.class));
+        layout_cl_service.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclservicii.class));
+
+
+        layout_cl_coco.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcocm.class));
 
 
         layout_cl_cfp.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfp.class));
 
 
 
-        layout_cl_cfoj.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfoj.class));
+        layout_foj.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcfoj.class));
 
 
-        caem_cl.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem.class));
+        cam_cl.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem.class));
 
 
 
-        layout_caem2.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem2.class));
+        layout_cam2.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityclcaem2.class));
 
-        layout_cuatm_next.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycuatm.class));
+        layout_cut_next.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycuatm.class));
 
 
         layout_cfp_next.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycfp.class));
@@ -118,7 +111,7 @@ help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, h
 
 
 
-        layout_caem.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycucaem.class));
+        layout_cam.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivitycucaem.class));
 
 
 
@@ -130,17 +123,17 @@ help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, h
 
         layout_viewCUATM.setOnClickListener(v -> {
             Utils.openActivity(DashboardActivity.this,ScientistsActivitycu.class);
-          //  Utils.openActivity(DashboardActivity.this,ScientistsActivity_dgti.class);
+          //  Utils.openActivity(DashboardActivity.this,ScientistsActivity_digit.class);
 
         });
 
 
 
-        ScientistsvwCard.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class));
+        ScientistsCard.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class));
 
         third1.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,AboutUsActivity.class));
 
-        layout_helpvw.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help_vw.class));
+        layout_help.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help_vw.class));
 
         third.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help.class));
 
