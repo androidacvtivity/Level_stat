@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
@@ -89,6 +90,9 @@ public class DetailActivity extends AppCompatActivity  {
               mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
               mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
               getColor(R.color.white));
+
+//             Context context;
+//             ContextCompat.getColor(context, R.color.white);
          }
     }
     /**
