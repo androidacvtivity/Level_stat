@@ -1,5 +1,6 @@
 package com.bancusoft.levelstat.Views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,12 +14,14 @@ import android.widget.AbsListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import com.bancusoft.levelstat.Helpers.MyAdapter;
 import com.bancusoft.levelstat.Helpers.Utils;
@@ -39,7 +42,7 @@ public class ScientistsActivity extends AppCompatActivity
     private RecyclerView rv;
     private MyAdapter mAdapter;
     private LinearLayoutManager layoutManager;
-    public ArrayList<Scientist> allPagesScientists = new ArrayList();
+    public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
     private Boolean isScrolling = false;
     private int currentScientists, totalScientists, scrolledOutScientists;
@@ -98,9 +101,11 @@ public class ScientistsActivity extends AppCompatActivity
 
 
         retrievedData.enqueue(new Callback<ResponseModel>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
-            public void onResponse(Call<ResponseModel> call, Response<ResponseModel>
+            public void onResponse(@NonNull Call<ResponseModel> call, @NonNull Response<ResponseModel>
              response) {
+                assert response.body() != null;
                 Log.d("RETROFIT", "CODE : " + response.body().getCode());
                 Log.d("RETROFIT", "MESSAGE : " + response.body().getMessage());
                 Log.d("RETROFIT", "RESPONSE : " + response.body().getResult());
@@ -110,9 +115,7 @@ public class ScientistsActivity extends AppCompatActivity
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
                         allPagesScientists.clear();
                     }
-                    for (int i = 0; i < currentPageScientists.size(); i++) {
-                        allPagesScientists.add(currentPageScientists.get(i));
-                    }
+                    allPagesScientists.addAll(currentPageScientists);
 
                 } else {
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
@@ -124,7 +127,7 @@ public class ScientistsActivity extends AppCompatActivity
             }
 
             @Override
-            public void onFailure(Call<ResponseModel> call, Throwable t) {
+            public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                 Utils.hideProgressBar(mProgressBar);
                 Log.d("RETROFIT", "ERROR: " + t.getMessage());
                 Utils.showInfoDialog(ScientistsActivity.this, "ERROR", t.getMessage());
@@ -138,7 +141,7 @@ public class ScientistsActivity extends AppCompatActivity
     private void listenToRecyclerViewScroll() {
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView rv, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView rv, int newState) {
                 //when scrolling starts
                 super.onScrollStateChanged(rv, newState);
                 //check for scroll state
@@ -147,12 +150,12 @@ public class ScientistsActivity extends AppCompatActivity
                 }
             }
             @Override
-            public void onScrolled(RecyclerView rv, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView rv, int dx, int dy) {
                 // When the scrolling has stopped
                 super.onScrolled(rv, dx, dy);
                 currentScientists = layoutManager.getChildCount();
                 totalScientists = layoutManager.getItemCount();
-                scrolledOutScientists = ((LinearLayoutManager) rv.getLayoutManager()).
+                scrolledOutScientists = ((LinearLayoutManager) Objects.requireNonNull(rv.getLayoutManager())).
                 findFirstVisibleItemPosition();
 
                 if (isScrolling && (currentScientists + scrolledOutScientists ==
