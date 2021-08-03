@@ -1,5 +1,7 @@
 package com.bancusoft.levelstat.Retrofit;
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
@@ -150,7 +152,7 @@ public class Scientist implements Serializable {
          return phonemobil;
      }
 
-     public void setPhonemobil(String phone) {
+     public void setPhonemobil(String phonemobil) {
          this.phonemobil = phonemobil;
      }
 
@@ -235,6 +237,7 @@ public class Scientist implements Serializable {
 //        this.died = died;
 //    }
 
+    @NonNull
     @Override
     public String toString() {
         return getName();
