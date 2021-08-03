@@ -233,52 +233,111 @@ public class ScientistsActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_new:
-                Utils.sendScientistToActivity(this,receivedScientist,help.class);
-                finish();
-                return true;
 
 
-            case R.id.action_new_en:
-                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-                finish();
-                return true;
+        int id = item.getItemId();
+        if (id==R.id.action_new){
+            Utils.sendScientistToActivity(this,receivedScientist,help.class);
+            finish();
+            return true;
 
-            case R.id.action_new_ru:
-                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
-//                finish();
-//
-                Intent intent;
-                intent = new Intent(this, DashboardActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-
-                return true;
-
-//            case R.id.back_str:
-//                Utils.openActivity(this, structurabns.class);
-//                finish();
-//                return true;
-
-            case R.id.video2:
-              //   String test_url = "https://www.youtube.com/watch?v=GovpbmgZY_E";
-              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=GovpbmgZY_E"));
-              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(test_url));
+        }
 
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+        else
+
+        if (id==R.id.action_new_en){
+            Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
+            finish();
+            return true;
+
+        }
+
+        else
+
+        if (id==R.id.action_new_ru){
+            Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
+            finish();
+            return true;
+
+        }
+
+        else
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,DashboardActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+
+        else
+        if (id == R.id.video2){
+
+               Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
 
                 startActivity(browserIntent);
-                break;
+
+
         }
+
+
+
+//        switch (item.getItemId()) {
+//            case R.id.action_new:
+//                Utils.sendScientistToActivity(this,receivedScientist,help.class);
+//                finish();
+//                return true;
+//
+//
+//            case R.id.action_new_en:
+//                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
+//                finish();
+//                return true;
+//
+//            case R.id.action_new_ru:
+//                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
+//                finish();
+//                return true;
+//
+//            case android.R.id.home:
+//                //NavUtils.navigateUpFromSameTask(this);
+////                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
+////                finish();
+////
+//                Intent intent;
+//                intent = new Intent(this, DashboardActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                finish();
+//                startActivity(intent);
+//
+//                return true;
+//
+////            case R.id.back_str:
+////                Utils.openActivity(this, structurabns.class);
+////                finish();
+////                return true;
+//
+//            case R.id.video2:
+//              //   String test_url = "https://www.youtube.com/watch?v=GovpbmgZY_E";
+//              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=GovpbmgZY_E"));
+//              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(test_url));
+//
+//
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+//
+//                startActivity(browserIntent);
+//                break;
+//        }
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
