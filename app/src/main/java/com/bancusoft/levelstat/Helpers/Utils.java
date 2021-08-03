@@ -3,9 +3,7 @@ package com.bancusoft.levelstat.Helpers;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -29,7 +27,6 @@ import com.bancusoft.levelstat.Retrofit.Scientistscfp;
 import com.bancusoft.levelstat.Retrofit.Scientistscu;
 import com.bancusoft.levelstat.Retrofit.Scientistvw;
 import com.bancusoft.levelstat.Views.DashboardActivity;
-import com.bancusoft.levelstat.Views.ScientistsActivity;
 import com.bancusoft.levelstat.Views.help;
 import com.bancusoft.levelstat.Views.help_vw;
 import com.bancusoft.levelstat.Views.help_vw_en;
@@ -39,8 +36,6 @@ import com.bancusoft.levelstat.Views.helpru;
 import com.bancusoft.levelstat.Views.med.help_medicament;
 import com.bancusoft.levelstat.Views.med.help_medicament_en;
 import com.bancusoft.levelstat.Views.med.help_medicament_ru;
-import com.yarolegovich.lovelydialog.LovelyChoiceDialog;
-import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
@@ -510,10 +505,10 @@ public class Utils {
                 .show();
     }
 
-    /**
-     * This method will allow us show a single select dialog where we can select and return a
-     * star to an edittext.
-     */
+
+     //This method will allow us show a single select dialog where we can select and return a
+    // star to an edittext.
+
 //     public static void selectStar(Context c,final EditText starTxt){
 ////        String[] stars ={"Rigel","Aldebaran","Arcturus","Betelgeuse","Antares","Deneb",
 ////        "Wezen","VY Canis Majoris","Sirius","Alpha Pegasi","Vega","Saiph","Polaris",
@@ -583,7 +578,7 @@ public class Utils {
      */
 
     public static void sendCl_mediToActivity(Context c, Cl_medicament cl_medicament,
-                                             Class clazz){
+                                             Class <?> clazz){
         Intent i=new Intent(c,clazz);
         i.putExtra("SCIENTIST_KEY",  cl_medicament);
         c.startActivity(i);
@@ -597,7 +592,7 @@ public class Utils {
      */
 
     public static void sendCl_tariToActivity(Context c, Cl_tari cl_tari,
-                                             Class clazz){
+                                             Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",  cl_tari);
@@ -610,7 +605,7 @@ public class Utils {
      */
 
     public static void sendCl_prodmoldToActivity(Context c, Cl_prodmold cl_prodmold,
-                                             Class clazz){
+                                             Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable) cl_prodmold);
@@ -623,7 +618,7 @@ public class Utils {
      */
 
     public static void sendCl_cfojToActivity(Context c, Cl_cfoj cl_cfoj,
-                                              Class clazz){
+                                              Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfoj);
@@ -637,7 +632,7 @@ public class Utils {
      */
 
     public static void sendCl_cocmToActivity(Context c, Cl_cocm cl_cocm,
-                                             Class clazz){
+                                             Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_cocm);
@@ -651,7 +646,7 @@ public class Utils {
      */
 
     public static void sendCl_cfpToActivity(Context c, Cl_cfp cl_cfp,
-                                             Class clazz){
+                                             Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfp);
@@ -665,7 +660,7 @@ public class Utils {
      */
 
     public static void sendCl_serviciiToActivity(Context c, Cl_servicii cl_servicii,
-                                            Class clazz){
+                                            Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_servicii);
@@ -679,7 +674,7 @@ public class Utils {
      */
 
     public static void sendCl_caem2ToActivity(Context c, Cl_caem2 cl_caem2,
-                                              Class clazz){
+                                              Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable) cl_caem2);
@@ -693,7 +688,7 @@ public class Utils {
      */
 
     public static void sendCl_caemToActivity(Context c, Cl_caem cl_caem,
-                                              Class clazz){
+                                              Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_caem);
@@ -708,7 +703,7 @@ public class Utils {
      */
 
     public static void sendScientistToActivity(Context c, Scientist scientist,
-     Class clazz){
+     Class <?> clazz){
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //                "",scientist);
@@ -724,7 +719,7 @@ public class Utils {
      * This method will allow us send a serialized scientist objec  to a specifie activity
      */
     public static void sendScientistvwToActivity(Context c, Scientistvw scientistvw,
-                                               Class clazz){
+                                               Class <?> clazz){
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
@@ -735,7 +730,7 @@ public class Utils {
      * This method will allow us send a serialized scientist objec  to a specifie activity
      */
     public static void sendScientistscuToActivity(Context c, Scientistscu scientistscu,
-                                                 Class clazz){
+                                                 Class <?> clazz){
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
@@ -749,7 +744,7 @@ public class Utils {
      * This method will allow us send a serialized scientist objec  to a specifie activity
      */
     public static void sendScientistscaemToActivity(Context c, Scientistscaem scientistscaem,
-                                                  Class clazz){
+                                                  Class <?> clazz){
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
@@ -761,7 +756,7 @@ public class Utils {
      * This method will allow us send a serialized cl_cuatm_all objec  to a specifie activity
      */
     public static void sendCl_cuatm_allToActivity(Context c, Cl_cuatm_all cl_cuatm_all,
-                                                    Class clazz){
+                                                    Class <?> clazz){
         Intent i=new Intent(c,clazz);
         i.putExtra("SCIENTIST_KEY",(Serializable)cl_cuatm_all);
         c.startActivity(i);
@@ -771,7 +766,7 @@ public class Utils {
      * This method will allow us send a serialized Scientistscfp objec  to a specifie activity
      */
     public static void sendScientistscfpToActivity(Context c, Scientistscfp scientistscfp,
-                                                    Class clazz){
+                                                    Class <?> clazz){
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
@@ -785,8 +780,7 @@ public class Utils {
      */
     public  static Scientist receiveScientist(Intent intent,Context c){
         try {
-            Scientist scientist= (Scientist) intent.getSerializableExtra("SCIENTIST_KEY");
-            return scientist;
+            return (Scientist) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c,"RECEIVING-SCIENTIST ERROR: "+e.getMessage());
@@ -801,8 +795,7 @@ public class Utils {
      */
     public  static Cl_caem2 receiveCl_caem2(Intent intent,Context c){
         try {
-            Cl_caem2 cl_caem2= (Cl_caem2) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_caem2;
+            return (Cl_caem2) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c,"RECEIVING-SCIENTIST ERROR: "+e.getMessage());
@@ -814,8 +807,7 @@ public class Utils {
      */
     public  static Cl_caem receiveCl_caem(Intent intent,Context c){
         try {
-            Cl_caem cl_caem = (Cl_caem) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_caem;
+            return (Cl_caem) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c,"RECEIVING-SCIENTIST ERROR: "+e.getMessage());
@@ -830,8 +822,7 @@ public class Utils {
      */
     public  static Cl_cuatm_all receiveCl_cuatm_all(Intent intent,Context c){
         try {
-            Cl_cuatm_all cl_cuatm_all= (Cl_cuatm_all) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_cuatm_all;
+            return (Cl_cuatm_all) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c,"RECEIVING-SCIENTIST ERROR: "+e.getMessage());
@@ -849,8 +840,7 @@ public class Utils {
      */
     public  static Scientistvw receiveScientistvw(Intent intent,Context c){
         try {
-            Scientistvw scientistvw= (Scientistvw) intent.getSerializableExtra("SCIENTIST_KEY");
-            return scientistvw;
+            return (Scientistvw) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c," -SCIENTIST ERROR: "+e.getMessage());
@@ -865,8 +855,7 @@ public class Utils {
      */
     public  static Scientistscu receiveScientistscu(Intent intent,Context c) {
         try {
-            Scientistscu scientistscu= (Scientistscu) intent.getSerializableExtra("SCIENTIST_KEY");
-            return scientistscu
+            return (Scientistscu) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -881,8 +870,7 @@ public class Utils {
      */
     public  static Scientistscaem receiveScientistscaem(Intent intent,Context c) {
         try {
-            Scientistscaem scientistscaem= (Scientistscaem) intent.getSerializableExtra("SCIENTIST_KEY");
-            return scientistscaem
+            return (Scientistscaem) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -897,8 +885,7 @@ public class Utils {
      */
     public  static Scientistscfp receiveScientistscfp(Intent intent,Context c) {
         try {
-            Scientistscfp scientistscfp= (Scientistscfp) intent.getSerializableExtra("SCIENTIST_KEY");
-            return scientistscfp
+            return (Scientistscfp) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -913,8 +900,7 @@ public class Utils {
      */
     public  static Cl_cfoj receiveCl_cfoj(Intent intent,Context c) {
         try {
-            Cl_cfoj cl_cfoj= (Cl_cfoj) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_cfoj
+            return (Cl_cfoj) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -929,8 +915,7 @@ public class Utils {
      */
     public  static Cl_cocm receiveCl_cocm(Intent intent,Context c) {
         try {
-            Cl_cocm cl_cocm= (Cl_cocm) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_cocm
+            return (Cl_cocm) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -945,8 +930,7 @@ public class Utils {
      */
     public  static Cl_cfp receiveCl_cfp(Intent intent,Context c) {
         try {
-            Cl_cfp cl_cfp= (Cl_cfp) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_cfp
+            return (Cl_cfp) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -960,8 +944,7 @@ public class Utils {
      */
     public  static Cl_servicii receiveCl_servicii(Intent intent,Context c) {
         try {
-            Cl_servicii cl_servicii= (Cl_servicii) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_servicii
+            return (Cl_servicii) intent.getSerializableExtra("SCIENTIST_KEY")
                     ;
         }catch (Exception e){
             e.printStackTrace();
@@ -977,8 +960,7 @@ public class Utils {
      */
     public  static Cl_tari receiveCl_tari(Intent intent,Context c) {
         try {
-            Cl_tari cl_tari= (Cl_tari) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_tari;
+            return (Cl_tari) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c," -SCIENTIST ERROR: "+e.getMessage());
@@ -991,8 +973,7 @@ public class Utils {
      */
     public  static Cl_prodmold receiveCl_prodmold(Intent intent,Context c) {
         try {
-            Cl_prodmold cl_prodmold= (Cl_prodmold) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_prodmold;
+            return (Cl_prodmold) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c," -SCIENTIST ERROR: "+e.getMessage());
@@ -1006,8 +987,7 @@ public class Utils {
 
     public  static Cl_medicament receiveCl_medicament(Intent intent,Context c) {
         try {
-            Cl_medicament cl_medicament= (Cl_medicament) intent.getSerializableExtra("SCIENTIST_KEY");
-            return cl_medicament;
+            return (Cl_medicament) intent.getSerializableExtra("SCIENTIST_KEY");
         }catch (Exception e){
             e.printStackTrace();
             show(c," -Medicament ERROR: "+e.getMessage());
