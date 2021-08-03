@@ -1,6 +1,7 @@
 package com.bancusoft.levelstat.Helpers;
 
-import java.io.IOException;
+import androidx.annotation.NonNull;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
@@ -12,14 +13,11 @@ public class NullOnEmptyConverterFactory extends Converter.Factory{
 
 
     @Override
-    public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
+    public Converter<ResponseBody, ?> responseBodyConverter(@NonNull Type type, @NonNull Annotation[] annotations, Retrofit retrofit) {
         final Converter<ResponseBody, ?> delegate = retrofit.nextResponseBodyConverter(this, type, annotations);
-        return new Converter<ResponseBody, Object>() {
-            @Override
-            public Object convert(ResponseBody body) throws IOException {
-                if (body.contentLength() == 0) return null;
-                return delegate.convert(body);
-            }
+        return (Converter<ResponseBody, Object>) body -> {
+            if (body.contentLength() == 0) return null;
+            return delegate.convert(body);
         };
     }
 }
