@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.bancusoft.levelstat"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "23_30"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
