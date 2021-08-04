@@ -1,8 +1,10 @@
 package com.bancusoft.levelstat.Views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
 import android.util.Log;
@@ -218,9 +220,10 @@ public class CRUDActivity extends AppCompatActivity {
         Utils.showProgressBar(mProgressBar);
         del.enqueue(new Callback<ResponseModel>() {
             @Override
-            public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+            public void onResponse(@NonNull Call<ResponseModel> call, @NonNull Response<ResponseModel> response) {
                 Log.d("RETROFIT", "DELETE RESPONSE: " + response.body());
                 Utils.hideProgressBar(mProgressBar);
+                assert response.body() != null;
                 String myResponseCode = response.body().getCode();
 
                 if (myResponseCode.equalsIgnoreCase("1")) {
@@ -238,16 +241,16 @@ public class CRUDActivity extends AppCompatActivity {
                 }
             }
             @Override
-            public void onFailure(Call<ResponseModel> call, Throwable t) {
+            public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                 Utils.hideProgressBar(mProgressBar);
                 Log.d("RETROFIT", "ERROR: " + t.getMessage());
                 Utils.showInfoDialog(CRUDActivity.this, "FAILURE THROWN", "ERROR during DELETE attempt. Message: " + t.getMessage());
             }
         });
     }
-    /**
-     * Show selected star in our edittext
-     */
+
+     // Show selected star in our edittext
+
 //    private void showSelectedStarInEditText() {
 //        starTxt.setOnClickListener(v -> Utils.selectStar(c, starTxt));
 //    }
@@ -261,6 +264,7 @@ public class CRUDActivity extends AppCompatActivity {
     /**
      * Let's inflate our menu based on the role this page has been opened for.
      */
+    @SuppressLint("SetTextI18n")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (receivedScientist == null) {
@@ -321,9 +325,9 @@ public class CRUDActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Object o = Utils.receiveScientist(getIntent(), c);
+        Scientist o = Utils.receiveScientist(getIntent(), c);
         if (o != null) {
-            receivedScientist = (Scientist) o;
+            receivedScientist = o;
             id = receivedScientist.getId();
             nameTxt.setText(receivedScientist.getName());
             descriptionTxt.setText(receivedScientist.getDescription());
