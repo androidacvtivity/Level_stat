@@ -4,15 +4,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientist;
 
-public class AboutUsActivity extends BaseActivity {
+public class AboutUsActivity extends AppCompatActivity {
 
-    private Scientist receivedScientist;
+    private  Scientist receivedScientist;
+
+
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,22 +36,45 @@ public class AboutUsActivity extends BaseActivity {
 
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_dgti:
-                Utils.sendScientistToActivity(this,receivedScientist,ScientistsActivity_dgti.class);
+
+        int id = item.getItemId();
+
+        if (id==R.id.action_dgti){
+            Utils.sendScientistToActivity(this, receivedScientist, ScientistsActivity_dgti.class);
                 finish();
                 return true;
 
+        }
 
-            case android.R.id.home:
+        else
+        if (id == android.R.id.home){
 
+            Intent intent;
+            intent = new Intent(this,DashboardActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
 
-                Intent intent;
-                intent = new Intent(this, DashboardActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-                return true;
+        }
+
+//        switch (item.getItemId()) {
+//            case R.id.action_dgti:
+//                Utils.sendScientistToActivity(this, receivedScientist, ScientistsActivity_dgti.class);
+//                finish();
+//                return true;
+//
+//
+//            case android.R.id.home:
+//
+//
+//                Intent intent;
+//                intent = new Intent(this, DashboardActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                finish();
+//                startActivity(intent);
+//                return true;
+//        }
 
 
 //            case R.id.action_edit_en:
@@ -70,7 +97,7 @@ public class AboutUsActivity extends BaseActivity {
 //                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.nextlevel.Helpers.Utils.youtube_level_stat ));
 //                startActivity(browserIntent);
 //                break;
-        }
+
         return super.onOptionsItemSelected(item);
     }
     @Override
@@ -81,4 +108,12 @@ public class AboutUsActivity extends BaseActivity {
         finish();
         startActivity(intent);
     }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
+    }
+
+//    public void setReceivedScientist(Scientist receivedScientist) {
+//        this.receivedScientist = receivedScientist;
+//    }
 }
