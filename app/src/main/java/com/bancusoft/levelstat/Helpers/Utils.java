@@ -608,7 +608,7 @@ public class Utils {
                                              Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable) cl_prodmold);
+        i.putExtra("SCIENTIST_KEY", cl_prodmold);
         c.startActivity(i);
     }
 
@@ -621,7 +621,7 @@ public class Utils {
                                               Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfoj);
+        i.putExtra("SCIENTIST_KEY", cl_cfoj);
         c.startActivity(i);
     }
 
@@ -635,7 +635,7 @@ public class Utils {
                                              Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cocm);
+        i.putExtra("SCIENTIST_KEY", cl_cocm);
         c.startActivity(i);
     }
 
@@ -649,7 +649,7 @@ public class Utils {
                                              Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cfp);
+        i.putExtra("SCIENTIST_KEY", cl_cfp);
         c.startActivity(i);
     }
 
@@ -663,7 +663,7 @@ public class Utils {
                                             Class <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_servicii);
+        i.putExtra("SCIENTIST_KEY", cl_servicii);
         c.startActivity(i);
     }
 
@@ -677,7 +677,7 @@ public class Utils {
                                               Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable) cl_caem2);
+        i.putExtra("SCIENTIST_KEY", cl_caem2);
         c.startActivity(i);
     }
 
@@ -691,7 +691,7 @@ public class Utils {
                                               Class  <?> clazz){
         Intent i=new Intent(c,clazz);
 
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_caem);
+        i.putExtra("SCIENTIST_KEY", cl_caem);
         c.startActivity(i);
     }
 
@@ -707,7 +707,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //                "",scientist);
-        i.putExtra("SCIENTIST_KEY",(Serializable)scientist);
+        i.putExtra("SCIENTIST_KEY", scientist);
         c.startActivity(i);
     }
 
@@ -723,7 +723,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",(Serializable)scientistvw);
+        i.putExtra("SCIENTIST_KEY", scientistvw);
         c.startActivity(i);
     }
     /**
@@ -734,7 +734,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscu);
+        i.putExtra("SCIENTIST_KEY", scientistscu);
         c.startActivity(i);
     }
 
@@ -748,7 +748,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscaem);
+        i.putExtra("SCIENTIST_KEY", scientistscaem);
         c.startActivity(i);
     }
 
@@ -758,7 +758,7 @@ public class Utils {
     public static void sendCl_cuatm_allToActivity(Context c, Cl_cuatm_all cl_cuatm_all,
                                                     Class <?> clazz){
         Intent i=new Intent(c,clazz);
-        i.putExtra("SCIENTIST_KEY",(Serializable)cl_cuatm_all);
+        i.putExtra("SCIENTIST_KEY", cl_cuatm_all);
         c.startActivity(i);
     }
 
@@ -770,7 +770,7 @@ public class Utils {
         Intent i=new Intent(c,clazz);
 //        i.putExtra("" +
 //////                "",scientistvw);
-        i.putExtra("SCIENTIST_KEY",(Serializable)scientistscfp);
+        i.putExtra("SCIENTIST_KEY", scientistscfp);
         c.startActivity(i);
     }
 
