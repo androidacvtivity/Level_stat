@@ -3,10 +3,6 @@ package com.bancusoft.levelstat.Views;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NavUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,11 +11,15 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
 import com.bancusoft.levelstat.Retrofit.Scientist;
+
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,7 +35,7 @@ public class CRUDActivity extends AppCompatActivity {
     private ProgressBar mProgressBar;
     private String id = null;
     private Scientist receivedScientist;
-    private Context c = CRUDActivity.this;
+    private final Context c = CRUDActivity.this;
 
     /**
      * Let's reference our widgets
@@ -106,9 +106,10 @@ public class CRUDActivity extends AppCompatActivity {
 
             insertData.enqueue(new Callback<ResponseModel>() {
                 @Override
-                public void onResponse(Call<ResponseModel> call,
-                 Response<ResponseModel> response) {
+                public void onResponse(@NonNull Call<ResponseModel> call,
+                                       @NonNull Response<ResponseModel> response) {
 
+                    assert response.body() != null;
                     Log.d("RETROFIT", "response : " + response.body().toString());
                     String myResponseCode = response.body().getCode();
 
@@ -127,7 +128,7 @@ public class CRUDActivity extends AppCompatActivity {
                     Utils.hideProgressBar(mProgressBar);
                 }
                 @Override
-                public void onFailure(Call<ResponseModel> call, Throwable t) {
+                public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                     Log.d("RETROFIT", "ERROR: " + t.getMessage());
                     Utils.hideProgressBar(mProgressBar);
                     Utils.showInfoDialog(CRUDActivity.this, "FAILURE",
@@ -178,7 +179,8 @@ public class CRUDActivity extends AppCompatActivity {
              //dob, died);
             update.enqueue(new Callback<ResponseModel>() {
                 @Override
-                public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+                public void onResponse(@NonNull Call<ResponseModel> call, @NonNull Response<ResponseModel> response) {
+                    assert response.body() != null;
                     Log.d("RETROFIT", "Response: " + response.body().getResult());
 
                     Utils.hideProgressBar(mProgressBar);
@@ -201,7 +203,7 @@ public class CRUDActivity extends AppCompatActivity {
                     }
                 }
                 @Override
-                public void onFailure(Call<ResponseModel> call, Throwable t) {
+                public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                     Log.d("RETROFIT", "ERROR THROWN DURING UPDATE: " + t.getMessage());
                     Utils.hideProgressBar(mProgressBar);
                     Utils.showInfoDialog(CRUDActivity.this, "FAILURE THROWN", "ERROR DURING UPDATE.Here"+
@@ -281,33 +283,35 @@ public class CRUDActivity extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.insertMenuItem:
-                insertData();
-                return true;
-            case R.id.editMenuItem:
-                if (receivedScientist != null) {
-                    updateData();
-                } else {
-                    Utils.show(this, "EDIT ONLY WORKS IN EDITING MODE");
-                }
-                return true;
-            case R.id.deleteMenuItem:
-                if (receivedScientist != null) {
-                    deleteData();
-                } else {
-                    Utils.show(this, "DELETE ONLY WORKS IN EDITING MODE");
-                }
-                return true;
-            case R.id.viewAllMenuItem:
-                Utils.openActivity(this, ScientistsActivity.class);
-                finish();
-                return true;
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                finish();
-                return true;
-        }
+
+
+//        switch (item.getItemId()) {
+//            case R.id.insertMenuItem:
+//                insertData();
+//                return true;
+//            case R.id.editMenuItem:
+//                if (receivedScientist != null) {
+//                    updateData();
+//                } else {
+//                    Utils.show(this, "EDIT ONLY WORKS IN EDITING MODE");
+//                }
+//                return true;
+//            case R.id.deleteMenuItem:
+//                if (receivedScientist != null) {
+//                    deleteData();
+//                } else {
+//                    Utils.show(this, "DELETE ONLY WORKS IN EDITING MODE");
+//                }
+//                return true;
+//            case R.id.viewAllMenuItem:
+//                Utils.openActivity(this, ScientistsActivity.class);
+//                finish();
+//                return true;
+//            case android.R.id.home:
+//                NavUtils.navigateUpFromSameTask(this);
+//                finish();
+//                return true;
+//        }
         return super.onOptionsItemSelected(item);
     }
 

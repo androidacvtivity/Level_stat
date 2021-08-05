@@ -37,7 +37,6 @@ import com.bancusoft.levelstat.Views.med.help_medicament;
 import com.bancusoft.levelstat.Views.med.help_medicament_en;
 import com.bancusoft.levelstat.Views.med.help_medicament_ru;
 
-import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
