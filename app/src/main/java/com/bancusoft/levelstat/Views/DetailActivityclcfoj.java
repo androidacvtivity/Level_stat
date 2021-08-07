@@ -6,18 +6,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-
-
-import com.bancusoft.levelstat.Retrofit.Cl_cfoj;
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
+import com.bancusoft.levelstat.Retrofit.Cl_cfoj;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -60,8 +58,7 @@ public class DetailActivityclcfoj extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedCl_cfoj.getCODUL());
 
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
@@ -152,34 +149,27 @@ public class DetailActivityclcfoj extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_cfoj);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_CODUL_TV_CFOJ = CODUL_TV_CFOJ.getText().toString();
-                String s_DENUMIRE_TV_CFOJ = DENUMIRE_TV_CFOJ.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_CODUL_TV_CFOJ = CODUL_TV_CFOJ.getText().toString();
+            String s_DENUMIRE_TV_CFOJ = DENUMIRE_TV_CFOJ.getText().toString();
 
 
+            String contentShare = " Codul CFOJ : " + s_CODUL_TV_CFOJ + " - Denumirea CFOJ, \n" +
+                    "  :  " + s_DENUMIRE_TV_CFOJ;
 
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
-                String a = " Codul CFOJ : " + s_CODUL_TV_CFOJ + " - Denumirea CFOJ, \n" +
-                        "  :  " + s_DENUMIRE_TV_CFOJ;
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "CLASIFICATORUL  \n" +
+                    "FORMELOR  \n" +
+                    "ORGANIZATORICO-JURIDICE  \n" +
+                    "ALE  AGENŢILOR  ECONOMICI  \n" +
+                    "DIN  REPUBLICA  MOLDOVA\n" +
+                    "(C.F.O.J.)\n");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-
-                String contentShare = new String(a);
-
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "CLASIFICATORUL  \n" +
-                        "FORMELOR  \n" +
-                        "ORGANIZATORICO-JURIDICE  \n" +
-                        "ALE  AGENŢILOR  ECONOMICI  \n" +
-                        "DIN  REPUBLICA  MOLDOVA\n" +
-                        "(C.F.O.J.)\n");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 

@@ -1,20 +1,22 @@
 package com.bancusoft.levelstat.Views;
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientistscaem;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
@@ -57,8 +59,10 @@ public class DetailActivitycaem extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getVALUE());
 
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+//            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
+//                    getColor(R.color.white));
+
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
@@ -143,28 +147,23 @@ public class DetailActivitycaem extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_caem);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_DENUMIRE_TV_caem = DENUMIRE_TV_caem.getText().toString();
-                String s_VALUE_TV_caem = VALUE_TV_caem.getText().toString();
-                String s_act_TV_caem = act_TV_caem.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_DENUMIRE_TV_caem = DENUMIRE_TV_caem.getText().toString();
+            String s_VALUE_TV_caem = VALUE_TV_caem.getText().toString();
+            String s_act_TV_caem = act_TV_caem.getText().toString();
 
 
+            String contentShare = " Genul de activitate: " + s_DENUMIRE_TV_caem + " - Număr (care au codul IDNO) :  "+ s_VALUE_TV_caem + " Actualizarea " + s_act_TV_caem;
 
-                String a = " Genul de activitate: " + s_DENUMIRE_TV_caem + " - Număr (care au codul IDNO) :  "+ s_VALUE_TV_caem + " Actualizarea " + s_act_TV_caem;
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
 
-                String contentShare = new String(a);
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia deschisa  după genurile de activitate declarate");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Informatia deschisa  după genurile de activitate declarate");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 

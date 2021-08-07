@@ -7,18 +7,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
-
 import com.bancusoft.levelstat.Retrofit.Scientistscfp;
-
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -62,8 +60,7 @@ public class DetailActivitycfp extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getVALUE());
 
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
@@ -148,28 +145,22 @@ public class DetailActivitycfp extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_cfp);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_DENUMIRE_TV_cfp = DENUMIRE_TV_cfp.getText().toString();
-                String s_VALUE_TV_cfp = VALUE_TV_cfp.getText().toString();
-                String s_act_TV_cfp = act_TV_cfp.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_DENUMIRE_TV_cfp = DENUMIRE_TV_cfp.getText().toString();
+            String s_VALUE_TV_cfp = VALUE_TV_cfp.getText().toString();
+            String s_act_TV_cfp = act_TV_cfp.getText().toString();
 
 
+            String contentShare = "Forma organizatorico-juridică: " + s_DENUMIRE_TV_cfp + " - Număr (care au codul IDNO) :  "+ s_VALUE_TV_cfp + "  Actualizarea  " + s_act_TV_cfp;
 
-                String a = "Forma organizatorico-juridică: " + s_DENUMIRE_TV_cfp + " - Număr (care au codul IDNO) :  "+ s_VALUE_TV_cfp + "  Actualizarea  " + s_act_TV_cfp;
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia deschisa  după forma juridică de organizare");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-                String contentShare = new String(a);
-
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Informatia deschisa  după forma juridică de organizare");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 
