@@ -79,34 +79,73 @@ public class DetailActivityclcaem2 extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_caem2:
-                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw.class);
-                finish();
-                return true;
 
 
-            case R.id.action_edit_en_caem2:
-                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw_en.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.action_edit_ru_caem2:
-                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw_ru.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_caem2){
+            Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw.class);
+            finish();
+            return true;
 
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,ScientistsActivitycuatm.class);
-                finish();
-                return true;
-
-            case R.id.video3_caem:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_caem2){
+            Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_caem2){
+            Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,ScientistsActivityclcaem2.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_caem) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+//            case android.R.id.home:
+//                //NavUtils.navigateUpFromSameTask(this);
+//                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,ScientistsActivitycuatm.class);
+//                finish();
+//                return true;
+//
+//            case R.id.video3_caem:
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
+//                startActivity(browserIntent);
+//                break;
+//        }
+//
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 

@@ -1,4 +1,5 @@
 package com.bancusoft.levelstat.Views;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,13 +13,14 @@ import android.widget.AbsListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Objects;
 
 
 import com.bancusoft.levelstat.Helpers.MyAdapterclcaem2;
@@ -40,7 +42,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
     private RecyclerView rv;
     private MyAdapterclcaem2 mAdapter;
     private LinearLayoutManager layoutManager;
-    public ArrayList<Cl_caem2> allPagesScientists = new ArrayList();
+    public ArrayList<Cl_caem2> allPagesScientists = new ArrayList<>();
     private List<Cl_caem2> currentPageScientists;
     private Boolean isScrolling = false;
     private int currentScientists, totalScientists, scrolledOutScientists;
@@ -72,18 +74,18 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
      * without seaching. However all the arriving data is paginated at the server level.
      */
     private void retrieveAndFillRecyclerView(final String action, String queryString,
-                                             final String start, String limit) {
+                                             final String start) {
 
         mAdapter.searchString = queryString;
         RestApi api = Utils.getClient().create(RestApi.class);
         Call<ResponseModelcaem2cl> retrievedData;
 
         if (action.equalsIgnoreCase("GET_PAGINATEDCAEM2")) {
-            retrievedData = api.search_caem2("GET_PAGINATEDCAEM2", queryString, start, limit);
+            retrievedData = api.search_caem2("GET_PAGINATEDCAEM2", queryString, start, "100");
             Utils.showProgressBar(mProgressBar);
         } else if (action.equalsIgnoreCase("GET_PAGINATED_SEARCHCAEM2")) {
             Utils.showProgressBar(mProgressBar);
-            retrievedData = api.search_caem2("GET_PAGINATED_SEARCHCAEM2", queryString, start, limit);
+            retrievedData = api.search_caem2("GET_PAGINATED_SEARCHCAEM2", queryString, start, "100");
         } else {
             Utils.showProgressBar(mProgressBar);
             retrievedData = api.retrievecaem2cl();
@@ -91,9 +93,11 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
 
 
         retrievedData.enqueue(new Callback<ResponseModelcaem2cl>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
-            public void onResponse(Call<ResponseModelcaem2cl> call, Response<ResponseModelcaem2cl>
+            public void onResponse(@NonNull Call<ResponseModelcaem2cl> call, @NonNull Response<ResponseModelcaem2cl>
                     response) {
+                assert response.body() != null;
                 Log.d("RETROFIT", "CODE : " + response.body().getCodecu());
                 Log.d("RETROFIT", "MESSAGE : " + response.body().getMessagecu());
                 Log.d("RETROFIT", "RESPONSE : " + response.body().getResultcaem2cl());
@@ -103,9 +107,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCHCAEM2")) {
                         allPagesScientists.clear();
                     }
-                    for (int i = 0; i < currentPageScientists.size(); i++) {
-                        allPagesScientists.add(currentPageScientists.get(i));
-                    }
+                    allPagesScientists.addAll(currentPageScientists);
 
                 } else {
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCHCAEM2")) {
@@ -117,7 +119,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
             }
 
             @Override
-            public void onFailure(Call<ResponseModelcaem2cl> call, Throwable t) {
+            public void onFailure(@NonNull Call<ResponseModelcaem2cl> call, @NonNull Throwable t) {
                 Utils.hideProgressBar(mProgressBar);
                 Log.d("RETROFIT", "ERROR: " + t.getMessage());
                 Utils.showInfoDialog(ScientistsActivityclcaem2.this, "ERROR", t.getMessage());
@@ -131,7 +133,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
     private void listenToRecyclerViewScroll() {
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView rv, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView rv, int newState) {
                 //when scrolling starts
                 super.onScrollStateChanged(rv, newState);
                 //check for scroll state
@@ -140,12 +142,12 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
                 }
             }
             @Override
-            public void onScrolled(RecyclerView rv, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView rv, int dx, int dy) {
                 // When the scrolling has stopped
                 super.onScrolled(rv, dx, dy);
                 currentScientists = layoutManager.getChildCount();
                 totalScientists = layoutManager.getItemCount();
-                scrolledOutScientists = ((LinearLayoutManager) rv.getLayoutManager()).
+                scrolledOutScientists = ((LinearLayoutManager) Objects.requireNonNull(rv.getLayoutManager())).
                         findFirstVisibleItemPosition();
 
                 if (isScrolling && (currentScientists + scrolledOutScientists ==
@@ -156,7 +158,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
                         // Scrolling up
                         retrieveAndFillRecyclerView("GET_PAGINATEDCAEM2",
                                 mAdapter.searchString,
-                                String.valueOf(totalScientists), "100");
+                                String.valueOf(totalScientists));
 
                     } else {
                         // Scrolling down
@@ -183,43 +185,55 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_new_caem2:
-                Utils.openActivity(this, help_vw.class);
+
+
+
+        int id = item.getItemId();
+
+        if (id==R.id.action_new_caem2){
+            Utils.openActivity(this, help_vw.class);
                 finish();
                 return true;
 
-            case R.id.action_new_en_caem2:
-                Utils.openActivity(this, help_vw_en.class);
-                finish();
-                return true;
+        } else
 
+        if (id==R.id.action_new_en_caem2){
+            Utils.openActivity(this, help_vw_en.class);
+            finish();
+            return true;
 
-            case R.id.action_new_ru_caem2:
-                Utils.openActivity(this, help_vw_ru.class);
-                finish();
-                return true;
+        } else
 
-            case R.id.video2_caem2:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
+        if (id==R.id.action_new_ru_caem2){
+            Utils.openActivity(this, help_vw_ru.class);
+            finish();
+            return true;
+
+        } else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,DashboardActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
         }
+
+        else
+        if (id == R.id.video2_caem2) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
+        }
+
+
         return super.onOptionsItemSelected(item);
     }
-
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_new:
-//                Utils.openActivity(this, CRUDActivity.class);
-//                finish();
-//                return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-
 
     @Override
     public boolean onQueryTextSubmit(String query) {
@@ -228,7 +242,7 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
 
     @Override
     public boolean onQueryTextChange(String query) {
-        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCHCAEM2", query, "0", "100");
+        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCHCAEM2", query, "0");
         return false;
     }
 
@@ -247,11 +261,6 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
 
 
     @Override
@@ -271,6 +280,6 @@ public class ScientistsActivityclcaem2 extends AppCompatActivity
         initializeViews();
         this.listenToRecyclerViewScroll();
         setupRecyclerView();
-        retrieveAndFillRecyclerView("GET_PAGINATEDCAEM2", "", "0", "100");
+        retrieveAndFillRecyclerView("GET_PAGINATEDCAEM2", "", "0");
     }
 }
