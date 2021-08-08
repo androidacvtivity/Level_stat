@@ -59,8 +59,7 @@ public class DetailActivitycaem extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getVALUE());
 
-//            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-//                    getColor(R.color.white));
+
 
             mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
@@ -82,34 +81,61 @@ public class DetailActivitycaem extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_caem:
-                Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw.class);
-                finish();
-                return true;
 
+        int id = item.getItemId();
 
-            case R.id.action_edit_en_caem:
-                Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw_en.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_caem){
+            Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_caem:
-                Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw_ru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendScientistscaemToActivity(this,receivedScientist,ScientistsActivitycucaem.class);
-                finish();
-                return true;
-
-            case R.id.video3_caem:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_caem){
+            Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id==R.id.action_edit_ru_caem){
+            Utils.sendScientistscaemToActivity(this,receivedScientist,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, ScientistsActivitycucaem.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        if (id == R.id.video3_caem){
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+
+
+        }
+
+
+
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
