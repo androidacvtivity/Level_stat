@@ -74,21 +74,21 @@ public class ScientistsActivity extends AppCompatActivity
      * without seaching. However all the arriving data is paginated at the server level.
      */
     private void retrieveAndFillRecyclerView(final String action, String queryString,
-     final String start, String limit) {
+                                             final String start) {
 
         mAdapter.searchString = queryString;
         RestApi api = Utils.getClient().create(RestApi.class);
         Call<ResponseModel> retrievedData;
 
         if (action.equalsIgnoreCase("GET_PAGINATED")) {
-            retrievedData = api.search("GET_PAGINATED", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED", queryString, start, "20");
             Utils.showProgressBar(mProgressBar);
         } else
 
 
             if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
             Utils.showProgressBar(mProgressBar);
-            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, "20");
         } else
 
 
@@ -166,7 +166,7 @@ public class ScientistsActivity extends AppCompatActivity
 						// Scrolling up
                         retrieveAndFillRecyclerView("GET_PAGINATED",
                          mAdapter.searchString,
-                         String.valueOf(totalScientists), "20");
+                         String.valueOf(totalScientists));
 
 					} else {
 						// Scrolling down
@@ -190,47 +190,6 @@ public class ScientistsActivity extends AppCompatActivity
         return true;
     }
 
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_new:
-//                Utils.openActivity(this, help.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_new_en:
-//                Utils.openActivity(this, helpen.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_new_ru:
-//                Utils.openActivity(this, helpru.class);
-//                finish();
-//                return true;
-//
-//            case R.id.home:
-//                Utils.openActivity(this, DashboardActivity.class);
-//                finish();
-//                return true;
-////            case R.id.dgti:
-////                Utils.openActivity(this, ScientistsActivity_dgti.class);
-////                finish();
-////                return true;
-//
-//
-//            case R.id.video2:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.nextlevel.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-
-
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -242,8 +201,6 @@ public class ScientistsActivity extends AppCompatActivity
             return true;
 
         }
-
-
 
         else
 
@@ -288,52 +245,7 @@ public class ScientistsActivity extends AppCompatActivity
 
 
 
-//        switch (item.getItemId()) {
-//            case R.id.action_new:
-//                Utils.sendScientistToActivity(this,receivedScientist,help.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_new_en:
-//                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_new_ru:
-//                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-//                finish();
-//                return true;
-//
-//            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-////                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
-////                finish();
-////
-//                Intent intent;
-//                intent = new Intent(this, DashboardActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                finish();
-//                startActivity(intent);
-//
-//                return true;
-//
-////            case R.id.back_str:
-////                Utils.openActivity(this, structurabns.class);
-////                finish();
-////                return true;
-//
-//            case R.id.video2:
-//              //   String test_url = "https://www.youtube.com/watch?v=GovpbmgZY_E";
-//              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=GovpbmgZY_E"));
-//              //  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(test_url));
-//
-//
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
-//
-//                startActivity(browserIntent);
-//                break;
-//        }
+
 
 
 
@@ -350,7 +262,7 @@ public class ScientistsActivity extends AppCompatActivity
 
     @Override
     public boolean onQueryTextChange(String query) {
-        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", query, "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", query, "0");
         return false;
     }
 
@@ -393,7 +305,11 @@ public class ScientistsActivity extends AppCompatActivity
         initializeViews();
         this.listenToRecyclerViewScroll();
         setupRecyclerView();
-        retrieveAndFillRecyclerView("GET_PAGINATED", "", "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED", "", "0");
+    }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
     }
 }
 
