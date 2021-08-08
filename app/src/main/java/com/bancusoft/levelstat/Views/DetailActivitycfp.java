@@ -80,34 +80,53 @@ public class DetailActivitycfp extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_cfp:
-                Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw.class);
-                finish();
-                return true;
 
+        int id = item.getItemId();
 
-            case R.id.action_edit_en_cfp:
-                Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw_en.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cfp){
+            Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_cfp:
-                Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw_ru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendScientistscfpToActivity(this,receivedScientist,ScientistsActivitycfp.class);
-                finish();
-                return true;
-
-            case R.id.video3_cfp:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cfp){
+            Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id==R.id.action_edit_ru_cfp){
+            Utils.sendScientistscfpToActivity(this,receivedScientist,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, ScientistsActivitycfp.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        if (id == R.id.video3_cfp) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

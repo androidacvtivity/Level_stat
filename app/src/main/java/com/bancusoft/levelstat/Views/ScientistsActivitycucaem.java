@@ -239,18 +239,7 @@ public class ScientistsActivitycucaem extends AppCompatActivity
 
         }
 
-//
-//            case R.id.video2_caem:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//
-//
-//            case R.id.home:
-//                Utils.openActivity(this, DashboardActivity.class);
-//                finish();
-//                return true;
-//        }
+
 
 
 
