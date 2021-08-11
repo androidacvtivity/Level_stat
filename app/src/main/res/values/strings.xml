@@ -16,6 +16,13 @@
     <string name="bancu_vitalie">Bancu Vitalie</string>
     <string name="programmer">Programmer</string>
     <string name="afteni_tatiana">Afteni Tatiana</string>
+    <string name="clasificatorul_activit_ilor_din_economia_moldovei_caem">CLASIFICATORUL ACTIVITĂŢILOR DIN ECONOMIA MOLDOVEI (CAEM)</string>
+    <string name="clasificatorul_activit_ilor_din_economia_moldovei_caem_2">CLASIFICATORUL ACTIVITĂŢILOR DIN ECONOMIA MOLDOVEI (CAEM-2)</string>
+    <string name="clasificatorul_formelor_organizatorico_juridice_ale_agen_ilor_economici_din_republica_moldova_c_f_o_j">CLASIFICATORUL FORMELOR ORGANIZATORICO-JURIDICE ALE AGENŢILOR ECONOMICI DIN REPUBLICA MOLDOVA (C.F.O.J.)</string>
+    <string name="schema_principal_a_clasificatorului_formelor_de_proprietate">Schema principală a clasificatorului formelor de proprietate</string>
+    <string name="clasificatorul_organelor_de_conducere_al_republicii_moldova_cocm">Clasificatorul Organelor de Conducere al Republicii Moldova (COCM)</string>
+    <string name="clasificatorul_serviciilor_n_domeniul_activit_ii_economice_externe">Clasificatorul serviciilor în domeniul activităţii economice externe</string>
+    <string name="clasificatorul_unit_ilor_administrativ_teritoriale_al_republicii_moldova_cuatm">CLASIFICATORUL UNITĂŢILOR ADMINISTRATIV-TERITORIALE AL REPUBLICII MOLDOVA (CUATM)</string>
 
 
 </resources>
