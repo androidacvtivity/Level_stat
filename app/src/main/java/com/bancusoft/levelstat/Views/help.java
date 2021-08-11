@@ -14,7 +14,10 @@ import com.bancusoft.levelstat.R;
 public class help extends BaseActivity{
 
     private Scientist receivedScientist;
-    private Toolbar toolbar;
+
+
+
+
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -86,6 +89,10 @@ public class help extends BaseActivity{
 //                return true;
             }
             return super.onOptionsItemSelected(item);
+    }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
     }
 }
 
