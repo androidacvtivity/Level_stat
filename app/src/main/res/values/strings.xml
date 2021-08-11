@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">Stat Level</string>
     <string name="todo">TODO</string>
+    <string name="about_us">About us</string>
+    <string name="administrative_n_authority">Administrative \n authority</string>
+    <string name="national_bureau_of_nstatistics_of_the_n_republic_of_moldova">National Bureau of \nStatistics of the \n Republic of Moldova</string>
+    <string name="division">Division</string>
+    <string name="general_division_for_n_informational_technologies_ndesigning_of_computer_napplications_division">General Division for\n Informational Technologies, \nDesigning of Computer \nApplications Division</string>
+    <string name="website">Website</string>
+    <string name="https_statistica_gov_md">https://statistica.gov.md/</string>
+    <string name="address">Address</string>
+    <string name="bujor_vasile">Bujor Vasile</string>
+
+    <string name="gheorghita_natalia">Gheorghita Natalia</string>
+   
+    <string name="bancu_vitalie">Bancu Vitalie</string>
+    <string name="programmer">Programmer</string>
+    <string name="afteni_tatiana">Afteni Tatiana</string>
 
 
 </resources>
