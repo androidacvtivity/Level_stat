@@ -80,13 +80,13 @@
     <string name="indrumar">Indrumar</string>
     <string name="despre_accesarea_datelor_deschise_si_c_tre_agen_ii_economici_implica_i_n_circula_ia_medicamentelor_din_rep_moldova">despre accesarea datelor deschise si către agenţii economici implicaţi în circulaţia medicamentelor din Rep. Moldova</string>
     <string name="a_e_cuatm">A.E - CUATM</string>
-    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_n_profil_administrativ_teritorial">Date statistice din Registrul de stat al unităţilor de drept în profil administrativ-teritorial</string>
+
     <string name="a_e_caem">A.E - CAEM</string>
-    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
+
     <string name="cuatm">CUATM</string>
     <string name="clasificatorul_unit_ilor_administrativ_teritoriale">Clasificatorul unităţilor administrativ-teritoriale</string>
     <string name="a_e_cfp">A.E - CFP</string>
-    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare">Date statistice din Registrul de stat al unităţilor de drept după forma juridică de organizare</string>
+
     <string name="caem2">CAEM2</string>
     <string name="caem">CAEM</string>
 
@@ -106,6 +106,18 @@
     <string name="view_about_contatact_us">View About / Contatact us</string>
     <string name="exit">Exit</string>
     <string name="exit_of_the_from_application">Exit of the from application.</string>
+
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare">Date statistice din Registrul de stat al unităţilor de drept după forma juridică de organizare</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_n_profil_administrativ_teritorial">Date statistice din Registrul de stat al unităţilor de drept în profil administrativ-teritorial</string>
+    <string name="lista_angaja_ilor">Lista angajaților</string>
+    <string name="lista_unita_ilor_a_e">Lista unitaților A.E</string>
+    <string name="biroul_na_ional_de_statistic_al_republicii_moldova">Biroul Național de Statistică al Republicii Moldova</string>
+    <string name="direc_ia_general_tehnologii_informa_ionale">Direcția generală tehnologii informaționale</string>
+    <string name="direc_ia_proiectare_aplica_ii_informatice">Direcția proiectare aplicații informatice</string>
+    <string name="director_general">* Director general</string>
+    <string name="directori_generali_adjunc_i">* Directori generali adjuncţi</string>
+    <string name="cabinetul_directorului_general">* Cabinetul directorului general</string>
 
 
 </resources>
