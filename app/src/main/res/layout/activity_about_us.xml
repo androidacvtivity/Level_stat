@@ -239,9 +239,9 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel"
+                        android:layout_toEndOf="@+id/websiteLabel"
 
-                        android:text="MD-2019 Chişinău,\nstr. Grenoble 106"
+                        android:text="@string/md_2019_chi_in_u_nstr_grenoble_106"
                         />
                 </RelativeLayout>
 
@@ -258,7 +258,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="Division Head "
+                        android:text="@string/division_head"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -266,8 +266,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address"
                         android:text="@string/bujor_vasile" />
                 </RelativeLayout>
 
