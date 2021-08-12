@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,15 +27,16 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    android:contentDescription="@string/todo_about_us"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrow"
-                    android:text="About Me"
+                    android:layout_toEndOf="@+id/mBackArrow"
+                    android:text="@string/about_me"
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:layout_marginStart="20dp" />
@@ -56,7 +58,7 @@
             android:layout_height="125dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
             android:scaleType="centerCrop"
             android:src="@drawable/oclemy"
             app:shape_mode="circle"
@@ -69,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/mImageView"
             android:layout_marginTop="13dp"
-            android:text="Vitalie Bancu"
+            android:text="@string/vitalie_bancu"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -81,7 +83,7 @@
             android:layout_below="@+id/nameTV"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Software Engineer\n Programmer"
+            android:text="@string/software_engineer_n_programmer"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="12sp" />
@@ -89,18 +91,22 @@
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="90dp"
-            android:layout_toRightOf="@+id/mImageView"
-            android:src="@drawable/ic_call" />
+            android:layout_toEndOf="@+id/mImageView"
+            android:src="@drawable/ic_call"
+            android:contentDescription="@string/todo"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginTop="90dp"
-            android:layout_marginRight="20dp"
-            android:layout_toLeftOf="@+id/mImageView"
-            android:src="@drawable/ic_email" />
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/mImageView"
+            android:src="@drawable/ic_email"
+            android:contentDescription="@string/todo"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -111,7 +117,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -130,7 +137,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="Administrative authority"
+                        android:text="@string/administrative_authority"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -138,10 +145,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:layout_toRightOf="@+id/addressTV"
-                        android:text="National Bureau of Statistics of the Republic of Moldova" />
+                        android:layout_toEndOf="@+id/addressTV"
+                        android:text="@string/national_bureau_of_statistics_of_the_republic_of_moldova" />
 
 <!--                    <Button-->
 <!--                        android:id="@+id/locatebtn"-->
@@ -168,7 +175,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="Division"
+                        android:text="@string/division"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -176,9 +183,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/currentCityLabel"
-                        android:text="General Division for Informational Technologies, Designing of Computer Applications Division" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/currentCityLabel"
+                        android:text="@string/general_division_for_informational_technologies_designing_of_computer_applications_division" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -193,7 +200,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="Mobile number"
+                        android:text="@string/mobile_number"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -201,10 +208,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/contactNoLabel"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/contactNoLabel"
                         android:autoLink="phone"
-                        android:text="+37367770604" />
+                        android:text="@string/_37367770604" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -219,7 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="Website"
+                        android:text="@string/website"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -227,10 +234,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel"
                         android:autoLink="all"
-                        android:text="https://statistica.gov.md/"
+                        android:text="@string/https_statistica_gov_md"
                         android:textColor="@color/colorPrimary" />
                 </RelativeLayout>
 
@@ -247,7 +254,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="Address"
+                        android:text="@string/address"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -255,9 +262,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address"
-                        android:text="MD-2019 Chişinău, str. Grenoble 106" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address"
+                        android:text="@string/md_2019_chi_in_u_str_grenoble_106" />
                 </RelativeLayout>
 
 
@@ -274,7 +281,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="Email"
+                        android:text="@string/email"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -282,10 +289,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/emailLabel"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/emailLabel"
                         android:autoLink="email"
-                        android:text="vitalie.bancu@statistica.gov.md" />
+                        android:text="@string/vitalie_bancu_statistica_gov_md" />
                 </RelativeLayout>
 
 
