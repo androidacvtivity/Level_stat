@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Stat Level</string>
 
-    <string name="about_us">About us</string>
     <string name="administrative_n_authority">Administrative \n authority</string>
     <string name="national_bureau_of_nstatistics_of_the_n_republic_of_moldova">National Bureau of \nStatistics of the \n Republic of Moldova</string>
     <string name="division">Division</string>
@@ -20,7 +19,7 @@
     <string name="clasificatorul_activit_ilor_din_economia_moldovei_caem_2">CLASIFICATORUL ACTIVITĂŢILOR DIN ECONOMIA MOLDOVEI (CAEM-2)</string>
     <string name="clasificatorul_formelor_organizatorico_juridice_ale_agen_ilor_economici_din_republica_moldova_c_f_o_j">CLASIFICATORUL FORMELOR ORGANIZATORICO-JURIDICE ALE AGENŢILOR ECONOMICI DIN REPUBLICA MOLDOVA (C.F.O.J.)</string>
     <string name="schema_principal_a_clasificatorului_formelor_de_proprietate">Schema principală a clasificatorului formelor de proprietate</string>
-    <string name="clasificatorul_organelor_de_conducere_al_republicii_moldova_cocm">Clasificatorul Organelor de Conducere al Republicii Moldova (COCM)</string>
+
     <string name="clasificatorul_serviciilor_n_domeniul_activit_ii_economice_externe">Clasificatorul serviciilor în domeniul activităţii economice externe</string>
     <string name="clasificatorul_unit_ilor_administrativ_teritoriale_al_republicii_moldova_cuatm">CLASIFICATORUL UNITĂŢILOR ADMINISTRATIV-TERITORIALE AL REPUBLICII MOLDOVA (CUATM)</string>
     <string name="md_2019_chi_in_u_nstr_grenoble_106">MD-2019 Chişinău,\nstr. Grenoble 106</string>
@@ -30,7 +29,7 @@
     <string name="vitalie_bancu">Vitalie Bancu</string>
     <string name="software_engineer_n_programmer">Software Engineer\n Programmer</string>
 
-    <string name="todo">TODO</string>
+
     <string name="administrative_authority">Administrative authority</string>
     <string name="national_bureau_of_statistics_of_the_republic_of_moldova">National Bureau of Statistics of the Republic of Moldova</string>
 
@@ -43,6 +42,70 @@
     <string name="md_2019_chi_in_u_str_grenoble_106">MD-2019 Chişinău, str. Grenoble 106</string>
     <string name="email">Email</string>
     <string name="vitalie_bancu_statistica_gov_md">vitalie.bancu@statistica.gov.md</string>
+    <string name="clasificatorul_produse_si_servicii_cu_caracter_industrial">Clasificatorul - Produse si servicii cu caracter industrial</string>
+
+    <string name="scientists_editing_page">Scientists Editing Page</string>
+    <string name="instruc_iune">Instrucțiune</string>
+    <string name="adauga_i_angajatul_n_edittext_apoi_face_i_clic_pe_butonul_de_salvare_din_bara_de_instrumente_unele_c_mpuri_precum_numele_i_loca_i_trebuie_s_fie_completate">Adaugați angajatul în edittext, apoi faceți clic pe butonul de salvare din bara de instrumente. Unele câmpuri precum numele și locați trebuie să fie completate.</string>
+    <string name="informa_ie_despre_angajat">Informație despre angajat</string>
+    <string name="nume_prenume">Nume, prenume</string>
+    <string name="loca_ia">Locația</string>
+    <string name="func_ia">Funcția</string>
+    <string name="serviciu">Serviciu</string>
+    <string name="sec_ia">Secția</string>
+    <string name="dirtec_ia_general">Dirtecția generală</string>
+    <string name="telefon">Telefon</string>
+    <string name="telefon_intern">Telefon intern</string>
+    <string name="cercet_ri_statistice">Cercetări Statistice</string>
+    <string name="e_mail">E-mail</string>
+    <string name="informa_ii_personale">Informații personale</string>
+
+    <string name="angaja_ii_bns">Angajații BNS</string>
+    <string name="vizualizarea_tuturor_angaja_ilor">Vizualizarea tuturor angajaților</string>
+
+
+    <string name="despre_accesarea_informatiei_de_contact_a_angajatilor_bns">despre accesarea informatiei de contact a angajatilor BNS</string>
+
+    <string name="a_e_n_r_m">A.E în R.M</string>
+    <string name="vizualizarea_tuturor_a_e_n_r_m">Vizualizarea tuturor A.E în R.M</string>
+
+
+
+    <string name="structura_bns">Structura BNS</string>
+    <string name="structura_biroului_na_ional_de_statistic">Structura Biroului Naţional de Statistică</string>
+
+    <string name="despre_accesarea_datelor_deschise_a_unita_ilor_de_drept_din_rep_moldova">despre accesarea datelor deschise a Unitaților de Drept din Rep. Moldova</string>
+    <string name="clasificatorul_medicamentelor">Clasificatorul medicamentelor</string>
+    <string name="ordinul_msps_rm_nr_271_din_04_07_2006_cu_privire_la_aprobarea_clasificatorului_medicamentelor_nregistrate_n_republica_moldova">Ordinul MSPS RM nr. 271 din 04.07.2006 „Cu privire la aprobarea Clasificatorului medicamentelor înregistrate în Republica Moldova</string>
+    <string name="indrumar">Indrumar</string>
+    <string name="despre_accesarea_datelor_deschise_si_c_tre_agen_ii_economici_implica_i_n_circula_ia_medicamentelor_din_rep_moldova">despre accesarea datelor deschise si către agenţii economici implicaţi în circulaţia medicamentelor din Rep. Moldova</string>
+    <string name="a_e_cuatm">A.E - CUATM</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_n_profil_administrativ_teritorial">Date statistice din Registrul de stat al unităţilor de drept în profil administrativ-teritorial</string>
+    <string name="a_e_caem">A.E - CAEM</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
+    <string name="cuatm">CUATM</string>
+    <string name="clasificatorul_unit_ilor_administrativ_teritoriale">Clasificatorul unităţilor administrativ-teritoriale</string>
+    <string name="a_e_cfp">A.E - CFP</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare">Date statistice din Registrul de stat al unităţilor de drept după forma juridică de organizare</string>
+    <string name="caem2">CAEM2</string>
+    <string name="caem">CAEM</string>
+
+    <string name="cfoj">CFOJ</string>
+    <string name="clasificatorul_formelor_organizatorico_juridice_ale_agen_ilor_economici_din_republica_moldova">CLASIFICATORUL FORMELOR ORGANIZATORICO-JURIDICE ALE AGENŢILOR ECONOMICI DIN REPUBLICA MOLDOVA</string>
+    <string name="cfp">CFP</string>
+
+    <string name="cl_servicii">CL SERVICII</string>
+
+
+    <string name="cocm">COCM</string>
+    <string name="clasificatorul_organelor_de_conducere_al_republicii_moldova_cocm">Clasificatorul Organelor de Conducere al Republicii Moldova (COCM)</string>
+    <string name="todo">TODO</string>
+    <string name="cl_tari">Cl Tari</string>
+    <string name="clasificatorul_interna_ional_al_rilor_lumii_i_teritoriilor_care_se_utilizeaz_la_completarea_rapoartelor_statistice_privind_exportul_i_importul_de_servicii">Clasificatorul internaţional al ţărilor lumii şi teritoriilor, care se utilizează la completarea rapoartelor statistice privind exportul şi importul de servicii</string>
+    <string name="about_us">About us</string>
+    <string name="view_about_contatact_us">View About / Contatact us</string>
+    <string name="exit">Exit</string>
+    <string name="exit_of_the_from_application">Exit of the from application.</string>
 
 
 </resources>

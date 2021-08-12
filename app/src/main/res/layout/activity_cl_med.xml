@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="1">
 
 
     <TextView
         android:id="@+id/mHeaderTxt_cl_med1"
-        fontPath="fonts/Roboto-Bold.ttf"
+        app:fontPath="fonts/Roboto-Bold.ttf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
