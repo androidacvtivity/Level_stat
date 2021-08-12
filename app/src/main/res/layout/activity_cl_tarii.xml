@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="1">
 
 
     <TextView
         android:id="@+id/mHeadercl_tari_Txt"
-        fontPath="fonts/Roboto-Bold.ttf"
+        app:fontPath="fonts/Roboto-Bold.ttf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="Clasificatorul internaţional al ţărilor lumii şi teritoriilor, care se utilizează la
-completarea rapoartelor statistice privind exportul şi importul de servicii"
+        android:text="@string/clasificatorul_interna_ional_al_rilor_lumii_i_teritoriilor_care_se_utilizeaz_la_completarea_rapoartelor_statistice_privind_exportul_i_importul_de_servicii"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorAccent"

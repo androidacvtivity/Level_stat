@@ -61,7 +61,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/viewScientistsCard"
@@ -76,14 +77,16 @@
                             android:background="@drawable/m_circle_bg_purple"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="Angajații BNS"
+                            android:text="@string/angaja_ii_bns"
                             android:textStyle="bold" />
 
 
@@ -92,7 +95,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Vizualizarea tuturor angajaților"
+                            android:text="@string/vizualizarea_tuturor_angaja_ilor"
                             android:layout_gravity="center_horizontal"
                             android:textColor="@android:color/darker_gray" />
 
@@ -105,7 +108,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/help"
@@ -119,14 +123,16 @@
                             android:layout_height="64dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/man" />
+                            android:src="@drawable/man"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="Indrumar"
+                            android:text="@string/indrumar"
                             android:textStyle="bold" />
 
 
@@ -135,7 +141,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="despre accesarea informatiei de contact a angajatilor BNS"
+                            android:text="@string/despre_accesarea_informatiei_de_contact_a_angajatilor_bns"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -155,7 +161,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/viewScientistsvwCard"
@@ -170,14 +177,16 @@
                             android:background="@drawable/m_circle_bg_green"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="A.E  în R.M"
+                            android:text="@string/a_e_n_r_m"
                             android:textStyle="bold" />
 
 
@@ -187,7 +196,7 @@
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Vizualizarea tuturor A.E  în R.M"
+                            android:text="@string/vizualizarea_tuturor_a_e_n_r_m"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -199,7 +208,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/helpvw"
@@ -213,7 +223,9 @@
                             android:layout_height="64dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/man" />
+                            android:src="@drawable/man"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -221,7 +233,8 @@
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
                             android:text="Indrumar"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
 
                         <TextView
@@ -229,7 +242,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="despre accesarea datelor deschise a Unitaților de Drept din Rep. Moldova "
+                            android:text="@string/despre_accesarea_datelor_deschise_a_unita_ilor_de_drept_din_rep_moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -250,7 +263,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/view_structura"
@@ -265,14 +279,16 @@
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_green"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="Structura BNS"
+                            android:text="@string/structura_bns"
                             android:textStyle="bold" />
 
 
@@ -282,7 +298,7 @@
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Structura Biroului Naţional de Statistică"
+                            android:text="@string/structura_biroului_na_ional_de_statistic"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -294,7 +310,8 @@
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/help_structura"
@@ -308,14 +325,15 @@
                             android:layout_height="64dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/man" />
+                            android:src="@drawable/man"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="Indrumar"
+                            android:text="@string/indrumar"
                             android:textStyle="bold" />
 
 
@@ -324,7 +342,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="despre accesarea datelor deschise a Unitaților de Drept din Rep. Moldova "
+                            android:text="@string/despre_accesarea_datelor_deschise_a_unita_ilor_de_drept_din_rep_moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -345,7 +363,8 @@
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/view_list_of_med"
@@ -360,14 +379,15 @@
                             android:layout_gravity="center_horizontal"
                             android:background="@mipmap/ic_medicament"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="Clasificatorul medicamentelor"
+                            android:text="@string/clasificatorul_medicamentelor"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -378,7 +398,7 @@
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Ordinul MSPS RM nr. 271 din 04.07.2006 „Cu privire la aprobarea Clasificatorului medicamentelor înregistrate în Republica Moldova"
+                            android:text="@string/ordinul_msps_rm_nr_271_din_04_07_2006_cu_privire_la_aprobarea_clasificatorului_medicamentelor_nregistrate_n_republica_moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -390,7 +410,8 @@
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/help_cl_med"
@@ -404,14 +425,15 @@
                             android:layout_height="64dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/man" />
+                            android:src="@drawable/man"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="Indrumar"
+                            android:text="@string/indrumar"
                             android:textStyle="bold" />
 
 
@@ -420,7 +442,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="despre accesarea datelor deschise si către agenţii economici implicaţi în circulaţia medicamentelor din Rep. Moldova "
+                            android:text="@string/despre_accesarea_datelor_deschise_si_c_tre_agen_ii_economici_implica_i_n_circula_ia_medicamentelor_din_rep_moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -442,7 +464,8 @@
                     android:layout_height="280dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/viewCUATM"
@@ -457,14 +480,15 @@
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="A.E -  CUATM"
+                            android:text="@string/a_e_cuatm"
                             android:textStyle="bold" />
 
 
@@ -474,9 +498,7 @@
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Date statistice
-din Registrul de stat al unităţilor de drept
-în profil administrativ-teritorial"
+                            android:text="@string/date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_n_profil_administrativ_teritorial"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -488,7 +510,8 @@ din Registrul de stat al unităţilor de drept
                     android:layout_height="280dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/caem"
@@ -503,14 +526,15 @@ din Registrul de stat al unităţilor de drept
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="A.E - CAEM"
+                            android:text="@string/a_e_caem"
                             android:textStyle="bold" />
 
 
@@ -519,9 +543,7 @@ din Registrul de stat al unităţilor de drept
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Date statistice
-din Registrul de stat al unităţilor de drept
-după genurile de activitate declarate"
+                            android:text="@string/date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -548,7 +570,8 @@ după genurile de activitate declarate"
                     android:layout_height="240dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cuatm_next"
@@ -563,14 +586,15 @@ după genurile de activitate declarate"
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_yello"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="CUATM"
+                            android:text="@string/cuatm"
                             android:textStyle="bold" />
 
 
@@ -580,7 +604,7 @@ după genurile de activitate declarate"
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Clasificatorul unităţilor administrativ-teritoriale"
+                            android:text="@string/clasificatorul_unit_ilor_administrativ_teritoriale"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -592,7 +616,8 @@ după genurile de activitate declarate"
                     android:layout_height="240dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cfp"
@@ -607,14 +632,15 @@ după genurile de activitate declarate"
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="A.E - CFP"
+                            android:text="@string/a_e_cfp"
                             android:textStyle="bold" />
 
 
@@ -623,9 +649,7 @@ după genurile de activitate declarate"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Date statistice
-din Registrul de stat al unităţilor de drept
-după forma juridică de organizare"
+                            android:text="@string/date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -647,7 +671,8 @@ după forma juridică de organizare"
                     android:layout_height="240dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/caem2"
@@ -662,14 +687,15 @@ după forma juridică de organizare"
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_yello"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="CAEM2"
+                            android:text="@string/caem2"
                             android:textStyle="bold" />
 
 
@@ -679,10 +705,7 @@ după forma juridică de organizare"
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="CLASIFICATORUL ACTIVITĂŢILOR
-DIN ECONOMIA MOLDOVEI
-(CAEM-2)
-"
+                            android:text="@string/clasificatorul_activit_ilor_din_economia_moldovei_caem_2"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -694,14 +717,16 @@ DIN ECONOMIA MOLDOVEI
                     android:layout_height="240dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_caem"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="TooManyViews">
 
                         <ImageView
                             android:layout_width="64dp"
@@ -709,14 +734,15 @@ DIN ECONOMIA MOLDOVEI
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="CAEM"
+                            android:text="@string/caem"
                             android:textStyle="bold" />
 
 
@@ -725,10 +751,7 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="CLASIFICATORUL ACTIVITĂŢILOR
-DIN ECONOMIA MOLDOVEI
-(CAEM)
-"
+                            android:text="@string/clasificatorul_activit_ilor_din_economia_moldovei_caem"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -749,7 +772,8 @@ DIN ECONOMIA MOLDOVEI
                     android:layout_height="270dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_cfoj"
@@ -764,14 +788,15 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_yello"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="CFOJ"
+                            android:text="@string/cfoj"
                             android:textStyle="bold" />
 
 
@@ -781,13 +806,7 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="CLASIFICATORUL
-FORMELOR
-ORGANIZATORICO-JURIDICE
-ALE  AGENŢILOR  ECONOMICI
-DIN  REPUBLICA  MOLDOVA
-
-"
+                            android:text="@string/clasificatorul_formelor_organizatorico_juridice_ale_agen_ilor_economici_din_republica_moldova"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -799,7 +818,8 @@ DIN  REPUBLICA  MOLDOVA
                     android:layout_height="270dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_cfp"
@@ -814,14 +834,15 @@ DIN  REPUBLICA  MOLDOVA
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="CFP"
+                            android:text="@string/cfp"
                             android:textStyle="bold" />
 
 
@@ -830,10 +851,7 @@ DIN  REPUBLICA  MOLDOVA
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="CLASIFICATORUL ACTIVITĂŢILOR
-DIN ECONOMIA MOLDOVEI
-(CAEM)
-"
+                            android:text="@string/clasificatorul_activit_ilor_din_economia_moldovei_caem"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -852,7 +870,8 @@ DIN ECONOMIA MOLDOVEI
                     android:layout_height="270dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_servicii"
@@ -867,14 +886,15 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_yello"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="CL SERVICII"
+                            android:text="@string/cl_servicii"
                             android:textStyle="bold" />
 
 
@@ -884,7 +904,7 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Clasificatorul serviciilor în domeniul activităţii economice externe"
+                            android:text="@string/clasificatorul_serviciilor_n_domeniul_activit_ii_economice_externe"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -896,7 +916,8 @@ DIN ECONOMIA MOLDOVEI
                     android:layout_height="270dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_cocm"
@@ -911,14 +932,16 @@ DIN ECONOMIA MOLDOVEI
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="COCM"
+                            android:text="@string/cocm"
                             android:textStyle="bold" />
 
 
@@ -927,7 +950,7 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text=" Clasificatorul Organelor de Conducere al Republicii Moldova (COCM)"
+                            android:text="@string/clasificatorul_organelor_de_conducere_al_republicii_moldova_cocm"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -947,7 +970,8 @@ DIN ECONOMIA MOLDOVEI
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_tari"
@@ -962,14 +986,16 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:background="@drawable/m_circle_bg_yello"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="Cl Tari"
+                            android:text="@string/cl_tari"
                             android:textStyle="bold" />
 
 
@@ -979,8 +1005,7 @@ DIN ECONOMIA MOLDOVEI
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Clasificatorul internaţional al ţărilor lumii şi teritoriilor, care se utilizează la
-completarea rapoartelor statistice privind exportul şi importul de servicii"
+                            android:text="@string/clasificatorul_interna_ional_al_rilor_lumii_i_teritoriilor_care_se_utilizeaz_la_completarea_rapoartelor_statistice_privind_exportul_i_importul_de_servicii"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -1000,7 +1025,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                     android:layout_height="300dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/cl_prodmild"
@@ -1015,7 +1041,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_list" />
+                            android:src="@drawable/m_list"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1023,7 +1050,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
                             android:text="PRODMOLD-A"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
 
                         <TextView
@@ -1032,7 +1060,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text=" Clasificatorul Produse si servicii cu caracter industrial"
-                            android:textColor="@android:color/darker_gray" />
+                            android:textColor="@android:color/darker_gray"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -1052,7 +1081,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/third"
@@ -1067,13 +1097,14 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:background="@drawable/m_circle_bg_pink"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_cloud_circle_black" />
+                            android:src="@drawable/m_cloud_circle_black"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="About us"
+                            android:text="@string/about_us"
                             android:layout_gravity="center_horizontal"
                             android:textStyle="bold" />
 
@@ -1082,7 +1113,7 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="View About / Contatact us"
+                            android:text="@string/view_about_contatact_us"
                             android:layout_gravity="center_horizontal"
                             android:textColor="@android:color/darker_gray" />
 
@@ -1095,7 +1126,8 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:id="@+id/closeCard"
@@ -1110,14 +1142,15 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:background="@drawable/m_circle_bg_yello"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp"
-                            android:src="@drawable/m_icon_logout" />
+                            android:src="@drawable/m_icon_logout"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
-                            android:text="Exit"
+                            android:text="@string/exit"
                             android:textStyle="bold" />
 
 
@@ -1126,7 +1159,7 @@ completarea rapoartelor statistice privind exportul şi importul de servicii"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Exit of the from application."
+                            android:text="@string/exit_of_the_from_application"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
