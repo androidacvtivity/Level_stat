@@ -257,7 +257,7 @@
                         android:layout_centerVertical="true"
                         android:text="@string/cabinetul_directorului_general"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -277,7 +277,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
             </RelativeLayout>
 
@@ -294,9 +294,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia coordonare statistică şi cooperare internaţională"
+                        android:text="@string/direc_ia_coordonare_statistic_i_cooperare_interna_ional"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -315,7 +315,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -331,9 +331,9 @@
                     android:id="@+id/sec_audit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="***  Secția audit intern și managementul calității"
+                    android:text="@string/sec_ia_audit_intern_i_managementul_calit_ii"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -351,7 +351,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -367,9 +367,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia generală statistica macroeconomică"
+                        android:text="@string/direc_ia_general_statistica_macroeconomic"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -387,7 +387,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
@@ -402,9 +402,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția conturi naționale"
+                        android:text="@string/direc_ia_conturi_na_ionale"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -422,7 +422,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -438,9 +438,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica prețurilor de consum"
+                        android:text="@string/direc_ia_statistica_pre_urilor_de_consum"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -458,7 +458,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -475,9 +475,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica comerțului exterior"
+                        android:text="@string/direc_ia_statistica_comer_ului_exterior"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -495,7 +495,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -512,9 +512,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia generală statistica întreprinderilor"
+                        android:text="@string/direc_ia_general_statistica_ntreprinderilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -532,7 +532,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -548,9 +548,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica industriei și energeticii"
+                        android:text="@string/direc_ia_statistica_industriei_i_energeticii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -568,7 +568,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -585,9 +585,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica investițiilor și construcțiilor"
+                        android:text="@string/direc_ia_statistica_investi_iilor_i_construc_iilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -605,7 +605,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -621,9 +621,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica structurală"
+                        android:text="@string/direc_ia_statistica_structural"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -641,7 +641,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -658,9 +658,9 @@
                         android:id="@+id/dir_com_intern"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția statistica comerțului interior"
+                        android:text="@string/direc_ia_statistica_comer_ului_interior"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -678,7 +678,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -694,9 +694,9 @@
                         android:id="@+id/dir_transport"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția statistica transporturilor, turismului și TIC"
+                        android:text="@string/direc_ia_statistica_transporturilor_turismului_i_tic"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -715,7 +715,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -732,7 +732,7 @@
                         android:id="@+id/dir_registre"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția registre și clasificatoare"
+                        android:text="@string/direc_ia_registre_i_clasificatoare"
                         android:textColor="@android:color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />

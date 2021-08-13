@@ -118,6 +118,19 @@
     <string name="director_general">* Director general</string>
     <string name="directori_generali_adjunc_i">* Directori generali adjuncţi</string>
     <string name="cabinetul_directorului_general">* Cabinetul directorului general</string>
+    <string name="direc_ia_coordonare_statistic_i_cooperare_interna_ional">* Direcţia coordonare statistică şi cooperare internaţională</string>
+    <string name="sec_ia_audit_intern_i_managementul_calit_ii">*** Secția audit intern și managementul calității</string>
+    <string name="direc_ia_general_statistica_macroeconomic">* Direcţia generală statistica macroeconomică</string>
+    <string name="direc_ia_conturi_na_ionale">** Direcția conturi naționale</string>
+    <string name="direc_ia_statistica_pre_urilor_de_consum">** Direcția statistica prețurilor de consum</string>
+    <string name="direc_ia_statistica_comer_ului_exterior">** Direcția statistica comerțului exterior</string>
+    <string name="direc_ia_general_statistica_ntreprinderilor">* Direcţia generală statistica întreprinderilor</string>
+    <string name="direc_ia_statistica_industriei_i_energeticii">** Direcția statistica industriei și energeticii</string>
+    <string name="direc_ia_statistica_investi_iilor_i_construc_iilor">** Direcția statistica investițiilor și construcțiilor</string>
+    <string name="direc_ia_statistica_structural">** Direcția statistica structurală</string>
+    <string name="direc_ia_statistica_comer_ului_interior">** Direcția statistica comerțului interior</string>
+    <string name="direc_ia_statistica_transporturilor_turismului_i_tic">** Direcția statistica transporturilor, turismului și TIC</string>
+    <string name="direc_ia_registre_i_clasificatoare">** Direcția registre și clasificatoare</string>
 
 
 </resources>
