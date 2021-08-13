@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,18 +27,19 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrow_str"
+                    android:layout_toEndOf="@+id/mBackArrow_str"
                     android:text="structura BNS"
                     android:textColor="@color/white"
                     android:textSize="21sp"
-                    android:layout_marginStart="20dp" />
+                    android:layout_marginStart="20dp"
+                    tools:ignore="HardcodedText" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -90,34 +92,37 @@
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="90dp"
-            android:layout_toRightOf="@+id/mImageView"
-            android:src="@drawable/ic_call" />
+            android:layout_toEndOf="@+id/mImageView"
+            android:src="@drawable/ic_call"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginTop="90dp"
-            android:layout_marginRight="20dp"
-            android:layout_toLeftOf="@+id/mImageView"
-            android:src="@drawable/ic_email" />
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/mImageView"
+            android:src="@drawable/ic_email"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/mRelativeLayout_str"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="5dp">
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
 
 
@@ -132,9 +137,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Director general"
+                        android:text="@string/director_general"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
 <!--                    <TextView-->
@@ -173,7 +178,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <!--                    <TextView-->
@@ -210,9 +215,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Directori generali adjuncţi"
+                        android:text="@string/directori_generali_adjunc_i"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -232,7 +237,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
 
@@ -250,9 +255,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Cabinetul directorului general"
+                        android:text="@string/cabinetul_directorului_general"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -272,7 +277,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
             </RelativeLayout>
 
@@ -289,9 +294,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia coordonare statistică şi cooperare internaţională"
+                        android:text="@string/direc_ia_coordonare_statistic_i_cooperare_interna_ional"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -310,7 +315,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -326,9 +331,9 @@
                     android:id="@+id/sec_audit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="***  Secția audit intern și managementul calității"
+                    android:text="@string/sec_ia_audit_intern_i_managementul_calit_ii"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -346,7 +351,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -362,9 +367,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia generală statistica macroeconomică"
+                        android:text="@string/direc_ia_general_statistica_macroeconomic"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -382,7 +387,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
@@ -397,9 +402,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția conturi naționale"
+                        android:text="@string/direc_ia_conturi_na_ionale"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -417,7 +422,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -433,9 +438,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica prețurilor de consum"
+                        android:text="@string/direc_ia_statistica_pre_urilor_de_consum"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -453,7 +458,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -470,9 +475,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica comerțului exterior"
+                        android:text="@string/direc_ia_statistica_comer_ului_exterior"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -490,7 +495,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -507,9 +512,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*  Direcţia generală statistica întreprinderilor"
+                        android:text="@string/direc_ia_general_statistica_ntreprinderilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -527,7 +532,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -543,9 +548,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica industriei și energeticii"
+                        android:text="@string/direc_ia_statistica_industriei_i_energeticii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -563,7 +568,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -580,9 +585,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica investițiilor și construcțiilor"
+                        android:text="@string/direc_ia_statistica_investi_iilor_i_construc_iilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -600,7 +605,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -616,9 +621,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="**  Direcția statistica structurală"
+                        android:text="@string/direc_ia_statistica_structural"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -636,7 +641,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -653,9 +658,9 @@
                         android:id="@+id/dir_com_intern"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția statistica comerțului interior"
+                        android:text="@string/direc_ia_statistica_comer_ului_interior"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -673,7 +678,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -689,9 +694,9 @@
                         android:id="@+id/dir_transport"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția statistica transporturilor, turismului și TIC"
+                        android:text="@string/direc_ia_statistica_transporturilor_turismului_i_tic"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -710,7 +715,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -727,7 +732,7 @@
                         android:id="@+id/dir_registre"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția registre și clasificatoare"
+                        android:text="@string/direc_ia_registre_i_clasificatoare"
                         android:textColor="@android:color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
