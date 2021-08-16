@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp">
@@ -10,19 +11,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="Informație despre medicament "
+                    android:text="@string/informa_ie_despre_medicament"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/niceGreenish"
@@ -43,7 +45,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul medicamentului "
+                            android:text="@string/codul_medicamentului"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -53,7 +55,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Codul medicamentului" />
+                            android:text="@string/codul_medicamentului" />
 
                     </LinearLayout>
 
@@ -74,7 +76,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul vamal"
+                            android:text="@string/codul_vamal"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -84,7 +86,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Codul vamal" />
+                            android:text="@string/codul_vamal" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -135,7 +137,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea comercială"
+                            android:text="@string/denumirea_comercial"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -145,7 +147,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Denumirea comercială." />
+                            android:text="@string/denumirea_comercial_1" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -182,7 +184,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Forma farmaceutică"
+                            android:text="@string/forma_farmaceutic"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -192,7 +194,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Forma farmaceutică." />
+                            android:text="@string/forma_farmaceutica" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -243,7 +245,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Doza, concentraţia"
+                            android:text="@string/doza_concentra_ia"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -253,7 +255,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Doza, concentraţia" />
+                            android:text="@string/doza_concentra_ia" />
 
                     </LinearLayout>
 
@@ -275,7 +277,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Volum"
+                            android:text="@string/volum"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -285,7 +287,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Volum" />
+                            android:text="@string/volum" />
 
 
                     </LinearLayout>
@@ -308,7 +310,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Divizarea"
+                            android:text="@string/divizarea"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -318,7 +320,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Divizarea" />
+                            android:text="@string/divizarea" />
 
 
                     </LinearLayout>
@@ -340,7 +342,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Ţara"
+                            android:text="@string/ara"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -350,7 +352,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Ţara" />
+                            android:text="@string/ara" />
 
 
                     </LinearLayout>
@@ -373,7 +375,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Firma producătoare"
+                            android:text="@string/firma_produc_toare"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -383,7 +385,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Firma producătoare" />
+                            android:text="@string/firma_produc_toare" />
 
                     </LinearLayout>
 
@@ -405,7 +407,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Numărul de înregistrare"
+                            android:text="@string/num_rul_de_nregistrare"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -417,7 +419,7 @@
 
                             android:padding="@dimen/text_padding"
 
-                            android:text="Numărul de înregistrare" />
+                            android:text="@string/num_rul_de_nregistrare" />
 
                     </LinearLayout>
 
@@ -439,7 +441,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Data înregistrării"
+                            android:text="@string/data_nregistr_rii"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -451,7 +453,7 @@
 
                             android:padding="@dimen/text_padding"
 
-                            android:text="Data înregistrării" />
+                            android:text="@string/data_nregistr_rii" />
 
                     </LinearLayout>
 
@@ -474,7 +476,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul ATC"
+                            android:text="@string/codul_atc"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -483,7 +485,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul ATC"
+                            android:text="@string/codul_atc"
 
                             />
 
@@ -507,7 +509,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea comună internaţională"
+                            android:text="@string/denumirea_comun_interna_ional"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -517,7 +519,7 @@
                             android:layout_height="wrap_content"
 
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea comună internaţională" />
+                            android:text="@string/denumirea_comun_interna_ional" />
 
                     </LinearLayout>
 
@@ -539,7 +541,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Termenul de valabilitate"
+                            android:text="@string/termenul_de_valabilitate"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -549,7 +551,7 @@
                             android:layout_height="wrap_content"
 
                             android:padding="@dimen/text_padding"
-                            android:text="Termenul de valabilitate" />
+                            android:text="@string/termenul_de_valabilitate" />
 
                     </LinearLayout>
 
@@ -571,7 +573,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul cu bare"
+                            android:text="@string/codul_cu_bare"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -583,7 +585,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Codul cu bare" />
+                            android:text="@string/codul_cu_bare" />
 
                     </LinearLayout>
 
@@ -606,7 +608,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -616,7 +618,7 @@
 
                         <Button
                             android:id="@+id/btnShare"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorAccent"
