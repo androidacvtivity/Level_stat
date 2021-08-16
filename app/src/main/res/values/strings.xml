@@ -107,7 +107,7 @@
     <string name="exit">Exit</string>
     <string name="exit_of_the_from_application">Exit of the from application.</string>
 
-    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
+
     <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare">Date statistice din Registrul de stat al unităţilor de drept după forma juridică de organizare</string>
     <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_n_profil_administrativ_teritorial">Date statistice din Registrul de stat al unităţilor de drept în profil administrativ-teritorial</string>
     <string name="lista_angaja_ilor">Lista angajaților</string>
@@ -212,6 +212,40 @@
     <string name="direc_ia_statistic_uta_g_g_uzia">** Direcția statistică UTA Găgăuzia</string>
     <string name="serviciul_statistic_leova">*** Serviciul statistică Leova</string>
     <string name="serviciul_statistic_taraclia">*** Serviciul statistică Taraclia</string>
+
+
+    <string name="albert_einstein">ALBERT EINSTEIN</string>
+
+
+    <string name="etajul">Etajul</string>
+
+    <string name="biroul">Biroul</string>
+    <string name="this_is_the_description">This is the description.</string>
+
+    <string name="galaxy">Galaxy</string>
+
+
+
+
+    <string name="direc_ia">Direcția</string>
+
+    <string name="direc_ia_general">Direcția generală</string>
+
+    <string name="telefon_fix_serviciu">Telefon fix serviciu</string>
+    <string name="star">Star</string>
+    <string name="telefon_mobil_serviciu">Telefon mobil serviciu</string>
+
+    <string name="notice_about_error_in_list_of_contacts_of_employers">Notice about error in list of contacts of employers</string>
+    <string name="send">Send</string>
+    <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
+    <string name="genul_de_activitate">Genul de activitate</string>
+    <string name="municipiu_raion">Municipiu raion</string>
+    <string name="num_r_care_au_codul_idno">Număr (care au codul IDNO)</string>
+    <string name="num_r_ce_au_codul_idno">Număr(ce au codul IDNO)</string>
+
+    <string name="actualizarea">Actualizarea</string>
+    <string name="share_button">Share button</string>
+    <string name="share">Share</string>
 
 
 </resources>
