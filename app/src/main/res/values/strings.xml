@@ -320,15 +320,13 @@
     <string name="termenul_de_valabilitate">Termenul de valabilitate</string>
 
     <string name="codul_cu_bare">Codul cu bare</string>
-
-
-
     <string name="codul_prodmiold">Codul Prodmiold</string>
     <string name="codul_prodmold">Codul Prodmold</string>
 
     <string name="denumirea_codului">Denumirea codului</string>
     <string name="unitatea_de_m_sur">Unitatea de măsură</string>
-
+    <string name="codul_rii">Codul Țării</string>
+    <string name="denumirea_rii">Denumirea Țării</string>
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
 
