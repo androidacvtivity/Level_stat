@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp">
@@ -11,19 +12,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="Forme organizatorico-juridice"
+                    android:text="@string/forme_organizatorico_juridice"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/niceGreenish"
@@ -44,7 +46,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Codul CFOJ"
+                            android:text="@string/codul_cfoj"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -54,7 +56,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Codul CFOJ" />
+                            android:text="@string/codul_cfoj" />
 
                     </LinearLayout>
 
@@ -75,7 +77,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea formelor organizatorico-juridice ale agenţilor economici"
+                            android:text="@string/denumirea_formelor_organizatorico_juridice_ale_agen_ilor_economici"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -85,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Denumirea formelor organizatorico-juridice ale agenţilor economici" />
+                            android:text="@string/denumirea_formelor_organizatorico_juridice_ale_agen_ilor_economici" />
 
 
 
@@ -118,7 +120,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -130,7 +132,7 @@
                             android:id="@+id/btnShare_cfoj"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
@@ -141,17 +143,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/card_margin">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-
-
-
-                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
