@@ -734,7 +734,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/direc_ia_registre_i_clasificatoare"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -753,7 +753,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -770,9 +770,9 @@
                         android:id="@+id/dir__agricultura"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția statistica agriculturii și mediului"
+                        android:text="@string/direc_ia_statistica_agriculturii_i_mediului"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -782,7 +782,8 @@
                     android:layout_width="match_parent"
                     android:layout_below="@+id/mRelativeLayout_agricultura"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shadow_bottom">
+                    android:background="@drawable/shadow_bottom"
+                    tools:ignore="TooManyViews">
 
                     <TextView
                         android:id="@+id/bet17"
@@ -791,7 +792,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -807,9 +808,9 @@
                         android:id="@+id/dir_stat_agriculturii"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistica agriculturii"
+                        android:text="@string/sec_ia_statistica_agriculturii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -827,7 +828,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -844,9 +845,9 @@
                         android:id="@+id/dir_cer_selec_agr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția cercetări selective în agricultură"
+                        android:text="@string/sec_ia_cercet_ri_selective_n_agricultur"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -864,7 +865,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -880,9 +881,9 @@
                         android:id="@+id/dir_sec_stat_med"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistica mediului"
+                        android:text="@string/serviciul_statistica_mediului"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -901,7 +902,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -918,9 +919,9 @@
                         android:id="@+id/dg_col_tata"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Direcţia generală colectarea datelor entităţi economice"
+                        android:text="@string/direc_ia_general_colectarea_datelor_entit_i_economice"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -939,7 +940,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -955,9 +956,9 @@
                         android:id="@+id/tv_dr_sit_fin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția situații financiare "
+                        android:text="@string/direc_ia_situa_ii_financiare"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -976,7 +977,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -993,9 +994,9 @@
                         android:id="@+id/tv_dr_colect_data"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția colectarea și validarea datelor "
+                        android:text="@string/direc_ia_colectarea_i_validarea_datelor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1014,7 +1015,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1031,9 +1032,9 @@
                         android:id="@+id/tv_dr_colect_data_pret"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția colectarea datelor prețuri"
+                        android:text="@string/direc_ia_colectarea_datelor_pre_uri"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1051,7 +1052,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1067,9 +1068,9 @@
                         android:id="@+id/tv_dr_sociala_demografie"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Direcţia generală statistica socială şi demografie"
+                        android:text="@string/direc_ia_general_statistica_social_i_demografie"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1087,7 +1088,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1104,9 +1105,9 @@
                         android:id="@+id/tv_dr_niv_trai"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistica nivelului de trai"
+                        android:text="@string/direc_ia_statistica_nivelului_de_trai"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1124,7 +1125,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1141,9 +1142,9 @@
                         android:id="@+id/tv_dr_stat_ocuparii"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistica ocupării"
+                        android:text="@string/direc_ia_statistica_ocup_rii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1162,7 +1163,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1179,9 +1180,9 @@
                         android:id="@+id/tv_dr_stat_salariu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistica salariilor"
+                        android:text="@string/direc_ia_statistica_salariilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1199,7 +1200,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1215,9 +1216,9 @@
                         android:id="@+id/tv_dr_pop_migratie"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistica populației și migrației"
+                        android:text="@string/direc_ia_statistica_popula_iei_i_migra_iei"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1235,7 +1236,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1252,9 +1253,9 @@
                         android:id="@+id/tv_dr_serv_social"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistica serviciilor sociale"
+                        android:text="@string/direc_ia_statistica_serviciilor_sociale"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1272,7 +1273,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1288,9 +1289,9 @@
                         android:id="@+id/tv_dr_serv_edu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistica educației, științei și culturii"
+                        android:text="@string/sec_ia_statistica_educa_iei_tiin_ei_i_culturii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1308,7 +1309,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1325,9 +1326,9 @@
                         android:id="@+id/tv_dr_recesaminte"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția recensăminte"
+                        android:text="@string/direc_ia_recens_minte"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1345,7 +1346,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1361,9 +1362,9 @@
                         android:id="@+id/tv_dr_diseminare"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția diseminare și comunicare"
+                        android:text="@string/direc_ia_diseminare_i_comunicare"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1382,7 +1383,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1399,9 +1400,9 @@
                         android:id="@+id/tv_dr_met_statistice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția metode statistice"
+                        android:text="@string/direc_ia_metode_statistice"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1419,7 +1420,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1437,9 +1438,9 @@
                         android:id="@+id/tv_sec_cer_sondaj"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secţia cercetări prin sondaj"
+                        android:text="@string/sec_ia_cercet_ri_prin_sondaj"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1457,7 +1458,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1474,9 +1475,9 @@
                         android:id="@+id/tv_servicu_sur_date_admin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul surse de date administrative"
+                        android:text="@string/serviciul_surse_de_date_administrative"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1494,7 +1495,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1510,9 +1511,9 @@
                         android:id="@+id/tv_servicu_sist_geografic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul sisteme informaţionale geografice"
+                        android:text="@string/serviciul_sisteme_informa_ionale_geografice"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1531,7 +1532,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1547,9 +1548,9 @@
                         android:id="@+id/tv_sec_colect_data_gosp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția colectarea datelor în gospodării"
+                        android:text="@string/sec_ia_colectarea_datelor_n_gospod_rii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1567,7 +1568,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1583,9 +1584,9 @@
                         android:id="@+id/tv_dr_management_fin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcţia management financiar"
+                        android:text="@string/direc_ia_management_financiar"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1603,7 +1604,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1619,9 +1620,9 @@
                         android:id="@+id/tvsec_finante"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secţia finanţe şi evidenţă contabilă"
+                        android:text="@string/sec_ia_finan_e_i_eviden_contabil"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1640,7 +1641,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1656,9 +1657,9 @@
                         android:id="@+id/tv_sec_admin_achiz"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secţia administrare și achiziţii"
+                        android:text="@string/sec_ia_administrare_i_achizi_ii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1676,7 +1677,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1692,9 +1693,9 @@
                         android:id="@+id/tv_sec_juridica"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția juridică și resurse umane"
+                        android:text="@string/sec_ia_juridic_i_resurse_umane"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1712,7 +1713,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1728,9 +1729,9 @@
                         android:id="@+id/tv_ser_man_doc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul managementul documentelor"
+                        android:text="@string/serviciul_managementul_documentelor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1749,7 +1750,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1766,9 +1767,9 @@
                         android:id="@+id/tv_dg_it"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*  Direcția generală tehnologii informaționale"
+                        android:text="@string/direc_ia_general_tehnologii_informa_ionale_1"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1786,7 +1787,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1802,9 +1803,9 @@
                         android:id="@+id/tv_dg_app"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția proiectare aplicații informatice"
+                        android:text="@string/direc_ia_proiectare_aplica_ii_informatice_1"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1822,7 +1823,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1838,9 +1839,9 @@
                         android:id="@+id/tv_dr_admin_sis_info"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**  Direcția administrare a sistemului informațional"
+                        android:text="@string/direc_ia_administrare_a_sistemului_informa_ional"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1859,7 +1860,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1875,9 +1876,9 @@
                         android:id="@+id/tv__sec_instruire_stat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="***  Secția instruire în statistica oficială"
+                        android:text="@string/sec_ia_instruire_n_statistica_oficial"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1895,7 +1896,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1911,9 +1912,9 @@
                         android:id="@+id/tv_des_poligrafica"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția deservire poligrafică"
+                        android:text="@string/direc_ia_deservire_poligrafic"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1931,7 +1932,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1947,9 +1948,9 @@
                         android:id="@+id/tv_mun_Chisinau"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Centrul regional pentru statistică mun. Chișinău"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1967,7 +1968,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -1984,9 +1985,9 @@
                         android:id="@+id/tv_mun_Chisinau_admin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Administratia"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_administratia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2006,7 +2007,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2022,9 +2023,9 @@
                         android:id="@+id/tv_mun_Chisinau_dr_generalizare"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția generalizare date statistice cercetări economice "
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_generalizare_date_statistice_cercet_ri_economice"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2042,7 +2043,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2060,9 +2061,9 @@
                         android:id="@+id/tv_mun_Chisinau_dr_industrie"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica industriei, energeticii  investițiilor și construcțiilor"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_statistica_industriei_energeticii_investi_iilor_i_construc_iilor"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2083,7 +2084,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2100,9 +2101,9 @@
                         android:id="@+id/tv_mun_Chisinau_dr_pm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica pieței muncii"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_statistica_pie_ei_muncii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2121,7 +2122,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2137,9 +2138,9 @@
                         android:id="@+id/tv_mun_dr_servicii"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția statistica serviciilor de piață"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_statistica_serviciilor_de_pia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2157,7 +2158,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2175,9 +2176,9 @@
                         android:id="@+id/tv_mun_Chisinau_Botanica"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Botanica"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_rapoarte_statistice_i_situa_ii_financiare_sect_botanica"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2195,7 +2196,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2213,9 +2214,9 @@
                         android:id="@+id/tv_mun_Chisinau_Buiucani"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Buiucani"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_rapoarte_statistice_i_situa_ii_financiare_sect_buiucani"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2233,7 +2234,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2249,9 +2250,9 @@
                         android:id="@+id/tv_mun_Chisinau_Centru"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Centru"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_rapoarte_statistice_i_situa_ii_financiare_sect_centru"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2270,7 +2271,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2287,9 +2288,9 @@
                         android:id="@+id/tv_mun_Chisinau_ciocana"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Ciocana"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_rapoarte_statistice_i_situa_ii_financiare_sect_ciocana"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2307,7 +2308,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
@@ -2322,9 +2323,9 @@
                         android:id="@+id/tv_mun_Chisinau_rascani"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția rapoarte statistice și situații financiare sect. Râșcani"
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_rapoarte_statistice_i_situa_ii_financiare_sect_r_cani"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2343,7 +2344,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2359,9 +2360,9 @@
                         android:id="@+id/tv_mun_Chisinau_cercetari_gosp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Centrul regional pentru statistică mun. Chișinău - Direcția cercetări gospodării."
+                        android:text="@string/centrul_regional_pentru_statistic_mun_chi_in_u_direc_ia_cercet_ri_gospod_rii"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2379,7 +2380,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2395,9 +2396,9 @@
                         android:id="@+id/tv__crs_nord"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Centrul regional pentru statistică NORD."
+                        android:text="@string/centrul_regional_pentru_statistic_nord"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2415,7 +2416,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2431,9 +2432,9 @@
                         android:id="@+id/tv__crs_nord_balti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Bălți."
+                        android:text="@string/direc_ia_statistic_b_l_i"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2451,7 +2452,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2468,9 +2469,9 @@
                         android:id="@+id/tv__crs_nord_briceni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Briceni."
+                        android:text="@string/sec_ia_statistic_briceni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2488,7 +2489,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2504,9 +2505,9 @@
                         android:id="@+id/tv__crs_nord_donduseni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistică Dondușeni."
+                        android:text="@string/serviciul_statistic_dondu_eni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2525,7 +2526,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2541,9 +2542,9 @@
                         android:id="@+id/tv__crs_nord_drochia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Drochia."
+                        android:text="@string/sec_ia_statistic_drochia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2562,7 +2563,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2578,9 +2579,9 @@
                         android:id="@+id/tv__crs_nord_edinet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Edineț."
+                        android:text="@string/direc_ia_statistic_edine"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
@@ -2597,7 +2598,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2613,9 +2614,9 @@
                         android:id="@+id/tv__crs_nord_falesti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Fălești."
+                        android:text="@string/sec_ia_statistic_f_le_ti"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2633,7 +2634,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2650,9 +2651,9 @@
                         android:id="@+id/tv__crs_nord_floresti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Florești."
+                        android:text="@string/sec_ia_statistic_flore_ti"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
@@ -2669,7 +2670,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2685,9 +2686,9 @@
                         android:id="@+id/tv_crs_nord_glodeni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Glodeni."
+                        android:text="@string/sec_ia_statistic_glodeni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2705,7 +2706,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2722,9 +2723,9 @@
                         android:id="@+id/tv_crs_nord_ocnita"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistică Ocnița."
+                        android:text="@string/serviciul_statistic_ocni_a"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2742,7 +2743,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2758,9 +2759,9 @@
                         android:id="@+id/tv_crs_nord_rezina"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistică Rezina."
+                        android:text="@string/serviciul_statistic_rezina"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2778,7 +2779,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2794,9 +2795,9 @@
                         android:id="@+id/tv_crs_nord_rascani"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Râșcani"
+                        android:text="@string/sec_ia_statistic_r_cani"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2815,7 +2816,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2831,9 +2832,9 @@
                         android:id="@+id/tv_crs_nord_sangerei"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Sângerei"
+                        android:text="@string/sec_ia_statistic_s_ngerei"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2851,7 +2852,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2867,9 +2868,9 @@
                         android:id="@+id/tv_crs_nord_soroca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Soroca"
+                        android:text="@string/direc_ia_statistic_soroca"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2887,7 +2888,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2903,9 +2904,9 @@
                         android:id="@+id/tv_crs_nord_soldanesti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistică Șoldănești"
+                        android:text="@string/serviciul_statistic_old_ne_ti"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2923,7 +2924,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2940,9 +2941,9 @@
                         android:id="@+id/tv_crs_nord_telenesti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistică  Telenești"
+                        android:text="@string/serviciul_statistic_telene_ti"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2960,7 +2961,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2976,9 +2977,9 @@
                         android:id="@+id/tv_crs_centru"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Centrul regional pentru statistică CENTRU"
+                        android:text="@string/centrul_regional_pentru_statistic_centru"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -2996,7 +2997,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3012,9 +3013,9 @@
                         android:id="@+id/tv_crs_centru_aneniinoi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Anenii-Noi"
+                        android:text="@string/direc_ia_statistic_anenii_noi"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3032,7 +3033,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3049,9 +3050,9 @@
                         android:id="@+id/tv_crs_centru_calarasi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Călărași"
+                        android:text="@string/sec_ia_statistic_c_l_ra_i"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3071,7 +3072,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3087,9 +3088,9 @@
                         android:id="@+id/tv_crs_centru_causeni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Căușeni"
+                        android:text="@string/direc_ia_statistic_c_u_eni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3108,7 +3109,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3124,9 +3125,9 @@
                         android:id="@+id/tv_crs_centru_cimislia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Cimișlia"
+                        android:text="@string/sec_ia_statistic_cimi_lia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3144,7 +3145,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3160,9 +3161,9 @@
                         android:id="@+id/tv_crs_centru_criuleni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică  Criuleni"
+                        android:text="@string/sec_ia_statistic_criuleni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3180,7 +3181,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3196,9 +3197,9 @@
                         android:id="@+id/tv_crs_centru_dubasari"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistică Dubăsari (Cocieri)"
+                        android:text="@string/serviciul_statistic_dub_sari_cocieri"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3217,7 +3218,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3234,9 +3235,9 @@
                         android:id="@+id/tv_crs_centru_hancesti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Hâncești"
+                        android:text="@string/direc_ia_statistic_h_nce_ti"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3254,7 +3255,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3270,9 +3271,9 @@
                     android:id="@+id/tv_crs_centru_ialoveni"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="** Direcția statistică Ialoveni"
+                    android:text="@string/direc_ia_statistic_ialoveni"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -3290,7 +3291,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3307,9 +3308,9 @@
                         android:id="@+id/tv_crs_centru_nisporeni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistica Nisporeni"
+                        android:text="@string/serviciul_statistica_nisporeni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3327,7 +3328,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3344,9 +3345,9 @@
                         android:id="@+id/tv_crs_centru_orhei"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Orhei"
+                        android:text="@string/direc_ia_statistic_orhei"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3364,7 +3365,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3380,9 +3381,9 @@
                         android:id="@+id/tv_crs_centru_straseni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Strășeni"
+                        android:text="@string/direc_ia_statistic_str_eni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3400,7 +3401,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3419,9 +3420,9 @@
                         android:id="@+id/tv_crs_centru_stefan_voda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Secția statistică Ștefan-Vodă"
+                        android:text="@string/sec_ia_statistic_tefan_vod"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3439,7 +3440,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3455,9 +3456,9 @@
                         android:id="@+id/tv_crs_centru_ungheni"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Ungheni"
+                        android:text="@string/direc_ia_statistic_ungheni"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3475,7 +3476,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3491,9 +3492,9 @@
                         android:id="@+id/tv_crs_sud"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* Centrul regional pentru statistică SUD"
+                        android:text="@string/centrul_regional_pentru_statistic_sud"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3511,7 +3512,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3529,9 +3530,9 @@
                         android:id="@+id/tv_crs_sud_basarabeasca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistică Basarabeasca"
+                        android:text="@string/serviciul_statistic_basarabeasca"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3549,7 +3550,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3565,9 +3566,9 @@
                         android:id="@+id/tv_crs_sud_cahul"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică Cahul"
+                        android:text="@string/direc_ia_statistic_cahul"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3585,7 +3586,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3602,9 +3603,9 @@
                         android:id="@+id/tv_crs_sud_cantemir"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="**** Serviciul statistică Cantemir"
+                        android:text="@string/serviciul_statistic_cantemir"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3622,7 +3623,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3639,9 +3640,9 @@
                         android:id="@+id/tv_crs_sud_uta_gagauzia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="** Direcția statistică UTA Găgăuzia"
+                        android:text="@string/direc_ia_statistic_uta_g_g_uzia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3659,7 +3660,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3676,9 +3677,9 @@
                         android:id="@+id/tv_crs_sud_uta_leova"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistică Leova"
+                        android:text="@string/serviciul_statistic_leova"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3696,7 +3697,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3713,9 +3714,9 @@
                         android:id="@+id/tv_crs_sud_uta_taraclia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*** Serviciul statistică  Taraclia"
+                        android:text="@string/serviciul_statistic_taraclia"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -3733,7 +3734,7 @@
                         android:layout_centerVertical="true"
                         android:text=""
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
