@@ -249,6 +249,9 @@
     <string name="actualizarea">Actualizarea</string>
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
+    <string name="activitatea_economic">Activitatea Economică</string>
+
+    <string name="codul_caem">Codul CAEM</string>
 
 
 </resources>
