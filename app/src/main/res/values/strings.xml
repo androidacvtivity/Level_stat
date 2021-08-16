@@ -247,7 +247,7 @@
     <string name="num_r_care_au_codul_idno">Număr (care au codul IDNO)</string>
     <string name="num_r_ce_au_codul_idno">Număr(ce au codul IDNO)</string>
     <string name="actualizarea">Actualizarea</string>
-    <string name="share_button">Share button</string>
+
 
 
 
@@ -259,6 +259,13 @@
 
     <string name="statutul">Statutul</string>
 
+
+    <string name="forme_organizatorico_juridice">Forme organizatorico-juridice</string>
+
+    <string name="codul_cfoj">Codul CFOJ</string>
+
+    <string name="denumirea_formelor_organizatorico_juridice_ale_agen_ilor_economici">Denumirea formelor organizatorico-juridice ale agenţilor economici</string>
+    <string name="share_button">Share button</string>
     <string name="share">Share</string>
 
 
