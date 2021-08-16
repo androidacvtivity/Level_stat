@@ -20,7 +20,7 @@
     <string name="clasificatorul_formelor_organizatorico_juridice_ale_agen_ilor_economici_din_republica_moldova_c_f_o_j">CLASIFICATORUL FORMELOR ORGANIZATORICO-JURIDICE ALE AGENŢILOR ECONOMICI DIN REPUBLICA MOLDOVA (C.F.O.J.)</string>
     <string name="schema_principal_a_clasificatorului_formelor_de_proprietate">Schema principală a clasificatorului formelor de proprietate</string>
 
-    <string name="clasificatorul_serviciilor_n_domeniul_activit_ii_economice_externe">Clasificatorul serviciilor în domeniul activităţii economice externe</string>
+
     <string name="clasificatorul_unit_ilor_administrativ_teritoriale_al_republicii_moldova_cuatm">CLASIFICATORUL UNITĂŢILOR ADMINISTRATIV-TERITORIALE AL REPUBLICII MOLDOVA (CUATM)</string>
     <string name="md_2019_chi_in_u_nstr_grenoble_106">MD-2019 Chişinău,\nstr. Grenoble 106</string>
     <string name="division_head">Division Head</string>
@@ -265,8 +265,35 @@
     <string name="codul_cfoj">Codul CFOJ</string>
 
     <string name="denumirea_formelor_organizatorico_juridice_ale_agen_ilor_economici">Denumirea formelor organizatorico-juridice ale agenţilor economici</string>
+
+
+
+    <string name="codul_cfp">Codul CFP</string>
+
+    <string name="denumirea_formelor_de_proprietate">Denumirea formelor de proprietate</string>
+    <string name="clasificatorul_organelor_de_conducere_al_republicii_moldova">Clasificatorul Organelor de Conducere al Republicii Moldova</string>
+    <string name="codul_cocm">Codul COCM</string>
+
+    <string name="denumirea_organelor_de_conducere_al_republicii_moldova">Denumirea Organelor de Conducere al Republicii Moldova</string>
+
+
+
+    <string name="clasificatorul_serviciilor_n_domeniul_activit_ii_economice_externe">Clasificatorul serviciilor în domeniul activităţii economice externe</string>
+    <string name="sec_ie_grup_clas_subclas_categorie_subcategorie">Secţie, grupă, clasă, subclasă, categorie, subcategorie</string>
+
+    <string name="denumire">Denumire</string>
+
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
+    <string name="unitatea_administrativ_teritorial">UNITATEA ADMINISTRATIV-TERITORIALĂ</string>
+    <string name="codul_statistic">Codul statistic</string>
+
+    <string name="denumirea_ora_elor_municipiilor_satelor_comunelor">Denumirea oraşelor (municipiilor), satelor (comunelor)</string>
+
+
+
+
+
 
 
 </resources>
