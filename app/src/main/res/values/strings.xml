@@ -248,6 +248,17 @@
     <string name="num_r_ce_au_codul_idno">Număr(ce au codul IDNO)</string>
     <string name="actualizarea">Actualizarea</string>
     <string name="share_button">Share button</string>
+
+
+
+    <string name="codul_caem">Codul CAEM</string>
+    <string name="activitatea_economic">Activitatea Economică</string>
+    <string name="codul_caem2">Codul CAEM2</string>
+
+    <string name="denumirea_activitatii_economice">Denumirea activitatii economice</string>
+
+    <string name="statutul">Statutul</string>
+
     <string name="share">Share</string>
 
 
