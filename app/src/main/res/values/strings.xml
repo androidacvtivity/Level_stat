@@ -240,9 +240,12 @@
     <string name="date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_genurile_de_activitate_declarate">Date statistice din Registrul de stat al unităţilor de drept după genurile de activitate declarate</string>
     <string name="genul_de_activitate">Genul de activitate</string>
     <string name="municipiu_raion">Municipiu raion</string>
+
+
+
+    <string name="forma_organizatorico_juridic">Forma organizatorico-juridică</string>
     <string name="num_r_care_au_codul_idno">Număr (care au codul IDNO)</string>
     <string name="num_r_ce_au_codul_idno">Număr(ce au codul IDNO)</string>
-
     <string name="actualizarea">Actualizarea</string>
     <string name="share_button">Share button</string>
     <string name="share">Share</string>

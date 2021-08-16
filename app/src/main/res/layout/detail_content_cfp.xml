@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp">
@@ -11,21 +12,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="Date statistice
-din Registrul de stat al unităţilor de drept
-după forma juridică de organizare"
+                    android:text="@string/date_statistice_din_registrul_de_stat_al_unit_ilor_de_drept_dup_forma_juridic_de_organizare"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/niceGreenish"
@@ -46,7 +46,7 @@ după forma juridică de organizare"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Forma organizatorico-juridică"
+                            android:text="@string/forma_organizatorico_juridic"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -56,7 +56,7 @@ după forma juridică de organizare"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Forma organizatorico-juridică" />
+                            android:text="@string/forma_organizatorico_juridic" />
 
                     </LinearLayout>
 
@@ -77,7 +77,7 @@ după forma juridică de organizare"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Număr (care au codul IDNO)"
+                            android:text="@string/num_r_care_au_codul_idno"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -87,7 +87,7 @@ după forma juridică de organizare"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Număr(ce au codul  IDNO)" />
+                            android:text="@string/num_r_ce_au_codul_idno" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -123,7 +123,7 @@ după forma juridică de organizare"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Actualizarea"
+                            android:text="@string/actualizarea"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -133,7 +133,7 @@ după forma juridică de organizare"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Actualizarea" />
+                            android:text="@string/actualizarea" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -483,7 +483,7 @@ după forma juridică de organizare"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -495,7 +495,7 @@ după forma juridică de organizare"
                             android:id="@+id/btnShare_cfp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
@@ -506,33 +506,6 @@ după forma juridică de organizare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/card_margin">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-
-                        <!--                        <TextView-->
-                        <!--                            android:layout_width="match_parent"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:padding="@dimen/text_padding"-->
-                        <!--                            android:text=""-->
-
-                        <!--                            android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
-                        <!--                            android:textColor="@color/colorAccent" />-->
-
-                        <!--                        <TextView-->
-                        <!--                            android:id="@+id/personalinfoTV"-->
-                        <!--                            android:layout_width="match_parent"-->
-
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:padding="@dimen/text_padding"-->
-
-                        <!--                            android:text="Star" />-->
-
-                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
