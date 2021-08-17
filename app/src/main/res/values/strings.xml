@@ -301,34 +301,42 @@
 
     <string name="doza_concentra_ia">Doza, concentraţia</string>
     <string name="volum">Volum</string>
-
-
     <string name="divizarea">Divizarea</string>
-
     <string name="ara">Ţara</string>
-
     <string name="firma_produc_toare">Firma producătoare</string>
-
     <string name="num_rul_de_nregistrare">Numărul de înregistrare</string>
-
     <string name="data_nregistr_rii">Data înregistrării</string>
     <string name="codul_atc">Codul ATC</string>
-
     <string name="denumirea_comun_interna_ional">Denumirea comună internaţională</string>
-
-
     <string name="termenul_de_valabilitate">Termenul de valabilitate</string>
-
     <string name="codul_cu_bare">Codul cu bare</string>
     <string name="codul_prodmiold">Codul Prodmiold</string>
     <string name="codul_prodmold">Codul Prodmold</string>
-
     <string name="denumirea_codului">Denumirea codului</string>
     <string name="unitatea_de_m_sur">Unitatea de măsură</string>
     <string name="codul_rii">Codul Țării</string>
     <string name="denumirea_rii">Denumirea Țării</string>
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
+    <string name="informa_ie_despre_angajat">Informație despre angajat</string>
+    <string name="nume_prenume">Nume, prenume</string>
+    <string name="vitalie_bancu">Vitalie Bancu</string>
+    <string name="loca_ia">Locația</string>
+    <string name="this_is_the_description">This is the description.</string>
+    <string name="etajul">Etajul</string>
+    <string name="this_is_the_description">This is the description.</string>
+    <string name="biroul">Biroul</string>
+    <string name="this_is_the_description">This is the description.</string>
+    <string name="func_ia">Funcția</string>
+    <string name="galaxy">Galaxy</string>
+    <string name="serviciu">Serviciu</string>
+    <string name="serviciu">Serviciu</string>
+    <string name="sec_ia">Secția</string>
+    <string name="sec_ia">Secția</string>
+    <string name="direc_ia">Direcția</string>
+    <string name="direc_ia">Direcția</string>
+    <string name="direc_ia_general">Direcția generală</string>
+    <string name="direc_ia">Direcția</string>
 
 
 </resources>
