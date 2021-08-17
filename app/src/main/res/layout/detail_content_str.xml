@@ -408,7 +408,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Telefon fix serviciu"
+                            android:text="@string/telefon_fix_serviciu"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -420,7 +420,7 @@
                             android:autoLink="phone"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Star" />
+                            android:text="@string/star" />
 
                     </LinearLayout>
 
@@ -442,7 +442,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Telefon mobil serviciu"
+                            android:text="@string/telefon_mobil_serviciu"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -454,7 +454,7 @@
                             android:autoLink="phone"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Star" />
+                            android:text="@string/star" />
 
                     </LinearLayout>
 
@@ -477,7 +477,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Telefon intern"
+                            android:text="@string/telefon_intern"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -486,7 +486,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Star"
+                            android:text="@string/star"
 
                             />
 
@@ -510,7 +510,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Cercetări Statistice"
+                            android:text="@string/cercet_ri_statistice"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -520,7 +520,7 @@
                             android:layout_height="wrap_content"
                             android:autoLink="email"
                             android:padding="@dimen/text_padding"
-                            android:text="Cercetări Statistice" />
+                            android:text="@string/cercet_ri_statistice" />
 
                     </LinearLayout>
 
@@ -542,7 +542,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="E-mail"
+                            android:text="@string/e_mail"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -552,7 +552,7 @@
                             android:layout_height="wrap_content"
                             android:autoLink="email"
                             android:padding="@dimen/text_padding"
-                            android:text="Star" />
+                            android:text="@string/star" />
 
                     </LinearLayout>
 
@@ -574,7 +574,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Informații personale"
+                            android:text="@string/informa_ii_personale"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -586,7 +586,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Star" />
+                            android:text="@string/star" />
 
                     </LinearLayout>
 
@@ -609,7 +609,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -619,7 +619,7 @@
 
                         <Button
                             android:id="@+id/btnShares"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorAccent"
@@ -646,7 +646,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Notice about error in list of contacts of employers"
+                            android:text="@string/notice_about_error_in_list_of_contacts_of_employers"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -658,7 +658,7 @@
                             android:id="@+id/btnnNtices"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Send"
+                            android:text="@string/send"
                             android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
