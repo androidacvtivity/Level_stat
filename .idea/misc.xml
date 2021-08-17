@@ -8,6 +8,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cuatm.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_med.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_prodmold.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_tarii.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cu.xml" value="0.3238231098430813" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_about_us.xml" value="0.36666666666666664" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_about_us_me.xml" value="0.2046875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_cl_caem.xml" value="0.2046875" />
@@ -46,16 +51,6 @@
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_scientistsvw.xml" value="0.246875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_splash.xml" value="0.246875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_structura_bns.xml" value="0.33" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content.xml" value="0.1875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_caem.xml" value="0.36666666666666664" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_caem.xml" value="0.1875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_caem2.xml" value="0.2046875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cfoj.xml" value="0.1875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cfp.xml" value="0.2046875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cocm.xml" value="0.2046875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cspm.xml" value="0.2046875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cuatm.xml" value="0.2046875" />
-        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_med.xml" value="0.2046875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_dgti.xml" value="0.25416666666666665" />
       </map>

@@ -283,17 +283,52 @@
 
     <string name="denumire">Denumire</string>
 
-    <string name="share_button">Share button</string>
-    <string name="share">Share</string>
+
+
     <string name="unitatea_administrativ_teritorial">UNITATEA ADMINISTRATIV-TERITORIALĂ</string>
     <string name="codul_statistic">Codul statistic</string>
 
     <string name="denumirea_ora_elor_municipiilor_satelor_comunelor">Denumirea oraşelor (municipiilor), satelor (comunelor)</string>
+    <string name="informa_ie_despre_medicament">Informație despre medicament</string>
+
+    <string name="codul_medicamentului">Codul medicamentului</string>
+
+    <string name="codul_vamal">Codul vamal</string>
+    <string name="denumirea_comercial">Denumirea comercială</string>
+    <string name="denumirea_comercial_1">Denumirea comercială.</string>
+    <string name="forma_farmaceutic">Forma farmaceutică</string>
+    <string name="forma_farmaceutica">Forma farmaceutică.</string>
+
+    <string name="doza_concentra_ia">Doza, concentraţia</string>
+    <string name="volum">Volum</string>
 
 
+    <string name="divizarea">Divizarea</string>
+
+    <string name="ara">Ţara</string>
+
+    <string name="firma_produc_toare">Firma producătoare</string>
+
+    <string name="num_rul_de_nregistrare">Numărul de înregistrare</string>
+
+    <string name="data_nregistr_rii">Data înregistrării</string>
+    <string name="codul_atc">Codul ATC</string>
+
+    <string name="denumirea_comun_interna_ional">Denumirea comună internaţională</string>
 
 
+    <string name="termenul_de_valabilitate">Termenul de valabilitate</string>
 
+    <string name="codul_cu_bare">Codul cu bare</string>
+    <string name="codul_prodmiold">Codul Prodmiold</string>
+    <string name="codul_prodmold">Codul Prodmold</string>
+
+    <string name="denumirea_codului">Denumirea codului</string>
+    <string name="unitatea_de_m_sur">Unitatea de măsură</string>
+    <string name="codul_rii">Codul Țării</string>
+    <string name="denumirea_rii">Denumirea Țării</string>
+    <string name="share_button">Share button</string>
+    <string name="share">Share</string>
 
 
 </resources>
