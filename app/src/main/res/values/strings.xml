@@ -50,14 +50,14 @@
     <string name="informa_ie_despre_angajat">Informație despre angajat</string>
     <string name="nume_prenume">Nume, prenume</string>
     <string name="loca_ia">Locația</string>
-    <string name="func_ia">Funcția</string>
-    <string name="serviciu">Serviciu</string>
-    <string name="sec_ia">Secția</string>
-    <string name="dirtec_ia_general">Dirtecția generală</string>
+
+
+
+
     <string name="telefon">Telefon</string>
-    <string name="telefon_intern">Telefon intern</string>
+
     <string name="cercet_ri_statistice">Cercetări Statistice</string>
-    <string name="e_mail">E-mail</string>
+
     <string name="informa_ii_personale">Informații personale</string>
 
     <string name="angaja_ii_bns">Angajații BNS</string>
@@ -219,7 +219,7 @@
 
     <string name="etajul">Etajul</string>
 
-    <string name="biroul">Biroul</string>
+
     <string name="this_is_the_description">This is the description.</string>
 
     <string name="galaxy">Galaxy</string>
@@ -353,6 +353,74 @@
 
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
+
+    <string name="aplicatia_lista_angajatilor_a_fost_dezvoltata_pentru_a_facilita_accesul_la_informatia_de_contact_prin_intermediul_telefonullui_mobil_sistem_de_operare_android">Aplicatia lista angajatilor a fost dezvoltata pentru a facilita accesul la informatia de contact prin intermediul telefonullui mobil (Sistem de operare: Android).</string>
+    <string name="aplicatia_include_lista_profilurilor_angajatilor_cu_informatia_de_contact">Aplicatia include lista profilurilor angajatilor cu informatia de contact.</string>
+    <string name="functiile_puse_la_dispozitie_de_programul_lista_functionarilor_din_bns_denumire_conventionala_au_fost_grupate_pe_categorii_si_sunt_prezentate_mau_jos">Functiile puse la dispozitie de programul (Lista functionarilor din BNS(denumire conventionala)) au fost grupate pe categorii si sunt prezentate mau jos.</string>
+    <string name="_1">1</string>
+    <string name="afiseaza_lista_functionarilor_din_bns_si_structurile_teritoriale_prin_conectarea_la_baza_de_date_mysql_aici_sunt_stocate_datele_de_ce_este_o_aplcatie_client_server_se_utilizeaza_principiul_client_server_ca_si_la_aplicatie_web_intranet_statistica_md_se_actualizeaza_informatia_despre_angajat_in_baza_si_orice_angajat_care_are_instalata_aceasta_aplicatie_pe_telefonul_sau_mobil_android_os_acceseza_datele_actualizate">Afiseaza lista functionarilor din BNS si structurile teritoriale. (Prin conectarea la baza de date MySQL aici sunt stocate datele.De ce este o aplcatie client - server ? Se utilizeaza principiul client server ca si la aplicatie web intranet.statistica.md). Se actualizeaza informatia despre angajat in baza. Si orice angajat care are instalata aceasta aplicatie pe telefonul sau mobil, Android OS, acceseza datele actualizate.</string>
+    <string name="_2">2</string>
+    <string name="lista_datelor_deschise_care_sunt_afisate_despre_functionarul_angajatul_din_bns_si_strcuturile_teritoriale">Lista datelor deschise care sunt afisate despre (functionarul/angajatul) din BNS si strcuturile teritoriale.</string>
+    <string name="_2_1">2.1</string>
+    <string name="nume_prenume_1">Nume, Prenume</string>
+    <string name="_2_2">2.2</string>
+    <string name="loca_ia_adresa">Locația - Adresa</string>
+    <string name="_2_3">2.3</string>
+
+    <string name="_2_4">2.4</string>
+    <string name="biroul">Biroul</string>
+    <string name="_2_5">2.5</string>
+    <string name="func_ia">Funcția</string>
+    <string name="_2_6">2.6</string>
+    <string name="serviciu">Serviciu</string>
+    <string name="_2_7">2.7</string>
+    <string name="sec_ia">Secția</string>
+    <string name="_2_8">2.8</string>
+    <string name="dirtec_ia">Dirtecția</string>
+    <string name="_2_9">2.9</string>
+    <string name="dirtec_ia_general">Dirtecția generală</string>
+    <string name="_2_10">2.10</string>
+    <string name="telefonul_fix_de_serviciu">Telefonul fix de serviciu.</string>
+    <string name="_2_11">2.11</string>
+    <string name="telefonul_mobil_de_sreviciu">Telefonul mobil de sreviciu.</string>
+    <string name="_2_12">2.12</string>
+    <string name="telefon_intern">Telefon intern</string>
+    <string name="_2_13">2.13</string>
+    <string name="cercet_ri_statistice_daca_functinarul_este_administratorul_curatorul_unei_sau_catorva_cercet_ri_statistice_se_poate_indica_cercetarea_statistica">Cercetări Statistice - Daca functinarul este administratorul/curatorul unei sau catorva Cercetări Statistice - se poate indica Cercetarea Statistica</string>
+    <string name="_2_14">2.14</string>
+    <string name="e_mail">E-mail</string>
+    <string name="_2_15">2.15</string>
+    <string name="informa_ii_personale_un_camp_cu_sens_foarte_general">Informații personale - Un camp cu sens foarte general.</string>
+    <string name="_3">3</string>
+    <string name="functia_de_cautarea_permite_cautarea_dupa_urmatoarele_campuri">Functia de cautarea permite cautarea dupa urmatoarele campuri</string>
+    <string name="_3_1">3.1</string>
+    <string name="nume_sau_prenume">Nume sau prenume</string>
+    <string name="_3_2">3.2</string>
+    <string name="dupa_functie">Dupa functie</string>
+    <string name="_3_3">3.3</string>
+    <string name="dupa_dirtec_ia_general">Dupa Dirtecția generală</string>
+    <string name="_3_4">3.4</string>
+    <string name="dupa_directie">Dupa directie</string>
+    <string name="_3_5">3.5</string>
+    <string name="dupa_sectie">Dupa sectie</string>
+    <string name="_3_6">3.6</string>
+    <string name="dupa_serviciu">Dupa serviciu</string>
+
+    <string name="dupa_telefon">Dupa telefon</string>
+    <string name="_3_7">3.7</string>
+    <string name="dupa_adresa">Dupa adresa</string>
+    <string name="_3_8">3.8</string>
+    <string name="dupa_telefonul_mobil_de_serviciu">Dupa telefonul mobil de serviciu</string>
+    <string name="_4">4</string>
+    <string name="functia_de_cautare_cauta_simultan_in_toate_campurile_in_care_este_permisa_cautarea">Functia de cautare cauta simultan in toate campurile in care este permisa cautarea.</string>
+    <string name="_4_1">4.1</string>
+    <string name="cautarea_este_realizata_dupa_principu_apari_ia_unei_subcaden_e_n_ir">Cautarea este realizata dupa principu (apariția unei subcadențe în șir).</string>
+    <string name="_4_2">4.2</string>
+    <string name="numerele_de_telefoane_fixe_si_mobile_adresele_de_e_mail_de_pe_profil_cat_si_din_interiorul_profilului_permit_direct_apelarea_prin_simplu_clic">Numerele de telefoane fixe si mobile, adresele de e-mail de pe profil cat si din interiorul profilului, permit direct apelarea prin simplu clic.</string>
+    <string name="_5">5</string>
+    <string name="in_compartimentul_despre_angajat_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_de_contact_a_angajatului">In compartimentul despre angajat a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie de contact a angajatului.</string>
+    <string name="_6">6</string>
+    <string name="in_compartimentul_despre_angajat_a_fost_adaugat_un_buton_notice_about_error_in_list_of_contacts_of_employers_care_permite_notificarea_daca_este_informatie_de_contact_gresita_a_angajatului">In compartimentul despre angajat a fost adaugat un buton - (Notice about error in list of contacts of employers) - care permite notificarea daca este informatie de contact gresita a angajatului.</string>
 
 
 </resources>
