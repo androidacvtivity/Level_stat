@@ -257,7 +257,7 @@
 
     <string name="denumirea_activitatii_economice">Denumirea activitatii economice</string>
 
-    <string name="statutul">Statutul</string>
+
 
 
     <string name="forme_organizatorico_juridice">Forme organizatorico-juridice</string>
@@ -305,7 +305,7 @@
     <string name="ara">Ţara</string>
     <string name="firma_produc_toare">Firma producătoare</string>
     <string name="num_rul_de_nregistrare">Numărul de înregistrare</string>
-    <string name="data_nregistr_rii">Data înregistrării</string>
+
     <string name="codul_atc">Codul ATC</string>
     <string name="denumirea_comun_interna_ional">Denumirea comună internaţională</string>
     <string name="termenul_de_valabilitate">Termenul de valabilitate</string>
@@ -326,9 +326,33 @@
 
 
 
+
+
+    <string name="informa_ie_unitatea_de_drept">Informație unitatea de drept</string>
+    <string name="denumirea_complet">Denumirea completă</string>
+    <string name="statistical_unit">Statistical Unit</string>
+
+    <string name="idno">IDNO</string>
+    <string name="adresa">Adresa</string>
+
+
+    <string name="lista_conduc_torilor">Lista conducătorilor</string>
+
+    <string name="lista_fondatorilor">Lista fondatorilor</string>
+    <string name="genuri_de_activitate_nelicentiate">Genuri de activitate nelicentiate</string>
+
+    <string name="forma_org_jurid">Forma org./jurid.</string>
+
+    <string name="genuri_de_activitate_licentiate">Genuri de activitate licentiate</string>
+
+    <string name="statutul">Statutul</string>
+
+    <string name="data_nregistr_rii">Data înregistrării</string>
+
+    <string name="ultima_actualizare">Ultima actualizare</string>
+
     <string name="share_button">Share button</string>
     <string name="share">Share</string>
-
 
 
 </resources>
