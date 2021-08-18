@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp">
@@ -11,19 +12,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="Informație unitatea de drept"
+                    android:text="@string/informa_ie_unitatea_de_drept"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/niceGreenish"
@@ -44,7 +46,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea completă"
+                            android:text="@string/denumirea_complet"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -54,7 +56,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Statistical Unit" />
+                            android:text="@string/statistical_unit" />
 
                     </LinearLayout>
 
@@ -75,7 +77,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="IDNO"
+                            android:text="@string/idno"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -85,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="IDNO" />
+                            android:text="@string/idno" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -149,7 +151,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Adresa"
+                            android:text="@string/adresa"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -159,7 +161,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Address" />
+                            android:text="@string/address" />
 
                     </LinearLayout>
 
@@ -183,7 +185,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Lista conducătorilor"
+                            android:text="@string/lista_conduc_torilor"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -193,7 +195,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Lista conducătorilor" />
+                            android:text="@string/lista_conduc_torilor" />
 
 
 
@@ -222,7 +224,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Lista fondatorilor"
+                            android:text="@string/lista_fondatorilor"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -232,7 +234,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Lista fondatorilor" />
+                            android:text="@string/lista_fondatorilor" />
 
 
 
@@ -259,7 +261,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Genuri de activitate nelicentiate"
+                            android:text="@string/genuri_de_activitate_nelicentiate"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -269,7 +271,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Genuri de activitate nelicentiate" />
+                            android:text="@string/genuri_de_activitate_nelicentiate" />
 
 
 
@@ -297,7 +299,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Forma org./jurid."
+                            android:text="@string/forma_org_jurid"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -307,7 +309,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Forma org./jurid." />
+                            android:text="@string/forma_org_jurid" />
 
                     </LinearLayout>
 
@@ -330,7 +332,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Genuri de activitate licentiate"
+                            android:text="@string/genuri_de_activitate_licentiate"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
@@ -342,7 +344,7 @@
                             android:padding="@dimen/text_padding"
                             android:autoLink="phone"
 
-                            android:text="Genuri de activitate licentiate" />
+                            android:text="@string/genuri_de_activitate_licentiate" />
 
                     </LinearLayout>
 
@@ -366,7 +368,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Statutul"
+                            android:text="@string/statutul"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -375,7 +377,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Statutul"
+                            android:text="@string/statutul"
 
                             />
 
@@ -400,7 +402,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Data înregistrării"
+                            android:text="@string/data_nregistr_rii"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -410,7 +412,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Data înregistrării" />
+                            android:text="@string/data_nregistr_rii" />
 
                     </LinearLayout>
 
@@ -433,7 +435,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Ultima actualizare"
+                            android:text="@string/ultima_actualizare"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -443,7 +445,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Ultima actualizare" />
+                            android:text="@string/ultima_actualizare" />
 
                     </LinearLayout>
 
@@ -469,7 +471,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -479,7 +481,7 @@
 
                         <Button
                             android:id="@+id/btnShare_vw"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorAccent"
@@ -493,33 +495,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/card_margin">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-
-                        <!--                        <TextView-->
-                        <!--                            android:layout_width="match_parent"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:padding="@dimen/text_padding"-->
-                        <!--                            android:text=""-->
-
-                        <!--                            android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
-                        <!--                            android:textColor="@color/colorAccent" />-->
-
-                        <!--                        <TextView-->
-                        <!--                            android:id="@+id/personalinfoTV"-->
-                        <!--                            android:layout_width="match_parent"-->
-
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:padding="@dimen/text_padding"-->
-
-                        <!--                            android:text="Star" />-->
-
-                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
