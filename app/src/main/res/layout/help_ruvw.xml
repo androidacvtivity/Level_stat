@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,15 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh_ru"
-                    android:text="О  юридических лиц"
+                    android:layout_toEndOf="@+id/mBackArrowh_ru"
+                    android:text="@string/id_1"
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:layout_marginStart="20dp" />
@@ -59,7 +58,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -77,17 +77,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="1"
+                        android:text="@string/_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="Откуда мы получаем данные ?"
+                        android:text="@string/id2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -116,9 +116,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Приложение Level stat  использует открытые данные из Государственного реестра юридических лиц, зарегистрированных в Республике Молдова, опубликованные Министерством информационных технологий и связи на правительственном портале открытых данных date.gov.md." />
+                        android:text="@string/level_stat_date_gov_md" />
                 </RelativeLayout>
 
 
@@ -136,17 +136,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="2"
+                        android:text="@string/_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe2_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe2_h"
 
-                        android:text="Как часто обновляются данные ?"
+                        android:text="@string/id_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -173,9 +173,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Данные о компаниях обновляются на портале date.gov.md раз в неделю, соответственно в Level stat они обновляются еженедельно. " />
+                        android:text="@string/date_gov_md_level_stat" />
                 </RelativeLayout>
 
 
@@ -192,17 +192,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="3"
+                        android:text="@string/_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe3_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe3_h"
 
-                        android:text="Личность администраторов и учредителей"
+                        android:text="@string/id4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -229,9 +229,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="В Regview вы найдете только имена и фамилии основателей и администраторов компаний, поскольку в настоящее время нет другой информации открытого формата." />
+                        android:text="@string/regview" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -246,17 +246,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="4"
+                        android:text="@string/_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe4_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe4_h"
 
-                        android:text="Как осуществляется поиск в приложении"
+                        android:text="@string/id5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -283,12 +283,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Опция «Поиск» позволяет искать компании по нескольким полям. Если вам известны IDNO, ФИО, Имя учредителей или руководителей, Город, Год регистрации или Вид деятельности компании, а также статус, вы можете ввести их в поисковик.
-Например - Если вы ищете после (lichidata) - будут найдены все ликвидированные компании.
-Не испльзовать поиске  диакритические знаки (ș, â.î, ă, î.ț)
- " />
+                        android:text="@string/idno_lichidata" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -303,17 +300,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="5"
+                        android:text="@string/_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe5_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe5_h"
 
-                        android:text="Как установить приложение Level stat?"
+                        android:text="@string/level_stat"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -340,9 +337,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Для установки на телефон (Android) Установите Winrar для Android, затем удалите предыдущую версию, если она существует, и установите обновленную версию. Приложение работает, если есть подключение к интернету" />
+                        android:text="@string/android_winrar_android" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -357,17 +354,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="6"
+                        android:text="@string/_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe6_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe6_h"
 
-                        android:text="Что означает кнопка поделиться в отсеке юридического подразделения.?"
+                        android:text="@string/id7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -396,9 +393,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="В раздел Юридического подразделения добавлена ​​кнопка - ПОДЕЛИТЬСЯ, которая позволяет распространять и сохранять контактную информацию юридического подразделения." />
+                        android:text="@string/id_8" />
                 </RelativeLayout>
 
 
@@ -415,17 +412,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="7"
+                        android:text="@string/_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe7_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe7_h"
 
-                        android:text="Добавлена ​​возможность поиска AE после даты регистрации."
+                        android:text="@string/ae"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -452,9 +449,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Introducem 2020-09 si vor fi  gasiti tot AE care au fost inregistrati in  2020-09. Daca introducem 2020-09-04 vor fi gasiti exact toti AE care au fost inregistrati in aceasta data. " />
+                        android:text="@string/introducem_2020_09_si_vor_fi_gasiti_tot_ae_care_au_fost_inregistrati_in_2020_09_daca_introducem_2020_09_04_vor_fi_gasiti_exact_toti_ae_care_au_fost_inregistrati_in_aceasta_data" />
                 </RelativeLayout>
             </RelativeLayout>
         </ScrollView>
