@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,15 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh_ru"
-                    android:text="список  сотрудников"
+                    android:layout_toEndOf="@+id/mBackArrowh_ru"
+                    android:text="@string/list_of_employees_ru"
                     android:textColor="@color/white"
                     android:textSize="21sp" />
             </RelativeLayout>
@@ -58,7 +57,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -85,10 +85,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
 
-                        android:text="Приложение для списка сотрудников было разработано для облегчения доступа к контактной информации через мобильный телефон (Операционная система: Android)." />
+                        android:text="@string/android" />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -123,9 +123,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Приложение включает в себя список профилей сотрудников с контактной информацией." />
+                        android:text="@string/soft_description" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -148,10 +148,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
 
-                        android:text="Функции, предоставляемые программой (Список должностных лиц НБС (условное название)), сгруппированы по категориям и представлены ниже." />
+                        android:text="@string/description_ru1" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -166,17 +166,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="1"
+                        android:text="@string/_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="Отображает список сотрудников НБС и территориальных структур. (При подключении к базе данных MySQL данные хранятся здесь. Почему это приложение клиент-сервер? Принцип клиент-сервер используется как в веб-приложении intranet.statistica.md). Информация о сотруднике обновляется в базе данных. И любой сотрудник, у которого установлено это приложение на мобильном телефоне с ОС Android, получает доступ к обновленным данным." />
+                        android:text="@string/mysql_intranet_statistica_md_android" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -192,7 +192,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:autoLink="email"
-                        android:text="2"
+                        android:text="@string/_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -200,9 +200,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address_h"
-                        android:text="Список открытых данных, которые отображаются о (государственный служащий / сотрудник НБС) и территориальных структурах." />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address_h"
+                        android:text="@string/description_ru2" />
                 </RelativeLayout>
 
 
@@ -219,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.1"
+                        android:text="@string/_2_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -227,10 +227,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/emailLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/emailLabel_h"
 
-                        android:text="Имя, Фамилия" />
+                        android:text="@string/name_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -246,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.2"
+                        android:text="@string/_2_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -254,10 +254,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/locatia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/locatia_h"
 
-                        android:text="Расположение - Адрес" />
+                        android:text="@string/address_ru" />
                 </RelativeLayout>
 
 
@@ -274,7 +274,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.3"
+                        android:text="@string/_2_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -282,10 +282,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/etajul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/etajul_h"
 
-                        android:text=" Этаж" />
+                        android:text="@string/floor_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -301,7 +301,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.4"
+                        android:text="@string/_2_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -309,10 +309,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/biroul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/biroul_h"
 
-                        android:text=" Офис " />
+                        android:text="@string/Office_ru" />
                 </RelativeLayout>
 
 
@@ -329,7 +329,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.5"
+                        android:text="@string/_2_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -337,10 +337,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/functia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/functia_h"
 
-                        android:text=" Должность " />
+                        android:text="@string/Position" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -356,7 +356,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.6"
+                        android:text="@string/_2_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -364,10 +364,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/serviciu_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/serviciu_h"
 
-                        android:text=" Служба  " />
+                        android:text="@string/Service_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -383,7 +383,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.7"
+                        android:text="@string/_2_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -391,10 +391,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/sectia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/sectia_h"
 
-                        android:text=" Отдел  " />
+                        android:text="@string/Department_ru" />
                 </RelativeLayout>
 
 
@@ -411,7 +411,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.8"
+                        android:text="@string/_2_8"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -419,10 +419,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directia_h"
 
-                        android:text=" Управление  " />
+                        android:text="@string/direction_ru" />
                 </RelativeLayout>
 
 
@@ -439,7 +439,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.9"
+                        android:text="@string/_2_9"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -447,10 +447,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directiagenerala_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directiagenerala_h"
 
-                        android:text=" Главное управление " />
+                        android:text="@string/main_direction_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -466,7 +466,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.10"
+                        android:text="@string/_2_10"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -474,10 +474,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phoneintern_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phoneintern_h"
 
-                        android:text=" Служебный телефон " />
+                        android:text="@string/office_phone_ru" />
                 </RelativeLayout>
 
 
@@ -494,7 +494,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.11"
+                        android:text="@string/_2_11"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -502,10 +502,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phonemobile_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phonemobile_h"
 
-                        android:text=" Служебный  мобильный телефон. " />
+                        android:text="@string/office_mobile_phone_ru" />
                 </RelativeLayout>
 
 
@@ -522,7 +522,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.12"
+                        android:text="@string/_2_12"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -530,10 +530,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phonemobileintern_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phonemobileintern_h"
 
-                        android:text=" Внутренний телефон " />
+                        android:text="@string/inside_phone_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -549,7 +549,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.13"
+                        android:text="@string/_2_13"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -557,10 +557,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/cercetare_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/cercetare_h"
 
-                        android:text=" Статистическое исследование" />
+                        android:text="@string/statistica_research_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -576,7 +576,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.14"
+                        android:text="@string/_2_14"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -584,10 +584,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/email_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/email_h"
 
-                        android:text="E-mail" />
+                        android:text="@string/e_mail" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -603,7 +603,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.15"
+                        android:text="@string/_2_15"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -611,10 +611,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/info_gen_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/info_gen_h"
 
-                        android:text="Личная информация " />
+                        android:text="@string/Personal_info_ru" />
                 </RelativeLayout>
 
 
@@ -632,7 +632,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3"
+                        android:text="@string/_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -640,10 +640,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter3_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter3_h"
 
-                        android:text="Функция поиска позволяет искать по следующим полям" />
+                        android:text="@string/function_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -659,7 +659,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.1"
+                        android:text="@string/_3_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -667,10 +667,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter4_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter4_h"
 
-                        android:text="Имя или фамилия" />
+                        android:text="@string/name_ru_1" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -686,7 +686,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.2"
+                        android:text="@string/_3_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -694,10 +694,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter5_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter5_h"
 
-                        android:text="По должности" />
+                        android:text="@string/of_position_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -713,7 +713,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.3"
+                        android:text="@string/_3_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -721,10 +721,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter6_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter6_h"
 
-                        android:text="По главному управлению" />
+                        android:text="@string/department_ru" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -732,7 +732,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_below="@+id/mRelativeLayouth_h24_h"
-                    android:background="@drawable/shadow_bottom">
+                    android:background="@drawable/shadow_bottom"
+                    tools:ignore="TooManyViews">
 
                     <TextView
                         android:id="@+id/chapter7_h"
@@ -740,7 +741,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.4"
+                        android:text="@string/_3_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -748,10 +749,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter7_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter7_h"
 
-                        android:text="По управлению" />
+                        android:text="@string/department_ru3" />
                 </RelativeLayout>
 
 
@@ -768,7 +769,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.5"
+                        android:text="@string/_3_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -776,10 +777,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter8_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter8_h"
 
-                        android:text="По отделу " />
+
+                        android:text="@string/department_ru5" />
                 </RelativeLayout>
 
 
@@ -796,7 +798,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.6"
+                        android:text="@string/_3_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -804,10 +806,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter9_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter9_h"
 
-                        android:text="По службе" />
+                        android:text="@string/service_ru1" />
                 </RelativeLayout>
 
 
@@ -825,7 +827,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.7"
+                        android:text="@string/_3_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -833,10 +835,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter10_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter10_h"
 
-                        android:text="По телефону" />
+                        android:text="@string/phone_ru2" />
                 </RelativeLayout>
 
 
@@ -853,7 +855,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.7"
+                        android:text="@string/_3_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -861,10 +863,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter11_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter11_h"
 
-                        android:text="По адресу" />
+                        android:text="@string/address_ru4" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -880,7 +882,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.8"
+                        android:text="@string/_3_8"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -888,10 +890,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter12_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter12_h"
 
-                        android:text="По мобильному телефону офиса" />
+                        android:text="@string/mobile_phone_3" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -907,7 +909,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="4"
+                        android:text="@string/_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -915,10 +917,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter14_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter14_h"
 
-                        android:text="Функция поиска выполняет поиск одновременно во всех полях, в которых разрешен поиск." />
+                        android:text="@string/function_ru3" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -934,7 +936,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="4.1"
+                        android:text="@string/_4_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -942,10 +944,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter15_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter15_h"
 
-                        android:text="Поиск осуществляется по принципу (появление подстроки в строке)." />
+                        android:text="@string/search_ru2" />
                 </RelativeLayout>
 
 
@@ -962,7 +964,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="4.2"
+                        android:text="@string/_4_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -970,10 +972,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter16_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter16_h"
 
-                        android:text="Номера стационарных и мобильных телефонов, адреса электронной почты в профиле, а также внутри профиля, позволяют прямой набор номера простым нажатием. " />
+                        android:text="@string/touch_ru_2" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/mRelativeLayouth_h34_h"
@@ -988,7 +990,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="5"
+                        android:text="@string/_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -996,10 +998,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter17_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter17_h"
 
-                        android:text="В отделении сотрудника добавлена ​​кнопка ПОДЕЛИТЬСЯ, которая позволяет передавать и сохранять контактную информацию сотрудника. " />
+                        android:text="@string/employee_ru2" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -1015,7 +1017,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="6"
+                        android:text="@string/_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -1023,10 +1025,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/chapter18_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/chapter18_h"
 
-                        android:text="В отделении сотрудника добавлена ​​кнопка (Notice about error in list of contacts of employers) , которая позволяет предупредить администратора что есть некорректная информация о сотруднике. " />
+                        android:text="@string/notice_about_error_in_list_of_contacts_of_employers_ru" />
                 </RelativeLayout>
 
 
