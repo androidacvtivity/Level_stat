@@ -603,9 +603,31 @@
 
     <string name="id7">Что означает кнопка поделиться в отсеке юридического подразделения.?</string>
     <string name="id_8">В раздел Юридического подразделения добавлена ​​кнопка - ПОДЕЛИТЬСЯ, которая позволяет распространять и сохранять контактную информацию юридического подразделения.</string>
-    <string name="_7">7</string>​​возможность
+
     <string name="ae">Добавлена  поиска AE после даты регистрации.</string>
     <string name="introducem_2020_09_si_vor_fi_gasiti_tot_ae_care_au_fost_inregistrati_in_2020_09_daca_introducem_2020_09_04_vor_fi_gasiti_exact_toti_ae_care_au_fost_inregistrati_in_aceasta_data">Introducem 2020-09 si vor fi gasiti tot AE care au fost inregistrati in 2020-09. Daca introducem 2020-09-04 vor fi gasiti exact toti AE care au fost inregistrati in aceasta data.</string>
+
+
+    <string name="de_unde_lu_m_datele">De unde luăm datele?</string>
+    <string name="aplicatia_level_stat_in_compartimentul_a_e_n_r_m_utilizeaz_datele_deschise_din_registrul_de_stat_al_unit_ilor_de_drept_privind_ntreprinderile_nregistrate_n_republica_moldova_publicate_de_c_tre_ministerul_tehnologiei_inform_iei_i_comunica_iilor_pe_portalul_guvernamental_al_datelor_deschise_date_gov_md">Aplicatia Level stat in compartimentul (A.E în R.M) utilizează datele deschise din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova publicate de către Ministerul Tehnologiei Informţiei şi Comunicaţiilor pe portalul guvernamental al datelor deschise date.gov.md.</string>
+
+    <string name="c_t_de_des_se_actualizeaz_datele">Cât de des se actualizează datele?</string>
+    <string name="datele_despre_companii_sunt_actualizate_pe_portalul_date_gov_md_o_data_pe_saptamana_respectiv_i_in_level_stat_acestea_sunt_re_nnoite_saptamanal">Datele despre companii sunt actualizate pe portalul date.gov.md o data pe saptamana, respectiv şi in Level stat acestea sunt reînnoite saptamanal.</string>
+
+    <string name="identitatea_administratorilor_i_fondatorilor">Identitatea administratorilor şi fondatorilor</string>
+    <string name="pe_level_stat_in_compartimentul_a_e_n_r_m_ve_i_g_si_doar_numele_i_prenumele_fondatorilor_i_administratorilor_companiilor_deoarece_n_prezent_nu_sunt_disponibile_alte_informa_ii_n_format_deschis">Pe Level stat, in compartimentul A.E în R.M veţi găsi doar numele şi prenumele fondatorilor şi administratorilor companiilor deoarece în prezent nu sunt disponibile alte informaţii în format deschis.</string>
+
+    <string name="ce_este_cautarea_in_level_stat_in_compartimentul_a_e_n_r_m">Ce este cautarea in Level Stat in compartimentul A.E în R.M ?</string>
+    <string name="op_iunea_c_utarea_permite_c_utarea_companiilor_n_baza_mai_multor_c_mpuri_dac_cunoa_te_i_idno_ul_denumirea_numele_fondatorilor_sau_conduc_torilor_localitatea_anul_nregistr_rii_sau_genul_de_activitate_ale_companiei_si_statutul_le_pute_i_introduce_n_motorul_de_c_utare_de_exemplu_daca_cautati_dupa_lichidata_vor_fi_gasite_toate_intreprinderile_care_sunt_lichidate_in_cautare_nu_se_cauta_cu_diacritice">Opţiunea “Căutarea” permite căutarea companiilor în baza mai multor câmpuri. Dacă cunoaşteţi IDNO-ul, Denumirea, Numele fondatorilor sau conducătorilor, Localitatea, Anul Înregistrării sau Genul de activitate ale companiei,si statutul le puteţi introduce în motorul de căutare. De exemplu – Daca cautati dupa (lichidata) – Vor fi gasite toate intreprinderile care sunt lichidate. In cautare nu se cauta cu diacritice (ș,â.î,ă,î.ț)</string>
+
+    <string name="cum_se_instaleaza_aplicatia_level_stat">Cum se instaleaza aplicatia Level stat?</string>
+    <string name="pentru_a_instala_pe_telefon_android_instaleaz_winrar_pentru_android_apoi_dezinstalezi_precedenta_versiune_daca_exista_si_instalezi_versiunea_actualizata_aplica_ia_functioneaz_dac_este_conexiune_la_internet_func_ioneaz_non_stop">Pentru a instala pe telefon (Android) Instalează Winrar pentru Android, apoi dezinstalezi precedenta versiune daca exista si instalezi versiunea actualizata. Aplicația functionează dacă este conexiune la internet. Funcționează non stop.</string>
+
+    <string name="ce_semnifica_butonul_share_in_compartimentul_despre_unitatea_de_drept">Ce semnifica butonul share in compartimentul despre unitatea de drept</string>
+    <string name="in_compartimentul_despre_unitatea_de_drept_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_deschise_despre_unitatea_de_drept">In compartimentul despre Unitatea de drept a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie deschise despre unitatea de drept.</string>
+    <string name="_7">7</string>
+    <string name="sa_adaugat_posibilitatea_cautarii_ae_dupa_data_inregistrarii">Sa adaugat posibilitatea cautarii AE dupa data inregistrarii.</string>
+    <string name="_2020_09_ae_2020_09_2020_09_04_ae">Мы вводим 2020-09, и вы также найдете AE, которые были зарегистрированы в 2020-09. Если мы введем 2020-09-04, мы найдем точно все AE, которые были зарегистрированы на эту дату.</string>
 
 
 </resources>
