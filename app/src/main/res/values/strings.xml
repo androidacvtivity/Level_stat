@@ -425,70 +425,138 @@
     <string name="the_application_for_the_list_of_employees_was_developed_to_facilitate_access_to_contact_information_via_mobile_phone_operating_system_android">The application for the list of employees was developed to facilitate access to contact information via mobile phone (Operating system: Android).</string>
     <string name="the_application_includes_the_list_of_employee_profiles_with_contact_information">The application includes the list of employee profiles with contact information.</string>
     <string name="the_functions_provided_by_the_program_list_of_officials_from_the_nbs_conventional_name_have_been_grouped_into_categories_and_are_presented_below">The functions provided by the program (List of officials from the NBS (conventional name)) have been grouped into categories and are presented below.</string>
-    <string name="_1">1</string>
+
     <string name="displays_the_list_of_nbs_officials_and_territorial_structures_by_connecting_to_the_mysql_database_the_data_is_stored_here_why_is_a_client_server_application_the_client_server_principle_is_used_as_in_the_intranet_statistica_md_web_application_the_employee_information_is_updated_in_the_database_and_any_employee_who_has_this_application_installed_on_their_mobile_phone_android_os_accesses_the_updated_data">Displays the list of NBS officials and territorial structures. (By connecting to the MySQL database, the data is stored here. Why is a client-server application? The client-server principle is used as in the intranet.statistica.md web application). The employee information is updated in the database. And any employee who has this application installed on their mobile phone, Android OS, accesses the updated data.</string>
-    <string name="_2">2</string>
+
     <string name="list_of_open_data_that_are_displayed_about_nbs_civil_servant_employee_and_territorial_structures">List of open data that are displayed about (NBS civil servant / employee) and territorial structures.</string>
-    <string name="_2_1">2.1</string>
+
     <string name="name_surname">Name, Surname</string>
-    <string name="_2_2">2.2</string>
+
     <string name="location_address">Location - Address</string>
-    <string name="_2_3">2.3</string>
+
     <string name="floor">Floor</string>
-    <string name="_2_4">2.4</string>
+
     <string name="office">Office</string>
-    <string name="_2_5">2.5</string>
+
     <string name="position">Position</string>
-    <string name="_2_6">2.6</string>
+
     <string name="service">Service</string>
-    <string name="_2_7">2.7</string>
+
     <string name="section">Section</string>
-    <string name="_2_8">2.8</string>
+
     <string name="division">Division</string>
-    <string name="_2_9">2.9</string>
+
     <string name="general_division">General Division</string>
-    <string name="_2_10">2.10</string>
+
     <string name="official_telephone">Official telephone</string>
-    <string name="_2_11">2.11</string>
+
     <string name="office_mobile_phone">Office mobile phone.</string>
-    <string name="_2_12">2.12</string>
+
     <string name="internal_telephone">Internal telephone</string>
-    <string name="_2_13">2.13</string>
+
     <string name="statistical_research">Statistical Research</string>
-    <string name="_2_14">2.14</string>
-    <string name="e_mail">E-mail</string>
-    <string name="_2_15">2.15</string>
+
+
+
     <string name="personal_information">Personal Information</string>
-    <string name="_3">3</string>
+
     <string name="the_search_function_allows_you_to_search_by_the_following_fields">The search function allows you to search by the following fields</string>
-    <string name="_3_1">3.1</string>
+
     <string name="name_or_surname">Name or surname</string>
-    <string name="_3_2">3.2</string>
+
     <string name="by_position">By position</string>
-    <string name="_3_3">3.3</string>
+
     <string name="by_general_division">By General Division</string>
-    <string name="_3_4">3.4</string>
+
     <string name="by_division">By Division</string>
-    <string name="_3_5">3.5</string>
+
     <string name="by_section">By Section</string>
-    <string name="_3_6">3.6</string>
+
     <string name="by_service">By service</string>
 
     <string name="by_phone">By phone</string>
-    <string name="_3_7">3.7</string>
+
     <string name="by_address">By address</string>
-    <string name="_3_8">3.8</string>
+
     <string name="by_mobile_phone_of_the_office">By mobile phone of the office</string>
-    <string name="_4">4</string>
+
     <string name="the_search_function_searches_simultaneously_in_all_fields_in_which_the_search_is_allowed">The search function searches simultaneously in all fields in which the search is allowed.</string>
-    <string name="_4_1">4.1</string>
+
     <string name="the_search_is_performed_according_to_the_principle_the_appearance_of_a_substring_in_a_row">The search is performed according to the principle (the appearance of a substring in a row).</string>
-    <string name="_4_2">4.2</string>
+
     <string name="the_numbers_of_fixed_and_mobile_phones_the_e_mail_addresses_on_the_profile_as_well_as_inside_the_profile_allow_direct_dialing_by_a_simple_click">The numbers of fixed and mobile phones, the e-mail addresses on the profile as well as inside the profile, allow direct dialing by a simple click.</string>
-    <string name="_5">5</string>
+
     <string name="a_button_has_been_added_to_the_employee_compartment_share_which_allows_the_distribution_and_saving_of_the_employee_s_contact_information">A button has been added to the employee compartment - SHARE - which allows the distribution and saving of the employee\'s contact information.</string>
-    <string name="_6">6</string>
+
     <string name="a_button_has_been_added_to_the_employee_compartment_notice_about_error_in_list_of_contacts_of_employers_warn_the_administrator_that_there_is_incorrect_information_about_the_employee">A button has been added to the employee compartment - (Notice about error in list of contacts of employers) - warn the administrator that there is incorrect information about the employee.</string>
+    <string name="list_of_employees_ru">список сотрудников</string>
+    <string name="android">Приложение для списка сотрудников было разработано для облегчения доступа к контактной информации через мобильный телефон (Операционная система: Android).</string>
+    <string name="soft_description">Приложение включает в себя список профилей сотрудников с контактной информацией.</string>
+    <string name="description_ru1">Функции, предоставляемые программой (Список должностных лиц НБС (условное название)), сгруппированы по категориям и представлены ниже.</string>
+    <string name="_1">1</string>
+    <string name="mysql_intranet_statistica_md_android">Отображает список сотрудников НБС и территориальных структур. (При подключении к базе данных MySQL данные хранятся здесь. Почему это приложение клиент-сервер? Принцип клиент-сервер используется как в веб-приложении intranet.statistica.md). Информация о сотруднике обновляется в базе данных. И любой сотрудник, у которого установлено это приложение на мобильном телефоне с ОС Android, получает доступ к обновленным данным.</string>
+    <string name="_2">2</string>
+    <string name="description_ru2">Список открытых данных, которые отображаются о (государственный служащий / сотрудник НБС) и территориальных структурах.</string>
+    <string name="_2_1">2.1</string>
+    <string name="name_ru">Имя, Фамилия</string>
+    <string name="_2_2">2.2</string>
+    <string name="address_ru">Расположение - Адрес</string>
+    <string name="_2_3">2.3</string>
+    <string name="floor_ru">Этаж</string>
+    <string name="_2_4">2.4</string>
+    <string name="Office_ru">Офис</string>
+    <string name="_2_5">2.5</string>
+    <string name="Position">Должность</string>
+    <string name="_2_6">2.6</string>
+    <string name="Service_ru">Служба</string>
+    <string name="_2_7">2.7</string>
+    <string name="Department_ru">Отдел</string>
+    <string name="_2_8">2.8</string>
+    <string name="direction_ru">Управление</string>
+    <string name="_2_9">2.9</string>
+    <string name="main_direction_ru">Главное управление</string>
+    <string name="_2_10">2.10</string>
+    <string name="office_phone_ru">Служебный телефон</string>
+    <string name="_2_11">2.11</string>
+    <string name="office_mobile_phone_ru">Служебный мобильный телефон.</string>
+    <string name="_2_12">2.12</string>
+    <string name="inside_phone_ru">Внутренний телефон</string>
+    <string name="_2_13">2.13</string>
+    <string name="statistica_research_ru">Статистическое исследование</string>
+    <string name="_2_14">2.14</string>
+    <string name="e_mail">E-mail</string>
+    <string name="_2_15">2.15</string>
+    <string name="Personal_info_ru">Личная информация</string>
+    <string name="_3">3</string>
+    <string name="function_ru">Функция поиска позволяет искать по следующим полям</string>
+    <string name="_3_1">3.1</string>
+    <string name="name_ru_1">Имя или фамилия</string>
+    <string name="_3_2">3.2</string>
+    <string name="of_position_ru">По должности</string>
+    <string name="_3_3">3.3</string>
+    <string name="department_ru">По главному управлению</string>
+    <string name="_3_4">3.4</string>
+    <string name="department_ru3">По управлению</string>
+    <string name="_3_5">3.5</string>
+    <string name="department_ru5">По отделу</string>
+    <string name="_3_6">3.6</string>
+    <string name="service_ru1">По службе</string>
+
+    <string name="phone_ru2">По телефону</string>
+    <string name="_3_7">3.7</string>
+    <string name="address_ru4">По адресу</string>
+    <string name="_3_8">3.8</string>
+    <string name="mobile_phone_3">По мобильному телефону офиса</string>
+    <string name="_4">4</string>
+    <string name="function_ru3">Функция поиска выполняет поиск одновременно во всех полях, в которых разрешен поиск.</string>
+    <string name="_4_1">4.1</string>
+    <string name="search_ru2">Поиск осуществляется по принципу (появление подстроки в строке).</string>
+    <string name="_4_2">4.2</string>
+    <string name="touch_ru_2">Номера стационарных и мобильных телефонов, адреса электронной почты в профиле, а также внутри профиля, позволяют прямой набор номера простым нажатием.</string>
+    <string name="_5">5</string>
+    <string name="employee_ru2">В отделении сотрудника добавлена ​​кнопка ПОДЕЛИТЬСЯ, которая позволяет передавать и сохранять контактную информацию сотрудника.</string>
+    <string name="_6">6</string>
+    <string name="notice_about_error_in_list_of_contacts_of_employers_ru">В отделении сотрудника добавлена ​​кнопка (Notice about error in list of contacts of employers) , которая позволяет предупредить администратора что есть некорректная информация о сотруднике.</string>
 
 
 </resources>
