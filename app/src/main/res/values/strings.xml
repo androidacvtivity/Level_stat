@@ -650,6 +650,18 @@
     <string name="_7">7</string>
     <string name="sa_adaugat_posibilitatea_cautarii_ae_dupa_data_inregistrarii">Sa adaugat posibilitatea cautarii AE dupa data inregistrarii.</string>
     <string name="_2020_09_ae_2020_09_2020_09_04_ae">Мы вводим 2020-09, и вы также найдете AE, которые были зарегистрированы в 2020-09. Если мы введем 2020-09-04, мы найдем точно все AE, которые были зарегистрированы на эту дату.</string>
+    <string name="scientist_s_name">Nume Prenume</string>
+    <string name="scientists_description">Scientists Description</string>
+    <string name="depart">Depart</string>
+
+    <string name="sectia">Sectia</string>
+    <string name="phone">Phone</string>
+    <string name="phonemobile">Phonemobile</string>
+
+    <string name="description">description</string>
+    <string name="formneame">formneame</string>
+    <string name="notice">Notice</string>
+
 
 
 </resources>
