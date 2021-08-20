@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,16 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    android:contentDescription="@string/todo"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh_ru_med"
-                    android:text="Классиф. лекарст. преп."
+                    android:layout_toEndOf="@+id/mBackArrowh_ru_med"
+                    android:text="@string/clas_med"
                     android:textColor="@color/white"
                     android:textSize="21sp" />
             </RelativeLayout>
@@ -58,7 +58,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -85,10 +86,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
 
-                        android:text=" Приложение-классификатор лекарств было разработано для облегчения доступа к классификатору лекарств через мобильный телефон (операционная система: Android)." />
+                        android:text="@string/android_2" />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -123,9 +124,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Классификатор загружен с официального сайта Агентства лекарственных средств и медицинских изделий." />
+                        android:text="@string/cl_med_ru2" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -148,9 +149,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="https://amdm.gov.md/ro/clasificator-medicamente"
+                        android:text="@string/https_amdm_gov_md_ro_clasificator_medicamente"
                         android:autoLink="web"
 
                         />
@@ -175,10 +176,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="Файл Excel можно скачать здесь." />
+                        android:text="@string/excel" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -202,9 +203,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address_h"
-                        android:text="http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address_h"
+                        android:text="@string/http_amdm_gov_md_sites_default_files_medicamente_clasificator_clasificatorul_20_10_07_2019_xls"
                         android:autoLink="web"
 
                         />
@@ -224,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1"
+                        android:text="@string/_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -232,10 +233,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/emailLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/emailLabel_h"
 
-                        android:text=" В приложении ищется препарат по следующим полям." />
+                        android:text="@string/about_ru2" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -251,7 +252,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.1"
+                        android:text="@string/_1_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -259,10 +260,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/locatia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/locatia_h"
 
-                        android:text="Код лекарства" />
+                        android:text="@string/cod_med_ru3" />
                 </RelativeLayout>
 
 
@@ -279,7 +280,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.2"
+                        android:text="@string/_1_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -287,10 +288,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/etajul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/etajul_h"
 
-                        android:text=" Торговое наименование." />
+                        android:text="@string/trademark_ru2" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -306,7 +307,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.3"
+                        android:text="@string/_1_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -314,10 +315,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/biroul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/biroul_h"
 
-                        android:text=" Компания-производитель. " />
+                        android:text="@string/trade_market_ru1" />
                 </RelativeLayout>
 
 
@@ -334,7 +335,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.4"
+                        android:text="@string/_1_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -342,10 +343,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/functia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/functia_h"
 
-                        android:text=" Регистрационный номер. " />
+                        android:text="@string/serial_number_ru_1" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -361,7 +362,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.5"
+                        android:text="@string/_1_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -369,10 +370,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/serviciu_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/serviciu_h"
 
-                        android:text=" Международное общее название.  " />
+                        android:text="@string/International_name_ru1" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -388,7 +389,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.6"
+                        android:text="@string/_1_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -396,10 +397,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/sectia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/sectia_h"
 
-                        android:text=" Страна.  " />
+                        android:text="@string/country_ru1" />
                 </RelativeLayout>
 
 
@@ -416,7 +417,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.7"
+                        android:text="@string/_1_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -424,10 +425,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directia_h"
 
-                        android:text=" Код УВД.  " />
+                        android:text="@string/cod_ru1" />
                 </RelativeLayout>
 
 
@@ -444,7 +445,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.0"
+                        android:text="@string/_2_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -452,10 +453,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directiagenerala_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directiagenerala_h"
 
-                        android:text=" Функция поиска выполняет поиск во всех перечисленных полях одновременно. " />
+                        android:text="@string/fieldsru1" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -471,7 +472,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.0"
+                        android:text="@string/_3_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -479,10 +480,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phoneintern_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phoneintern_h"
 
-                        android:text=" В отделение для лекарств добавлена ​​кнопка - ПОДЕЛИТЬСЯ - которая позволяет распространять и сохранять информацию о лекарствах. " />
+                        android:text="@string/med_ru1" />
                 </RelativeLayout>
 
 

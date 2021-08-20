@@ -558,5 +558,32 @@
     <string name="_6">6</string>
     <string name="notice_about_error_in_list_of_contacts_of_employers_ru">В отделении сотрудника добавлена ​​кнопка (Notice about error in list of contacts of employers) , которая позволяет предупредить администратора что есть некорректная информация о сотруднике.</string>
 
+    <string name="clas_med">Классиф. лекарст. преп.</string>
+    <string name="android_2">Приложение-классификатор лекарств было разработано для облегчения доступа к классификатору лекарств через мобильный телефон (операционная система: Android).</string>
+    <string name="cl_med_ru2">Классификатор загружен с официального сайта Агентства лекарственных средств и медицинских изделий.</string>
+    <string name="https_amdm_gov_md_ro_clasificator_medicamente">https://amdm.gov.md/ro/clasificator-medicamente</string>
+    <string name="excel">Файл Excel можно скачать здесь.</string>
+    <string name="http_amdm_gov_md_sites_default_files_medicamente_clasificator_clasificatorul_20_10_07_2019_xls">http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls</string>
+
+    <string name="about_ru2">В приложении ищется препарат по следующим полям.</string>
+    <string name="_1_1">1.1</string>
+    <string name="cod_med_ru3">Код лекарства</string>
+    <string name="_1_2">1.2</string>
+    <string name="trademark_ru2">Торговое наименование.</string>
+    <string name="_1_3">1.3</string>
+    <string name="trade_market_ru1">Компания-производитель.</string>
+    <string name="_1_4">1.4</string>
+    <string name="serial_number_ru_1">Регистрационный номер.</string>
+    <string name="_1_5">1.5</string>
+    <string name="International_name_ru1">Международное общее название.</string>
+    <string name="_1_6">1.6</string>
+    <string name="country_ru1">Страна.</string>
+    <string name="_1_7">1.7</string>
+    <string name="cod_ru1">Код УВД.</string>
+    <string name="_2_0">2.0</string>
+    <string name="fieldsru1">Функция поиска выполняет поиск во всех перечисленных полях одновременно.</string>
+    <string name="_3_0">3.0</string>
+    <string name="med_ru1">В отделение для лекарств добавлена ​​кнопка - ПОДЕЛИТЬСЯ - которая позволяет распространять и сохранять информацию о лекарствах.</string>
+
 
 </resources>
