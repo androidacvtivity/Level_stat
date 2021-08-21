@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,15 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
 
-                    android:text="Despre clasificatorul Med"
+                    android:text="@string/despre_clasificatorul_med"
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:layout_marginStart="20dp" />
@@ -59,7 +58,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -86,10 +86,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
 
-                        android:text="Aplicatia clasificatorul medicamentelor  a fost dezvoltata pentru a facilita accesul la clasificatorul medicamentelor  prin intermediul telefonullui mobil (Sistem de operare: Android)." />
+                        android:text="@string/aplicatia_clasificatorul_medicamentelor_a_fost_dezvoltata_pentru_a_facilita_accesul_la_clasificatorul_medicamentelor_prin_intermediul_telefonullui_mobil_sistem_de_operare_android" />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -124,9 +124,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="Clasificatorul este descarcat de pe pagina oficila a Agentiei Medicamentului si Dispozitii Medicale." />
+                        android:text="@string/clasificatorul_este_descarcat_de_pe_pagina_oficila_a_agentiei_medicamentului_si_dispozitii_medicale" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -149,9 +149,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="https://amdm.gov.md/ro/clasificator-medicamente"
+                        android:text="@string/https_amdm_gov_md_ro_clasificator_medicamente"
                         android:autoLink="web"
 
                         />
@@ -177,10 +177,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="Fisierul excel se poate descarca de aici."
+                        android:text="@string/fisierul_excel_se_poate_descarca_de_aici"
 
 
                         />
@@ -207,9 +207,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address_h"
-                        android:text="http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address_h"
+                        android:text="@string/http_amdm_gov_md_sites_default_files_medicamente_clasificator_clasificatorul_20_10_07_2019_xls"
                         android:autoLink="web"
                         />
 
@@ -229,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1"
+                        android:text="@string/_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -237,10 +237,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/emailLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/emailLabel_h"
 
-                        android:text=" In aplicatie medicamentul se cauta dupa urmatoarele campuri" />
+                        android:text="@string/in_aplicatie_medicamentul_se_cauta_dupa_urmatoarele_campuri" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -256,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.1"
+                        android:text="@string/_1_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -264,10 +264,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/locatia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/locatia_h"
 
-                        android:text="Codul medicamentului" />
+                        android:text="@string/codul_medicamentului" />
                 </RelativeLayout>
 
 
@@ -284,7 +284,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.2"
+                        android:text="@string/_1_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -292,10 +292,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/etajul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/etajul_h"
 
-                        android:text=" Denumirea comercială" />
+                        android:text="@string/denumirea_comercial" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -311,7 +311,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.3"
+                        android:text="@string/_1_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -319,10 +319,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/biroul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/biroul_h"
 
-                        android:text=" Firma producătoare " />
+                        android:text="@string/firma_produc_toare" />
                 </RelativeLayout>
 
 
@@ -339,7 +339,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.4"
+                        android:text="@string/_1_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -347,10 +347,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/functia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/functia_h"
 
-                        android:text=" Numărul de înregistrare " />
+                        android:text="@string/num_rul_de_nregistrare" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -366,7 +366,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.5"
+                        android:text="@string/_1_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -374,10 +374,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/serviciu_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/serviciu_h"
 
-                        android:text=" Denumirea comună internaţională.  " />
+                        android:text="@string/denumirea_comun_interna_ional2" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -393,7 +393,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.6"
+                        android:text="@string/_1_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -401,10 +401,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/sectia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/sectia_h"
 
-                        android:text=" Ţara.  " />
+                        android:text="@string/ara2" />
                 </RelativeLayout>
 
 
@@ -421,7 +421,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.7"
+                        android:text="@string/_1_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -429,10 +429,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directia_h"
 
-                        android:text=" Codul ATC " />
+                        android:text="@string/codul_atc" />
                 </RelativeLayout>
 
 
@@ -449,17 +449,17 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.0"
+                        android:text="@string/_2_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="11dp"
-                        android:layout_toRightOf="@+id/directiagenerala_h"
+                        android:layout_marginStart="11dp"
+                        android:layout_toEndOf="@+id/directiagenerala_h"
 
-                        android:text=" Functia de cautare cauta simultan in toate campurile  enumerate. " />
+                        android:text="@string/functia_de_cautare_cauta_simultan_in_toate_campurile_enumerate" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -475,7 +475,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.0"
+                        android:text="@string/_3_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -483,11 +483,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phoneintern_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phoneintern_h"
 
-                        android:text="
-In compartimentul despre medicament a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie despre medicament. " />
+                        android:text="@string/in_compartimentul_despre_medicament_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_despre_medicament" />
                 </RelativeLayout>
 
 

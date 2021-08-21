@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,15 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
 
-                    android:text="About of the medicament"
+                    android:text="@string/about_of_the_medicament"
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:layout_marginStart="20dp" />
@@ -59,7 +58,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -86,10 +86,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
 
-                        android:text="The medicamention  classifier application has been developed to facilitate access to the medicamention  classifier through a mobile phone (operating system: Android). " />
+                        android:text="@string/the_medicamention_classifier_application_has_been_developed_to_facilitate_access_to_the_medicamention_classifier_through_a_mobile_phone_operating_system_android" />
 
                     <!--                    <Button-->
                     <!--                        android:id="@+id/locatebtn"-->
@@ -124,9 +124,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="The classifier is downloaded from the official website of the Agency for Medicines and Medical Devices." />
+                        android:text="@string/the_classifier_is_downloaded_from_the_official_website_of_the_agency_for_medicines_and_medical_devices" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -149,8 +149,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:text="https://amdm.gov.md/ro/clasificator-medicamente"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/https_amdm_gov_md_ro_clasificator_medicamente"
                         android:autoLink="web"
 
 
@@ -177,10 +177,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="The excel file can be downloaded here."
+                        android:text="@string/the_excel_file_can_be_downloaded_here"
                         />
                 </RelativeLayout>
 
@@ -207,9 +207,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/address_h"
-                        android:text="http://amdm.gov.md/sites/default/files/Medicamente/Clasificator/Clasificatorul%20_10.07.2019.xls"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/address_h"
+                        android:text="@string/http_amdm_gov_md_sites_default_files_medicamente_clasificator_clasificatorul_20_10_07_2019_xls"
                         android:autoLink="web"
 
 
@@ -229,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1"
+                        android:text="@string/_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -237,10 +237,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/emailLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/emailLabel_h"
 
-                        android:text="In the application the drug is searched for the following fields" />
+                        android:text="@string/in_the_application_the_drug_is_searched_for_the_following_fields" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -256,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.1"
+                        android:text="@string/_1_1"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -264,10 +264,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/locatia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/locatia_h"
 
-                        android:text="Medicamention  code" />
+                        android:text="@string/medicamention_code" />
                 </RelativeLayout>
 
 
@@ -284,7 +284,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.2"
+                        android:text="@string/_1_2"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -292,10 +292,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/etajul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/etajul_h"
 
-                        android:text=" Trade name" />
+                        android:text="@string/trade_name" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -311,7 +311,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.3"
+                        android:text="@string/_1_3"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -319,10 +319,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/biroul_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/biroul_h"
 
-                        android:text=" The manufacturing company. " />
+                        android:text="@string/the_manufacturing_company" />
                 </RelativeLayout>
 
 
@@ -339,7 +339,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.4"
+                        android:text="@string/_1_4"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -347,10 +347,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/functia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/functia_h"
 
-                        android:text=" Registration number. " />
+                        android:text="@string/registration_number" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -366,7 +366,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.5"
+                        android:text="@string/_1_5"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -374,10 +374,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/serviciu_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/serviciu_h"
 
-                        android:text=" International common name. " />
+                        android:text="@string/international_common_name" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -393,7 +393,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.6"
+                        android:text="@string/_1_6"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -401,10 +401,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/sectia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/sectia_h"
 
-                        android:text=" The country " />
+                        android:text="@string/the_country" />
                 </RelativeLayout>
 
 
@@ -421,7 +421,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="1.7"
+                        android:text="@string/_1_7"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -429,10 +429,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directia_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directia_h"
 
-                        android:text=" ATC code. " />
+                        android:text="@string/atc_code" />
                 </RelativeLayout>
 
 
@@ -449,7 +449,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="2.0"
+                        android:text="@string/_2_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -457,10 +457,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/directiagenerala_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/directiagenerala_h"
 
-                        android:text=" The search function searches all the fields listed simultaneously." />
+                        android:text="@string/the_search_function_searches_all_the_fields_listed_simultaneously" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -476,7 +476,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
 
-                        android:text="3.0"
+                        android:text="@string/_3_0"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -484,10 +484,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/phoneintern_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/phoneintern_h"
 
-                        android:text=" A button has been added to the medicine compartment - SHARE - which allows the distribution and saving of medicine information. " />
+                        android:text="@string/a_button_has_been_added_to_the_medicine_compartment_share_which_allows_the_distribution_and_saving_of_medicine_information" />
                 </RelativeLayout>
 
 
