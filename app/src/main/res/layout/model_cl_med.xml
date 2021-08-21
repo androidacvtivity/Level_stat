@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="5dp"
     android:orientation="horizontal"
     card_view:cardCornerRadius="5dp"
@@ -21,7 +19,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="35dp"
             android:layout_marginTop="10dp"
-            android:text="Denumirea Internationala"
+            android:text="@string/denumirea_internationala"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/mdenumirea_intTxt"
@@ -41,11 +39,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mcodul_ATC_Txt_view"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="30dp"
 
             android:maxLines="5"
-            android:text="Notice"
+            android:text="@string/notice"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
             android:textColor="@color/darkGreen"
@@ -59,9 +57,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:text="Denumirea Comerciala"
+            android:text="@string/denumirea_comerciala"
             android:layout_below="@id/mdenumirea_intTxt"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_med"
             android:textStyle="bold" />
 
 
@@ -73,8 +71,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mdenumirea_comercialaTxt_m"
-            android:text="Denumirea Comerciala"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:text="@string/denumirea_comerciala"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_med"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
             android:textStyle="bold" />
@@ -88,8 +86,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mdenumirea_comercialaTxt_View"
-            android:text="Codul medical"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:text="@string/codul_medical"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_med"
             android:textStyle="bold" />
 
 
@@ -101,8 +99,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mdcodul_medicalTxt"
-            android:text="Codul medical"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_med"
+            android:text="@string/codul_medical"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_med"
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
@@ -118,7 +116,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mdcodul_medicalTxt_view"
-            android:text="Producatorul"
+            android:text="@string/producatorul"
 
             android:textStyle="bold" />
 
@@ -132,7 +130,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mproducatorulTxt"
-            android:text="Producatorul"
+            android:text="@string/producatorul"
 
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -150,7 +148,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mProducatorulTxt_view"
-            android:text="Nr. Inregistrare"
+            android:text="@string/nr_inregistrare"
 
             android:textStyle="bold" />
 
@@ -164,7 +162,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/mnrinregistrareTxt"
-            android:text="Nr. Inregistrare"
+            android:text="@string/nr_inregistrare"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
             android:textStyle="bold" />
@@ -177,7 +175,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:text="Țara"
+            android:text="@string/ara8"
 
             android:textStyle="bold" />
 
@@ -192,7 +190,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:text="Țara"
+            android:text="@string/ara56"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
             android:textStyle="bold" />
@@ -207,7 +205,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:text="Codul ATC"
+            android:text="@string/codul_atc"
 
             android:textStyle="bold" />
 
@@ -221,7 +219,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:text="Codul ATC"
+            android:text="@string/codul_atc"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
             android:textStyle="bold" />
@@ -233,7 +231,7 @@
             android:layout_height="@dimen/list_item_avatar_size"
             android:layout_below="@id/mdenumirea_intTxt"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginStart="10dp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

@@ -649,8 +649,25 @@
     <string name="denumirea_caem2">Denumirea CAEM2</string>
 
     <string name="prim">Prim</string>
-    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+<string name="denumirea_clasificatorului_cocm">Denumirea clasificatorului COCM</string>
 
+
+    <string name="unitatea_administrativ_teritorial1">Unitatea administrativ-teritorială</string>
+
+
+    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+    <string name="denumirea_internationala">Denumirea Internationala</string>
+
+    <string name="denumirea_comerciala">Denumirea Comerciala</string>
+
+    <string name="codul_medical">Codul medical</string>
+
+    <string name="producatorul">Producatorul</string>
+
+    <string name="nr_inregistrare">Nr. Inregistrare</string>
+
+    <string name="ara8">Țara</string>
+    <string name="ara56">Țara</string>
 
 
 
