@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Stat Level</string>
 
     <string name="administrative_n_authority">Administrative \n authority</string>
@@ -605,8 +605,9 @@
     <string name="id_8">В раздел Юридического подразделения добавлена ​​кнопка - ПОДЕЛИТЬСЯ, которая позволяет распространять и сохранять контактную информацию юридического подразделения.</string>
 
     <string name="ae">Добавлена  поиска AE после даты регистрации.</string>
-    <string name="introducem_2020_09_si_vor_fi_gasiti_tot_ae_care_au_fost_inregistrati_in_2020_09_daca_introducem_2020_09_04_vor_fi_gasiti_exact_toti_ae_care_au_fost_inregistrati_in_aceasta_data">Introducem 2020-09 si vor fi gasiti tot AE care au fost inregistrati in 2020-09. Daca introducem 2020-09-04 vor fi gasiti exact toti AE care au fost inregistrati in aceasta data.</string>
+    <string name="introducem_2020_09_si_vor_fi_gasiti_tot_ae_care_au_fost_inregistrati_in_2020_09_daca_introducem_2020_09_04_vor_fi_gasiti_exact_toti_ae_care_au_fost_inregistrati_in_aceasta_data" tools:ignore="TypographyDashes">Introducem 2020–09 si vor fi gasiti tot AE care au fost inregistrati in 2020-09. Daca introducem 2020-09-04 vor fi gasiti exact toti AE care au fost inregistrati in aceasta data.</string>
 
+    <string name="clasificatorul_medicamentelor_1">CLASIFICATORUL MEDICAMENTELOR</string>
 
     <string name="de_unde_lu_m_datele">De unde luăm datele?</string>
     <string name="aplicatia_level_stat_in_compartimentul_a_e_n_r_m_utilizeaz_datele_deschise_din_registrul_de_stat_al_unit_ilor_de_drept_privind_ntreprinderile_nregistrate_n_republica_moldova_publicate_de_c_tre_ministerul_tehnologiei_inform_iei_i_comunica_iilor_pe_portalul_guvernamental_al_datelor_deschise_date_gov_md">Aplicatia Level stat in compartimentul (A.E în R.M) utilizează datele deschise din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova publicate de către Ministerul Tehnologiei Informţiei şi Comunicaţiilor pe portalul guvernamental al datelor deschise date.gov.md.</string>
@@ -627,7 +628,28 @@
     <string name="in_compartimentul_despre_unitatea_de_drept_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_deschise_despre_unitatea_de_drept">In compartimentul despre Unitatea de drept a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie deschise despre unitatea de drept.</string>
     <string name="_7">7</string>
     <string name="sa_adaugat_posibilitatea_cautarii_ae_dupa_data_inregistrarii">Sa adaugat posibilitatea cautarii AE dupa data inregistrarii.</string>
-    <string name="_2020_09_ae_2020_09_2020_09_04_ae">Мы вводим 2020-09, и вы также найдете AE, которые были зарегистрированы в 2020-09. Если мы введем 2020-09-04, мы найдем точно все AE, которые были зарегистрированы на эту дату.</string>
+    <string name="_2020_09_ae_2020_09_2020_09_04_ae" tools:ignore="TypographyDashes">Мы вводим 2020–09, и вы также найдете AE, которые были зарегистрированы в 2020-09. Если мы введем 2020-09-04, мы найдем точно все AE, которые были зарегистрированы на эту дату.</string>
+    <string name="scientist_s_name">Nume Prenume</string>
+    <string name="scientists_description">Scientists Description</string>
+    <string name="depart">Depart</string>
+
+    <string name="sectia">Sectia</string>
+    <string name="phone">Phone</string>
+    <string name="phonemobile">Phonemobile</string>
+
+    <string name="description">description</string>
+    <string name="formneame">formneame</string>
+    <string name="notice">Notice</string>
+
+
+
+
+    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+
+    <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
+
+    <string name="source_and_actualization">Source and actualization</string>
+
 
 
 </resources>

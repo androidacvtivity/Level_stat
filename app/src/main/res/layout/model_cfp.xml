@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="5dp"
     android:orientation="horizontal"
     card_view:cardCornerRadius="5dp"
@@ -20,11 +18,11 @@
             android:layout_height="wrap_content"
 
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_cfp"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_cfp"
             android:padding="5dp"
-            android:text="Forma organizatorico-juridică"
+            android:text="@string/forma_organizatorico_juridic"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968" />
 
@@ -33,11 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mDENUMIRE_cfp_Txt"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/mMaterialLetterIcon_cfp"
+            android:layout_toEndOf="@+id/mMaterialLetterIcon_cfp"
             android:maxLines="3"
-            android:text="Număr(care au codulIDNO)"
+            android:text="@string/num_r_care_au_codulidno"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic" />
 
@@ -46,11 +44,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mVALUE_cfp_Txt"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="40dp"
 
             android:maxLines="3"
-            android:text="Source and actualization"
+            android:text="@string/source_and_actualization"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic" />
 
@@ -59,11 +57,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mVALUE_cfp_Txt"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:layout_toRightOf="@+id/mact_Txt"
+            android:layout_toEndOf="@+id/mact_Txt"
             android:maxLines="3"
-            android:text="Source and actualization"
+            android:text="@string/source_and_actualization"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic" />
 
@@ -155,12 +153,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mact_Txt"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
 
             android:maxLines="3"
-            android:text="Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil."
+            android:text="@string/pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil"
             android:textAppearance="?android:attr/textAppearanceSmall"
 
 
@@ -190,7 +188,7 @@
             android:layout_width="@dimen/list_item_avatar_size"
             android:layout_height="@dimen/list_item_avatar_size"
             android:layout_marginTop="28dp"
-            android:layout_marginRight="8dp" />
+            android:layout_marginEnd="8dp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
