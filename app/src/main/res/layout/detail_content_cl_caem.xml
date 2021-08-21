@@ -77,7 +77,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Denumirea activitatii economice"
+                            android:text="@string/denumirea_activitatii_economice"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent" />
 
@@ -87,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
 
-                            android:text="Denumirea activitatii economice" />
+                            android:text="@string/denumirea_activitatii_economice" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -176,7 +176,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-                            android:text="Share button"
+                            android:text="@string/share_button"
 
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
@@ -188,7 +188,7 @@
                             android:id="@+id/btnShare_caem"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Share"
+                            android:text="@string/share"
                             android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
@@ -199,17 +199,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/card_margin">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-
-
-
-                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 

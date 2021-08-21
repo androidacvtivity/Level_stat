@@ -640,16 +640,112 @@
     <string name="description">description</string>
     <string name="formneame">formneame</string>
     <string name="notice">Notice</string>
+   <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
+
+    <string name="source_and_actualization">Source and actualization</string>
+    <string name="denumirea_caem">Denumirea CAEM</string>
 
 
+    <string name="denumirea_caem2">Denumirea CAEM2</string>
+
+    <string name="prim">Prim</string>
+<string name="denumirea_clasificatorului_cocm">Denumirea clasificatorului COCM</string>
+
+
+    <string name="unitatea_administrativ_teritorial1">Unitatea administrativ-teritorială</string>
+
+
+
+    <string name="denumirea_internationala">Denumirea Internationala</string>
+
+    <string name="denumirea_comerciala">Denumirea Comerciala</string>
+
+    <string name="codul_medical">Codul medical</string>
+
+    <string name="producatorul">Producatorul</string>
+
+    <string name="nr_inregistrare">Nr. Inregistrare</string>
+
+    <string name="ara8">Țara</string>
+    <string name="ara56">Țara</string>
+
+    <string name="codul_prodmoldl">Codul prodmold</string>
+    <string name="denumirea_serviciilor">Denumirea serviciilor</string>
+
+
+    <string name="denumirea_tarii">Denumirea tarii</string>
+    <string name="codul_tarii">Codul tarii</string>
+
+    <string name="municipiu_raion2">Municipiu / raion</string>
+
+
+
+
+    <string name="scientist_s_name1">Scientist\'s Name</string>
+    <string name="name_of_the_economic_agent">Name of the economic agent</string>
+
+    <string name="lista_fond">LISTA FOND</string>
+
+    <string name="gen_act_ne_lic">GEN ACT NE LIC</string>
+    <string name="statutul2">STATUTUL</string>
+    <string name="gen_act_lic">GEN ACT LIC</string>
+    <string name="data_reg">DATA REG</string>
 
 
     <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+    <string name="list_cond">LIST COND</string>
+    <string name="about_of_the_medicament">About of the medicament</string>
+    <string name="the_medicamention_classifier_application_has_been_developed_to_facilitate_access_to_the_medicamention_classifier_through_a_mobile_phone_operating_system_android">The medicamention classifier application has been developed to facilitate access to the medicamention classifier through a mobile phone (operating system: Android).</string>
+    <string name="the_classifier_is_downloaded_from_the_official_website_of_the_agency_for_medicines_and_medical_devices">The classifier is downloaded from the official website of the Agency for Medicines and Medical Devices.</string>
 
-    <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
+    <string name="the_excel_file_can_be_downloaded_here">The excel file can be downloaded here.</string>
 
-    <string name="source_and_actualization">Source and actualization</string>
 
+    <string name="in_the_application_the_drug_is_searched_for_the_following_fields">In the application the drug is searched for the following fields</string>
+
+    <string name="medicamention_code">Medicamention code</string>
+
+    <string name="trade_name">Trade name</string>
+
+    <string name="the_manufacturing_company">The manufacturing company.</string>
+
+    <string name="registration_number">Registration number.</string>
+
+    <string name="international_common_name">International common name.</string>
+
+    <string name="the_country">The country</string>
+
+    <string name="atc_code">ATC code.</string>
+
+    <string name="the_search_function_searches_all_the_fields_listed_simultaneously">The search function searches all the fields listed simultaneously.</string>
+
+    <string name="a_button_has_been_added_to_the_medicine_compartment_share_which_allows_the_distribution_and_saving_of_medicine_information">A button has been added to the medicine compartment - SHARE - which allows the distribution and saving of medicine information.</string>
+    <string name="despre_clasificatorul_med">Despre clasificatorul Med</string>
+    <string name="aplicatia_clasificatorul_medicamentelor_a_fost_dezvoltata_pentru_a_facilita_accesul_la_clasificatorul_medicamentelor_prin_intermediul_telefonullui_mobil_sistem_de_operare_android">Aplicatia clasificatorul medicamentelor a fost dezvoltata pentru a facilita accesul la clasificatorul medicamentelor prin intermediul telefonullui mobil (Sistem de operare: Android).</string>
+    <string name="clasificatorul_este_descarcat_de_pe_pagina_oficila_a_agentiei_medicamentului_si_dispozitii_medicale">Clasificatorul este descarcat de pe pagina oficila a Agentiei Medicamentului si Dispozitii Medicale.</string>
+
+    <string name="fisierul_excel_se_poate_descarca_de_aici">Fisierul excel se poate descarca de aici.</string>
+
+
+    <string name="in_aplicatie_medicamentul_se_cauta_dupa_urmatoarele_campuri">In aplicatie medicamentul se cauta dupa urmatoarele campuri</string>
+
+
+
+
+
+
+
+
+
+    <string name="denumirea_comun_interna_ional2">Denumirea comună internaţională.</string>
+
+    <string name="ara2">Ţara.</string>
+
+
+
+    <string name="functia_de_cautare_cauta_simultan_in_toate_campurile_enumerate">Functia de cautare cauta simultan in toate campurile enumerate.</string>
+
+    <string name="in_compartimentul_despre_medicament_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_despre_medicament">In compartimentul despre medicament a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie despre medicament.</string>
 
 
 </resources>
