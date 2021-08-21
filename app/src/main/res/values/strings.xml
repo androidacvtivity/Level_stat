@@ -655,7 +655,7 @@
     <string name="unitatea_administrativ_teritorial1">Unitatea administrativ-teritorială</string>
 
 
-    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+
     <string name="denumirea_internationala">Denumirea Internationala</string>
 
     <string name="denumirea_comerciala">Denumirea Comerciala</string>
@@ -669,7 +669,17 @@
     <string name="ara8">Țara</string>
     <string name="ara56">Țara</string>
 
+    <string name="codul_prodmoldl">Codul prodmold</string>
+    <string name="denumirea_serviciilor">Denumirea serviciilor</string>
 
 
+    <string name="denumirea_tarii">Denumirea tarii</string>
+    <string name="codul_tarii">Codul tarii</string>
+    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+    <string name="municipiu_raion2">Municipiu / raion</string>
+    <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
+    <string name="source_and_actualization">Source and actualization</string>
+    <string name="source_and_actualization">Source and actualization</string>
+    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
 
 </resources>
