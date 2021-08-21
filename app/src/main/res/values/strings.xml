@@ -640,15 +640,18 @@
     <string name="description">description</string>
     <string name="formneame">formneame</string>
     <string name="notice">Notice</string>
-
-
-
-
-    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
-
-    <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
+   <string name="num_r_care_au_codulidno">Număr(care au codulIDNO)</string>
 
     <string name="source_and_actualization">Source and actualization</string>
+    <string name="denumirea_caem">Denumirea CAEM</string>
+
+
+    <string name="denumirea_caem2">Denumirea CAEM2</string>
+
+    <string name="prim">Prim</string>
+    <string name="pentru_vizualizarea_informatiei_complete_despre_ae_accesati_profilul_click_pe_profil">Pentru vizualizarea informatiei complete despre AE, accesati profilul. Click pe profil.</string>
+
+
 
 
 
