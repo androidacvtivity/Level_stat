@@ -7,17 +7,17 @@
 
     <item
         android:id="@+id/editMenuItem"
-        android:title="SAVE"
+        android:title="@string/save"
         android:icon="@drawable/m_done"
         app:showAsAction="always" />
     <item
         android:id="@+id/deleteMenuItem"
-        android:title="DELETE"
+        android:title="@string/delete"
         android:icon="@drawable/m_delete"
         app:showAsAction="always" />
     <item
         android:id="@+id/viewAllMenuItem"
-        android:title="VIEW ALL"
+        android:title="@string/view_all"
         android:icon="@drawable/m_list"
         app:showAsAction="ifRoom" />
 </menu>

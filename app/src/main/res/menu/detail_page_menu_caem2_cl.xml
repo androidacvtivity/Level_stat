@@ -8,27 +8,27 @@
     <item
         android:visibility="invisible"
         android:id="@+id/action_edit_caem2"
-        android:title="Despre aplicatie"
+        android:title="@string/despre_aplicatie"
         app:showAsAction="never" />
 
     <item
         android:visibility="invisible"
         android:id="@+id/action_edit_en_caem2"
-        android:title="About application"
+        android:title="@string/about_application"
         app:showAsAction="never" />
 
 
     <item
         android:visibility="invisible"
         android:id="@+id/action_edit_ru_caem2"
-        android:title="О программе"
+        android:title="@string/about_application_ru"
         app:showAsAction="never" />
 
 
     <item
         android:id="@+id/video3_caem2"
         android:visibility="invisible"
-        android:title="Video tutorial"
+        android:title="@string/video_tutorial"
         app:showAsAction="never" />
 
 

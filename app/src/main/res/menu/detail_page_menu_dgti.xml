@@ -8,7 +8,7 @@
     <item
         android:visibility="invisible"
         android:id="@+id/action_dgti"
-        android:title="DGTI"
+        android:title="@string/dgti"
         app:showAsAction="never" />
 
 <!--    <item-->

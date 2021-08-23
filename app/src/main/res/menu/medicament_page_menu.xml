@@ -10,9 +10,9 @@
 
         android:id="@+id/action_search_med"
         android:orderInCategory="1"
-        myapp:showAsAction="always"
+        myapp:showAsAction="ifRoom"
         myapp:actionViewClass="android.widget.SearchView"
-        android:title="Searcher"
+        android:title="@string/searcher"
         android:visibility="invisible"
         />
 
@@ -20,21 +20,21 @@
     <item
         android:id="@+id/action_new_med"
         android:visibility="invisible"
-        android:title="Despre aplicatie"
+        android:title="@string/despre_aplicatie"
         app:showAsAction="never" />
 
 
     <item
         android:id="@+id/action_new_en_med"
         android:visibility="invisible"
-        android:title="About application"
+        android:title="@string/about_application"
         app:showAsAction="never" />
 
 
     <item
         android:id="@+id/action_new_ru_med"
         android:visibility="invisible"
-        android:title="О программе"
+        android:title="@string/about_application_ru"
         app:showAsAction="never" />
 
     <!--    <item-->
@@ -46,7 +46,7 @@
     <item
         android:id="@+id/video2_med"
         android:visibility="invisible"
-        android:title="Video tutorial"
+        android:title="@string/video_tutorial"
         app:showAsAction="never" />
 
 </menu>
