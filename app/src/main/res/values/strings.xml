@@ -317,17 +317,6 @@
     <string name="codul_rii">Codul Țării</string>
     <string name="denumirea_rii">Denumirea Țării</string>
 
-
-
-
-
-
-
-
-
-
-
-
     <string name="informa_ie_unitatea_de_drept">Informație unitatea de drept</string>
     <string name="denumirea_complet">Denumirea completă</string>
     <string name="statistical_unit">Statistical Unit</string>
@@ -729,23 +718,31 @@
 
     <string name="in_aplicatie_medicamentul_se_cauta_dupa_urmatoarele_campuri">In aplicatie medicamentul se cauta dupa urmatoarele campuri</string>
 
-
-
-
-
-
-
-
-
     <string name="denumirea_comun_interna_ional2">Denumirea comună internaţională.</string>
 
     <string name="ara2">Ţara.</string>
-
-
-
-    <string name="functia_de_cautare_cauta_simultan_in_toate_campurile_enumerate">Functia de cautare cauta simultan in toate campurile enumerate.</string>
+  <string name="functia_de_cautare_cauta_simultan_in_toate_campurile_enumerate">Functia de cautare cauta simultan in toate campurile enumerate.</string>
 
     <string name="in_compartimentul_despre_medicament_a_fost_adaugat_un_buton_share_care_permite_distribiurea_si_salvarea_informatie_despre_medicament">In compartimentul despre medicament a fost adaugat un buton - SHARE - care permite distribiurea si salvarea informatie despre medicament.</string>
+
+   <string name="delete">DELETE</string>
+  <string name="english_language">english language</string>
+    <string name="romanian_language">romanian language</string>
+    <string name="russian_language">russian language</string>
+   <string name="save">SAVE</string>
+    <string name="view_all">VIEW ALL</string>
+
+ <string name="dgti">DGTI</string>
+
+
+
+
+    <string name="video_tutorial">Video tutorial</string>
+    <string name="searcher">Searcher</string>
+    <string name="despre_aplicatie">Despre aplicatie</string>
+    <string name="about_application">About application</string>
+    <string name="about_application_ru">О программе</string>
+
 
 
 </resources>
