@@ -31,11 +31,10 @@ import com.bancusoft.levelstat.Retrofit.Scientist;
  * 4. Listen to click events of recyclerview item and pass the clicked item to recyclerview
  */
 public class MyAdapterstr extends RecyclerView.Adapter<MyAdapterstr.ViewHolder>{
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Scientist> scientists;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Scientist> scientists;
 
     public String searchString = "";
 
@@ -44,11 +43,21 @@ public class MyAdapterstr extends RecyclerView.Adapter<MyAdapterstr.ViewHolder>{
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView nameTxt, starTxt, galaxyTxt, departTxt, sectiaTxt, serviciuTxt, phoneTxt, descriptionTxt, formnamneTxt,
-                phonemobileTxt,emailTxt,noticeTxt;
-        private MaterialLetterIcon mIcon;
+        private final TextView nameTxt;
+        private final TextView starTxt;
+        private final TextView galaxyTxt;
+        private final TextView departTxt;
+        private final TextView sectiaTxt;
+        private final TextView serviciuTxt;
+        private final TextView phoneTxt;
+        private final TextView descriptionTxt;
+        private final TextView formnamneTxt;
+        private final TextView phonemobileTxt;
+        private final TextView emailTxt;
+        private final TextView noticeTxt;
+        private final MaterialLetterIcon mIcon;
         private MyAdapter.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -88,6 +97,7 @@ public class MyAdapterstr extends RecyclerView.Adapter<MyAdapterstr.ViewHolder>{
     public MyAdapterstr(Context mContext, ArrayList<Scientist> scientists) {
         this.c = mContext;
         this.scientists = scientists;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -101,8 +111,7 @@ public class MyAdapterstr extends RecyclerView.Adapter<MyAdapterstr.ViewHolder>{
     public MyAdapterstr.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_str, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterstr.ViewHolder vh = new MyAdapterstr.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method
@@ -145,7 +154,6 @@ public class MyAdapterstr extends RecyclerView.Adapter<MyAdapterstr.ViewHolder>{
     public int getItemCount() {
         return scientists.size();
     }
-    interface ItemClickListener {
-        void onItemClick(int pos);
-    }
+
+
 }
