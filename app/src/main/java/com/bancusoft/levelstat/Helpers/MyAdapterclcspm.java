@@ -28,11 +28,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHolder> {
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_servicii> cl_servicii;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_servicii> cl_servicii;
     public String searchString = "";
 
     /**
@@ -40,11 +39,12 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cspm_Txt, mCODUL_cspm_Txt;
+        private final TextView mDENUMIRE_cspm_Txt;
+        private final TextView mCODUL_cspm_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private MyAdapterclcspm.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -76,6 +76,7 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
     public MyAdapterclcspm(Context mContext, ArrayList<Cl_servicii> cl_servicii) {
         this.c = mContext;
         this.cl_servicii = cl_servicii;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -89,8 +90,7 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
     public MyAdapterclcspm.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_servicii, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterclcspm.ViewHolder vh = new MyAdapterclcspm.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
 
 //    @Override
@@ -139,9 +139,8 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
             holder.mDENUMIRE_cspm_Txt.setText(spanString);
-        } else {
-            //Utils.show(ctx, "Search string empty");
-        }
+        }  //Utils.show(ctx, "Search string empty");
+
 
         //highligh galaxy text while searching
         if (serviciu.contains(searchString) && !(searchString.isEmpty())) {

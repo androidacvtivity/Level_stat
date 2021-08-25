@@ -28,11 +28,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdaptercltari extends RecyclerView.Adapter<MyAdaptercltari.ViewHolder> {
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_tari> cl_tari;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_tari> cl_tari;
     public String searchString = "";
 
     /**
@@ -40,11 +39,12 @@ public class MyAdaptercltari extends RecyclerView.Adapter<MyAdaptercltari.ViewHo
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cl_tari_Txt, mCODUL_cl_tari_Txt;
+        private final TextView mDENUMIRE_cl_tari_Txt;
+        private final TextView mCODUL_cl_tari_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private MyAdaptercltari.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -76,6 +76,7 @@ public class MyAdaptercltari extends RecyclerView.Adapter<MyAdaptercltari.ViewHo
     public MyAdaptercltari(Context mContext, ArrayList<Cl_tari> cl_tari) {
         this.c = mContext;
         this.cl_tari = cl_tari;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -89,14 +90,9 @@ public class MyAdaptercltari extends RecyclerView.Adapter<MyAdaptercltari.ViewHo
     public MyAdaptercltari.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_tari, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdaptercltari.ViewHolder vh = new MyAdaptercltari.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
 
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
 
     /**
      * Our onBindViewHolder method

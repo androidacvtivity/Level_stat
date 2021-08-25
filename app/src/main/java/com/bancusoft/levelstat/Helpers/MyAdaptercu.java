@@ -32,11 +32,10 @@ import com.bancusoft.levelstat.Views.DetailActivitycu;
  * 4. Listen to click events of recyclerview item and pass the clicked item to recyclerview
  */
 public class MyAdaptercu extends RecyclerView.Adapter<MyAdaptercu.ViewHolder> {
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Scientistscu> scientists;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Scientistscu> scientists;
     public String searchString = "";
 
     /**
@@ -44,11 +43,13 @@ public class MyAdaptercu extends RecyclerView.Adapter<MyAdaptercu.ViewHolder> {
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView DEN_CUATM_Txt, NUMBER_CUATM_Txt, source_Txt ;
+        private final TextView DEN_CUATM_Txt;
+        private final TextView NUMBER_CUATM_Txt;
+        private final TextView source_Txt ;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -80,6 +81,7 @@ public class MyAdaptercu extends RecyclerView.Adapter<MyAdaptercu.ViewHolder> {
     public MyAdaptercu(Context mContext, ArrayList<Scientistscu> scientists) {
         this.c = mContext;
         this.scientists = scientists;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -93,8 +95,7 @@ public class MyAdaptercu extends RecyclerView.Adapter<MyAdaptercu.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cu, parent, false);
         view.setBackgroundResource(mBackground);
-        ViewHolder vh = new ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method

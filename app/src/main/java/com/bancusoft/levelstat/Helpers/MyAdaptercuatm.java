@@ -34,11 +34,10 @@ import com.bancusoft.levelstat.Views.DetailActivitycuatm;
 
 public class MyAdaptercuatm extends RecyclerView.Adapter<MyAdaptercuatm.ViewHolder> {
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_cuatm_all> cl_cuatm_all;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_cuatm_all> cl_cuatm_all;
     public String searchString = "";
 
     /**
@@ -46,11 +45,13 @@ public class MyAdaptercuatm extends RecyclerView.Adapter<MyAdaptercuatm.ViewHold
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cuatm_Txt, mCODUL_cuatm_Txt, mPRGS_cuatm_Txt ;
+        private final TextView mDENUMIRE_cuatm_Txt;
+        private final TextView mCODUL_cuatm_Txt;
+        private final TextView mPRGS_cuatm_Txt ;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -82,6 +83,7 @@ public class MyAdaptercuatm extends RecyclerView.Adapter<MyAdaptercuatm.ViewHold
     public MyAdaptercuatm(Context mContext, ArrayList<Cl_cuatm_all> cl_cuatm_all) {
         this.c = mContext;
         this.cl_cuatm_all = cl_cuatm_all;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -95,8 +97,7 @@ public class MyAdaptercuatm extends RecyclerView.Adapter<MyAdaptercuatm.ViewHold
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_cuatm_all, parent, false);
         view.setBackgroundResource(mBackground);
-        ViewHolder vh = new ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method

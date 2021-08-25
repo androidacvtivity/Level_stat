@@ -26,11 +26,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdapterclcaem  extends RecyclerView.Adapter<MyAdapterclcaem.ViewHolder>{
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_caem> cl_caem;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_caem> cl_caem;
     public String searchString = "";
 
     /**
@@ -38,11 +37,12 @@ public class MyAdapterclcaem  extends RecyclerView.Adapter<MyAdapterclcaem.ViewH
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_caem_Txt, mCODUL_caem_Txt;
+        private final TextView mDENUMIRE_caem_Txt;
+        private final TextView mCODUL_caem_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -74,6 +74,7 @@ public class MyAdapterclcaem  extends RecyclerView.Adapter<MyAdapterclcaem.ViewH
     public MyAdapterclcaem(Context mContext, ArrayList<Cl_caem> cl_caem) {
         this.c = mContext;
         this.cl_caem = cl_caem;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -87,14 +88,10 @@ public class MyAdapterclcaem  extends RecyclerView.Adapter<MyAdapterclcaem.ViewH
     public MyAdapterclcaem.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_caem, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterclcaem.ViewHolder vh = new MyAdapterclcaem.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
 
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
+
 
     /**
      * Our onBindViewHolder method
