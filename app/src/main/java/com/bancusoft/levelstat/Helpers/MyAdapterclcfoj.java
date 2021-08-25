@@ -27,11 +27,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdapterclcfoj extends RecyclerView.Adapter<MyAdapterclcfoj.ViewHolder>{
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_cfoj> cl_cfoj;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_cfoj> cl_cfoj;
     public String searchString = "";
 
     /**
@@ -39,11 +38,12 @@ public class MyAdapterclcfoj extends RecyclerView.Adapter<MyAdapterclcfoj.ViewHo
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cfoj_Txt, mCODUL_cfoj_Txt;
+        private final TextView mDENUMIRE_cfoj_Txt;
+        private final TextView mCODUL_cfoj_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private MyAdapterclcfoj.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -75,6 +75,7 @@ public class MyAdapterclcfoj extends RecyclerView.Adapter<MyAdapterclcfoj.ViewHo
     public MyAdapterclcfoj(Context mContext, ArrayList<Cl_cfoj> cl_cfoj) {
         this.c = mContext;
         this.cl_cfoj = cl_cfoj;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -88,14 +89,9 @@ public class MyAdapterclcfoj extends RecyclerView.Adapter<MyAdapterclcfoj.ViewHo
     public MyAdapterclcfoj.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_cfoj, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterclcfoj.ViewHolder vh = new MyAdapterclcfoj.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
 
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
 
     /**
      * Our onBindViewHolder method
