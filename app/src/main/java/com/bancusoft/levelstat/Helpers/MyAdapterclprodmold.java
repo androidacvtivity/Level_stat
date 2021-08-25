@@ -27,11 +27,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdapterclprodmold extends RecyclerView.Adapter<MyAdapterclprodmold.ViewHolder>{
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_prodmold> cl_prodmold;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_prodmold> cl_prodmold;
     public String searchString = "";
 
     /**
@@ -39,11 +38,13 @@ public class MyAdapterclprodmold extends RecyclerView.Adapter<MyAdapterclprodmol
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cl_prodmold_Txt, mCODUL_cl_prodmold_Txt, mUM_cl_prodmold_Txt;
+        private final TextView mDENUMIRE_cl_prodmold_Txt;
+        private final TextView mCODUL_cl_prodmold_Txt;
+        private final TextView mUM_cl_prodmold_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private MyAdapterclprodmold.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -75,6 +76,7 @@ public class MyAdapterclprodmold extends RecyclerView.Adapter<MyAdapterclprodmol
     public MyAdapterclprodmold(Context mContext, ArrayList<Cl_prodmold> cl_prodmold) {
         this.c = mContext;
         this.cl_prodmold = cl_prodmold;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -88,14 +90,9 @@ public class MyAdapterclprodmold extends RecyclerView.Adapter<MyAdapterclprodmol
     public MyAdapterclprodmold.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_prodmold, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterclprodmold.ViewHolder vh = new MyAdapterclprodmold.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
 
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
 
     /**
      * Our onBindViewHolder method

@@ -27,11 +27,10 @@ import com.bancusoft.levelstat.R;
 
 public class MyAdapterclcocm extends RecyclerView.Adapter<MyAdapterclcocm.ViewHolder> {
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_cocm> cl_cocm;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_cocm> cl_cocm;
     public String searchString = "";
 
     /**
@@ -39,11 +38,12 @@ public class MyAdapterclcocm extends RecyclerView.Adapter<MyAdapterclcocm.ViewHo
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mDENUMIRE_cocm_Txt, mCODUL_cocm_Txt;
+        private final TextView mDENUMIRE_cocm_Txt;
+        private final TextView mCODUL_cocm_Txt;
 
-        private MaterialLetterIcon mIcon;
+        private final MaterialLetterIcon mIcon;
         private MyAdapterclcocm.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -75,6 +75,7 @@ public class MyAdapterclcocm extends RecyclerView.Adapter<MyAdapterclcocm.ViewHo
     public MyAdapterclcocm(Context mContext, ArrayList<Cl_cocm> cl_cocm) {
         this.c = mContext;
         this.cl_cocm = cl_cocm;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -88,14 +89,8 @@ public class MyAdapterclcocm extends RecyclerView.Adapter<MyAdapterclcocm.ViewHo
     public MyAdapterclcocm.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_cocm, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapterclcocm.ViewHolder vh = new MyAdapterclcocm.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
-
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
 
     /**
      * Our onBindViewHolder method
