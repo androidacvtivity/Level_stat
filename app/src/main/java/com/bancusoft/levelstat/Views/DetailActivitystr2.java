@@ -6,17 +6,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientist;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -47,13 +46,6 @@ public class DetailActivitystr2 extends AppCompatActivity{
         phonemobilTV = findViewById(R.id.phonemobilTVs);
         floorTV = findViewById(R.id.floorTVs);
         officeTV = findViewById(R.id.officeTVs);
-
-
-//        dobTV= findViewById(R.id.dobTV);
-//        diedTV= findViewById(R.id.diedTV);
-        //  editFAB=findViewById(R.id.editFAB);
-
-        //	editFAB.setOnClickListener(this);
 
         mCollapsingToolbarLayout=findViewById(R.id.mCollapsingToolbarLayouts);
     }
@@ -203,47 +195,38 @@ public class DetailActivitystr2 extends AppCompatActivity{
 
         Button mBtnShare = findViewById(R.id.btnShares);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_nameTV = nameTV.getText().toString();
-                String s_descriptionTV = descriptionTV.getText().toString();
-                String s_floorTV = floorTV.getText().toString();
-                String  s_officeTV = officeTV.getText().toString();
-                String  s_galaxyTV = galaxyTV.getText().toString();
-                String  s_serviciuTV = serviciuTV.getText().toString();
-                String  s_sectiaTV = sectiaTV.getText().toString();
-                String  s_departTV = departTV.getText().toString();
-                String  s_starTV = starTV.getText().toString();
-                String  s_phoneTV = phoneTV.getText().toString();
-                String  s_phonemobilTV = phonemobilTV.getText().toString();
-                String  s_phoneinternalTV = phoneinternalTV.getText().toString();
-                String  s_formnameTV = formnameTV.getText().toString();
-                String  s_emailTV = emailTV.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_nameTV = nameTV.getText().toString();
+            String s_descriptionTV = descriptionTV.getText().toString();
+            String s_floorTV = floorTV.getText().toString();
+            String  s_officeTV = officeTV.getText().toString();
+            String  s_galaxyTV = galaxyTV.getText().toString();
+            String  s_serviciuTV = serviciuTV.getText().toString();
+            String  s_sectiaTV = sectiaTV.getText().toString();
+            String  s_departTV = departTV.getText().toString();
+            String  s_starTV = starTV.getText().toString();
+            String  s_phoneTV = phoneTV.getText().toString();
+            String  s_phonemobilTV = phonemobilTV.getText().toString();
+            String  s_phoneinternalTV = phoneinternalTV.getText().toString();
+            String  s_formnameTV = formnameTV.getText().toString();
+            String  s_emailTV = emailTV.getText().toString();
 
 
-                String a = " Nume, prenume  : " + s_nameTV + "-   Locația :  "+ s_descriptionTV + " - Etajul :  " +  s_floorTV
-                        + " -  Oficiul :  " +  s_officeTV + "  - Functia :  " + s_galaxyTV + " -  Serviciu :  " + s_serviciuTV
-                        + " - Sectia :  " + s_sectiaTV +  " -  Directia :  " +  s_departTV + " -  Directia generala :  " + s_starTV
-                        + " - Telefon fix serviciu :  " + s_phoneTV  + "  - Telefon mobil serviciu :  " +  s_phonemobilTV
-                        + " -  Telefon intern :  " +  s_phoneinternalTV + " - Cercetări Statistice  :  " + s_formnameTV
-                        +  " -  E-mail :   " +  s_emailTV
-                        ;
+            String contentShare = " Nume, prenume  : " + s_nameTV + "-   Locația :  "+ s_descriptionTV + " - Etajul :  " +  s_floorTV
+                    + " -  Oficiul :  " +  s_officeTV + "  - Functia :  " + s_galaxyTV + " -  Serviciu :  " + s_serviciuTV
+                    + " - Sectia :  " + s_sectiaTV +  " -  Directia :  " +  s_departTV + " -  Directia generala :  " + s_starTV
+                    + " - Telefon fix serviciu :  " + s_phoneTV  + "  - Telefon mobil serviciu :  " +  s_phonemobilTV
+                    + " -  Telefon intern :  " +  s_phoneinternalTV + " - Cercetări Statistice  :  " + s_formnameTV
+                    +  " -  E-mail :   " +  s_emailTV;
 
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
-                String contentShare = new String(a);
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia de contact despre angajat BNS");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia de contact despre angajat BNS");
-                sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
-
-
-
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 
@@ -267,49 +250,42 @@ public class DetailActivitystr2 extends AppCompatActivity{
 
         Button mBtnSend = findViewById(R.id.btnnNtices);
 
-        mBtnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_nameTV = nameTV.getText().toString();
-                String s_descriptionTV = descriptionTV.getText().toString();
-                String s_floorTV = floorTV.getText().toString();
-                String  s_officeTV = officeTV.getText().toString();
-                String  s_galaxyTV = galaxyTV.getText().toString();
-                String  s_serviciuTV = serviciuTV.getText().toString();
-                String  s_sectiaTV = sectiaTV.getText().toString();
-                String  s_departTV = departTV.getText().toString();
-                String  s_starTV = starTV.getText().toString();
-                String  s_phoneTV = phoneTV.getText().toString();
-                String  s_phonemobilTV = phonemobilTV.getText().toString();
-                String  s_phoneinternalTV = phoneinternalTV.getText().toString();
-                String  s_formnameTV = formnameTV.getText().toString();
-                String  s_emailTV = emailTV.getText().toString();
+        mBtnSend.setOnClickListener(view -> {
+            String s_nameTV = nameTV.getText().toString();
+            String s_descriptionTV = descriptionTV.getText().toString();
+            String s_floorTV = floorTV.getText().toString();
+            String  s_officeTV = officeTV.getText().toString();
+            String  s_galaxyTV = galaxyTV.getText().toString();
+            String  s_serviciuTV = serviciuTV.getText().toString();
+            String  s_sectiaTV = sectiaTV.getText().toString();
+            String  s_departTV = departTV.getText().toString();
+            String  s_starTV = starTV.getText().toString();
+            String  s_phoneTV = phoneTV.getText().toString();
+            String  s_phonemobilTV = phonemobilTV.getText().toString();
+            String  s_phoneinternalTV = phoneinternalTV.getText().toString();
+            String  s_formnameTV = formnameTV.getText().toString();
+            String  s_emailTV = emailTV.getText().toString();
 
 
-                String a = " Nume, prenume  : " + s_nameTV + "  -   Locația :  "+  s_descriptionTV +  "  - Etajul :   " +  s_floorTV
-                        + "  -  Oficiul :  " +  s_officeTV + "  -  Functia :  " + s_galaxyTV + "  -  Serviciu :   " + s_serviciuTV
-                        + "  -  Sectia :   " + s_sectiaTV +   " -   Directia :   " +  s_departTV + " -   Directia generala :  " + s_starTV
-                        + " -  Telefon fix serviciu :   " + s_phoneTV  + "  -  Telefon mobil serviciu :   " +  s_phonemobilTV
-                        + " -   Telefon intern :  " +  s_phoneinternalTV + " -  Cercetări Statistice  :   " + s_formnameTV
-                        +  "  -  E-mail :   " +  s_emailTV
-                        ;
+            String a = " Nume, prenume  : " + s_nameTV + "  -   Locația :  "+  s_descriptionTV +  "  - Etajul :   " +  s_floorTV
+                    + "  -  Oficiul :  " +  s_officeTV + "  -  Functia :  " + s_galaxyTV + "  -  Serviciu :   " + s_serviciuTV
+                    + "  -  Sectia :   " + s_sectiaTV +   " -   Directia :   " +  s_departTV + " -   Directia generala :  " + s_starTV
+                    + " -  Telefon fix serviciu :   " + s_phoneTV  + "  -  Telefon mobil serviciu :   " +  s_phonemobilTV
+                    + " -   Telefon intern :  " +  s_phoneinternalTV + " -  Cercetări Statistice  :   " + s_formnameTV
+                    +  "  -  E-mail :   " +  s_emailTV
+                    ;
 
 
 
 
-                String email2 = "vitallybankou@gmail.com";
-                String subject= "The list of contacts of Employer are wrong. Write please,  which of fields is wrong.  ";
-                String contentShare = new String(a);
-                String mailTo = "mailto:" + email2 + //"," + email2 +
-                        "?&subject=" + Uri.encode(subject) +
-                        "&body=" + Uri.encode(contentShare);
-                Intent emailIntent = new Intent(Intent.ACTION_VIEW);
-                emailIntent.setData(Uri.parse(mailTo));
-                startActivity(emailIntent);
-            }
-
-
-
+            String email2 = "vitallybankou@gmail.com";
+            String subject= "The list of contacts of Employer are wrong. Write please,  which of fields is wrong.  ";
+            String mailTo = "mailto:" + email2 + //"," + email2 +
+                    "?&subject=" + Uri.encode(subject) +
+                    "&body=" + Uri.encode(a);
+            Intent emailIntent = new Intent(Intent.ACTION_VIEW);
+            emailIntent.setData(Uri.parse(mailTo));
+            startActivity(emailIntent);
         });
 
 
