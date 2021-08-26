@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
@@ -82,12 +83,8 @@ public class DetailActivitystr2 extends AppCompatActivity{
             officeTV.setText(receivedScientist.getOffice());
 
 
-//             dobTV.setText(receivedScientist.getDob());
-//             diedTV.setText(receivedScientist.getDied());
-
             mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
     }
     /**
@@ -104,57 +101,58 @@ public class DetailActivitystr2 extends AppCompatActivity{
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_str:
-                Utils.sendScientistToActivity(this,receivedScientist,help.class);
-                finish();
-                return true;
 
-
-            case R.id.action_edit_en_str:
-                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-                finish();
-                return true;
-
-            case R.id.action_edit_ru_str:
-                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                Intent intent;
-                intent = new Intent(this, ScientistsActivitystr2.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-                return true;
-
-
-            case R.id.video3_str:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
+        int id = item.getItemId();
+        if (id==R.id.action_edit_str){
+            Utils.sendScientistToActivity(this,receivedScientist,help.class);
+            finish();
+            return true;
         }
+        else
+
+        if (id==R.id.action_edit_en_str){
+            Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
+            finish();
+            return true;
+
+        }
+
+        else
+        if (id==R.id.action_edit_ru_str){
+            Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
+            finish();
+            return true;
+        }
+
+
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, ScientistsActivitystr2.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_str){
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+
+
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
-    /**
-     * When FAB button is clicked we want to go to the editing page
-     */
-////    @Override
-//    public void onClick(View v) {
-//        int id =v.getId();
-//        if(id == R.id.editFAB){
-//         //   Utils.sendScientistToActivity(this,receivedScientist,CRUDActivity.class);
-//
-//
-//
-//
-//
-//
-//
-//         //   finish();
-//        }
-//    }
+
 
 
     /**

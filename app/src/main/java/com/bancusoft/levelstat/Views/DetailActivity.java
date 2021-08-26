@@ -49,11 +49,7 @@ public class DetailActivity extends AppCompatActivity  {
         officeTV = findViewById(R.id.officeTV);
 
 
-//        dobTV= findViewById(R.id.dobTV);
-//        diedTV= findViewById(R.id.diedTV);
-      //  editFAB=findViewById(R.id.editFAB);
 
-	//	editFAB.setOnClickListener(this);
 
         mCollapsingToolbarLayout=findViewById(R.id.mCollapsingToolbarLayout);
     }
@@ -81,19 +77,10 @@ public class DetailActivity extends AppCompatActivity  {
              phonemobilTV.setText(receivedScientist.getPhonemobil().trim());
              floorTV.setText(receivedScientist.getFloor().trim());
              officeTV.setText(receivedScientist.getOffice().trim());
-
-
-//             dobTV.setText(receivedScientist.getDob());
-//             diedTV.setText(receivedScientist.getDied());
-
               mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
-//              mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-//              getColor(R.color.white));
+              mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
 
-             mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
 
-//             Context context;
-//             ContextCompat.getColor(context, R.color.white);
          }
     }
     /**
@@ -120,8 +107,6 @@ public class DetailActivity extends AppCompatActivity  {
         }
         else
 
-
-
         if (id==R.id.action_edit_en){
             Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
             finish();
@@ -129,14 +114,14 @@ public class DetailActivity extends AppCompatActivity  {
 
         }
         else
-
-
         if (id==R.id.action_edit_ru){
             Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
             finish();
             return true;
 
         }
+
+
         else
 
         if (id == android.R.id.home){
@@ -160,61 +145,11 @@ public class DetailActivity extends AppCompatActivity  {
 
         }
 
-//        switch (item.getItemId()) {
-//            case R.id.action_edit:
-//                Utils.sendScientistToActivity(this,receivedScientist,help.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_edit_en:
-//                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_edit_ru:
-//                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-//                finish();
-//                return true;
-//
-//            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-////                Utils.sendScientistToActivity(this,receivedScientist,ScientistsActivity.class);
-////                finish();
-////                return true;
-//
-//                Intent intent;
-//                intent = new Intent(this, ScientistsActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                finish();
-//                startActivity(intent);
-//                return true;
-//
-//
-//            case R.id.video3:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
+
         return super.onOptionsItemSelected(item);
     }
 
-    //When FAB button is clicked we want to go to the editing page
-////    @Override
-//    public void onClick(View v) {
-//        int id =v.getId();
-//        if(id == R.id.editFAB){
-//         //   Utils.sendScientistToActivity(this,receivedScientist,CRUDActivity.class);
-//
-//
-//
-//
-//
-//
-//
-//         //   finish();
-//        }
-//    }
+
 
 
     /**
@@ -238,11 +173,7 @@ public class DetailActivity extends AppCompatActivity  {
         startActivity(intent);
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
+
     /**
      * Our onCreate method
      */
