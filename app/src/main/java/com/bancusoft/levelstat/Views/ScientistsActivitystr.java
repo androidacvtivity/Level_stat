@@ -175,20 +175,7 @@ public class ScientistsActivitystr extends AppCompatActivity
             }
         });
     }
-    /**
-     * We inflate our menu. We show SearchView inside the toolbar
-//     */
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.scientists_page_menu_str, menu);
-////        MenuItem searchItem = menu.findItem(R.id.action_search_str);
-////        SearchView searchView = (SearchView) searchItem.getActionView();
-////        searchView.setOnQueryTextListener(this);
-////        searchView.setIconified(true);
-////        searchView.setQueryHint("Căutare");
-//        return true;
-//    }
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail_page_menu_str, menu);
@@ -285,11 +272,6 @@ public class ScientistsActivitystr extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
 
 
     @Override
