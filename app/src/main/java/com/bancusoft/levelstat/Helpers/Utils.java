@@ -27,6 +27,7 @@ import com.bancusoft.levelstat.Retrofit.Scientistscfp;
 import com.bancusoft.levelstat.Retrofit.Scientistscu;
 import com.bancusoft.levelstat.Retrofit.Scientistvw;
 import com.bancusoft.levelstat.Views.DashboardActivity;
+import com.bancusoft.levelstat.Views.ScientistsActivityvw;
 import com.bancusoft.levelstat.Views.help;
 import com.bancusoft.levelstat.Views.help_vw;
 import com.bancusoft.levelstat.Views.help_vw_en;
@@ -275,7 +276,7 @@ public class Utils {
                 .setIcon(R.drawable.m_info)
                 .setMessage(message)
                 .setPositiveButton("en", (dialog, which) -> openActivity(activity, help_vw_en.class))
-                .setNeutralButton("La inceput", (dialog, which) -> openActivity(activity, DashboardActivity.class))
+                .setNeutralButton("La inceput", (dialog, which) -> openActivity(activity, ScientistsActivityvw.class))
                 .setNegativeButton("ru", (dialog, which) -> openActivity(activity, help_vw_ru.class))
 
                 .show();
@@ -391,7 +392,7 @@ public class Utils {
                 .setIcon(R.drawable.m_info)
                 .setMessage(message)
                 .setPositiveButton("ro", (dialog, which) -> openActivity(activity, help_vw.class))
-                .setNeutralButton("Dashboard", (dialog, which) -> openActivity(activity, DashboardActivity.class))
+                .setNeutralButton("Dashboard", (dialog, which) -> openActivity(activity, ScientistsActivityvw.class))
                 .setNegativeButton("ru", (dialog, which) -> openActivity(activity, help_vw_ru.class))
 
                 .show();
@@ -498,7 +499,7 @@ public class Utils {
                 .setIcon(R.drawable.m_info)
                 .setMessage(message)
                 .setPositiveButton("ro", (dialog, which) -> openActivity(activity, help_vw.class))
-                .setNeutralButton("В начало", (dialog, which) -> openActivity(activity, DashboardActivity.class))
+                .setNeutralButton("В начало", (dialog, which) -> openActivity(activity, ScientistsActivityvw.class))
                 .setNegativeButton("en", (dialog, which) -> openActivity(activity, help_vw_en.class))
 
                 .show();
