@@ -78,6 +78,7 @@ public class DetailActivity extends AppCompatActivity  {
              floorTV.setText(receivedScientist.getFloor().trim());
              officeTV.setText(receivedScientist.getOffice().trim());
               mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
+
               mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
 
 
