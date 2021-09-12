@@ -130,18 +130,7 @@ public class DetailActivityclcaem2 extends AppCompatActivity {
 
 
 
-//            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendCl_caem2ToActivity(this,receivedCl_caem2,ScientistsActivitycuatm.class);
-//                finish();
-//                return true;
-//
-//            case R.id.video3_caem:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
-//
+
 
 
 

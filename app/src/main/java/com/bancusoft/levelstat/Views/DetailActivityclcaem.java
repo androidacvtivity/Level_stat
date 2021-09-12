@@ -81,35 +81,6 @@ public class DetailActivityclcaem extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-//        switch (item.getItemId()) {
-//            case R.id.action_edit_caem:
-//                Utils.sendCl_caemToActivity(this,receivedCl_caem,help_vw.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_edit_en_caem:
-//                Utils.sendCl_caemToActivity(this,receivedCl_caem,help_vw_en.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_edit_ru_caem:
-//                Utils.sendCl_caemToActivity(this,receivedCl_caem,help_vw_ru.class);
-//                finish();
-//                return true;
-//
-//            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendCl_caemToActivity(this,receivedCl_caem,ScientistsActivitycucaem.class);
-//                finish();
-//                return true;
-//
-//            case R.id.video3_caem:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
-//
 
         int id = item.getItemId();
 
