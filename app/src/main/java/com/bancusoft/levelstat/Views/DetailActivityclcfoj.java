@@ -134,18 +134,7 @@ public class DetailActivityclcfoj extends AppCompatActivity {
 
 
 
-//
-//            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendCl_cfojToActivity(this,receivedCl_cfoj,ScientistsActivityclcfoj.class);
-//                finish();
-//                return true;
-//
-//            case R.id.video3_cl_cfoj:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
+
 
         return super.onOptionsItemSelected(item);
     }
