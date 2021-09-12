@@ -234,34 +234,7 @@ public class ScientistsActivityclcfoj extends AppCompatActivity
 
 
 
-//        switch (item.getItemId()) {
-//            case R.id.action_new_cl_cfoj:
-//                Utils.openActivity(this, help_vw.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_new_en_cl_cfoj:
-//                Utils.openActivity(this, help_vw_en.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_new_ru_cl_cfoj:
-//                Utils.openActivity(this, help_vw_ru.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.home:
-//                Utils.openActivity(this, DashboardActivity.class);
-//                finish();
-//                return true;
-//
-//            case R.id.video2_cl_cfoj:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
+
         return super.onOptionsItemSelected(item);
     }
 
