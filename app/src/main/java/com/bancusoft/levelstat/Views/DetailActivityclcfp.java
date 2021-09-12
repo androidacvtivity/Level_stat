@@ -82,34 +82,60 @@ public class DetailActivityclcfp extends AppCompatActivity  {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_cl_cfp:
-                Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw.class);
-                finish();
-                return true;
 
+        int id = item.getItemId();
 
-            case R.id.action_edit_en_cl_cfp:
-                Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw_en.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cl_cfp){
+            Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_cl_cfp:
-                Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw_ru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendCl_cfpToActivity(this,receivedCl_cfp,ScientistsActivityclcfp.class);
-                finish();
-                return true;
-
-            case R.id.video3_cl_cfp:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cl_cfp){
+            Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_cl_cfp){
+            Utils.sendCl_cfpToActivity(this,receivedCl_cfp,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,ScientistsActivityclcfp.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_cl_cfp) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
