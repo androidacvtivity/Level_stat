@@ -57,8 +57,7 @@ public class DetailActivityclcfp extends AppCompatActivity  {
 
             mCollapsingToolbarLayout.setTitle(receivedCl_cfp.getCODUL());
 
-//            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-//                    getColor(R.color.white));
+
 
             mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
