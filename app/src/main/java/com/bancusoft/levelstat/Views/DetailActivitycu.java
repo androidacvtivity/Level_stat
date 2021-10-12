@@ -6,17 +6,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
-
 import com.bancusoft.levelstat.Retrofit.Scientistscu;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -58,8 +57,9 @@ public class DetailActivitycu extends AppCompatActivity {
 
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getNUMBER_CUATM());
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
+
         }
 
     }
@@ -79,34 +79,57 @@ public class DetailActivitycu extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_cu:
-                Utils.sendScientistscuToActivity(this,receivedScientist,help_vw.class);
-                finish();
-                return true;
 
 
-            case R.id.action_edit_en_cu:
-                Utils.sendScientistscuToActivity(this,receivedScientist,help_vw_en.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.action_edit_ru_cu:
-                Utils.sendScientistscuToActivity(this,receivedScientist,help_vw_ru.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cu){
+            Utils.sendScientistscuToActivity(this,receivedScientist,help_vw.class);
+            finish();
+            return true;
 
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendScientistscuToActivity(this,receivedScientist,ScientistsActivitycu.class);
-                finish();
-                return true;
-
-            case R.id.video3_cu:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cu){
+            Utils.sendScientistscuToActivity(this,receivedScientist,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_cu){
+            Utils.sendScientistscuToActivity(this,receivedScientist,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,ScientistsActivitycu.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_cu) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -144,28 +167,22 @@ public class DetailActivitycu extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_cu);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_DEN_CUATM_TV = DEN_CUATM_TV.getText().toString();
-                String s_NUMBER_CUATM_TV = NUMBER_CUATM_TV.getText().toString();
-                String s_source_TV = source_TV.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_DEN_CUATM_TV = DEN_CUATM_TV.getText().toString();
+            String s_NUMBER_CUATM_TV = NUMBER_CUATM_TV.getText().toString();
+            String s_source_TV = source_TV.getText().toString();
 
 
+            String contentShare = " Municipiu   raion : " + s_DEN_CUATM_TV + " - Număr (care au codul IDNO) :  "+ s_NUMBER_CUATM_TV + " Actualizarea " + s_source_TV;
 
-                String a = " Municipiu   raion : " + s_DEN_CUATM_TV + " - Număr (care au codul IDNO) :  "+ s_NUMBER_CUATM_TV + " Actualizarea " + s_source_TV;
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia deschisa  despre Municipiu / raion");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-                String contentShare = new String(a);
-
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Informatia deschisa  despre Municipiu / raion");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 
