@@ -6,16 +6,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import com.bancusoft.levelstat.Retrofit.Cl_tari;
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
+import com.bancusoft.levelstat.Retrofit.Cl_tari;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
@@ -57,8 +58,7 @@ public class DetailActivitycltari extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedCl_tari.getCODUL());
 
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
@@ -80,34 +80,57 @@ public class DetailActivitycltari extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_cl_tari:
-                Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw.class);
-                finish();
-                return true;
 
+        int id = item.getItemId();
 
-            case R.id.action_edit_en_cl_tari:
-                Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw_en.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cl_tari){
+            Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_cl_tari:
-                Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw_ru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendCl_tariToActivity(this,receivedCl_tari,ScientistsActivitycltari.class);
-                finish();
-                return true;
-
-            case R.id.video3_cl_tari:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cl_tari){
+            Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_cl_tari){
+            Utils.sendCl_tariToActivity(this,receivedCl_tari,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,ScientistsActivitycltari.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_cl_tari) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -149,30 +172,23 @@ public class DetailActivitycltari extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_cl_tarii);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_CODUL_TV_CL_TARII = CODUL_TV_CL_TARII.getText().toString();
-                String s_DENUMIRE_TV_CL_TARII = DENUMIRE_TV_CL_TARII.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_CODUL_TV_CL_TARII = CODUL_TV_CL_TARII.getText().toString();
+            String s_DENUMIRE_TV_CL_TARII = DENUMIRE_TV_CL_TARII.getText().toString();
 
 
+            String contentShare = " Codul Țării : " + s_CODUL_TV_CL_TARII + " - Denumirea , \n" +
+                    "  :  " + s_DENUMIRE_TV_CL_TARII;
 
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
-                String a = " Codul Țării : " + s_CODUL_TV_CL_TARII + " - Denumirea , \n" +
-                        "  :  " + s_DENUMIRE_TV_CL_TARII;
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Clasificatorul internaţional al ţărilor lumii şi teritoriilor, care se utilizează la\n" +
+                    "completarea rapoartelor statistice privind exportul şi importul de servicii.");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-
-                String contentShare = new String(a);
-
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Clasificatorul internaţional al ţărilor lumii şi teritoriilor, care se utilizează la\n" +
-                        "completarea rapoartelor statistice privind exportul şi importul de servicii.");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 
