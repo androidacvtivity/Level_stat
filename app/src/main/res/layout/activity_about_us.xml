@@ -353,6 +353,36 @@
                         android:text="@string/afteni_tatiana" />
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/mRelativeLayout8"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/doru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:autoLink="email"
+                        android:text="@string/programmer"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/doru"
+
+                        android:text="@string/Doru_Marian" />
+                </RelativeLayout>
+
+
+
+
 
             </RelativeLayout>
         </ScrollView>
