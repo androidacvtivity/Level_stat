@@ -1,21 +1,22 @@
 package com.bancusoft.levelstat.Views;
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Cl_cuatm_all;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class DetailActivitycuatm extends AppCompatActivity {
@@ -58,8 +59,9 @@ public class DetailActivitycuatm extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setTitle(receivedCl_cuatm_all.getCODUL());
 
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+
+
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
@@ -79,34 +81,57 @@ public class DetailActivitycuatm extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_cuatm:
-                Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw.class);
-                finish();
-                return true;
 
 
-            case R.id.action_edit_en_cuatm:
-                Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw_en.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.action_edit_ru_cuatm:
-                Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw_ru.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cuatm){
+            Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw.class);
+            finish();
+            return true;
 
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-                Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,ScientistsActivitycuatm.class);
-                finish();
-                return true;
-
-            case R.id.video3_cuatm:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cuatm){
+            Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_cuatm){
+            Utils.sendCl_cuatm_allToActivity(this,receivedCl_cuatm_all,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this,ScientistsActivitycuatm.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_cuatm) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -144,29 +169,23 @@ public class DetailActivitycuatm extends AppCompatActivity {
 
         Button mBtnShare = findViewById(R.id.btnShare_cuatm);
 
-        mBtnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_CODUL_TV_CUATM = CODUL_TV_CUATM.getText().toString();
-                String s_DENUMIRE_TV_cuatm = DENUMIRE_TV_cuatm.getText().toString();
-                String s_act_TV_cuatm = act_TV_cuatm.getText().toString();
+        mBtnShare.setOnClickListener(view -> {
+            String s_CODUL_TV_CUATM = CODUL_TV_CUATM.getText().toString();
+            String s_DENUMIRE_TV_cuatm = DENUMIRE_TV_cuatm.getText().toString();
+            String s_act_TV_cuatm = act_TV_cuatm.getText().toString();
 
 
+            String contentShare = " Codul statistic: " + s_CODUL_TV_CUATM + "- Denumirea oraşelor (municipiilor), \n" +
+                    "satelor (comunelor) :  "+ s_DENUMIRE_TV_cuatm + "Statutul " + s_act_TV_cuatm;
 
-                String a = " Codul statistic: " + s_CODUL_TV_CUATM + "- Denumirea oraşelor (municipiilor), \n" +
-                        "satelor (comunelor) :  "+ s_DENUMIRE_TV_cuatm + "Statutul " + s_act_TV_cuatm;
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
 
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia deschisa  după CLASIFICATORUL  UNITĂŢILOR ADMINISTRATIV-TERITORIALE AL  REPUBLICII  MOLDOVA (CUATM)");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
-                String contentShare = new String(a);
-
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Informatia deschisa  după CLASIFICATORUL  UNITĂŢILOR ADMINISTRATIV-TERITORIALE AL  REPUBLICII  MOLDOVA (CUATM)");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, contentShare);
-
-                startActivity(Intent.createChooser(sharingIntent, "Share text via"));
-            }
+            startActivity(Intent.createChooser(sharingIntent, "Share text via"));
         });
 
 
