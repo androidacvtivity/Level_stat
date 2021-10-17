@@ -43,8 +43,6 @@ public class help extends BaseActivity{
      */
 
     public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.help, menu);
 
         getMenuInflater().inflate(R.menu.help, menu);
         return true;
@@ -58,36 +56,54 @@ public class help extends BaseActivity{
          */
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.rolang:
-                    Utils.sendScientistToActivity(this,receivedScientist,help.class);
-                    finish();
-                    return true;
 
-                case R.id.enlang:
-                    Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-                    finish();
-                    return true;
+            int id = item.getItemId();
 
-
-                case R.id.rulang:
-                    Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-                    finish();
-                    return true;
-
-                case R.id.link1:
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                    startActivity(browserIntent);
-                    break;
-
-
-
-//            case android.R.id.home:
-//
-//                Utils.sendScientistToActivity(this,receivedScientist,ScientistsActivity.class);
-//                finish();
-//                return true;
+            if (id==R.id.rolang){
+                Utils.sendScientistToActivity(this,receivedScientist,help.class);
+                finish();
+                return true;
             }
+            else
+
+            if (id==R.id.enlang){
+                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
+                finish();
+                return true;
+
+            }
+
+            else
+            if (id==R.id.rulang){
+                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
+                finish();
+                return true;
+            }
+
+
+            else
+
+            if (id == android.R.id.home){
+
+                Intent intent;
+                intent = new Intent(this, ScientistsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                finish();
+                startActivity(intent);
+                return true;
+
+            }
+
+            else
+            if (id == R.id.link1) {
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+                startActivity(browserIntent);
+
+
+            }
+
             return super.onOptionsItemSelected(item);
     }
 
