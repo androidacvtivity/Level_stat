@@ -298,9 +298,8 @@ public class CRUDActivity extends AppCompatActivity {
             emailTxt.setText(receivedScientist.getEmail());
             personalinfoTxt.setText(receivedScientist.getPersonalinfo());
             formnameTxt.setText(receivedScientist.getFormname());
-        } else {
-            //Utils.show(c,"Received Scientist is Null");
-        }
+        }  //Utils.show(c,"Received Scientist is Null");
+
     }
     /**
      * Let's override our onCreate() method
