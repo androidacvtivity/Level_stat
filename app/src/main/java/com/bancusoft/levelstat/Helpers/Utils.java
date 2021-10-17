@@ -61,17 +61,12 @@ public class Utils {
 
     public   static  final  String  youtube_Stat_Level = "https://www.youtube.com/watch?v=Mn4AV9exZJ0";
 
-      private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
+     private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
 
 
-  //   private  static  final String base_url = "http://192.168.0.100/bns/";
-
-    //http://192.168.1.2/PHP/bns/
-
-   // private  static  final String base_url =   "http://192.168.0.101/PHP/bns/";
+      // private  static  final String base_url = "http://192.168.1.5/PHP/bns/";
 
 
-   //   private  static  final String base_url =   "http://192.168.0.102/PHP/bns/";
 
 
     private static Retrofit retrofit = null;
