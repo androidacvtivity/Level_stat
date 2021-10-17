@@ -137,41 +137,6 @@ public class DetailActivityvw extends AppCompatActivity  {
 
         }
 
-//        switch (item.getItemId()) {
-//            case R.id.action_edit_vw:
-//                Utils.sendScientistvwToActivity(this,receivedScientist,help_vw.class);
-//                finish();
-//                return true;
-//
-//
-//            case R.id.action_edit_en_vw:
-//                Utils.sendScientistvwToActivity(this,receivedScientist,help_vw_en.class);
-//                finish();
-//                return true;
-//
-//            case R.id.action_edit_ru_vw:
-//                Utils.sendScientistvwToActivity(this,receivedScientist,help_vw_ru.class);
-//                finish();
-//                return true;
-//
-//            case android.R.id.home:
-//
-//
-//
-//                Intent intent;
-//                intent = new Intent(this, ScientistsActivityvw.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                finish();
-//                startActivity(intent);
-//                return true;
-//
-//            case R.id.video3_vw:
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-//                startActivity(browserIntent);
-//                break;
-//        }
-
-
 
         return super.onOptionsItemSelected(item);
     }
