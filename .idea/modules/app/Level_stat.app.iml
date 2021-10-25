@@ -102,7 +102,7 @@
     <orderEntry type="library" name="Gradle: io.github.inflationx:calligraphy3:3.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: io.github.inflationx:viewpump:2.0.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.ivbaranov:materiallettericon:0.2.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: cn.gavinliu:ShapedImageView:0.8.7@aar" level="project" />
   </component>
