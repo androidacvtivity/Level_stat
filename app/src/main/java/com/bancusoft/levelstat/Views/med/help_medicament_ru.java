@@ -1,24 +1,22 @@
 package com.bancusoft.levelstat.Views.med;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.bancusoft.levelstat.Retrofit.Scientist;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
+import com.bancusoft.levelstat.Retrofit.Scientist;
 import com.bancusoft.levelstat.Views.BaseActivity;
-import com.bancusoft.levelstat.Views.help;
-import com.bancusoft.levelstat.Views.helpen;
-import com.bancusoft.levelstat.Views.helpru;
 
 public class help_medicament_ru extends BaseActivity{
 
     private Scientist receivedScientist;
-    private Toolbar toolbar;
+
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -47,8 +45,7 @@ public class help_medicament_ru extends BaseActivity{
      */
 
     public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.help, menu);
+
 
         getMenuInflater().inflate(R.menu.help_med, menu);
         return true;
@@ -61,36 +58,61 @@ public class help_medicament_ru extends BaseActivity{
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.rolang_med:
-                Utils.sendScientistToActivity(this,receivedScientist, help_medicament.class);
-                finish();
-                return true;
-
-            case R.id.enlang_med:
-                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_en.class);
-                finish();
-                return true;
 
 
-            case R.id.rulang_med:
-                Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.link1_med:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_Stat_Level ));
-                startActivity(browserIntent);
-                break;
+        if (id==R.id.rolang_med){
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament.class);
+            finish();
+            return true;
 
-
-
-//            case android.R.id.home:
-//
-//                Utils.sendScientistToActivity(this,receivedScientist,ScientistsActivity.class);
-//                finish();
-//                return true;
         }
+        else
+
+        if (id==R.id.enlang_med){
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.rulang_med){
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, CL_medicament_Activity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.link1_med) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
+    }
+
 }
