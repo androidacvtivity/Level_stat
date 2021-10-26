@@ -25,9 +25,9 @@ import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
 import com.bancusoft.levelstat.Retrofit.Scientist;
-import com.bancusoft.levelstat.Views.help_vw;
-import com.bancusoft.levelstat.Views.help_vw_en;
-import com.bancusoft.levelstat.Views.help_vw_ru;
+import com.bancusoft.levelstat.Views.help;
+import com.bancusoft.levelstat.Views.helpen;
+import com.bancusoft.levelstat.Views.helpru;
 import com.bancusoft.levelstat.Views.structurabns;
 
 import java.util.ArrayList;
@@ -202,16 +202,16 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id==R.id.action_edit_cl_cocm){
-            Utils.sendScientistToActivity(this,receivedScientist,help_vw.class);
+        if (id==R.id.action_edit_str){
+            Utils.sendScientistToActivity(this,receivedScientist, help.class);
             finish();
             return true;
 
         }
         else
 
-        if (id==R.id.action_edit_en_cl_cocm){
-            Utils.sendScientistToActivity(this,receivedScientist,help_vw_en.class);
+        if (id==R.id.action_edit_en_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
             finish();
             return true;
 
@@ -219,8 +219,8 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
         else
 
 
-        if (id==R.id.action_edit_ru_cl_cocm){
-            Utils.sendScientistToActivity(this,receivedScientist,help_vw_ru.class);
+        if (id==R.id.action_edit_ru_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
             finish();
             return true;
 
