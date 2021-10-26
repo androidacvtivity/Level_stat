@@ -126,7 +126,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
         int id = item.getItemId();
 
         if (id==R.id.action_edit_med){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw.class);
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament.class);
             finish();
             return true;
 
@@ -134,7 +134,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
         else
 
         if (id==R.id.action_edit_en_med){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw_en.class);
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament_en.class);
             finish();
             return true;
 
@@ -143,7 +143,7 @@ public class DetailActivity_cl_med extends AppCompatActivity  {
 
 
         if (id==R.id.action_edit_ru_med){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw_ru.class);
+            Utils.sendScientistToActivity(this,receivedScientist, help_medicament_ru.class);
             finish();
             return true;
 
