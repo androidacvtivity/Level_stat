@@ -15,9 +15,9 @@ import androidx.core.content.ContextCompat;
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientist;
-import com.bancusoft.levelstat.Views.help_vw;
-import com.bancusoft.levelstat.Views.help_vw_en;
-import com.bancusoft.levelstat.Views.help_vw_ru;
+import com.bancusoft.levelstat.Views.help;
+import com.bancusoft.levelstat.Views.helpen;
+import com.bancusoft.levelstat.Views.helpru;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
@@ -106,7 +106,7 @@ public class DetailActivity_cer_selective_agricult extends AppCompatActivity{
         int id = item.getItemId();
 
         if (id==R.id.action_edit_str){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw.class);
+            Utils.sendScientistToActivity(this,receivedScientist, help.class);
             finish();
             return true;
 
@@ -114,7 +114,7 @@ public class DetailActivity_cer_selective_agricult extends AppCompatActivity{
         else
 
         if (id==R.id.action_edit_en_str){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw_en.class);
+            Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
             finish();
             return true;
 
@@ -123,7 +123,7 @@ public class DetailActivity_cer_selective_agricult extends AppCompatActivity{
 
 
         if (id==R.id.action_edit_ru_str){
-            Utils.sendScientistToActivity(this,receivedScientist, help_vw_ru.class);
+            Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
             finish();
             return true;
 
