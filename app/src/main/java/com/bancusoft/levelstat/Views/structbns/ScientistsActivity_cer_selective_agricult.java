@@ -1,4 +1,6 @@
 package com.bancusoft.levelstat.Views.structbns;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,24 +14,25 @@ import android.widget.AbsListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.bancusoft.levelstat.Helpers.Utils;
-
 import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_cer_selective_agricult;
-
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
 import com.bancusoft.levelstat.Retrofit.Scientist;
-import com.bancusoft.levelstat.Views.help;
-import com.bancusoft.levelstat.Views.helpen;
-import com.bancusoft.levelstat.Views.helpru;
+import com.bancusoft.levelstat.Views.help_vw;
+import com.bancusoft.levelstat.Views.help_vw_en;
+import com.bancusoft.levelstat.Views.help_vw_ru;
 import com.bancusoft.levelstat.Views.structurabns;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import retrofit2.Call;
@@ -44,7 +47,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
     private RecyclerView rv;
     private MyAdapter_cer_selective_agricult mAdapter;
     private LinearLayoutManager layoutManager;
-    public ArrayList<Scientist> allPagesScientists = new ArrayList();
+    public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
     private Boolean isScrolling = false;
     private int currentScientists, totalScientists, scrolledOutScientists;
@@ -75,26 +78,24 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
      * as well as pagination parameters. We are basiclally searching or selecting data
      * without seaching. However all the arriving data is paginated at the server level.
      */
-    private void retrieveAndFillRecyclerView(final String action, String queryString,
-                                             final String start, String limit) {
+    private void retrieveAndFillRecyclerView(final String action,
+                                             final String start) {
 
-        String director = "cercetari selective in agricultura";
-
-        queryString  = director;
+        String queryString = "cercetari selective in agricultura";
 
         mAdapter.searchString = queryString;
         RestApi api = Utils.getClient().create(RestApi.class);
         Call<ResponseModel> retrievedData;
 
         if (action.equalsIgnoreCase("GET_PAGINATED")) {
-            retrievedData = api.search("GET_PAGINATED", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED", queryString, start, "20");
             Utils.showProgressBar(mProgressBar);
         } else
 
 
         if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
             Utils.showProgressBar(mProgressBar);
-            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, "20");
         } else
 
 
@@ -107,9 +108,11 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
 
 
         retrievedData.enqueue(new Callback<ResponseModel>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
-            public void onResponse(Call<ResponseModel> call, Response<ResponseModel>
+            public void onResponse(@NonNull Call<ResponseModel> call, @NonNull Response<ResponseModel>
                     response) {
+                assert response.body() != null;
                 Log.d("RETROFIT", "CODE : " + response.body().getCode());
                 Log.d("RETROFIT", "MESSAGE : " + response.body().getMessage());
                 Log.d("RETROFIT", "RESPONSE : " + response.body().getResult());
@@ -119,9 +122,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
                         allPagesScientists.clear();
                     }
-                    for (int i = 0; i < currentPageScientists.size(); i++) {
-                        allPagesScientists.add(currentPageScientists.get(i));
-                    }
+                    allPagesScientists.addAll(currentPageScientists);
 
                 } else {
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
@@ -133,7 +134,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
             }
 
             @Override
-            public void onFailure(Call<ResponseModel> call, Throwable t) {
+            public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                 Utils.hideProgressBar(mProgressBar);
                 Log.d("RETROFIT", "ERROR: " + t.getMessage());
                 Utils.showInfoDialog(ScientistsActivity_cer_selective_agricult.this, "ERROR", t.getMessage());
@@ -147,7 +148,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
     private void listenToRecyclerViewScroll() {
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView rv, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView rv, int newState) {
                 //when scrolling starts
                 super.onScrollStateChanged(rv, newState);
                 //check for scroll state
@@ -156,12 +157,12 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
                 }
             }
             @Override
-            public void onScrolled(RecyclerView rv, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView rv, int dx, int dy) {
                 // When the scrolling has stopped
                 super.onScrolled(rv, dx, dy);
                 currentScientists = layoutManager.getChildCount();
                 totalScientists = layoutManager.getItemCount();
-                scrolledOutScientists = ((LinearLayoutManager) rv.getLayoutManager()).
+                scrolledOutScientists = ((LinearLayoutManager) Objects.requireNonNull(rv.getLayoutManager())).
                         findFirstVisibleItemPosition();
 
                 if (isScrolling && (currentScientists + scrolledOutScientists ==
@@ -171,8 +172,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
                     if (dy > 0) {
                         // Scrolling up
                         retrieveAndFillRecyclerView("GET_PAGINATED",
-                                mAdapter.searchString,
-                                String.valueOf(totalScientists), "20");
+                                String.valueOf(totalScientists));
 
                     } else {
                         // Scrolling down
@@ -198,46 +198,62 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_str:
-                Utils.sendScientistToActivity(this,receivedScientist, help.class);
-                finish();
-                return true;
 
 
-            case R.id.action_edit_en_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.action_edit_ru_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_cl_cocm){
+            Utils.sendScientistToActivity(this,receivedScientist,help_vw.class);
+            finish();
+            return true;
 
-            case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
-//                finish();
-//
-                Intent intent;
-                intent = new Intent(this, structurabns.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-
-                return true;
-
-//            case R.id.back_str:
-//                Utils.openActivity(this, structurabns.class);
-//                finish();
-//                return true;
-
-            case R.id.video3_str:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_cl_cocm){
+            Utils.sendScientistToActivity(this,receivedScientist,help_vw_en.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_cl_cocm){
+            Utils.sendScientistToActivity(this,receivedScientist,help_vw_ru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, structurabns.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_cl_cocm) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -248,7 +264,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
 
     @Override
     public boolean onQueryTextChange(String query) {
-        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", query, "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", "0");
         return false;
     }
 
@@ -266,12 +282,6 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
-
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
 
 
     @Override
@@ -291,7 +301,12 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
         initializeViews();
         this.listenToRecyclerViewScroll();
         setupRecyclerView();
-        retrieveAndFillRecyclerView("GET_PAGINATED", "", "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED", "0");
+    }
+
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
     }
 
 
