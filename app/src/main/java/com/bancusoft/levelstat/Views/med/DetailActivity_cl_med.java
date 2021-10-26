@@ -16,9 +16,6 @@ import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Cl_medicament;
 import com.bancusoft.levelstat.Retrofit.Scientist;
-import com.bancusoft.levelstat.Views.help_vw;
-import com.bancusoft.levelstat.Views.help_vw_en;
-import com.bancusoft.levelstat.Views.help_vw_ru;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
