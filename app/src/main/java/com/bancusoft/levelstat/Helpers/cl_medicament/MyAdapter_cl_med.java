@@ -29,11 +29,10 @@ import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Views.med.DetailActivity_cl_med;
 
 public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.ViewHolder>{
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Cl_medicament> cl_medicament;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Cl_medicament> cl_medicament;
 
     public String searchString = "";
 
@@ -42,11 +41,17 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView mdenumirea_intTxt, mnoticeTxt, mdenumirea_comercialaTxt_View, mdcodul_medicalTxt_view, mProducatorulTxt_view,
-                mnrinregistrareTxt_view, mcountryTxt_view, mcodul_ATC_Txt_view;
-        private MaterialLetterIcon mIcon;
+        private final TextView mdenumirea_intTxt;
+        private final TextView mnoticeTxt;
+        private final TextView mdenumirea_comercialaTxt_View;
+        private final TextView mdcodul_medicalTxt_view;
+        private final TextView mProducatorulTxt_view;
+        private final TextView mnrinregistrareTxt_view;
+        private final TextView mcountryTxt_view;
+        private final TextView mcodul_ATC_Txt_view;
+        private final MaterialLetterIcon mIcon;
         private MyAdapter_cl_med.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -83,6 +88,7 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
     public MyAdapter_cl_med(Context mContext, ArrayList<Cl_medicament> cl_medicament) {
         this.c = mContext;
         this.cl_medicament = cl_medicament;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -96,8 +102,7 @@ public class MyAdapter_cl_med extends RecyclerView.Adapter<MyAdapter_cl_med.View
     public MyAdapter_cl_med.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_cl_med, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapter_cl_med.ViewHolder vh = new MyAdapter_cl_med.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method
