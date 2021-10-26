@@ -60,6 +60,9 @@ public class DetailActivitycu extends AppCompatActivity {
 
             mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
 
+
+
+
         }
 
     }
