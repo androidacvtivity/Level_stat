@@ -239,7 +239,7 @@ public class ScientistsActivity_cer_selective_agricult extends AppCompatActivity
         }
 
         else
-        if (id == R.id.video3_cl_cocm) {
+        if (id == R.id.video3_str) {
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
 
