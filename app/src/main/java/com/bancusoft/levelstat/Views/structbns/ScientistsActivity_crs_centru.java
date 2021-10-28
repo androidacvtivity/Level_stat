@@ -299,5 +299,7 @@ public class ScientistsActivity_crs_centru extends AppCompatActivity
     public void setReceivedScientist(Scientist receivedScientist) {
         this.receivedScientist = receivedScientist;
     }
+
+
 }
 
