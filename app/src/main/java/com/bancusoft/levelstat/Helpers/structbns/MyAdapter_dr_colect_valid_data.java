@@ -27,11 +27,10 @@ import com.github.ivbaranov.mli.MaterialLetterIcon;
 
 public class MyAdapter_dr_colect_valid_data extends RecyclerView.Adapter<MyAdapter_dr_colect_valid_data.ViewHolder>{
 
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Scientist> scientists;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Scientist> scientists;
 
     public String searchString = "";
 
@@ -40,11 +39,21 @@ public class MyAdapter_dr_colect_valid_data extends RecyclerView.Adapter<MyAdapt
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView nameTxt, starTxt, galaxyTxt, departTxt, sectiaTxt, serviciuTxt, phoneTxt, descriptionTxt, formnamneTxt,
-                phonemobileTxt,emailTxt,noticeTxt;
-        private MaterialLetterIcon mIcon;
+        private final TextView nameTxt;
+        private final TextView starTxt;
+        private final TextView galaxyTxt;
+        private final TextView departTxt;
+        private final TextView sectiaTxt;
+        private final TextView serviciuTxt;
+        private final TextView phoneTxt;
+        private final TextView descriptionTxt;
+        private final TextView formnamneTxt;
+        private final TextView phonemobileTxt;
+        private final TextView emailTxt;
+        private final TextView noticeTxt;
+        private final MaterialLetterIcon mIcon;
         private MyAdapter_dr_colect_valid_data.ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -84,6 +93,7 @@ public class MyAdapter_dr_colect_valid_data extends RecyclerView.Adapter<MyAdapt
     public MyAdapter_dr_colect_valid_data(Context mContext, ArrayList<Scientist> scientists) {
         this.c = mContext;
         this.scientists = scientists;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -97,8 +107,7 @@ public class MyAdapter_dr_colect_valid_data extends RecyclerView.Adapter<MyAdapt
     public MyAdapter_dr_colect_valid_data.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.model_str, parent, false);
         view.setBackgroundResource(mBackground);
-        MyAdapter_dr_colect_valid_data.ViewHolder vh = new MyAdapter_dr_colect_valid_data.ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method
