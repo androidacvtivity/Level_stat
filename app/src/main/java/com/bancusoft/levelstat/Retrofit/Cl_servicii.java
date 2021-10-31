@@ -14,7 +14,7 @@ public class Cl_servicii  implements Serializable {
 
     /**
      * Let' now come define instance fields for this class. We decorate them with
-     * @SerializedName
+     * SerializedName
      * attribute. Through this we are specifying the keys in our json data.
      */
 
