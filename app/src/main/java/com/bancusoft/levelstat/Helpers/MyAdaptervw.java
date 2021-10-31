@@ -32,11 +32,10 @@ import com.bancusoft.levelstat.Views.DetailActivityvw;
  * 4. Listen to click events of recyclerview item and pass the clicked item to recyclerview
  */
 public class MyAdaptervw extends RecyclerView.Adapter<MyAdaptervw.ViewHolder> {
-    private Context c;
-    private final TypedValue mTypedValue = new TypedValue();
-    private int mBackground;
-    private int[] mMaterialColors;
-    private List<Scientistvw> scientists;
+    private final Context c;
+    private final int mBackground;
+    private final int[] mMaterialColors;
+    private final List<Scientistvw> scientists;
     public String searchString = "";
 
     /**
@@ -44,11 +43,19 @@ public class MyAdaptervw extends RecyclerView.Adapter<MyAdaptervw.ViewHolder> {
      * 1. Hold all the widgets which will be recycled and reference them.
      * 2. Implement click event.
      */
-    public class ViewHolder extends RecyclerView.ViewHolder implements
+    public static class ViewHolder extends RecyclerView.ViewHolder implements
             View.OnClickListener {
-        private TextView DEN_COM_VW_Txt, IDNO_VW_Txt, LIST_COND_VW_Txt, ADRESA_VW_Txt, LISTA_FOND_VW_Txt, GEN_ACT_NE_LIC_VW_Txt, GEN_ACT_LIC_VW_Txt, DATA_REG_VW_Txt,
-                STATUTUL_VW_Txt, act_TXT;
-        private MaterialLetterIcon mIcon;
+        private final TextView DEN_COM_VW_Txt;
+        private final TextView IDNO_VW_Txt;
+        private final TextView LIST_COND_VW_Txt;
+        private final TextView ADRESA_VW_Txt;
+        private final TextView LISTA_FOND_VW_Txt;
+        private final TextView GEN_ACT_NE_LIC_VW_Txt;
+        private final TextView GEN_ACT_LIC_VW_Txt;
+        private final TextView DATA_REG_VW_Txt;
+        private final TextView STATUTUL_VW_Txt;
+        private final TextView act_TXT;
+        private final MaterialLetterIcon mIcon;
         private ItemClickListener itemClickListener;
         /**
          * We reference our widgets
@@ -85,6 +92,7 @@ public class MyAdaptervw extends RecyclerView.Adapter<MyAdaptervw.ViewHolder> {
     public MyAdaptervw(Context mContext, ArrayList<Scientistvw> scientists) {
         this.c = mContext;
         this.scientists = scientists;
+        TypedValue mTypedValue = new TypedValue();
         c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
@@ -98,8 +106,7 @@ public class MyAdaptervw extends RecyclerView.Adapter<MyAdaptervw.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(c).inflate(R.layout.modelvw, parent, false);
         view.setBackgroundResource(mBackground);
-        ViewHolder vh = new ViewHolder(view);
-        return vh;
+        return new ViewHolder(view);
     }
     /**
      * Our onBindViewHolder method
