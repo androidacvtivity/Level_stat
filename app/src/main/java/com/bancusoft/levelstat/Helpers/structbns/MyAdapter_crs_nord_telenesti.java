@@ -28,7 +28,7 @@ public class MyAdapter_crs_nord_telenesti extends RecyclerView.Adapter<MyAdapter
     private final List<Scientist> scientists;
 
     public String searchString = "";
-
+//
     /**
      * Our ViewHolder class. It's responsibilities include:
      * 1. Hold all the widgets which will be recycled and reference them.
