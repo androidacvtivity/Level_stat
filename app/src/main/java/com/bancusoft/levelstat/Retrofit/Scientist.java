@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class Scientist implements Serializable {
     /**
      * Let' now come define instance fields for this class. We decorate them with
-     * @SerializedName
+     * SerializedName
      * attribute. Through this we are specifying the keys in our json data.
      */
     @SerializedName("id")
@@ -59,12 +59,7 @@ public class Scientist implements Serializable {
      private String notice;
 
 
-//    @SerializedName("dob")
-//    private String dob;
-//    @SerializedName("died")
-//    private String died;
-
-    /**
+     /**
      * Let's now come define our getter and setter methods.
      */
     public String getId() {
@@ -221,23 +216,7 @@ public class Scientist implements Serializable {
         this.galaxy = galaxy;
     }
 
-//    public String getDob() {
-//        return dob;
-//    }
-//
-//    public void setDob(String dob) {
-//        this.dob = dob;
-//    }
-//
-//    public String getDied() {
-//        return died;
-//    }
-//
-//    public void setDied(String died) {
-//        this.died = died;
-//    }
-
-    @NonNull
+     @NonNull
     @Override
     public String toString() {
         return getName();

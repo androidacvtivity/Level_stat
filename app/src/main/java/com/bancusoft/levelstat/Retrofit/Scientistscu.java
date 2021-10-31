@@ -1,4 +1,6 @@
 package com.bancusoft.levelstat.Retrofit;
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
@@ -13,7 +15,7 @@ public class Scientistscu  implements Serializable{
 
     /**
      * Let' now come define instance fields for this class. We decorate them with
-     * @SerializedName
+     * SerializedName
      * attribute. Through this we are specifying the keys in our json data.
      */
 
@@ -76,6 +78,7 @@ public class Scientistscu  implements Serializable{
     }
 
 
+    @NonNull
     @Override
     public String toString() {
         return getDEN_CUATM();

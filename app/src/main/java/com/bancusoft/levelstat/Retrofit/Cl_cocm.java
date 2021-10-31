@@ -1,4 +1,6 @@
 package com.bancusoft.levelstat.Retrofit;
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
@@ -58,6 +60,7 @@ public class Cl_cocm  implements Serializable  {
 
 
 
+    @NonNull
     @Override
     public String toString() {
         return getDENUMIRE();
