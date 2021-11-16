@@ -84,9 +84,6 @@ public class DetailActivity_crs_nord_calarasi extends AppCompatActivity{
 
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
-
-
-
             mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
     }
