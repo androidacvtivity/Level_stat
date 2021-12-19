@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -98,29 +97,27 @@ public class Utils {
     public static void show(Context c,String message){
         Toast.makeText(c, message, Toast.LENGTH_SHORT).show();
     }
-    /**
-     * This method will allow us validate edittexts
-     */
-    public static boolean validate(EditText... editTexts){
-        EditText nameTxt = editTexts[0];
-        EditText descriptionTxt = editTexts[1];
-        EditText galaxyTxt = editTexts[2];
 
-        if(nameTxt.getText() == null || nameTxt.getText().toString().isEmpty()){
-            nameTxt.setError("Numele este obligatoriu Vă rog!");
-            return false;
-        }
-        if(descriptionTxt.getText() == null || descriptionTxt.getText().toString().isEmpty()){
-            descriptionTxt.setError("Locația este obligatorie Vă rog!");
-            return false;
-        }
-        if(galaxyTxt.getText() == null || galaxyTxt.getText().toString().isEmpty()){
-            galaxyTxt.setError("Funcția este obligatorie Vă rog!");
-            return false;
-        }
-        return true;
-
-    }
+//    public static boolean validate(EditText... editTexts){
+//        EditText nameTxt = editTexts[0];
+//        EditText descriptionTxt = editTexts[1];
+//        EditText galaxyTxt = editTexts[2];
+//
+//        if(nameTxt.getText() == null || nameTxt.getText().toString().isEmpty()){
+//            nameTxt.setError("Numele este obligatoriu Vă rog!");
+//            return false;
+//        }
+//        if(descriptionTxt.getText() == null || descriptionTxt.getText().toString().isEmpty()){
+//            descriptionTxt.setError("Locația este obligatorie Vă rog!");
+//            return false;
+//        }
+//        if(galaxyTxt.getText() == null || galaxyTxt.getText().toString().isEmpty()){
+//            galaxyTxt.setError("Funcția este obligatorie Vă rog!");
+//            return false;
+//        }
+//        return true;
+//
+//    }
 
     //This utility method will allow us clear arbitrary number of edittexts
 
