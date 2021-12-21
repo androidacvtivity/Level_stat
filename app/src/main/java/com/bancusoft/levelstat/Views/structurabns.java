@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.widget.Toolbar;
@@ -250,857 +249,275 @@ public class structurabns  extends BaseActivity{
         layout_mRelativeLayout_crs_taraclia =  findViewById(R.id.mRelativeLayout_crs_taraclia);
 
 
-        layout_mRelativeLayout_crs_taraclia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_taraclia.class);
+        layout_mRelativeLayout_crs_taraclia.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_taraclia.class));
 
-            }
-        });
 
 
+        layout_mRelativeLayout_crs_leova.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_leova.class));
 
-        layout_mRelativeLayout_crs_leova.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_leova.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_sud_uta_gagauzia.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_uta_gagauzia.class));
 
+        layout_mRelativeLayout_crs_sud_cantemir.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_cantemir.class));
 
-        layout_mRelativeLayout_crs_sud_uta_gagauzia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_uta_gagauzia.class);
+        layout_mRelativeLayout_crs_sud_cahul.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_cahul.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_sud_basarabeasca.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_basarabeasca.class));
 
-        layout_mRelativeLayout_crs_sud_cantemir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_cantemir.class);
+        layout_mRelativeLayout_crs_sud.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_sud_cahul.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_cahul.class);
+        layout_mRelativeLayout_crs_centru_ungheni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_ungheni.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_sud_basarabeasca.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud_basarabeasca.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_centru_stefan_voda.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_stefanvoda.class));
 
-        layout_mRelativeLayout_crs_sud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_sud.class);
 
-            }
-        });
 
+        layout_mRelativeLayout_crs_centru_straseni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_straseni.class));
 
-        layout_mRelativeLayout_crs_centru_ungheni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_ungheni.class);
+        layout_mRelativeLayout_crs_centru_orhei.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_orhei.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_centru_nisporeni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_nisporeni.class));
 
+        layout_mRelativeLayout_crs_centru_ialoveni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_ialoveni.class));
 
 
-        layout_mRelativeLayout_crs_centru_stefan_voda.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_stefanvoda.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_centru_hancesti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_hancesti.class));
 
 
 
-        layout_mRelativeLayout_crs_centru_straseni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_straseni.class);
+        layout_mRelativeLayout_crs_centru_dubasari.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_dubasari.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_centru_orhei.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_orhei.class);
+        layout_mRelativeLayout_crs_centru_criuleni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_criuleni.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_centru_nisporeni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_nisporeni.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_centru_cimislia.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_cimislia.class));
 
-        layout_mRelativeLayout_crs_centru_ialoveni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_ialoveni.class);
+        layout_mRelativeLayout_crs_centru_causeni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_causeni.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_centru_calarasi.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_calarasi.class));
 
+        layout_mRelativeLayout_crs_centru_aneniinoi.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_anenii_noi2.class));
 
+        layout_mRelativeLayout_crs_centru.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru.class));
 
-        layout_mRelativeLayout_crs_centru_hancesti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_hancesti.class);
 
-            }
-        });
 
+        layout_mRelativeLayout_crs_nord_telenesti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_telenesti.class));
 
 
-        layout_mRelativeLayout_crs_centru_dubasari.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_dubasari.class);
+        layout_mRelativeLayout_crs_nord_soldanesti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_soldanesti.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_nord_soroca.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_soroca.class));
+        layout_mRelativeLayout_crs_nord_sangerei.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_sangerei.class));
 
 
-        layout_mRelativeLayout_crs_centru_criuleni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_criuleni.class);
+        layout_mRelativeLayout_crs_nord_rascani.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_rascani.class));
+        layout_mRelativeLayout_crs_nord_rezina.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_rezina.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_crs_nord_ocnnita.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_ocnita.class));
 
+        layout_mRelativeLayout_crs_nord_glodeni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_glodeni.class));
 
-        layout_mRelativeLayout_crs_centru_cimislia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_cimislia.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_nord_floresti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_floresti.class));
 
-        layout_mRelativeLayout_crs_centru_causeni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_causeni.class);
+        layout_mRelativeLayout_crs_nord_falesti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_falesti.class));
+        layout_mRelativeLayout_crs_nord_edinet.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_edinet.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_nord_drochia.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_drochia.class));
 
-        layout_mRelativeLayout_crs_centru_calarasi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru_calarasi.class);
+        layout_mRelativeLayout_crs_nord_donduseni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_donduseni.class));
 
-            }
-        });
+        layout_mRelativeLayout_crs_nord_briceni.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_briceni.class));
 
-        layout_mRelativeLayout_crs_centru_aneniinoi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_anenii_noi2.class);
+        layout_mRelativeLayout_crs_nord_balti.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_balti.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_centru.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_centru.class);
 
-            }
-        });
+        layout_mRelativeLayout_crs_nord.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord.class));
 
 
+        layout_mRelativeLayout_mun_Chisinau_cercetari_gosp.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_cer_gospodarii.class));
 
-        layout_mRelativeLayout_crs_nord_telenesti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_telenesti.class);
+        layout_mRelativeLayout_mun_Chisinau_Rascani.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_rascani.class));
 
-            }
-        });
+        layout_mRelativeLayout_mun_Chisinau_Ciocana.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_ciocana.class));
 
 
-        layout_mRelativeLayout_crs_nord_soldanesti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_soldanesti.class);
+        layout_mRelativeLayout_mun_Chisinau_Centru.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_centru.class));
 
-            }
-        });
+        layout_mRelativeLayout_mun_Chisinau_Buiucani.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_buiucani.class));
 
-        layout_mRelativeLayout_crs_nord_soroca.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_soroca.class);
+        layout_mRelativeLayout_mun_Chisinau_Botanica.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_botanica.class));
 
-            }
-        });
-        layout_mRelativeLayout_crs_nord_sangerei.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_sangerei.class);
 
-            }
-        });
 
+        layout_mRelativeLayout_mun_Chisinau_dr_servicii.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_servicii.class));
 
-        layout_mRelativeLayout_crs_nord_rascani.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_rascani.class);
 
-            }
-        });
-        layout_mRelativeLayout_crs_nord_rezina.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_rezina.class);
+        layout_mRelativeLayout_mun_Chisinau_dr_pm.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_pm.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_mun_Chisinau_dr_industrie.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_industrie.class));
 
-        layout_mRelativeLayout_crs_nord_ocnnita.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_ocnita.class);
 
-            }
-        });
+        layout_mRelativeLayout_mun_Chisinau_dr_generalizare.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_generalizare.class));
 
-        layout_mRelativeLayout_crs_nord_glodeni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_glodeni.class);
 
-            }
-        });
+        layout_mRelativeLayout_mun_Chisinau_admin.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chisinau_admin.class));
 
+        layout_mRelativeLayout_mun_Chisinau.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_mun_chisinau.class));
 
-        layout_mRelativeLayout_crs_nord_floresti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_floresti.class);
+        layout_mRelativeLayout_des_poligrafica.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_poligrafica.class));
 
-            }
-        });
+        layout_mRelativeLayout_sec_instruire_stat.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_instruire.class));
 
-        layout_mRelativeLayout_crs_nord_falesti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_falesti.class);
 
-            }
-        });
-        layout_mRelativeLayout_crs_nord_edinet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_edinet.class);
+        layout_mRelativeLayout_dr_admin_sis_info.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_admin_sistem.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_nord_drochia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_drochia.class);
+        layout_mRelativeLayout_dg_app.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_app.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_nord_donduseni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_donduseni.class);
+        layout_mRelativeLayout_dg_it.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_it.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_crs_nord_briceni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_briceni.class);
 
-            }
-        });
+        layout_mRelativeLayout_ser_man_doc.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_ser_man_doc.class));
 
-        layout_mRelativeLayout_crs_nord_balti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord_balti.class);
+        layout_mRelativeLayout_sec_juridica.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_juridica.class));
 
-            }
-        });
+        layout_mRelativeLayout_sec_admin_achiz.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_admin_achiz.class));
 
 
 
-        layout_mRelativeLayout_crs_nord.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_crs_nord.class);
+        layout_mRelativeLayout_sec_finante.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_finante.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_dr_management_fin.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_management_financiar.class));
 
-        layout_mRelativeLayout_mun_Chisinau_cercetari_gosp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_cer_gospodarii.class);
 
-            }
-        });
+        layout_mRelativeLayout_sec_colect_data_gosp.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_colect_data_gosp.class));
 
-        layout_mRelativeLayout_mun_Chisinau_Rascani.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_rascani.class);
 
-            }
-        });
+        layout_mRelativeLayout_servicu_sist_geografic.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_ser_sistem_geografic.class));
 
-        layout_mRelativeLayout_mun_Chisinau_Ciocana.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_ciocana.class);
 
-            }
-        });
 
+        layoutmRelativeLayout_servicu_sur_date_admin.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_ser_surse_date_admin.class));
 
-        layout_mRelativeLayout_mun_Chisinau_Centru.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_centru.class);
+        layout_mRelativeLayout_sec_cer_sondaj.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_cer_sondaj.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_mun_Chisinau_Buiucani.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_buiucani.class);
+        layout_mRelativeLayout_dr_met_statistice.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_met_stat.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_mun_Chisinau_Botanica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_sit_fin_botanica.class);
+        layout_mRelativeLayout_dr_diseminare.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_diseminare.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_dr_recesaminte.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_recesaminte.class));
 
 
-        layout_mRelativeLayout_mun_Chisinau_dr_servicii.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_servicii.class);
+        layout_mRelativeLayout_serv_edu.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_edu.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_dr_serv_social.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_servicii_sociale.class));
 
-        layout_mRelativeLayout_mun_Chisinau_dr_pm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_pm.class);
+        layout_mRelativeLayout_dr_pop_migratie.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_pop_mig.class));
 
-            }
-        });
+        layout_mRelativeLayout_dr_stat_salariu.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_salariu.class));
 
 
-        layout_mRelativeLayout_mun_Chisinau_dr_industrie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_industrie.class);
 
-            }
-        });
+        layout_mRelativeLayout_dr_stat_ocuparii.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_ocuparii.class));
 
+        layout_mRmRelativeLayout_dr_niv_trai.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_nivel_trai.class));
 
-        layout_mRelativeLayout_mun_Chisinau_dr_generalizare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chi_generalizare.class);
 
-            }
-        });
+        layout_mRelativeLayout_dr_sociala_demografie.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_social_demo.class));
 
+        layout_mRelativeLayout_dr_colect_data_pret.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_colect_data_pret.class));
 
-        layout_mRelativeLayout_mun_Chisinau_admin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chisinau_admin.class);
 
-            }
-        });
 
-        layout_mRelativeLayout_mun_Chisinau.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_mun_chisinau.class);
+        layout_mRelativeLayout_dr_colect_data.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dr_colect_valid_data.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_des_poligrafica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_poligrafica.class);
+        layout_mRelativeLayout_dr_sit_fin.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_sit_fin.class));
 
-            }
-        });
+        layout_mRelativeLayout_dg_col_tata.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_colect_data.class));
 
-        layout_mRelativeLayout_sec_instruire_stat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_instruire.class);
+        layout_mRelativeLayout_sec_stat_med.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_stat_med.class));
 
-            }
-        });
+        layout_mRelativeLayout_cer_selec_agr.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_cer_selective_agricult.class));
 
+        layout_mRelativeLayout_stat_agriculturii.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_sec_stat_agric.class));
 
-        layout_mRelativeLayout_dr_admin_sis_info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_admin_sistem.class);
 
-            }
-        });
+        layout_mRelativeLayout_agricultura.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_agricultura.class));
 
 
-        layout_mRelativeLayout_dg_app.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_app.class);
+        layout_mRelativeLayout_registre.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_registre.class));
 
-            }
-        });
 
+        layout_mRelativeLayout_transpost.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_transport.class));
 
-        layout_mRelativeLayout_dg_it.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_it.class);
+        layout_mRelativeLayout_com_intern.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_com_intern.class));
 
-            }
-        });
 
 
+        layout_mRelativeLayout_structurala.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_structurala.class));
 
-        layout_mRelativeLayout_ser_man_doc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_ser_man_doc.class);
 
-            }
-        });
 
-        layout_mRelativeLayout_sec_juridica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_juridica.class);
+        layout_mRelativeLayout_constructie.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_constructie.class));
 
-            }
-        });
 
-        layout_mRelativeLayout_sec_admin_achiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_admin_achiz.class);
 
-            }
-        });
+        layout_mRelativeLayout_industrie.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_industrie.class));
 
 
 
-        layout_mRelativeLayout_sec_finante.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_finante.class);
 
-            }
-        });
 
+        layout_mRelativeLayout_stat_int.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dg_stat_int.class));
 
-        layout_mRelativeLayout_dr_management_fin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_management_financiar.class);
 
-            }
-        });
+        layout_mRelativeLayout_dir_comert_exter.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dir_com_ext.class));
 
+        layout_mRelativeLayout17_str.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dir_pret.class));
 
-        layout_mRelativeLayout_sec_colect_data_gosp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_colect_data_gosp.class);
 
-            }
-        });
 
+        layout_mRelativeLayout15_str.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_cont_national.class));
 
-        layout_mRelativeLayout_servicu_sist_geografic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_ser_sistem_geografic.class);
 
-            }
-        });
+        layout_mRelativeLayout13_str.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivity_dir_macro.class));
 
 
+        layout_mRelativeLayout11_str.setOnClickListener(v -> Utils.openActivity(structurabns.this,ScientistsActivity_sec_audit.class));
 
-        layoutmRelativeLayout_servicu_sur_date_admin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_ser_surse_date_admin.class);
 
-            }
-        });
+        layout_dir_international.setOnClickListener(v -> Utils.openActivity(structurabns.this,ScientistsActivity_direc_international.class));
 
-        layout_mRelativeLayout_sec_cer_sondaj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_cer_sondaj.class);
 
-            }
-        });
+        layout_mRelativeLayout7_str.setOnClickListener(v -> Utils.openActivity(structurabns.this,ScientistsActivitystr3.class));
 
 
-        layout_mRelativeLayout_dr_met_statistice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_met_stat.class);
+        layout_mRelativeLayout3_str.setOnClickListener(v -> Utils.openActivity(structurabns.this,ScientistsActivitystr.class));
 
-            }
-        });
 
+        layout_mRelativeLayout4_str.setOnClickListener(v -> Utils.openActivity(structurabns.this, ScientistsActivitystr2.class));
 
-        layout_mRelativeLayout_dr_diseminare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_diseminare.class);
 
-            }
-        });
-
-
-        layout_mRelativeLayout_dr_recesaminte.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_recesaminte.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_serv_edu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_edu.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_dr_serv_social.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_servicii_sociale.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_dr_pop_migratie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_pop_mig.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_dr_stat_salariu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_salariu.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout_dr_stat_ocuparii.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_stat_ocuparii.class);
-
-            }
-        });
-
-        layout_mRmRelativeLayout_dr_niv_trai.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_nivel_trai.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_dr_sociala_demografie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_social_demo.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_dr_colect_data_pret.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_colect_data_pret.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout_dr_colect_data.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dr_colect_valid_data.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_dr_sit_fin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_sit_fin.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_dg_col_tata.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_colect_data.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_sec_stat_med.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_stat_med.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_cer_selec_agr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_cer_selective_agricult.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_stat_agriculturii.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_sec_stat_agric.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_agricultura.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_agricultura.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_registre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_registre.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_transpost.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_transport.class);
-
-            }
-        });
-
-        layout_mRelativeLayout_com_intern.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_com_intern.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout_structurala.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_structurala.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout_constructie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_constructie.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout_industrie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_industrie.class);
-
-            }
-        });
-
-
-
-
-
-        layout_mRelativeLayout_stat_int.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dg_stat_int.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout_dir_comert_exter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dir_com_ext.class);
-
-            }
-        });
-
-        layout_mRelativeLayout17_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dir_pret.class);
-
-            }
-        });
-
-
-
-        layout_mRelativeLayout15_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_cont_national.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout13_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivity_dir_macro.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout11_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this,ScientistsActivity_sec_audit.class);
-
-            }
-        });
-
-
-        layout_dir_international.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this,ScientistsActivity_direc_international.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout7_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this,ScientistsActivitystr3.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout3_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this,ScientistsActivitystr.class);
-
-            }
-        });
-
-
-        layout_mRelativeLayout4_str.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Utils.openActivity(structurabns.this, ScientistsActivitystr2.class);
-
-            }
-        });
-
-
-    };
+    }
 
 
     /**
@@ -1117,41 +534,55 @@ public class structurabns  extends BaseActivity{
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit:
-                Utils.sendScientistToActivity(this,receivedScientist,help.class);
-                finish();
-                return true;
 
 
-            case R.id.action_edit_en:
-                Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
-                finish();
-                return true;
+        int id = item.getItemId();
 
-            case R.id.action_edit_ru:
-                Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-//                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendScientistToActivity(this,receivedScientist,ScientistsActivitystr.class);
-//                finish();
-
-
-                Intent intent;
-                intent = new Intent(this, DashboardActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-                return true;
-
-            case R.id.video3:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
+        if (id==R.id.action_edit){
+            Utils.sendScientistToActivity(this,receivedScientist,help.class);
+            finish();
+            return true;
         }
+        else
+
+        if (id==R.id.action_edit_en){
+            Utils.sendScientistToActivity(this,receivedScientist,helpen.class);
+            finish();
+            return true;
+
+        }
+
+        else
+        if (id==R.id.action_edit_ru){
+            Utils.sendScientistToActivity(this,receivedScientist,helpru.class);
+            finish();
+            return true;
+        }
+
+
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, DashboardActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3){
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+
+        }
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -1169,10 +600,13 @@ public class structurabns  extends BaseActivity{
         setContentView(R.layout.activity_structura_bns);
 //        Toolbar toolbar = findViewById(R.id.aboutUsToolBar_str);
 //        setSupportActionBar(toolbar);
-//
-//        findViewById(R.id.mBackArrow_str).setOnClickListener(v -> finish());
+////        findViewById(R.id.mBackArrow_str).setOnClickListener(v -> finish());
 
 
         this.initializeWidgets();
+    }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
     }
 }
