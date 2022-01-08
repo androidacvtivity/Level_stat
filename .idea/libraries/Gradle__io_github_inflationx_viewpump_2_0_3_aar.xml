@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: io.github.inflationx:viewpump:2.0.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/46139bf3a5f9aba91ee047d79e1e9b76/transformed/jetified-viewpump-2.0.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/46139bf3a5f9aba91ee047d79e1e9b76/transformed/jetified-viewpump-2.0.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/46139bf3a5f9aba91ee047d79e1e9b76/transformed/jetified-viewpump-2.0.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/422d0484ff2bd3f461c4ce4d6944de47/transformed/jetified-viewpump-2.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/422d0484ff2bd3f461c4ce4d6944de47/transformed/jetified-viewpump-2.0.3/res" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/422d0484ff2bd3f461c4ce4d6944de47/transformed/jetified-viewpump-2.0.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.inflationx/viewpump/2.0.3/c604e675bc873c8a1189c0d1e18728906cba7596/viewpump-2.0.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/io.github.inflationx/viewpump/2.0.3/c604e675bc873c8a1189c0d1e18728906cba7596/viewpump-2.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
