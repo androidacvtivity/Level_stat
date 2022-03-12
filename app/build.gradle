@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 31
+    compileSdk 32
     defaultConfig {
         applicationId "com.bancusoft.levelstat"
         minSdkVersion 26
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
-        versionName "23_30"
+        versionName "26_32"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -25,7 +25,7 @@ android {
         dataBinding = true
 
     }
-    buildToolsVersion '32.0.0'
+    buildToolsVersion '32.1.0-rc1'
 
 }
 
