@@ -4,6 +4,7 @@ buildscript {
     
     repositories {
         google()
+        mavenCentral() // <-- add this at top
         maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
         maven { url 'https://maven.google.com' }
         maven {
@@ -17,7 +18,7 @@ buildscript {
       //  jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.android.tools.build:gradle:7.1.2'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -28,6 +29,7 @@ buildscript {
 allprojects {
     repositories {
         google()
+         // <--- this is needed
 
 
         maven { url 'https://maven.google.com' }
