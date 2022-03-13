@@ -9,11 +9,7 @@ import java.io.Serializable;
  *  our  class to support serialization and deserialization.
  */
 public class Cl_cfoj implements Serializable {
-    /**
-     * Let' now come define instance fields for this class. We decorate them with
-     * @SerializedName
-     * attribute. Through this we are specifying the keys in our json data.
-     */
+
 
     @SerializedName("id")
     private String mId;

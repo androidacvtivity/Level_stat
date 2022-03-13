@@ -598,9 +598,6 @@ public class structurabns  extends BaseActivity{
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_structura_bns);
-//        Toolbar toolbar = findViewById(R.id.aboutUsToolBar_str);
-//        setSupportActionBar(toolbar);
-////        findViewById(R.id.mBackArrow_str).setOnClickListener(v -> finish());
 
 
         this.initializeWidgets();
