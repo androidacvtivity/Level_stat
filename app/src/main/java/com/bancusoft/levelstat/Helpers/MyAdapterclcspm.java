@@ -93,10 +93,7 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
         return new ViewHolder(view);
     }
 
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//
-//    }
+
 
     /**
      * Our onBindViewHolder method
