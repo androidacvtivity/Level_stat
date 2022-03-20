@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.bancusoft.levelstat.Views.ScientistsActivity_dgti;
 import com.bancusoft.levelstat.Views.help;
@@ -89,8 +90,7 @@ public class DetailActivity_dgti  extends AppCompatActivity  {
 //             diedTV.setText(receivedScientist.getDied());
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
     }
     /**

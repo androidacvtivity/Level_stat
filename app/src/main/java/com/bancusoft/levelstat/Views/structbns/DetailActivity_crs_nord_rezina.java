@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientist;
@@ -83,8 +85,7 @@ public class DetailActivity_crs_nord_rezina extends AppCompatActivity{
 //             diedTV.setText(receivedScientist.getDied());
 
             mCollapsingToolbarLayout.setTitle(receivedScientist.getName());
-            mCollapsingToolbarLayout.setExpandedTitleColor(getResources().
-                    getColor(R.color.white));
+            mCollapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(this, R.color.white));
         }
     }
     /**
