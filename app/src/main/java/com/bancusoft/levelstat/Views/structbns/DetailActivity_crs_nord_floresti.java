@@ -1,13 +1,14 @@
 package com.bancusoft.levelstat.Views.structbns;
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -18,6 +19,7 @@ import com.bancusoft.levelstat.Views.help;
 import com.bancusoft.levelstat.Views.helpen;
 import com.bancusoft.levelstat.Views.helpru;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
@@ -98,37 +100,59 @@ public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_str:
-                Utils.sendScientistToActivity(this,receivedScientist, help.class);
-                finish();
-                return true;
 
+        int id = item.getItemId();
 
-            case R.id.action_edit_en_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_str){
+            Utils.sendScientistToActivity(this,receivedScientist, help.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
-                finish();
-                return true;
-
-            case android.R.id.home:
-                Intent intent;
-                intent = new Intent(this, ScientistsActivity_crs_nord_floresti.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
-                return true;
-
-
-            case R.id.video3_str:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
         }
+        else
+
+        if (id==R.id.action_edit_en_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
+            finish();
+            return true;
+
+        }
+        else
+
+
+        if (id==R.id.action_edit_ru_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id == android.R.id.home){
+
+            Intent intent;
+            intent = new Intent(this, ScientistsActivity_crs_nord_floresti.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
+
+        }
+
+        else
+        if (id == R.id.video3_str) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
+        }
+
+
+
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -207,7 +231,8 @@ public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
 
             Intent sharingIntent = new Intent(Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
-            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
             sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia de contact despre angajat BNS");
             sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
@@ -235,49 +260,42 @@ public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
 
         Button mBtnSend = findViewById(R.id.btnnNtices);
 
-        mBtnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s_nameTV = nameTV.getText().toString();
-                String s_descriptionTV = descriptionTV.getText().toString();
-                String s_floorTV = floorTV.getText().toString();
-                String  s_officeTV = officeTV.getText().toString();
-                String  s_galaxyTV = galaxyTV.getText().toString();
-                String  s_serviciuTV = serviciuTV.getText().toString();
-                String  s_sectiaTV = sectiaTV.getText().toString();
-                String  s_departTV = departTV.getText().toString();
-                String  s_starTV = starTV.getText().toString();
-                String  s_phoneTV = phoneTV.getText().toString();
-                String  s_phonemobilTV = phonemobilTV.getText().toString();
-                String  s_phoneinternalTV = phoneinternalTV.getText().toString();
-                String  s_formnameTV = formnameTV.getText().toString();
-                String  s_emailTV = emailTV.getText().toString();
+        mBtnSend.setOnClickListener(view -> {
+            String s_nameTV = nameTV.getText().toString();
+            String s_descriptionTV = descriptionTV.getText().toString();
+            String s_floorTV = floorTV.getText().toString();
+            String  s_officeTV = officeTV.getText().toString();
+            String  s_galaxyTV = galaxyTV.getText().toString();
+            String  s_serviciuTV = serviciuTV.getText().toString();
+            String  s_sectiaTV = sectiaTV.getText().toString();
+            String  s_departTV = departTV.getText().toString();
+            String  s_starTV = starTV.getText().toString();
+            String  s_phoneTV = phoneTV.getText().toString();
+            String  s_phonemobilTV = phonemobilTV.getText().toString();
+            String  s_phoneinternalTV = phoneinternalTV.getText().toString();
+            String  s_formnameTV = formnameTV.getText().toString();
+            String  s_emailTV = emailTV.getText().toString();
 
 
-                String a = " Nume, prenume  : " + s_nameTV + "  -   Locația :  "+  s_descriptionTV +  "  - Etajul :   " +  s_floorTV
-                        + "  -  Oficiul :  " +  s_officeTV + "  -  Functia :  " + s_galaxyTV + "  -  Serviciu :   " + s_serviciuTV
-                        + "  -  Sectia :   " + s_sectiaTV +   " -   Directia :   " +  s_departTV + " -   Directia generala :  " + s_starTV
-                        + " -  Telefon fix serviciu :   " + s_phoneTV  + "  -  Telefon mobil serviciu :   " +  s_phonemobilTV
-                        + " -   Telefon intern :  " +  s_phoneinternalTV + " -  Cercetări Statistice  :   " + s_formnameTV
-                        +  "  -  E-mail :   " +  s_emailTV
-                        ;
+            String a = " Nume, prenume  : " + s_nameTV + "  -   Locația :  "+  s_descriptionTV +  "  - Etajul :   " +  s_floorTV
+                    + "  -  Oficiul :  " +  s_officeTV + "  -  Functia :  " + s_galaxyTV + "  -  Serviciu :   " + s_serviciuTV
+                    + "  -  Sectia :   " + s_sectiaTV +   " -   Directia :   " +  s_departTV + " -   Directia generala :  " + s_starTV
+                    + " -  Telefon fix serviciu :   " + s_phoneTV  + "  -  Telefon mobil serviciu :   " +  s_phonemobilTV
+                    + " -   Telefon intern :  " +  s_phoneinternalTV + " -  Cercetări Statistice  :   " + s_formnameTV
+                    +  "  -  E-mail :   " +  s_emailTV
+                    ;
 
 
 
 
-                String email2 = "vitallybankou@gmail.com";
-                String subject= "The list of contacts of Employer are wrong. Write please,  which of fields is wrong.  ";
-                String contentShare = new String(a);
-                String mailTo = "mailto:" + email2 + //"," + email2 +
-                        "?&subject=" + Uri.encode(subject) +
-                        "&body=" + Uri.encode(contentShare);
-                Intent emailIntent = new Intent(Intent.ACTION_VIEW);
-                emailIntent.setData(Uri.parse(mailTo));
-                startActivity(emailIntent);
-            }
-
-
-
+            String email2 = "vitallybankou@gmail.com";
+            String subject= "The list of contacts of Employer are wrong. Write please,  which of fields is wrong.  ";
+            String mailTo = "mailto:" + email2 + //"," + email2 +
+                    "?&subject=" + Uri.encode(subject) +
+                    "&body=" + Uri.encode(a);
+            Intent emailIntent = new Intent(Intent.ACTION_VIEW);
+            emailIntent.setData(Uri.parse(mailTo));
+            startActivity(emailIntent);
         });
 
 
