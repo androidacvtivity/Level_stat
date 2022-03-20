@@ -239,7 +239,7 @@ public class DetailActivity_dr_poligrafica extends AppCompatActivity{
 
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Informatia de contact despre angajat BNS");
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, contentShare);
 
