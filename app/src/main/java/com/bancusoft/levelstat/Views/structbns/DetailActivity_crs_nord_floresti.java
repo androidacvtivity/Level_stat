@@ -49,12 +49,6 @@ public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
         officeTV = findViewById(R.id.officeTVs);
 
 
-//        dobTV= findViewById(R.id.dobTV);
-//        diedTV= findViewById(R.id.diedTV);
-        //  editFAB=findViewById(R.id.editFAB);
-
-        //	editFAB.setOnClickListener(this);
-
         mCollapsingToolbarLayout=findViewById(R.id.mCollapsingToolbarLayouts);
     }
 
@@ -137,23 +131,6 @@ public class DetailActivity_crs_nord_floresti extends AppCompatActivity{
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-////    @Override
-//    public void onClick(View v) {
-//        int id =v.getId();
-//        if(id == R.id.editFAB){
-//         //   Utils.sendScientistToActivity(this,receivedScientist,CRUDActivity.class);
-//
-//
-//
-//
-//
-//
-//
-//         //   finish();
-//        }
-//    }
 
 
     /**
