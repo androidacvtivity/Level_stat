@@ -58,10 +58,10 @@ public class Utils {
   //
   public   static  final  String  youtube_level_stat = "https://www.youtube.com/watch?v=GovpbmgZY_E";
 
-    private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
+   private  static  final String base_url = "http://bancusoft.com/PHP/bns/";
 
 
-    // private  static  final String base_url = "http://192.168.1.4/PHP/bns/";
+    // private  static  final String base_url = "http://192.168.1.3/PHP/bns/";
 
 
 
