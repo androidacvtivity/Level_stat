@@ -255,12 +255,6 @@ public class ScientistsActivity_crs_centru_hancesti  extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
-
 
     @Override
     public void onBackPressed() {
