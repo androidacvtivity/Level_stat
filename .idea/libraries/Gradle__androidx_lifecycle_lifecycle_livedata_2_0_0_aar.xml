@@ -6,9 +6,10 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/res" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a376d3ca723fa59c1700043d375c6a42/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/dd41686eba9aecad58d4acccc1f0e8cc/transformed/lifecycle-livedata-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/dd41686eba9aecad58d4acccc1f0e8cc/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/dd41686eba9aecad58d4acccc1f0e8cc/transformed/lifecycle-livedata-2.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
