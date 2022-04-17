@@ -1,18 +1,19 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/bced5d5fee0e798d47ed2b24bc03f128/transformed/jetified-activity-1.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/cead02be2295d32c0ed1697a3958b6c9/transformed/jetified-activity-1.2.4/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/dddb9ceae92fcfd9bf0feb0545366e6e/transformed/jetified-activity-1.2.4/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/res" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/40b9b0f2615fdb3f0141505efed046a1/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/bced5d5fee0e798d47ed2b24bc03f128/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/bced5d5fee0e798d47ed2b24bc03f128/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/bced5d5fee0e798d47ed2b24bc03f128/transformed/jetified-activity-1.2.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

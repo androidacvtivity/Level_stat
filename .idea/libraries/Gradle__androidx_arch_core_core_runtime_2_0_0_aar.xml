@@ -4,11 +4,12 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/2a2638352c3fbecaeb3d5b535032bac6/transformed/core-runtime-2.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/4b9df83a08a2af7006b91b52a6f68ba4/transformed/core-runtime-2.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/res" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

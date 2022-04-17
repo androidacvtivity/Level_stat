@@ -6,11 +6,12 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/b0735ce641954095717bde7eb23f298b/transformed/jetified-picasso-2.71828/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/6a9fbeb235d47b0596b871e1aa542197/transformed/jetified-picasso-2.71828/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/619de5c9c91b4c7cdaf0d830d08fa064/transformed/jetified-picasso-2.71828/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/619de5c9c91b4c7cdaf0d830d08fa064/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/619de5c9c91b4c7cdaf0d830d08fa064/transformed/jetified-picasso-2.71828/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/fbad7881b2d61629ebd0a048e0ffb0d2/transformed/jetified-picasso-2.71828/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/fbad7881b2d61629ebd0a048e0ffb0d2/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/fbad7881b2d61629ebd0a048e0ffb0d2/transformed/jetified-picasso-2.71828/res" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/e93cca62de800d62234d2baefbb92a21/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/e93cca62de800d62234d2baefbb92a21/transformed/jetified-picasso-2.71828/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/e93cca62de800d62234d2baefbb92a21/transformed/jetified-picasso-2.71828/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/2843564e6bac90b1e125104d7c842c87a96a8ee9/picasso-2.71828-javadoc.jar!/" />
