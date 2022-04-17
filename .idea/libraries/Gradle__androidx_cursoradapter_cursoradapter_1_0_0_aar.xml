@@ -3,17 +3,18 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/6a72d9ad668702b67ffd19b8a8cc8c96/transformed/cursoradapter-1.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/2b21be0fca45a62b6529cb63b25e5e1a/transformed/cursoradapter-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/res" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ba8fb37241dce18eabb31e9ac6940307/transformed/cursoradapter-1.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/res" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/res" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/f760a7bb74a2cf58567523e99257e0f9/transformed/cursoradapter-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.cursoradapter/cursoradapter/1.0.0/1e323083b41c31fd4d45510dfce50614963c3c6c/cursoradapter-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/androidx.cursoradapter/cursoradapter/1.0.0/1e323083b41c31fd4d45510dfce50614963c3c6c/cursoradapter-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

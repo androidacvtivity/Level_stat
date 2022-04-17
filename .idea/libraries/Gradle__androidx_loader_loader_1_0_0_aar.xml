@@ -4,16 +4,17 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/7ef418e423cb55e05eb1303374635d2e/transformed/loader-1.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/fa89bb493161b0d523560b7f23e4ee23/transformed/loader-1.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/ec8fb363f9657df350b5b4d0dae6fb05/transformed/loader-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5bd190874d128697db37ae262ec643f4/transformed/loader-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -3,17 +3,18 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/4be379851d7c94d9e7ae03594926283a/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/85f4a204b8c7030e81f1a2bfad8517e4/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/res" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/res" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/4aa93379b12923a1b29e33ee9cd6d785/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/286d0da1631f1f25a8f53de95b47ca3a/transformed/versionedparcelable-1.1.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
