@@ -73,11 +73,6 @@ public class Cl_caem2 implements Serializable {
         return PRIM;
     }
 
-    public void setPRIM(String PRIM) {
-        this.PRIM =  PRIM;
-
-    }
-
     @NonNull
     @Override
     public String toString() {
