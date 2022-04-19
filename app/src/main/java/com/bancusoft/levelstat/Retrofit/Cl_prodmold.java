@@ -16,7 +16,11 @@ public class Cl_prodmold implements Serializable{
     private String DENUMIRE;
 
     @SerializedName("UM")
-    private String UM;
+    private final String UM;
+
+    public Cl_prodmold(String um) {
+        UM = um;
+    }
 
 
     /**
@@ -59,11 +63,6 @@ public class Cl_prodmold implements Serializable{
     public  String getUM () {
 
         return UM;
-    }
-
-    public void setUM(String UM) {
-        this.UM = UM;
-
     }
 
 

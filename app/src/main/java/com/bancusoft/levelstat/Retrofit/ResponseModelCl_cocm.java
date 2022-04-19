@@ -19,11 +19,6 @@ public class ResponseModelCl_cocm {
 
     public List<Cl_cocm> getResultCl_cocm () {return  cl_cocm;}
 
-    public void setResultCl_cocm (List<Cl_cocm> cl_cocm) {
-
-        this.cl_cocm = cl_cocm;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

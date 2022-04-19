@@ -20,11 +20,6 @@ public class ResponseModelCl_cfoj {
 
     public List<Cl_cfoj> getResultCl_cfoj () {return  cl_cfoj;}
 
-    public void setResultCl_cfoj (List<Cl_cfoj> cl_cfoj) {
-
-        this.cl_cfoj = cl_cfoj;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

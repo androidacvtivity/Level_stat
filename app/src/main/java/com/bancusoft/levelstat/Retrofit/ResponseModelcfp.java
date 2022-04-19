@@ -17,11 +17,6 @@ public class ResponseModelcfp {
 
     public List<Scientistscfp> getResultcfp () {return  scientistscfp;}
 
-    public void setResultcfp (List<Scientistscfp> scientistscfp) {
-
-        this.scientistscfp = scientistscfp;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}
