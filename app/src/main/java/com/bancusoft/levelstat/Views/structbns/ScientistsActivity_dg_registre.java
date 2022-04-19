@@ -1,6 +1,7 @@
 package com.bancusoft.levelstat.Views.structbns;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,12 +15,15 @@ import android.widget.AbsListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
 import com.bancusoft.levelstat.Helpers.Utils;
 
 
@@ -46,7 +50,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
     private RecyclerView rv;
     private MyAdapter_dg_registre mAdapter;
     private LinearLayoutManager layoutManager;
-    public ArrayList<Scientist> allPagesScientists = new ArrayList();
+    public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
     private Boolean isScrolling = false;
     private int currentScientists, totalScientists, scrolledOutScientists;
@@ -77,26 +81,24 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
      * as well as pagination parameters. We are basiclally searching or selecting data
      * without seaching. However all the arriving data is paginated at the server level.
      */
-    private void retrieveAndFillRecyclerView(final String action, String queryString,
-                                             final String start, String limit) {
+    private void retrieveAndFillRecyclerView(final String action,
+                                             final String start) {
 
-        String director = "registre si clasificatoare";
-
-        queryString  = director;
+        String queryString = "registre si clasificatoare";
 
         mAdapter.searchString = queryString;
         RestApi api = Utils.getClient().create(RestApi.class);
         Call<ResponseModel> retrievedData;
 
         if (action.equalsIgnoreCase("GET_PAGINATED")) {
-            retrievedData = api.search("GET_PAGINATED", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED", queryString, start, "20");
             Utils.showProgressBar(mProgressBar);
         } else
 
 
         if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
             Utils.showProgressBar(mProgressBar);
-            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, limit);
+            retrievedData = api.search("GET_PAGINATED_SEARCH", queryString, start, "20");
         } else
 
 
@@ -109,9 +111,11 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
 
 
         retrievedData.enqueue(new Callback<ResponseModel>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
-            public void onResponse(Call<ResponseModel> call, Response<ResponseModel>
+            public void onResponse(@NonNull Call<ResponseModel> call, @NonNull Response<ResponseModel>
                     response) {
+                assert response.body() != null;
                 Log.d("RETROFIT", "CODE : " + response.body().getCode());
                 Log.d("RETROFIT", "MESSAGE : " + response.body().getMessage());
                 Log.d("RETROFIT", "RESPONSE : " + response.body().getResult());
@@ -121,9 +125,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
                         allPagesScientists.clear();
                     }
-                    for (int i = 0; i < currentPageScientists.size(); i++) {
-                        allPagesScientists.add(currentPageScientists.get(i));
-                    }
+                    allPagesScientists.addAll(currentPageScientists);
 
                 } else {
                     if (action.equalsIgnoreCase("GET_PAGINATED_SEARCH")) {
@@ -135,7 +137,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
             }
 
             @Override
-            public void onFailure(Call<ResponseModel> call, Throwable t) {
+            public void onFailure(@NonNull Call<ResponseModel> call, @NonNull Throwable t) {
                 Utils.hideProgressBar(mProgressBar);
                 Log.d("RETROFIT", "ERROR: " + t.getMessage());
                 Utils.showInfoDialog(ScientistsActivity_dg_registre.this, "ERROR", t.getMessage());
@@ -149,7 +151,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
     private void listenToRecyclerViewScroll() {
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView rv, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView rv, int newState) {
                 //when scrolling starts
                 super.onScrollStateChanged(rv, newState);
                 //check for scroll state
@@ -158,12 +160,12 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
                 }
             }
             @Override
-            public void onScrolled(RecyclerView rv, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView rv, int dx, int dy) {
                 // When the scrolling has stopped
                 super.onScrolled(rv, dx, dy);
                 currentScientists = layoutManager.getChildCount();
                 totalScientists = layoutManager.getItemCount();
-                scrolledOutScientists = ((LinearLayoutManager) rv.getLayoutManager()).
+                scrolledOutScientists = ((LinearLayoutManager) Objects.requireNonNull(rv.getLayoutManager())).
                         findFirstVisibleItemPosition();
 
                 if (isScrolling && (currentScientists + scrolledOutScientists ==
@@ -173,8 +175,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
                     if (dy > 0) {
                         // Scrolling up
                         retrieveAndFillRecyclerView("GET_PAGINATED",
-                                mAdapter.searchString,
-                                String.valueOf(totalScientists), "20");
+                                String.valueOf(totalScientists));
 
                     } else {
                         // Scrolling down
@@ -218,10 +219,6 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
                 return true;
 
             case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
-//                finish();
-//
                 Intent intent;
                 intent = new Intent(this, structurabns.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -229,11 +226,6 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
                 startActivity(intent);
 
                 return true;
-
-//            case R.id.back_str:
-//                Utils.openActivity(this, structurabns.class);
-//                finish();
-//                return true;
 
             case R.id.video3_str:
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
@@ -250,7 +242,7 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
 
     @Override
     public boolean onQueryTextChange(String query) {
-        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", query, "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED_SEARCH", "0");
         return false;
     }
 
@@ -269,11 +261,6 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
-    //    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
     @Override
     public void onBackPressed() {
         Intent intent;
@@ -291,6 +278,10 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
         initializeViews();
         this.listenToRecyclerViewScroll();
         setupRecyclerView();
-        retrieveAndFillRecyclerView("GET_PAGINATED", "", "0", "20");
+        retrieveAndFillRecyclerView("GET_PAGINATED", "0");
+    }
+
+    public void setReceivedScientist(Scientist receivedScientist) {
+        this.receivedScientist = receivedScientist;
     }
 }
