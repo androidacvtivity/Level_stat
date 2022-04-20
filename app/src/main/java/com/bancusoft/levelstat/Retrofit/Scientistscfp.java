@@ -19,11 +19,15 @@ public class Scientistscfp implements Serializable {
     private String DENUMIRE;
 
     @SerializedName("VALUE")
-    private String VALUE;
+    private final String VALUE;
 
 
     @SerializedName("act")
     private String act;
+
+    public Scientistscfp(String value) {
+        VALUE = value;
+    }
 
     /**
      * Let's now come define our getter and setter methods.
@@ -52,11 +56,6 @@ public class Scientistscfp implements Serializable {
     public  String getVALUE () {
 
         return VALUE;
-    }
-
-    public void setVALUE (String VALUE) {
-        this.VALUE =  VALUE;
-
     }
 
 

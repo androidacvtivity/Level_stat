@@ -29,7 +29,11 @@ public class Cl_cuatm_all implements Serializable {
     private String DENUMIRE;
 
     @SerializedName("prgs")
-    private String prgs;
+    private final String prgs;
+
+    public Cl_cuatm_all(String prgs) {
+        this.prgs = prgs;
+    }
 
     /**
      * Let's now come define our getter and setter methods.
@@ -70,11 +74,6 @@ public class Cl_cuatm_all implements Serializable {
     public  String getPrgs () {
 
         return prgs;
-    }
-
-    public void setPrgs(String prgs) {
-        this.prgs =  prgs;
-
     }
 
     @NonNull
