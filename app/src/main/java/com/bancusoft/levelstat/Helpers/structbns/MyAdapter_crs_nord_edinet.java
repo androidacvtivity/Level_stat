@@ -23,7 +23,7 @@ import com.bancusoft.levelstat.Retrofit.Scientist;
 import com.bancusoft.levelstat.Views.structbns.DetailActivity_crs_nord_edinet;
 import com.github.ivbaranov.mli.MaterialLetterIcon;
 
-public class MyAdapter_crs_nord_edinet extends RecyclerView.Adapter<MyAdapter_crs_nord_edinet.ViewHolder>{
+public class    MyAdapter_crs_nord_edinet extends RecyclerView.Adapter<MyAdapter_crs_nord_edinet.ViewHolder>{
 
     private final Context c;
     private final int mBackground;

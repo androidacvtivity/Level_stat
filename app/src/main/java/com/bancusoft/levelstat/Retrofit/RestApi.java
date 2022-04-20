@@ -72,57 +72,6 @@ public interface RestApi {
     Call<ResponseModel_Cl_medicament> retrievecl_medicament();
 
 
-
-
-    /**
-     * This method will allow us perform a HTTP POST request to the specified url.In the process
-     * we will insert data to mysql and return a ResponseModel object
-     */
-    @FormUrlEncoded
-    @POST("index.php")
-    Call<ResponseModel> insertData(@Field("action") String action,
-                                   @Field("name")   String name,
-                                   @Field("description") String description,
-                                   @Field("galaxy")  String galaxy,
-                                   @Field("star")     String star,
-                                   @Field("serviciu") String serviciu,
-                                   @Field("sectia")   String sectia,
-                                   @Field("depart")   String depart,
-                                   @Field("phone")   String phone,
-                                   @Field("phoneinternal")   String phoneinternal,
-                                   @Field("email")   String email,
-                                   @Field("personalinfo")   String personalinfo,
-                                   @Field("formname")   String formname
-                            //       @Field("phonemobil")  String phonemobil
-
-    );
-
-    /**
-     * This method will allow us update our mysql data by making a HTTP POST request.
-     * After that
-     * we will receive a ResponseModel model object
-     */
-    @FormUrlEncoded
-    @POST("index.php")
-    Call<ResponseModel> updateData(@Field("action") String action,
-                                   @Field("id") String id,
-                                   @Field("name") String name,
-                                   @Field("description") String description,
-                                   @Field("galaxy") String galaxy,
-                                   @Field("star") String star,
-                                   @Field("serviciu") String serviciu,
-                                   @Field("sectia")  String sectia,
-                                   @Field("depart")  String depart,
-                                   @Field("phone")   String phone,
-                                   @Field("phoneinternal")   String phoneinternal,
-                                   @Field("email")   String email,
-                                   @Field("personalinfo")   String personalinfo,
-                                   @Field("formname")   String formname
-                                //   @Field("phonemobil")  String phonemobil
-
-
-    );
-
     /**
      * This method will allow us to search our data while paginating the search results. We
      * specify the search and pagination parameters as fields.
@@ -319,15 +268,5 @@ public interface RestApi {
                                                       @Field("limitcu") String limitcu);
 
 
-
-
-    /**
-     * This method will aloow us to remove or delete from database the row with the
-     *  specified
-     * id.
-     */
-    @FormUrlEncoded
-    @POST("index.php")
-    Call<ResponseModel> remove(@Field("action") String action, @Field("id") String id);
 }
 //end

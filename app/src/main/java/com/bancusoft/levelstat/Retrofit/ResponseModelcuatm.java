@@ -19,11 +19,6 @@ public class ResponseModelcuatm {
 
     public List<Cl_cuatm_all> getResultcuatm () {return  cl_cuatm_all;}
 
-    public void setResultcuatm (List<Cl_cuatm_all> cl_cuatm_all) {
-
-        this.cl_cuatm_all = cl_cuatm_all;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}
