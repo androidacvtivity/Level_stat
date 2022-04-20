@@ -16,11 +16,6 @@ public class ResponseModelCl_tari {
 
     public List<Cl_tari> getResultCl_tari () {return  cl_tari;}
 
-    public void setResultCl_tari (List<Cl_tari> cl_tari) {
-
-        this.cl_tari = cl_tari;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

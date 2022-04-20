@@ -36,27 +36,36 @@ public class Scientist implements Serializable {
      @SerializedName("phone")
      private String phone;
      @SerializedName("phoneinternal")
-     private String phoneinternal;
+     private final String phoneinternal;
      @SerializedName("email")
      private String email;
      @SerializedName("personalinfo")
-     private String personalinfo;
+     private final String personalinfo;
 
      @SerializedName("formname")
-     private String formname;
+     private final String formname;
 
      @SerializedName("phonemobil")
-     private String phonemobil;
+     private final String phonemobil;
 
      @SerializedName("floor")
-     private String floor;
+     private final String floor;
 
      @SerializedName("office")
-     private String office;
+     private final String office;
 
 
      @SerializedName("notice")
      private String notice;
+
+     public Scientist(String phoneinternal, String personalinfo, String formname, String phonemobil, String floor, String office) {
+         this.phoneinternal = phoneinternal;
+         this.personalinfo = personalinfo;
+         this.formname = formname;
+         this.phonemobil = phonemobil;
+         this.floor = floor;
+         this.office = office;
+     }
 
 
      /**
@@ -83,20 +92,12 @@ public class Scientist implements Serializable {
          return floor;
      }
 
-     public void setFloor(String floor) {
-         this.floor = floor;
-     }
-
 
      public String getOffice() {
          return office;
      }
 
-     public void setOffice(String office) {
-         this.office = office;
-     }
-
-    public String getName() {
+     public String getName() {
         return name;
     }
 
@@ -127,12 +128,6 @@ public class Scientist implements Serializable {
          return formname;
      }
 
-     public void setFormname(String formname) {
-         this.formname = formname;
-     }
-
-
-
 
      public String getPhone() {
          return phone;
@@ -147,19 +142,9 @@ public class Scientist implements Serializable {
          return phonemobil;
      }
 
-     public void setPhonemobil(String phonemobil) {
-         this.phonemobil = phonemobil;
-     }
-
-
-
 
      public String getPersonalinfo() {
          return personalinfo;
-     }
-
-     public void sePersonalinfo (String personalinfo) {
-         this.personalinfo = personalinfo;
      }
 
 
@@ -175,10 +160,6 @@ public class Scientist implements Serializable {
 
      public String getPhoneinternal() {
          return phoneinternal;
-     }
-
-     public void setPhoneinternal(String phoneinternal) {
-         this.phoneinternal = phoneinternal;
      }
 
 

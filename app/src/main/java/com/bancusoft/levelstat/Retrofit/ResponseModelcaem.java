@@ -17,11 +17,6 @@ public class ResponseModelcaem {
 
     public List<Scientistscaem> getResultcaem () {return  scientistscaem;}
 
-    public void setResultcaem (List<Scientistscaem> scientistscaem) {
-
-        this.scientistscaem = scientistscaem;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

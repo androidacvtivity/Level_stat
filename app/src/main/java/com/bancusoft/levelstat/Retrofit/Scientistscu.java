@@ -13,37 +13,21 @@ import java.io.Serializable;
 
 public class Scientistscu  implements Serializable{
 
-    /**
-     * Let' now come define instance fields for this class. We decorate them with
-     * SerializedName
-     * attribute. Through this we are specifying the keys in our json data.
-     */
-
-    @SerializedName("id_cu")
-    private String mId_cu;
-
     @SerializedName("DEN_CUATM")
-    private String DEN_CUATM;
+    private final String DEN_CUATM;
 
     @SerializedName("NUMBER_CUATM")
-    private String NUMBER_CUATM;
+    private final String NUMBER_CUATM;
 
 
     @SerializedName("source")
-    private String source;
+    private final String source;
 
-    /**
-     * Let's now come define our getter and setter methods.
-     */
-
-    public String getmId_cu() {
-        return mId_cu;
+    public Scientistscu(String den_cuatm, String number_cuatm, String source) {
+        DEN_CUATM = den_cuatm;
+        NUMBER_CUATM = number_cuatm;
+        this.source = source;
     }
-
-    public void setmId_cu(String id_cu) {
-        mId_cu = id_cu;
-    }
-
 
 
     public  String getDEN_CUATM () {
@@ -51,30 +35,15 @@ public class Scientistscu  implements Serializable{
         return DEN_CUATM;
     }
 
-    public void setDEN_CUATM(String DEN_CUATM) {
-        this.DEN_CUATM =  DEN_CUATM;
-
-    }
-
     public  String getNUMBER_CUATM () {
 
         return NUMBER_CUATM;
-    }
-
-    public void setNUMBER_CUATM(String NUMBER_CUATM) {
-        this.NUMBER_CUATM =  NUMBER_CUATM;
-
     }
 
 
     public  String getSource () {
 
         return source;
-    }
-
-    public void setSource(String source) {
-        this.source =  source;
-
     }
 
 

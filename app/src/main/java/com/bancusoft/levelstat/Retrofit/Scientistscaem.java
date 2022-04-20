@@ -20,11 +20,15 @@ public class Scientistscaem implements Serializable {
     private String DENUMIRE;
 
     @SerializedName("VALUE")
-    private String VALUE;
+    private final String VALUE;
 
 
     @SerializedName("act")
     private String act;
+
+    public Scientistscaem(String value) {
+        VALUE = value;
+    }
 
     /**
      * Let's now come define our getter and setter methods.
@@ -53,11 +57,6 @@ public class Scientistscaem implements Serializable {
     public  String getVALUE () {
 
         return VALUE;
-    }
-
-    public void setVALUE (String VALUE) {
-        this.VALUE =  VALUE;
-
     }
 
 

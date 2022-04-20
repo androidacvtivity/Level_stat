@@ -32,6 +32,10 @@ public class Cl_caem2 implements Serializable {
     @SerializedName("PRIM")
     private String PRIM;
 
+    public Cl_caem2(String prim) {
+        PRIM = prim;
+    }
+
     /**
      * Let's now come define our getter and setter methods.
      */
@@ -71,11 +75,6 @@ public class Cl_caem2 implements Serializable {
     public  String getPRIM () {
 
         return PRIM;
-    }
-
-    public void setPRIM(String PRIM) {
-        this.PRIM =  PRIM;
-
     }
 
     @NonNull

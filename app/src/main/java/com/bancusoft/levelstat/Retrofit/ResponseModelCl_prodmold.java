@@ -18,11 +18,6 @@ public class ResponseModelCl_prodmold {
 
     public List<Cl_prodmold> getResultCl_prodmold () {return  cl_prodmold;}
 
-    public void setResultCl_prodmold (List<Cl_prodmold> cl_prodmold) {
-
-        this.cl_prodmold = cl_prodmold;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

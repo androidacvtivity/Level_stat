@@ -18,11 +18,6 @@ public class ResponseModelCl_cfp {
 
     public List<Cl_cfp> getResultCl_cfp () {return  cl_cfp;}
 
-    public void setResultCl_cfp (List<Cl_cfp> cl_cfp) {
-
-        this.cl_cfp = cl_cfp;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}

@@ -17,11 +17,6 @@ public class ResponseModelcaem2cl {
 
     public List<Cl_caem2> getResultcaem2cl () {return  cl_caem2;}
 
-    public void setResultcaem2cl (List<Cl_caem2> cl_caem2) {
-
-        this.cl_caem2 = cl_caem2;
-    }
-
     public String getCodecu () {return  codecu;}
 
     public void setCodecu  ( String codecu) {this.codecu = codecu;}
