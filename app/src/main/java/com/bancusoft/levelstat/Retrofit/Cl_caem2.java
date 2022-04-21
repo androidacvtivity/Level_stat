@@ -30,7 +30,7 @@ public class Cl_caem2 implements Serializable {
     private String DENUMIRE;
 
     @SerializedName("PRIM")
-    private String PRIM;
+    private final String PRIM;
 
     public Cl_caem2(String prim) {
         PRIM = prim;

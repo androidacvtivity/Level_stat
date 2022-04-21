@@ -301,7 +301,7 @@ public class DetailActivity_recesaminte extends AppCompatActivity {
 
 
 
-                String email2 = "vitallybankou@gmail.com";
+                String email2 = "bancusoft@gmail.com";
                 String subject= "The list of contacts of Employer are wrong. Write please,  which of fields is wrong.  ";
                 String contentShare = new String(a);
                 String mailTo = "mailto:" + email2 + //"," + email2 +
