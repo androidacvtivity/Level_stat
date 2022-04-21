@@ -1,5 +1,7 @@
 package com.bancusoft.levelstat.Views.med;
 
+import static com.bancusoft.levelstat.Helpers.Utils.showInfoDialog_help_ro_med;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,14 +27,14 @@ public class help_medicament extends BaseActivity {
         setSupportActionBar(toolbar);
 
         //findViewById(R.id.mBackArrowh).setOnClickListener(v -> finish());
-        findViewById(R.id.mBackArrowh_med).setOnClickListener( v -> Utils.showInfoDialog_help_ro_med(this,
+        findViewById(R.id.mBackArrowh_med).setOnClickListener( v -> showInfoDialog_help_ro_med(this,
                 "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar despre clasificatorul medicamentelor  in limba engleza si rusa.") );
     }
 
 
     @Override
     public void onBackPressed() {
-        Utils.showInfoDialog_help_ro_med(this,
+        showInfoDialog_help_ro_med(this,
                 "Atenție", "Sunteți sigutri că vreți sa esiți? Exista traducere la indrumar despre clasificatorul medicamentelor  in limba engleza si rusa.");
         //this.finish();
     }
