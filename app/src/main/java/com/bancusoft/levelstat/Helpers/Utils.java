@@ -153,12 +153,11 @@ public class Utils {
                 .show();
     }
 
-
     /**
      * This method will allow us show an Info dialog anywhere in our app.
      */
     public static void showInfoDialog_help_ro_med(final AppCompatActivity activity, String title,
-                                              String message) {
+                                                  String message) {
 
         new AlertDialog.Builder(activity)
 
@@ -170,6 +169,7 @@ public class Utils {
                 .setNegativeButton("ru", (dialog, which) -> openActivity(activity, help_medicament_ru.class))
 
                 .show();
+
 
 
     }
