@@ -25,6 +25,7 @@ import java.util.Objects;
 
 import com.bancusoft.levelstat.Helpers.Utils;
 
+import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_mun_chis_cer_gospodarii;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
@@ -43,7 +44,7 @@ public class ScientistsActivity_mun_chi_cer_gospodarii extends AppCompatActivity
         implements SearchView.OnQueryTextListener,MenuItem.OnActionExpandListener{
     //We define our instance fields
     private RecyclerView rv;
-    private MyAdapter_mun_chis_sit_fin_rascani mAdapter;
+    private MyAdapter_mun_chis_cer_gospodarii mAdapter;
     private LinearLayoutManager layoutManager;
     public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
@@ -66,7 +67,7 @@ public class ScientistsActivity_mun_chi_cer_gospodarii extends AppCompatActivity
      */
     private void setupRecyclerView() {
         layoutManager = new LinearLayoutManager(this);
-        mAdapter = new MyAdapter_mun_chis_sit_fin_rascani(this, allPagesScientists);
+        mAdapter = new MyAdapter_mun_chis_cer_gospodarii(this, allPagesScientists);
         rv.setAdapter(mAdapter);
         rv.setLayoutManager(layoutManager);
         rv.setBackgroundColor(Color.TRANSPARENT);

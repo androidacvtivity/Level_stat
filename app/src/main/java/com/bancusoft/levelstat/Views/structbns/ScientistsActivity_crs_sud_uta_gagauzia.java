@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bancusoft.levelstat.Helpers.Utils;
-import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_crs_sud_cantemir;
+import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_crs_sud_uta_gagauzia;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
@@ -42,7 +42,7 @@ public class ScientistsActivity_crs_sud_uta_gagauzia  extends AppCompatActivity
 
     //We define our instance fields
     private RecyclerView rv;
-    private MyAdapter_crs_sud_cantemir mAdapter;
+    private MyAdapter_crs_sud_uta_gagauzia mAdapter;
     private LinearLayoutManager layoutManager;
     public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
@@ -65,7 +65,7 @@ public class ScientistsActivity_crs_sud_uta_gagauzia  extends AppCompatActivity
      */
     private void setupRecyclerView() {
         layoutManager = new LinearLayoutManager(this);
-        mAdapter = new MyAdapter_crs_sud_cantemir(this, allPagesScientists);
+        mAdapter = new MyAdapter_crs_sud_uta_gagauzia(this, allPagesScientists);
         rv.setAdapter(mAdapter);
         rv.setLayoutManager(layoutManager);
         rv.setBackgroundColor(Color.TRANSPARENT);
