@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Objects;
 
 import com.bancusoft.levelstat.Helpers.Utils;
-import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_mun_chis_sit_fin_botanica;
+import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_mun_chis_sit_fin_buiucani;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
 import com.bancusoft.levelstat.Retrofit.RestApi;
@@ -46,7 +46,7 @@ public class ScientistsActivity_mun_chi_sit_fin_buiucani extends AppCompatActivi
 
     //We define our instance fields
     private RecyclerView rv;
-    private MyAdapter_mun_chis_sit_fin_botanica mAdapter;
+    private MyAdapter_mun_chis_sit_fin_buiucani mAdapter;
     private LinearLayoutManager layoutManager;
     public ArrayList<Scientist> allPagesScientists = new ArrayList<>();
     private List<Scientist> currentPageScientists;
@@ -69,7 +69,7 @@ public class ScientistsActivity_mun_chi_sit_fin_buiucani extends AppCompatActivi
      */
     private void setupRecyclerView() {
         layoutManager = new LinearLayoutManager(this);
-        mAdapter = new MyAdapter_mun_chis_sit_fin_botanica(this, allPagesScientists);
+        mAdapter = new MyAdapter_mun_chis_sit_fin_buiucani(this, allPagesScientists);
         rv.setAdapter(mAdapter);
         rv.setLayoutManager(layoutManager);
         rv.setBackgroundColor(Color.TRANSPARENT);
