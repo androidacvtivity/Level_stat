@@ -23,6 +23,7 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_crud.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_dashboard.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_caem.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cfoj.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cfp.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cl_caem.xml" value="0.13697916666666668" />
@@ -30,6 +31,8 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cl_cfp.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cl_cuatm.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cl_prodmold.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cl_tari.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cm_med.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cocm.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cspm.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cu.xml" value="0.13697916666666668" />
@@ -42,11 +45,13 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_scientists_str.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_scientistsvw.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_splash.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_caem.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cfp.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_caem.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_caem2.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cfoj.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cfp.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cocm.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cspm.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cuatm.xml" value="0.13697916666666668" />
@@ -82,6 +87,43 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/model_cu.xml" value="0.11145833333333334" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/model_str.xml" value="0.11145833333333334" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/modelvw.xml" value="0.11145833333333334" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_caem.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_caem2_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_caem_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cfoj_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cfp.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cfp_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cl_med.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cocm_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_cuatm.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_dgti.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_prodmold_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_servicii_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_str.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_tari_cl.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/detail_page_menu_vw.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/edit_item_menu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/help.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/helpvw.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/medicament_page_menu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/new_item_menu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_caem.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cfp.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_caem.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_caem2.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cfoj.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cfp.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cocm.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_prodmold.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_tari.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cu.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_cuatm.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_dgti.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_str.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/menu/scientists_page_menu_vw.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_cuatm.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/bancusoft/StudioProjects/Level_stat/app/src/main/res/layout/detail_content_cl_med.xml" value="0.11822916666666666" />
