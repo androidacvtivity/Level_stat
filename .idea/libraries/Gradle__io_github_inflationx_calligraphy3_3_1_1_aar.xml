@@ -13,11 +13,9 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/io.github.inflationx/calligraphy3/3.1.1/ee0e0d8fdcc92db6323063da61949dececb3b6ab/calligraphy3-3.1.1-javadoc.jar!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/io.github.inflationx/calligraphy3/3.1.1/ee0e0d8fdcc92db6323063da61949dececb3b6ab/calligraphy3-3.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/io.github.inflationx/calligraphy3/3.1.1/c5d2228e95c60d0a3e887139f08e4f7e5e515499/calligraphy3-3.1.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/io.github.inflationx/calligraphy3/3.1.1/c5d2228e95c60d0a3e887139f08e4f7e5e515499/calligraphy3-3.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
