@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,15 +26,16 @@
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:src="@drawable/ic_back_arrow"
+                    android:contentDescription="@string/todo_en_vw"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/mBackArrowh_en"
-                    android:text="About Statistical units"
+                    android:layout_toEndOf="@+id/mBackArrowh_en"
+                    android:text="@string/about_statistical_units_en_vw"
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:layout_marginStart="20dp" />
@@ -59,7 +59,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -77,17 +78,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="1"
+                        android:text="@string/_1_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabel_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabel_h"
 
-                        android:text="Where do we get the data from?"
+                        android:text="@string/where_do_we_get_the_data_from"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -116,9 +117,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="The Level stat application uses the open data from the State Register of Legal Entities on Public Services Agency  in the Republic of Moldova published by the Ministr of Information Technology and Communications on the government open data portal date.gov.md. " />
+                        android:text="@string/the_level_stat_application_uses_the_open_data_from_the_state_register_of_legal_entities_on_public_services_agency_in_the_republic_of_moldova_published_by_the_ministr_of_information_technology_and_communications_on_the_government_open_data_portal_date_gov_md" />
                 </RelativeLayout>
 
 
@@ -136,17 +137,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="2"
+                        android:text="@string/_2_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe2_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe2_h"
 
-                        android:text="How often is the data updated?"
+                        android:text="@string/how_often_is_the_data_updated"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -173,9 +174,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="The data about the companies are updated on the date.gov.md portal once a week, respectively in Level stat they are renewed monthly." />
+                        android:text="@string/the_data_about_the_companies_are_updated_on_the_date_gov_md_portal_once_a_week_respectively_in_level_stat_they_are_renewed_monthly" />
                 </RelativeLayout>
 
 
@@ -192,17 +193,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="3"
+                        android:text="@string/_3_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe3_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe3_h"
 
-                        android:text="The identity of the directors and founders of the companies"
+                        android:text="@string/the_identity_of_the_directors_and_founders_of_the_companies"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -229,9 +230,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="On Level stat you will only find the first and last names of the founders and administrators of the companies because no other open format information is currently available. " />
+                        android:text="@string/on_level_stat_you_will_only_find_the_first_and_last_names_of_the_founders_and_administrators_of_the_companies_because_no_other_open_format_information_is_currently_available" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -246,17 +247,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="4"
+                        android:text="@string/_4_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/websiteLabe4_h"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/websiteLabe4_h"
 
-                        android:text="What is search Level stat ?"
+                        android:text="@string/what_is_search_level_stat"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -283,11 +284,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="The Search option allows you to search for companies based on several fields. If you know the IDNO, Name, Name of the founders or leaders, City, Year of Registration or Type of activity of the company, and the status you can enter them in the search engine.
-For example - If you search after (lichidata) - All companies that are (lichidata) will be found. Searching with diacritics (ș, â.î, ă, î.ț)
-" />
+                        android:text="@string/the_search_option_allows_you_to_search_for_companies_based_on_several_fields_if_you_know_the_idno_name_name_of_the_founders_or_leaders_city_year_of_registration_or_type_of_activity_of_the_company_and_the_status_you_can_enter_them_in_the_search_engine_for_example_if_you_search_after_lichidata_all_companies_that_are_lichidata_will_be_found_searching_with_diacritics" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -302,17 +301,17 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="5"
+                        android:text="@string/_5_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe5_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe5_h"
 
-                        android:text="How to install the application Level stat?"
+                        android:text="@string/how_to_install_the_application_level_stat"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -339,9 +338,9 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="To install on your phone (Android) Install Winrar for Android, then uninstall the previous version if it exists and install the updated version. The application works if there is an internet connection. It works non-stop." />
+                        android:text="@string/to_install_on_your_phone_android_install_winrar_for_android_then_uninstall_the_previous_version_if_it_exists_and_install_the_updated_version_the_application_works_if_there_is_an_internet_connection_it_works_non_stop" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/mRelativeLayouth_h13_h"
@@ -355,17 +354,17 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="6"
+                        android:text="@string/_6_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe6_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe6_h"
 
-                        android:text="What does the share button in the law unit compartment mean?"
+                        android:text="@string/what_does_the_share_button_in_the_law_unit_compartment_mean"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -394,9 +393,9 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="In the section on the Law Unit, a button has been added - SHARE - which allows the distribution and saving of the employee's contact information." />
+                        android:text="@string/in_the_section_on_the_law_unit_a_button_has_been_added_share_which_allows_the_distribution_and_saving_of_the_employee_s_contact_information" />
                 </RelativeLayout>
 
 
@@ -412,17 +411,17 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="7"
+                        android:text="@string/_7_en_vw"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_toRightOf="@+id/websiteLabe7_h"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/websiteLabe7_h"
 
-                        android:text="The possibility to search for AE after the registration date has been added."
+                        android:text="@string/the_possibility_to_search_for_ae_after_the_registration_date_has_been_added"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -449,9 +448,9 @@ For example - If you search after (lichidata) - All companies that are (lichidat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
 
-                        android:text="We enter 2020-09 and you will also find AE that were registered in 2020-09. If we enter 2020-09-04 we will find exactly all the AEs that were registered on this date." />
+                        android:text="@string/we_enter_2020_09_and_you_will_also_find_ae_that_were_registered_in_2020_09_if_we_enter_2020_09_04_we_will_find_exactly_all_the_aes_that_were_registered_on_this_date" />
                 </RelativeLayout>
 
             </RelativeLayout>

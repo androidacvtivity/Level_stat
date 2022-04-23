@@ -220,10 +220,6 @@ public class ScientistsActivity_mun_chi_pm extends  AppCompatActivity
                 return true;
 
             case android.R.id.home:
-                //NavUtils.navigateUpFromSameTask(this);
-//                Utils.sendScientistToActivity(this,receivedScientist,structurabns.class);
-//                finish();
-//
                 Intent intent;
                 intent = new Intent(this, structurabns.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -231,11 +227,6 @@ public class ScientistsActivity_mun_chi_pm extends  AppCompatActivity
                 startActivity(intent);
 
                 return true;
-
-//            case R.id.back_str:
-//                Utils.openActivity(this, structurabns.class);
-//                finish();
-//                return true;
 
             case R.id.video3_str:
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
@@ -270,12 +261,6 @@ public class ScientistsActivity_mun_chi_pm extends  AppCompatActivity
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
-
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        this.finish();
-//    }
 
 
     @Override

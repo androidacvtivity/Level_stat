@@ -14,7 +14,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/io.github.inflationx/viewpump/2.0.3/c604e675bc873c8a1189c0d1e18728906cba7596/viewpump-2.0.3-sources.jar!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/io.github.inflationx/viewpump/2.0.3/c604e675bc873c8a1189c0d1e18728906cba7596/viewpump-2.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
