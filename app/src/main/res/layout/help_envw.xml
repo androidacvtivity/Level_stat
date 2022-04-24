@@ -450,7 +450,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
 
-                        android:text="@string/we_enter_2020_09_and_you_will_also_find_ae_that_were_registered_in_2020_09_if_we_enter_2020_09_04_we_will_find_exactly_all_the_aes_that_were_registered_on_this_date" />
+                        android:text="@string/we_enter_2020_09_and_you" />
                 </RelativeLayout>
 
             </RelativeLayout>
