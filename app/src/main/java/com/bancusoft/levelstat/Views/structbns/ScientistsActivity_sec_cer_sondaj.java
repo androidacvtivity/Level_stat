@@ -19,13 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
 import com.bancusoft.levelstat.Helpers.Utils;
-
-
 import com.bancusoft.levelstat.Helpers.structbns.MyAdapter_sec_cer_sondaj;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.ResponseModel;
@@ -35,6 +29,10 @@ import com.bancusoft.levelstat.Views.help;
 import com.bancusoft.levelstat.Views.helpen;
 import com.bancusoft.levelstat.Views.helpru;
 import com.bancusoft.levelstat.Views.structurabns;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import retrofit2.Call;
@@ -199,36 +197,51 @@ public class ScientistsActivity_sec_cer_sondaj extends AppCompatActivity
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_edit_str:
-                Utils.sendScientistToActivity(this,receivedScientist, help.class);
-                finish();
-                return true;
+        int id = item.getItemId();
+
+        if (id==R.id.action_edit_str){
+            Utils.sendScientistToActivity(this,receivedScientist, help.class);
+            finish();
+            return true;
+
+        }
+        else
+
+        if (id==R.id.action_edit_en_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
+            finish();
+            return true;
+
+        }
+        else
 
 
-            case R.id.action_edit_en_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpen.class);
-                finish();
-                return true;
+        if (id==R.id.action_edit_ru_str){
+            Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
+            finish();
+            return true;
 
-            case R.id.action_edit_ru_str:
-                Utils.sendScientistToActivity(this,receivedScientist, helpru.class);
-                finish();
-                return true;
+        }
+        else
 
-            case android.R.id.home:
-                Intent intent;
-                intent = new Intent(this, structurabns.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                startActivity(intent);
+        if (id == android.R.id.home){
 
-                return true;
+            Intent intent;
+            intent = new Intent(this, structurabns.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            finish();
+            startActivity(intent);
+            return true;
 
-            case R.id.video3_str:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat ));
-                startActivity(browserIntent);
-                break;
+        }
+
+        else
+        if (id == R.id.video3_str) {
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
+
+            startActivity(browserIntent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
