@@ -69,7 +69,7 @@ class Scientistscfp{
 		$limitcu=$_POST['limitcu'];
         $startcu=$_POST['startcu'];
 
-		$sql="SELECT * FROM reg_cfp_10_20	
+		$sql="SELECT * FROM reg_cfp_06_21	
 		
 		
 		WHERE 

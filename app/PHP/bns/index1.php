@@ -113,7 +113,8 @@ public function insert(){
  	        $sql = "UPDATE  start3v2 SET name = '$name',description = '$description',
              galaxy = '$galaxy', star = '$star', serviciu = '$serviciu', sectia = '$sectia', 
 			 depart = '$depart', phone = '$phone', phoneinternal = '$phoneinternal', email = '$email',
-			 personalinfo = '$personalinfo', formname = '$formname',phonemobil = '$phonemobil',floor = '$floor',office = '$office'            
+			 personalinfo = '$personalinfo', formname = '$formname',phonemobil = '$phonemobil',floor = '$floor',
+			 office = '$office'            
 			 WHERE id='$id'";
 
             $result = $con->query($sql);

@@ -69,7 +69,7 @@ class Scientistscaem{
 		$limitcu=$_POST['limitcu'];
         $startcu=$_POST['startcu'];
 
-		$sql="SELECT * FROM reg_caem_10_20	
+		$sql="SELECT * FROM reg_caem_06_21	
 		
 		
 		WHERE 
