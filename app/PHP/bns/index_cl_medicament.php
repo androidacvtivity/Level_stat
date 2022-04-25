@@ -44,10 +44,14 @@ class Cl_medicament{
                 while($row=$resultcu->fetch_array())
                 {
                     array_push($cl_medicament, array("id"=>$row['id'],"nr_ordine"=>$row['nr_ordine'],
-					"codul_med"=>$row['codul_med'],"codul_vamal"=>$row['codul_vamal'],"den_come"=>$row['den_come'],"forma_farmaceutica"=>$row['forma_farmaceutica'],
-					"doza_concentratia"=>$row['doza_concentratia'],"volum"=>$row['volum'],"divizarea"=>$row['divizarea'],"tara"=>$row['tara'],"producatorul"=>$row['producatorul'],
-					"nr_inregistrare"=>$row['nr_inregistrare'],"data_inregistrarii"=>$row['data_inregistrarii'],"codul_atc"=>$row['codul_atc'],
-					"denumirea_int"=>$row['denumirea_int'],"termen_valabilitate"=>$row['termen_valabilitate'],"codul_cu_bare"=>$row['codul_cu_bare']));
+					"codul_med"=>$row['codul_med'],"codul_vamal"=>$row['codul_vamal'],"den_come"=>$row['den_come'],
+					"forma_farmaceutica"=>$row['forma_farmaceutica'],
+					"doza_concentratia"=>$row['doza_concentratia'],"volum"=>$row['volum'],"divizarea"=>$row['divizarea'],
+					"tara"=>$row['tara'],"producatorul"=>$row['producatorul'],
+					"nr_inregistrare"=>$row['nr_inregistrare'],"data_inregistrarii"=>$row['data_inregistrarii'],
+					"codul_atc"=>$row['codul_atc'],
+					"denumirea_int"=>$row['denumirea_int'],"termen_valabilitate"=>$row['termen_valabilitate'],
+					"codul_cu_bare"=>$row['codul_cu_bare'],"notice"=>$row['notice']));
 					
                 }
                 print(json_encode(array("codecu" => 1,"messagecu"=>"Success", "resultcu"=>$cl_medicament)));
@@ -84,8 +88,13 @@ class Cl_medicament{
 		 producatorul LIKE '%$querycu%' 
 		 OR 
 		 nr_inregistrare LIKE '%$querycu%' 
-       OR 
+         OR 
 		 denumirea_int LIKE '%$querycu%' 
+		 OR 
+		 tara LIKE '%$querycu%' 
+		 OR 
+		 codul_atc LIKE '%$querycu%' 
+		 
          ORDER BY id
 	     LIMIT
          $limitcu OFFSET $startcu
@@ -106,7 +115,8 @@ class Cl_medicament{
 					"codul_med"=>$row['codul_med'],"codul_vamal"=>$row['codul_vamal'],"den_come"=>$row['den_come'],"forma_farmaceutica"=>$row['forma_farmaceutica'],
 					"doza_concentratia"=>$row['doza_concentratia'],"volum"=>$row['volum'],"divizarea"=>$row['divizarea'],"tara"=>$row['tara'],"producatorul"=>$row['producatorul'],
 					"nr_inregistrare"=>$row['nr_inregistrare'],"data_inregistrarii"=>$row['data_inregistrarii'],"codul_atc"=>$row['codul_atc'],
-					"denumirea_int"=>$row['denumirea_int'],"termen_valabilitate"=>$row['termen_valabilitate'],"codul_cu_bare"=>$row['codul_cu_bare']));
+					"denumirea_int"=>$row['denumirea_int'],"termen_valabilitate"=>$row['termen_valabilitate'],
+					"codul_cu_bare"=>$row['codul_cu_bare'],"notice"=>$row['notice']));
 					
 					
 					

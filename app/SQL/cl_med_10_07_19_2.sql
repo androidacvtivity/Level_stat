@@ -1,3 +1,0 @@
-SELECT
-   COUNT(*) AS CNT  
-	FROM cl_med_10_07_19;

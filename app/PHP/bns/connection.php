@@ -24,13 +24,13 @@ class Constants
 	
 	static $SQL_SELECT_ALL1="SELECT * FROM start3v2  ORDER BY ID";
 	
-	static $SQL_SELECT_ALL_VIEW ="SELECT * FROM reg_11_02_20_vw  ORDER BY id_vw";
+	static $SQL_SELECT_ALL_VIEW ="SELECT * FROM reg_03_28_22_vw  ORDER BY id_vw";
 	
-	static $SQL_SELECT_ALL_2 ="SELECT * FROM reg_cuatm_10_20  ORDER BY id_cu";
+	static $SQL_SELECT_ALL_2 ="SELECT * FROM reg_cuatm_06_21  ORDER BY id_cu";
 	
-	static $SQL_SELECT_ALL_3 ="SELECT * FROM reg_caem_10_20  ORDER BY id";
+	static $SQL_SELECT_ALL_3 ="SELECT * FROM reg_caem_06_21  ORDER BY id";
 	
-	static $SQL_SELECT_ALL_4 ="SELECT * FROM reg_cfp_10_20  ORDER BY id";
+	static $SQL_SELECT_ALL_4 ="SELECT * FROM reg_cfp_06_21  ORDER BY id";
 	
 	static $SQL_SELECT_ALL_5 ="SELECT * FROM cl_cuatm_all  ORDER BY id";
 	
@@ -51,19 +51,5 @@ class Constants
 	static $SQL_SELECT_ALL_14 ="SELECT * FROM cl_prodmold  ORDER BY id";
 	
 	static $SQL_SELECT_ALL_15 ="SELECT * FROM cl_med_10_07_19  ORDER BY id";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 ?>
