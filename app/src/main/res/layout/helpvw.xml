@@ -459,7 +459,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
 
-                        android:text="@string/_2020_09_ae_2020_09_2020_09_04_ae" />
+                        android:text="@string/introducem_2020_09_si_vor_fi_gasiti_tot_ae_care_au_fost_inregistrati_in_2020_09_daca_introducem_2020_09_04_vor_fi_gasiti_exact_toti_ae_care_au_fost_inregistrati_in_aceasta_data" />
                 </RelativeLayout>
 
 
