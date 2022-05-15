@@ -10,11 +10,14 @@ public class Cl_tari implements Serializable{
     private String mId;
 
     @SerializedName("CODUL")
-    private String CODUL;
+    private final String CODUL;
 
     @SerializedName("DENUMIRE")
     private String DENUMIRE;
 
+    public Cl_tari(String codul) {
+        CODUL = codul;
+    }
 
 
     /**
@@ -34,11 +37,6 @@ public class Cl_tari implements Serializable{
     public  String getCODUL () {
 
         return CODUL;
-    }
-
-    public void setCODUL(String CODUL) {
-        this.CODUL =  CODUL;
-
     }
 
 

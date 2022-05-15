@@ -24,7 +24,7 @@ public class Cl_caem2 implements Serializable {
     private String mId;
 
     @SerializedName("CODUL")
-    private String CODUL;
+    private final String CODUL;
 
     @SerializedName("DENUMIRE")
     private String DENUMIRE;
@@ -32,7 +32,8 @@ public class Cl_caem2 implements Serializable {
     @SerializedName("PRIM")
     private final String PRIM;
 
-    public Cl_caem2(String prim) {
+    public Cl_caem2(String codul, String prim) {
+        CODUL = codul;
         PRIM = prim;
     }
 
@@ -53,11 +54,6 @@ public class Cl_caem2 implements Serializable {
     public  String getCODUL () {
 
         return CODUL;
-    }
-
-    public void setCODUL(String CODUL) {
-        this.CODUL =  CODUL;
-
     }
 
 

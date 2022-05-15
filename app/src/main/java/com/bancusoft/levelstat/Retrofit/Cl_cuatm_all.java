@@ -23,7 +23,7 @@ public class Cl_cuatm_all implements Serializable {
     private String mId;
 
     @SerializedName("CODUL")
-    private String CODUL;
+    private final String CODUL;
 
     @SerializedName("DENUMIRE")
     private String DENUMIRE;
@@ -31,7 +31,8 @@ public class Cl_cuatm_all implements Serializable {
     @SerializedName("prgs")
     private final String prgs;
 
-    public Cl_cuatm_all(String prgs) {
+    public Cl_cuatm_all(String codul, String prgs) {
+        CODUL = codul;
         this.prgs = prgs;
     }
 
@@ -52,11 +53,6 @@ public class Cl_cuatm_all implements Serializable {
     public  String getCODUL () {
 
         return CODUL;
-    }
-
-    public void setCODUL(String CODUL) {
-        this.CODUL =  CODUL;
-
     }
 
 
