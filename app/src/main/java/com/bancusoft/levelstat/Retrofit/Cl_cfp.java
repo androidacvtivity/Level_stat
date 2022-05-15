@@ -22,11 +22,14 @@ public class Cl_cfp implements Serializable {
     private String mId;
 
     @SerializedName("CODUL")
-    private String CODUL;
+    private final String CODUL;
 
     @SerializedName("DENUMIRE")
     private String DENUMIRE;
 
+    public Cl_cfp(String codul) {
+        CODUL = codul;
+    }
 
 
     /**
@@ -46,11 +49,6 @@ public class Cl_cfp implements Serializable {
     public  String getCODUL () {
 
         return CODUL;
-    }
-
-    public void setCODUL(String CODUL) {
-        this.CODUL =  CODUL;
-
     }
 
 
