@@ -10,7 +10,7 @@ public class Cl_prodmold implements Serializable{
     private String mId;
 
     @SerializedName("CODUL")
-    private String CODUL;
+    private final String CODUL;
 
     @SerializedName("DENUMIRE")
     private String DENUMIRE;
@@ -18,7 +18,8 @@ public class Cl_prodmold implements Serializable{
     @SerializedName("UM")
     private final String UM;
 
-    public Cl_prodmold(String um) {
+    public Cl_prodmold(String codul, String um) {
+        CODUL = codul;
         UM = um;
     }
 
@@ -40,11 +41,6 @@ public class Cl_prodmold implements Serializable{
     public  String getCODUL () {
 
         return CODUL;
-    }
-
-    public void setCODUL(String CODUL) {
-        this.CODUL =  CODUL;
-
     }
 
 

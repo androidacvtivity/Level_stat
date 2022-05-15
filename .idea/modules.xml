@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Level_stat.iml" filepath="$PROJECT_DIR$/.idea/modules/Level_stat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Level_stat.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Level_stat.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Level_stat.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Level_stat.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Level_stat.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Level_stat.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Level_stat.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Level_stat.app.unitTest.iml" />
     </modules>
   </component>
 </project>
