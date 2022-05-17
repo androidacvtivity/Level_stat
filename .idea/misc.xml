@@ -169,12 +169,87 @@
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_scientistsvw.xml" value="0.246875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_splash.xml" value="0.246875" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/activity_structura_bns.xml" value="0.33" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_caem2.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cfoj.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cocm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cspm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_cuatm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_prodmold.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cl_tarii.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_cu.xml" value="0.134375" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_content_str.xml" value="0.19427083333333334" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/detail_contentvw.xml" value="0.19427083333333334" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help.xml" value="0.20520833333333333" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_en.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_en_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_envw.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_ru.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_ru_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/help_ruvw.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/helpvw.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/helpvw_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_caem2.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_cfoj.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_cocm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_cuatm_all.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_prodmold.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_servicii.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cl_tari.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_cu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/model_str.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/layout/modelvw.xml" value="0.134375" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_caem2_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_caem_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cfoj_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cfp_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cl_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cocm_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_cuatm.xml" value="0.134375" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_dgti.xml" value="0.25416666666666665" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_prodmold_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_servicii_cl.xml" value="0.134375" />
         <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_str.xml" value="0.22" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_tari_cl.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/detail_page_menu_vw.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/edit_item_menu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/help.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/help_med.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/helpvw.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/medicament_page_menu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/new_item_menu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_caem.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_caem2.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cfoj.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cfp.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_cocm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_prodmold.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_servicii.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cl_tari.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cu.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_cuatm.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_dgti.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_str.xml" value="0.134375" />
+        <entry key="..\:/bancusoft/Android_projects/Level_stat/app/src/main/res/menu/scientists_page_menu_vw.xml" value="0.134375" />
       </map>
     </option>
   </component>
