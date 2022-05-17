@@ -2,16 +2,12 @@
   <library name="Gradle: androidx.core:core:1.7.0@aar">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/9ee0dbe140e18b97add4b66a12bfde30/transformed/core-1.7.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b66ad0897bd96cf113e5a723eba85b99/transformed/core-1.7.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d8338c189490aee58604e111af57865f/transformed/core-1.7.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/9ee0dbe140e18b97add4b66a12bfde30/transformed/core-1.7.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/9ee0dbe140e18b97add4b66a12bfde30/transformed/core-1.7.0/res" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/9ee0dbe140e18b97add4b66a12bfde30/transformed/core-1.7.0/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b66ad0897bd96cf113e5a723eba85b99/transformed/core-1.7.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b66ad0897bd96cf113e5a723eba85b99/transformed/core-1.7.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b66ad0897bd96cf113e5a723eba85b99/transformed/core-1.7.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d8338c189490aee58604e111af57865f/transformed/core-1.7.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8338c189490aee58604e111af57865f/transformed/core-1.7.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8338c189490aee58604e111af57865f/transformed/core-1.7.0/AndroidManifest.xml" />
