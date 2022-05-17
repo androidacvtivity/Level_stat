@@ -26,7 +26,7 @@ public class Scientist implements Serializable {
     @SerializedName("galaxy")
     private String galaxy;
     @SerializedName("star")
-    private String star;
+    private final String star;
     @SerializedName("serviciu")
      private String serviciu;
     @SerializedName("sectia")
@@ -58,7 +58,8 @@ public class Scientist implements Serializable {
      @SerializedName("notice")
      private String notice;
 
-     public Scientist(String phoneinternal, String personalinfo, String formname, String phonemobil, String floor, String office) {
+     public Scientist(String star, String phoneinternal, String personalinfo, String formname, String phonemobil, String floor, String office) {
+         this.star = star;
          this.phoneinternal = phoneinternal;
          this.personalinfo = personalinfo;
          this.formname = formname;
@@ -185,11 +186,7 @@ public class Scientist implements Serializable {
          return star;
      }
 
-     public void setStar(String star) {
-         this.star = star;
-     }
-
-    public String getGalaxy() {
+     public String getGalaxy() {
         return galaxy;
     }
 
@@ -202,6 +199,7 @@ public class Scientist implements Serializable {
     public String toString() {
         return getName();
     }
-}
+
+ }
 //end
 
