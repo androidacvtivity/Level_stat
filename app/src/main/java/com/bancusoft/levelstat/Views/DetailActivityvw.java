@@ -119,7 +119,7 @@ public class DetailActivityvw extends AppCompatActivity  {
         if (id == android.R.id.home){
 
             Intent intent;
-            intent = new Intent(this, ScientistsActivitystr3.class);
+            intent = new Intent(this, ScientistsActivityvw.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
             finish();
             startActivity(intent);
