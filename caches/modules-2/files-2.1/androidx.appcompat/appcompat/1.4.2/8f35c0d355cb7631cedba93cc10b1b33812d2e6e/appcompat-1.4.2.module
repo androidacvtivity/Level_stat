@@ -1,0 +1,236 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.appcompat",
+    "module": "appcompat",
+    "version": "1.4.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.cursoradapter",
+          "module": "cursoradapter",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.2.4"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.3.6"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat-resources",
+          "version": {
+            "requires": "1.4.2"
+          }
+        },
+        {
+          "group": "androidx.drawerlayout",
+          "module": "drawerlayout",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.savedstate",
+          "module": "savedstate",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "appcompat-1.4.2.aar",
+          "url": "appcompat-1.4.2.aar",
+          "size": 1119174,
+          "sha512": "f9c2d0eceef8db95b2052ab2ff08800b7ee491c07bc06fc7fbcc656142ccca4e85ea29c19258f78cf7b3a4a57402b4881524624522a55716abd11f4a01a9ca87",
+          "sha256": "41983beab29605809357372e7866f1582450b754d21a4e3de93db0aaa0215182",
+          "sha1": "dd539dbf5bbf5a8d2bba1727970683e00b663e16",
+          "md5": "f4f7bc0639a6321047765402807da4ac"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.cursoradapter",
+          "module": "cursoradapter",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.2.4"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.3.6"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat-resources",
+          "version": {
+            "requires": "1.4.2"
+          }
+        },
+        {
+          "group": "androidx.drawerlayout",
+          "module": "drawerlayout",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.savedstate",
+          "module": "savedstate",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.emoji2",
+          "module": "emoji2",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.emoji2",
+          "module": "emoji2-views-helper",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.collection",
+          "module": "collection",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "androidx.resourceinspection",
+          "module": "resourceinspection-annotation",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "appcompat-1.4.2.aar",
+          "url": "appcompat-1.4.2.aar",
+          "size": 1119174,
+          "sha512": "f9c2d0eceef8db95b2052ab2ff08800b7ee491c07bc06fc7fbcc656142ccca4e85ea29c19258f78cf7b3a4a57402b4881524624522a55716abd11f4a01a9ca87",
+          "sha256": "41983beab29605809357372e7866f1582450b754d21a4e3de93db0aaa0215182",
+          "sha1": "dd539dbf5bbf5a8d2bba1727970683e00b663e16",
+          "md5": "f4f7bc0639a6321047765402807da4ac"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "appcompat-1.4.2-sources.jar",
+          "url": "appcompat-1.4.2-sources.jar",
+          "size": 477513,
+          "sha512": "5129a19361cb44737b51fb171d5d32dec371a4adace80672917ede92b74f232326a929ca116c7a260b4b3ff9c97143a31ab7c1990da4bf01fe44334d1768a2ea",
+          "sha256": "4ea27444feb480cb4dfcde569e0ad2a33e2887d2e4f50586aa05732b6e8ba517",
+          "sha1": "a0a6b931c735952c318e94c90b0239966c500c52",
+          "md5": "13f409660b252077749be640fd4c01fa"
+        }
+      ]
+    }
+  ]
+}
