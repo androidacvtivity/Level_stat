@@ -8,6 +8,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.148" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/drawable/locate_btn_background.xml" value="0.148" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/drawable/shadow_bottom.xml" value="0.148" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_about_us.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_about_us_me.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_cl_caem.xml" value="0.13697916666666668" />
@@ -21,7 +24,7 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_cl_prodmold.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_cl_tarii.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_crud.xml" value="0.13697916666666668" />
-        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_dashboard.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_dashboard.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_caem.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/activity_detail_cfoj.xml" value="0.13697916666666668" />
@@ -61,7 +64,7 @@
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_cu.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_content_str.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/detail_contentvw.xml" value="0.13697916666666668" />
-        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/help.xml" value="0.536" />
+        <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/help.xml" value="0.22159548751007252" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/help_en.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/help_en_med.xml" value="0.13697916666666668" />
         <entry key="..\:/Users/bancusoft/AndroidStudioProjects/Level_stat/app/src/main/res/layout/help_envw.xml" value="0.376" />
