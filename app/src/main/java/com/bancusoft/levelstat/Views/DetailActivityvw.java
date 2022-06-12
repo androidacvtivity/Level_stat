@@ -93,22 +93,22 @@ public class DetailActivityvw extends AppCompatActivity  {
         int id = item.getItemId();
 
         if (id==R.id.action_edit_vw){
-            Utils.sendScientistvwToActivity(this,receivedScientist,help.class);
+            Utils.sendScientistvwToActivity(this,receivedScientist,help_vw.class);
             finish();
             return true;
         }
         else
 
-        if (id==R.id.action_edit_en_str){
-            Utils.sendScientistvwToActivity(this,receivedScientist,helpen.class);
+        if (id==R.id.action_edit_en_vw){
+            Utils.sendScientistvwToActivity(this,receivedScientist,help_vw_en.class);
             finish();
             return true;
 
         }
 
         else
-        if (id==R.id.action_edit_ru_str){
-            Utils.sendScientistvwToActivity(this,receivedScientist,helpru.class);
+        if (id==R.id.action_edit_ru_vw){
+            Utils.sendScientistvwToActivity(this,receivedScientist,help_vw_ru.class);
             finish();
             return true;
         }
@@ -128,7 +128,7 @@ public class DetailActivityvw extends AppCompatActivity  {
         }
 
         else
-        if (id == R.id.video3_str){
+        if (id == R.id.video3_vw){
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(com.bancusoft.levelstat.Helpers.Utils.youtube_level_stat));
 
