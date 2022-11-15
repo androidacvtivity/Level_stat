@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/d8a45eee13eb850e8e6afe496c2df809/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/c768775b5dc4d88a87dae9419e2dd8a3/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/d8a45eee13eb850e8e6afe496c2df809/transformed/jetified-viewpager2-1.0.0/res" />
@@ -16,9 +16,9 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/res" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/c768775b5dc4d88a87dae9419e2dd8a3/transformed/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/c768775b5dc4d88a87dae9419e2dd8a3/transformed/jetified-viewpager2-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/c768775b5dc4d88a87dae9419e2dd8a3/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

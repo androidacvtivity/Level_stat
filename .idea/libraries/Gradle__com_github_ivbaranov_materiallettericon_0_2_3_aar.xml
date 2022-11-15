@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ivbaranov:materiallettericon:0.2.3@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/40b8f55c6c4da9a2a9fb2c3cc2cef7dd/transformed/jetified-materiallettericon-0.2.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/40b8f55c6c4da9a2a9fb2c3cc2cef7dd/transformed/jetified-materiallettericon-0.2.3/res" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/40b8f55c6c4da9a2a9fb2c3cc2cef7dd/transformed/jetified-materiallettericon-0.2.3/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/7aa1559945d134c1cf1b3c13e86cd84b/transformed/jetified-materiallettericon-0.2.3/res" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/7aa1559945d134c1cf1b3c13e86cd84b/transformed/jetified-materiallettericon-0.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/7aa1559945d134c1cf1b3c13e86cd84b/transformed/jetified-materiallettericon-0.2.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/modules-2/files-2.1/com.github.ivbaranov/materiallettericon/0.2.3/b1a86cb548d24b66f4b769d89f5bcfb3536a2144/materiallettericon-0.2.3-javadoc.jar!/" />
