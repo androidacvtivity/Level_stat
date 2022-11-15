@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/ba0579803351fcaabd85a20a482ac104/transformed/recyclerview-1.2.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/772027d9435ec24b9bd9466d42f95752/transformed/recyclerview-1.2.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/ba0579803351fcaabd85a20a482ac104/transformed/recyclerview-1.2.1/AndroidManifest.xml" />
@@ -16,9 +16,9 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/res" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/res" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/cf2a97d9c5719b92ddf0482175003ffc/transformed/recyclerview-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/772027d9435ec24b9bd9466d42f95752/transformed/recyclerview-1.2.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/772027d9435ec24b9bd9466d42f95752/transformed/recyclerview-1.2.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/772027d9435ec24b9bd9466d42f95752/transformed/recyclerview-1.2.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

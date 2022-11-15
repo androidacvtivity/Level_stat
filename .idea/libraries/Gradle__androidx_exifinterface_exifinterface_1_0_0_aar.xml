@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/147b6f3d4122313c486afcff9a4a85da/transformed/exifinterface-1.0.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/d28a22f884b0426245844c6a6e0c25f3/transformed/exifinterface-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/3a5390f9c7406a40663b11b3ba2bf4c1/transformed/exifinterface-1.0.0/res" />
@@ -26,8 +26,8 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/d28a22f884b0426245844c6a6e0c25f3/transformed/exifinterface-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/d28a22f884b0426245844c6a6e0c25f3/transformed/exifinterface-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

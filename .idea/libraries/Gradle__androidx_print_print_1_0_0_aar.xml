@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/d97cd16bcc9cb5490bf057f4603cd7d7/transformed/print-1.0.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/16b17608972cd67ff0ad94fb8432d7ca/transformed/print-1.0.0/res" />
@@ -24,8 +24,8 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/res" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

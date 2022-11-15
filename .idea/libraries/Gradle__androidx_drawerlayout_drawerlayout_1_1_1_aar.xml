@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/aab2fa08c591d8f62342ad08062007e0/transformed/drawerlayout-1.1.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/46e80d470db2b1b1912846da9c9a9db2/transformed/drawerlayout-1.1.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/caches/transforms-3/aab2fa08c591d8f62342ad08062007e0/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
@@ -16,9 +16,9 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/res" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/res" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/edcdf00559453ac5f7364b461524ff25/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/46e80d470db2b1b1912846da9c9a9db2/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/46e80d470db2b1b1912846da9c9a9db2/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/46e80d470db2b1b1912846da9c9a9db2/transformed/drawerlayout-1.1.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
