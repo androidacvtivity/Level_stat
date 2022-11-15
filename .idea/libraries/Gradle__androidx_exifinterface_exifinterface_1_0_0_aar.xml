@@ -4,6 +4,7 @@
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/147b6f3d4122313c486afcff9a4a85da/transformed/exifinterface-1.0.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/3a5390f9c7406a40663b11b3ba2bf4c1/transformed/exifinterface-1.0.0/res" />
@@ -25,11 +26,13 @@
       <root url="file://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.exifinterface/exifinterface/1.0.0/cb592500decea684137bd17587a92eee4e2568e/exifinterface-1.0.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/androidx.exifinterface/exifinterface/1.0.0/cb592500decea684137bd17587a92eee4e2568e/exifinterface-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/modules-2/files-2.1/androidx.exifinterface/exifinterface/1.0.0/cb592500decea684137bd17587a92eee4e2568e/exifinterface-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
