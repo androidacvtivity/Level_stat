@@ -1,30 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/2a2638352c3fbecaeb3d5b535032bac6/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/4b9df83a08a2af7006b91b52a6f68ba4/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/0667e482971e178640be7d99e106d354/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dbb1925fa51760e606ae5301143bf2df/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/05eb5b7623b154418903d97436d6aa68/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/05eb5b7623b154418903d97436d6aa68/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/res" />
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/81f39f6b10eaffbd9990198b840796f5/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7154ee6fec4f38ca05d36393363001c/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7154ee6fec4f38ca05d36393363001c/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.0.0/bc41b287c95bc50a3cd27cb1b7cfb301805ba7f1/core-runtime-2.0.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../IPC-m-01/IPC-m-01/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.0.0/bc41b287c95bc50a3cd27cb1b7cfb301805ba7f1/core-runtime-2.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.0.0/bc41b287c95bc50a3cd27cb1b7cfb301805ba7f1/core-runtime-2.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
