@@ -79,13 +79,16 @@
                             android:padding="@dimen/text_padding"
                             android:text="@string/idno"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                            android:textColor="@color/colorAccent" />
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            />
 
                         <TextView
                             android:id="@+id/IDNO_VW_TV"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
+                            android:textSize="30sp"
 
                             android:text="@string/idno" />
 

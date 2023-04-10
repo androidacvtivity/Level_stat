@@ -27,7 +27,9 @@
             android:text="@string/scientist_s_name"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#009968"
-            tools:ignore="RelativeOverlap" />
+            tools:ignore="RelativeOverlap"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/mstarTxt"
@@ -40,7 +42,9 @@
             android:maxLines="3"
             android:text="@string/scientists_description"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
 
 
         <TextView
@@ -54,7 +58,9 @@
             android:maxLines="3"
             android:text="@string/depart"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
 
 
         <TextView
@@ -68,7 +74,9 @@
             android:maxLines="3"
             android:text="@string/sectia"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/mserviciuTxt"
@@ -81,7 +89,8 @@
             android:maxLines="3"
             android:text="@string/sectia"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp"/>
 
 
         <TextView
@@ -96,7 +105,8 @@
             android:text="@string/phone"
             android:autoLink="phone"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp" />
 
 
         <TextView
@@ -111,7 +121,9 @@
             android:text="@string/phonemobile"
             android:autoLink="phone"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/emailTxt"
@@ -125,7 +137,8 @@
             android:text="@string/e_mail"
             android:autoLink="email"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/mdescriptionTxt"
@@ -138,7 +151,8 @@
             android:maxLines="3"
             android:text="@string/description"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp" />
 
 
         <TextView
@@ -152,7 +166,8 @@
             android:maxLines="3"
             android:text="@string/formneame"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/mnoticeTxt"
@@ -167,6 +182,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
             android:textColor="@color/darkGreen"
+            android:textSize="20sp"
             />
 
         <TextView
@@ -182,7 +198,8 @@
             android:text="@string/galaxy"
             android:textColor="@color/colorAccent"
             android:textStyle="italic"
-            tools:ignore="MissingPrefix,RelativeOverlap" />
+            tools:ignore="MissingPrefix,RelativeOverlap"
+            android:textSize="18sp"/>
 
         <com.github.ivbaranov.mli.MaterialLetterIcon
             android:id="@+id/mMaterialLetterIcon"
