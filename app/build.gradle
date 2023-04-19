@@ -33,7 +33,7 @@ android {
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.8.20'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.google.firebase:firebase-firestore:24.4.5'
+    implementation 'com.google.firebase:firebase-firestore:24.5.0'
     testImplementation 'junit:junit:4.13.2'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.cardview:cardview:1.0.0'
