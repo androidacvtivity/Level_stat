@@ -1,8 +1,10 @@
 package com.bancusoft.levelstat.Views;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,6 +16,12 @@ import com.bancusoft.levelstat.Retrofit.Scientist;
 public class AboutUsActivity extends AppCompatActivity {
 
     private  Scientist receivedScientist;
+
+    public void onCallTextivewClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:+37367770604"));
+        startActivity(intent);
+    }
 
 
 
