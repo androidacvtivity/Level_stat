@@ -17,6 +17,12 @@ public class AboutUsActivity extends AppCompatActivity {
 
     private  Scientist receivedScientist;
 
+    public void openEmail(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:vitale.bancu@statistica.gov.md"));
+        startActivity(intent);
+    }
+
     public void onCallTextivewClick(View view) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:+37367770604"));
