@@ -6,8 +6,8 @@ android {
         applicationId "com.bancusoft.levelstat"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 3
-        versionName "release 4.0"
+        versionCode 5
+        versionName "release 5.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -25,7 +25,7 @@ android {
         dataBinding = true
 
     }
-    buildToolsVersion '33.0.1'
+    buildToolsVersion '34.0.0 rc4'
     namespace 'com.bancusoft.levelstat'
 
 }
@@ -33,11 +33,11 @@ android {
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.8.20'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.google.firebase:firebase-firestore:24.5.0'
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
     testImplementation 'junit:junit:4.13.2'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'

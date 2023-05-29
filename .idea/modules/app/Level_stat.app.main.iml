@@ -36,7 +36,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-common:8.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-common:8.0.2" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.20" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20" level="project" />
@@ -71,11 +71,11 @@
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.17.5" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.9.0" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-runtime:8.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.databinding:viewbinding:8.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-runtime:8.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:viewbinding:8.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-adapters:8.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore:24.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-adapters:8.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore:24.6.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:20.3.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-components:17.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:18.1.0@aar" level="project" />
@@ -98,7 +98,7 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:protolite-well-known-types:18.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection:18.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:18.0.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-appcheck-interop:17.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: io.grpc:grpc-android:1.52.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.6.1@aar" level="project" />
@@ -109,7 +109,7 @@
     <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.material:material:1.8.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.material:material:1.9.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
