@@ -212,8 +212,16 @@
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity" />
 
 
+<!--        <activity-->
+<!--            android:name="com.bancusoft.levelstat.Views.AboutUsActivity"-->
+<!--            android:label="About Us "-->
+<!--            android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"-->
+<!--            android:theme="@style/AppTheme.NoActionBar"/>-->
+
+
+
         <activity
-            android:name="com.bancusoft.levelstat.Views.AboutUsActivity"
+            android:name="com.bancusoft.levelstat.Views.AboutUsActivity_test"
             android:label="About Us "
             android:parentActivityName="com.bancusoft.levelstat.Views.DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
