@@ -62,7 +62,7 @@ dependencies {
     //OPTIONAL: Circular imageview
     implementation 'cn.gavinliu:ShapedImageView:0.8.7'
 
-
+    implementation 'androidx.databinding:databinding-runtime:8.0.2'
 
 
 }
