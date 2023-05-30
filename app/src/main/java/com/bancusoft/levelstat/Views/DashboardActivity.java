@@ -131,7 +131,7 @@ help_cl_med.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this, h
 
         ScientistsCard.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,ScientistsActivityvw.class));
 
-        third1.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,AboutUsActivity.class));
+        third1.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,AboutUsActivity_test.class));
 
         layout_help.setOnClickListener(v -> Utils.openActivity(DashboardActivity.this,help_vw.class));
 
