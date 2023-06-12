@@ -23,6 +23,20 @@ public class AboutUsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void openEmail_bujor_vasile(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:vasile.bujor@statistica.gov.md"));
+        startActivity(intent);
+    }
+
+    public void onCallTextivewClick_bujor(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:+37367770021"));
+        startActivity(intent);
+    }
+
+
     public void onCallTextivewClick(View view) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:+37367770604"));

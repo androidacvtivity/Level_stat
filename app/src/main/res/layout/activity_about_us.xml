@@ -248,34 +248,65 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout5"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="90dp"
                     android:layout_below="@+id/mRelativeLayout4"
                     android:background="@drawable/shadow_bottom">
 
                     <TextView
-                        android:id="@+id/address"
+
+                        android:id="@+id/bujor_vasile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:autoLink="email"
+                        android:layout_marginTop="10dp"
                         android:text="@string/division_head"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/bujor_vasil1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
-                        android:layout_toEndOf="@+id/address"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/bujor_vasile"
                         android:text="@string/bujor_vasile" />
+
+                    <TextView
+                        android:id="@+id/bujor_vasil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bujor_vasil1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onCallTextivewClick_bujor"
+                        android:text="@string/_CALL_PHONE_BANCU"
+                        android:textColor="#FF0000" />
+
+
+                    <TextView
+                        android:id="@+id/bujor_vasil3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bujor_vasil1"
+
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/bujor_vasil2"
+
+                        android:onClick="openEmail_bujor_vasile"
+                        android:text="@string/_SEND_MAIL_BANCU"
+                        android:textColor="#FF0000"
+
+                        />
+
+
                 </RelativeLayout>
 
 
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout6"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="90dp"
                     android:layout_below="@+id/mRelativeLayout5"
                     android:background="@drawable/shadow_bottom">
 
@@ -290,6 +321,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/natalia_gheorghita1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -297,68 +329,14 @@
                         android:layout_toEndOf="@+id/emailLabel"
 
                         android:text="@string/gheorghita_natalia" />
-                </RelativeLayout>
 
 
 
-                <RelativeLayout
-                    android:id="@+id/mRelativeLayout7"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:layout_below="@+id/mRelativeLayout6"
-                    android:background="@drawable/shadow_bottom">
-
-                    <TextView
-                        android:id="@+id/bancu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-
-                        android:text="@string/programmer"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/bancu_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_toEndOf="@+id/bancu"
-                        android:text="@string/bancu_vitalie" />
-
-                    <TextView
-                        android:id="@+id/bancu_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="40dp"
-                        android:layout_below="@+id/bancu_1"
-                        android:onClick="onCallTextivewClick"
-                        android:textColor="#FF0000"
-                        android:text="@string/_CALL_PHONE_BANCU"/>
-
-                    <TextView
-                        android:id="@+id/bancu_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/bancu_1"
-
-                        android:layout_marginStart="40dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_toEndOf="@+id/bancu_2"
-
-                        android:text="@string/_SEND_MAIL_BANCU"
-                        android:textColor="#FF0000"
-                        android:onClick="openEmail"
-
-                        />
 
                 </RelativeLayout>
 
 
-
-<!--                <RelativeLayout-->
+                <!--                <RelativeLayout-->
 <!--                    android:id="@+id/mRelativeLayout7"-->
 <!--                    android:layout_width="match_parent"-->
 <!--                    android:layout_height="50dp"-->
@@ -440,9 +418,65 @@
 <!--                </RelativeLayout>-->
 
                 <RelativeLayout
+                    android:id="@+id/mRelativeLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/mRelativeLayout6"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/bancu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:text="@string/programmer"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bancu_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/bancu"
+                        android:text="@string/bancu_vitalie" />
+
+                    <TextView
+                        android:id="@+id/bancu_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bancu_1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onCallTextivewClick"
+                        android:text="@string/_CALL_PHONE_BANCU"
+                        android:textColor="#FF0000" />
+
+                    <TextView
+                        android:id="@+id/bancu_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bancu_1"
+
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/bancu_2"
+
+                        android:onClick="openEmail"
+                        android:text="@string/_SEND_MAIL_BANCU"
+                        android:textColor="#FF0000"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:id="@+id/mRelativeLayout9"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="90dp"
                     android:layout_below="@+id/mRelativeLayout7"
                     android:background="@drawable/shadow_bottom">
 
