@@ -311,11 +311,10 @@
                     android:background="@drawable/shadow_bottom">
 
                     <TextView
-                        android:id="@+id/emailLabel"
+                        android:id="@+id/natalia_gheorghita"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:autoLink="email"
+                        android:layout_marginTop="10dp"
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
@@ -324,13 +323,40 @@
                         android:id="@+id/natalia_gheorghita1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
-                        android:layout_toEndOf="@+id/emailLabel"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/natalia_gheorghita"
 
                         android:text="@string/gheorghita_natalia" />
 
 
+                    <TextView
+                        android:id="@+id/natalia_gheorghita2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/natalia_gheorghita1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onCallTextivewClick_NataliaGheorgita"
+                        android:text="@string/_CALL_PHONE_BANCU"
+                        android:textColor="#FF0000" />
+
+
+                    <TextView
+                        android:id="@+id/natalia_gheorghita3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/natalia_gheorghita1"
+
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/natalia_gheorghita2"
+
+                        android:onClick="openEmail_NT"
+                        android:text="@string/_SEND_MAIL_BANCU"
+                        android:textColor="#FF0000"
+
+                        />
 
 
                 </RelativeLayout>
@@ -484,20 +510,51 @@
                         android:id="@+id/doru"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:autoLink="email"
+                        android:layout_marginTop="10dp"
+
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/doru1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/doru"
 
                         android:text="@string/Doru_Marian" />
+
+                    <TextView
+                        android:id="@+id/doru2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doru1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onCallTextivewClick_Doru"
+                        android:text="@string/_CALL_PHONE_BANCU"
+                        android:textColor="#FF0000" />
+
+
+
+                    <TextView
+                        android:id="@+id/doru3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doru1"
+
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/doru2"
+
+                        android:onClick="openEmail_Doru"
+                        android:text="@string/_SEND_MAIL_BANCU"
+                        android:textColor="#FF0000"
+
+                        />
+
                 </RelativeLayout>
 
 
