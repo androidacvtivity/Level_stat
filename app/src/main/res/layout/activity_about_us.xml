@@ -559,6 +559,65 @@
 
 
 
+                <RelativeLayout
+                    android:id="@+id/mRelativeLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/mRelativeLayout9"
+                    android:background="@drawable/shadow_bottom">
+
+                    <TextView
+                        android:id="@+id/tudor_popescu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:text="@string/programmer"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tudor_popescu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/tudor_popescu"
+
+                        android:text="@string/Tudor_Popescu" />
+
+                    <TextView
+                        android:id="@+id/tudor_popescu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tudor_popescu1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onCallTextivewClick_Tudor_Popescu"
+                        android:text="@string/_CALL_PHONE_BANCU"
+                        android:textColor="#FF0000" />
+
+
+
+                    <TextView
+                        android:id="@+id/tudor_popescu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tudor_popescu1"
+
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/tudor_popescu2"
+
+                        android:onClick="openEmail_Tudor_Popescu"
+                        android:text="@string/_SEND_MAIL_BANCU"
+                        android:textColor="#FF0000"
+
+                        />
+
+                </RelativeLayout>
+
+
 
 
             </RelativeLayout>
