@@ -23,6 +23,12 @@ public class AboutUsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openEmail_Catalin_Timbalist(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:catalin.timbalist@statistica.gov.md"));
+        startActivity(intent);
+    }
+
     public void openEmail_Tudor_Popescu(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:tudor.popescu@statistica.gov.md"));
@@ -73,6 +79,12 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
     public void onCallTextivewClick_Tudor_Popescu(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:+37322403021"));
+        startActivity(intent);
+    }
+
+    public void onCallTextivewClick_Catalin_Timbalist(View view) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:+37322403021"));
         startActivity(intent);
