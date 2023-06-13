@@ -43,7 +43,7 @@
             android:text="@string/scientists_description"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
 
@@ -59,7 +59,7 @@
             android:text="@string/depart"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
 
@@ -75,7 +75,7 @@
             android:text="@string/sectia"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
         <TextView
@@ -90,7 +90,7 @@
             android:text="@string/sectia"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp"/>
+            android:textSize="15sp"/>
 
 
         <TextView
@@ -152,7 +152,7 @@
             android:text="@string/description"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
 
         <TextView
@@ -167,7 +167,7 @@
             android:text="@string/formneame"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/mnoticeTxt"
@@ -182,7 +182,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
             android:textColor="@color/darkGreen"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
         <TextView

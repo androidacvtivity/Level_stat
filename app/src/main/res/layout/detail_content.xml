@@ -54,8 +54,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
+                            android:text="@string/albert_einstein"
 
-                            android:text="@string/albert_einstein" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -85,8 +86,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/this_is_the_description" />
+                            android:text="@string/this_is_the_description"
+                            android:textSize="20sp" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -119,10 +120,6 @@
                 <!--                    android:textStyle="italic" />-->
 
 
-
-
-
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,8 +143,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/this_is_the_description" />
+                            android:text="@string/this_is_the_description"
+                            android:textSize="20sp" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -167,7 +164,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
 
 
                 <androidx.cardview.widget.CardView
@@ -193,8 +189,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/this_is_the_description" />
+                            android:text="@string/this_is_the_description"
+                            android:textSize="20sp" />
 
                         <!--                        <TextView-->
                         <!--                            android:layout_width="match_parent"-->
@@ -254,8 +250,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/galaxy" />
+                            android:text="@string/galaxy"
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -286,8 +282,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
+                            android:text="@string/serviciu"
 
-                            android:text="@string/serviciu" />
+                            android:textSize="20sp" />
 
 
                     </LinearLayout>
@@ -319,8 +316,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/sec_ia" />
+                            android:text="@string/sec_ia"
+                            android:textSize="20sp" />
 
 
                     </LinearLayout>
@@ -351,8 +348,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/direc_ia" />
+                            android:text="@string/direc_ia"
+                            android:textSize="20sp" />
 
 
                     </LinearLayout>
@@ -384,8 +381,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/direc_ia" />
+                            android:text="@string/direc_ia"
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -418,8 +415,8 @@
                             android:layout_height="wrap_content"
                             android:autoLink="phone"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/star" />
+                            android:text="@string/star"
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -452,13 +449,12 @@
                             android:layout_height="wrap_content"
                             android:autoLink="phone"
                             android:padding="@dimen/text_padding"
-
-                            android:text="@string/star" />
+                            android:text="@string/star"
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
 
 
                 <androidx.cardview.widget.CardView
@@ -486,8 +482,7 @@
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
                             android:text="@string/star"
-
-                            />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -519,7 +514,10 @@
                             android:layout_height="wrap_content"
                             android:autoLink="email"
                             android:padding="@dimen/text_padding"
-                            android:text="@string/cercet_ri_statistice" />
+                            android:text="@string/cercet_ri_statistice"
+                            android:textSize="20sp"
+
+                            />
 
                     </LinearLayout>
 
@@ -551,7 +549,10 @@
                             android:layout_height="wrap_content"
                             android:autoLink="email"
                             android:padding="@dimen/text_padding"
-                            android:text="@string/star" />
+                            android:text="@string/star"
+                            android:textSize="20sp"
+
+                            />
 
                     </LinearLayout>
 
@@ -584,7 +585,7 @@
 
                             android:layout_height="wrap_content"
                             android:padding="@dimen/text_padding"
-
+                            android:textSize="20sp"
                             android:text="@string/star" />
 
                     </LinearLayout>
@@ -610,19 +611,18 @@
                             android:padding="@dimen/text_padding"
                             android:text="@string/share_button"
 
+                            android:textAlignment="center"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
-                            android:textAlignment="center"
 
                             />
 
                         <Button
                             android:id="@+id/btnShare"
-                            android:text="@string/share"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorAccent"
-                            />
+                            android:text="@string/share"
+                            android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
 
@@ -647,9 +647,9 @@
                             android:padding="@dimen/text_padding"
                             android:text="@string/notice_about_error_in_list_of_contacts_of_employers"
 
+                            android:textAlignment="center"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorAccent"
-                            android:textAlignment="center"
 
                             />
 
