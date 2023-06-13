@@ -129,8 +129,9 @@
 
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout3"
+                    android:layout_height="100dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
                     android:background="@drawable/shadow_bottom">
 
                     <TextView
@@ -140,7 +141,9 @@
                         android:layout_centerVertical="true"
                         android:text="@string/administrative_n_authority"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -150,7 +153,9 @@
 
                         android:layout_toRightOf="@+id/addressTV"
                         android:text="@string/national_bureau_of_nstatistics_of_the_n_republic_of_moldova"
-                        tools:ignore="RtlHardcoded" />
+                        tools:ignore="RtlHardcoded"
+                        android:textSize="20sp"
+                        />
 
 <!--                    <Button-->
 <!--                        android:id="@+id/locatebtn"-->
@@ -168,7 +173,8 @@
                 <RelativeLayout
                     android:id="@+id/nnt"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout3"
                     android:background="@drawable/shadow_bottom">
 
@@ -179,7 +185,9 @@
                         android:layout_centerVertical="true"
                         android:text="@string/division"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -187,13 +195,14 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/currentCityLabel"
+                        android:textSize="20sp"
                         android:text="@string/general_division_for_n_informational_technologies_ndesigning_of_computer_napplications_division" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/sds"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="90dp"
                     android:layout_below="@+id/nnt"
                     android:background="@drawable/shadow_bottom">
 
@@ -204,7 +213,9 @@
                         android:layout_centerVertical="true"
                         android:text="@string/website"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -214,6 +225,7 @@
                         android:layout_toEndOf="@+id/contactNoLabel"
                         android:text="@string/https_statistica_gov_md"
                         android:autoLink="all"
+                        android:textSize="20sp"
 
                          />
                 </RelativeLayout>
@@ -221,7 +233,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout4"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="90dp"
                     android:layout_below="@+id/sds"
                     android:background="@drawable/shadow_bottom">
 
@@ -232,7 +244,10 @@
                         android:layout_centerVertical="true"
                         android:text="@string/address"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -240,6 +255,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/websiteLabel"
+                        android:textSize="20sp"
 
                         android:text="@string/md_2019_chi_in_u_nstr_grenoble_106"
                         />
@@ -260,7 +276,9 @@
                         android:layout_marginTop="10dp"
                         android:text="@string/division_head"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/bujor_vasil1"
@@ -269,7 +287,9 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/bujor_vasile"
-                        android:text="@string/bujor_vasile" />
+                        android:text="@string/bujor_vasile"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/bujor_vasil2"
@@ -317,7 +337,9 @@
                         android:layout_marginTop="10dp"
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/natalia_gheorghita1"
@@ -327,7 +349,9 @@
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/natalia_gheorghita"
 
-                        android:text="@string/gheorghita_natalia" />
+                        android:text="@string/gheorghita_natalia"
+                        android:textSize="20sp"
+                        />
 
 
                     <TextView
@@ -459,7 +483,9 @@
 
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/bancu_1"
@@ -468,7 +494,9 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/bancu"
-                        android:text="@string/bancu_vitalie" />
+                        android:text="@string/bancu_vitalie"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/bancu_2"
@@ -514,7 +542,9 @@
 
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/doru1"
@@ -524,7 +554,8 @@
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/doru"
 
-                        android:text="@string/Doru_Marian" />
+                        android:text="@string/Doru_Marian"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:id="@+id/doru2"
@@ -574,7 +605,9 @@
 
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/tudor_popescu1"
@@ -584,7 +617,9 @@
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/tudor_popescu"
 
-                        android:text="@string/Tudor_Popescu" />
+                        android:text="@string/Tudor_Popescu"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/tudor_popescu2"
@@ -634,7 +669,9 @@
 
                         android:text="@string/programmer"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/catalin_timbalist1"
@@ -644,7 +681,9 @@
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/catalin_timbalist"
 
-                        android:text="@string/Catalin_Timbalist" />
+                        android:text="@string/Catalin_Timbalist"
+                        android:textSize="20sp"
+                        />
 
                     <TextView
                         android:id="@+id/catalin_timbalist2"
