@@ -264,7 +264,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout5"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout4"
                     android:background="@drawable/shadow_bottom">
 
@@ -326,7 +326,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout6"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout5"
                     android:background="@drawable/shadow_bottom">
 
@@ -470,7 +470,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout7"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout6"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/shadow_bottom">
@@ -593,7 +593,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout10"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout9"
                     android:background="@drawable/shadow_bottom">
 
@@ -657,7 +657,7 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeLayout11"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="120dp"
                     android:layout_below="@+id/mRelativeLayout10"
                     android:background="@drawable/shadow_bottom">
 
