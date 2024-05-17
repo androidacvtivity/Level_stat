@@ -15,6 +15,7 @@ import android.widget.AbsListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -274,19 +275,29 @@ public class ScientistsActivity_dg_registre  extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
-    @Override
-    public void onBackPressed() {
-        Intent intent;
-        intent = new Intent(this, structurabns.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        finish();
-        startActivity(intent);
-    }
+//    @Override
+//    public void onBackPressed() {
+//        Intent intent;
+//        intent = new Intent(this, structurabns.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        finish();
+//        startActivity(intent);
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scientists_str);
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(ScientistsActivity_dg_registre.this, structurabns.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                finish();
+                startActivity(intent);
+            }
+        });
 
         initializeViews();
         this.listenToRecyclerViewScroll();

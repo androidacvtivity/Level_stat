@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-common-ktx:21.0.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/848038d1cda9224dabd4510f086d5f3d/transformed/jetified-firebase-common-ktx-21.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/848038d1cda9224dabd4510f086d5f3d/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/modules-2/files-2.1/com.google.firebase/firebase-common-ktx/21.0.0/1913965a30e886bd88f7bd627e6b0f683ed54169/firebase-common-ktx-21.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

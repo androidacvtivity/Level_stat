@@ -9,12 +9,14 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bancusoft.levelstat.Helpers.Utils;
 import com.bancusoft.levelstat.R;
 import com.bancusoft.levelstat.Retrofit.Scientist;
+import com.bancusoft.levelstat.Views.structbns.ScientistsActivity_dg_registre;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
@@ -164,15 +166,15 @@ public class DetailActivitystr extends AppCompatActivity{
     /**
      * Let's finish the current activity when back button is pressed
      */
-    @Override
-    public void onBackPressed() {
-        Intent intent;
-        intent = new Intent(this, ScientistsActivitystr.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        finish();
-        startActivity(intent);
-    }
-
+//    @Override
+//    public void onBackPressed() {
+//        Intent intent;
+//        intent = new Intent(this, ScientistsActivitystr.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        finish();
+//        startActivity(intent);
+//    }
+//
 
 
 
@@ -180,6 +182,17 @@ public class DetailActivitystr extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_str);
+
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(DetailActivitystr.this, ScientistsActivitystr.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                finish();
+                startActivity(intent);
+            }
+        });
 
         nameTV= findViewById(R.id.nameTVs);
         descriptionTV= findViewById(R.id.descriptionTVs);

@@ -25,7 +25,7 @@ android {
         dataBinding = true
 
     }
-    buildToolsVersion '33.0.1'
+  //  buildToolsVersion '33.0.1'
     namespace 'com.bancusoft.levelstat'
 
 }
