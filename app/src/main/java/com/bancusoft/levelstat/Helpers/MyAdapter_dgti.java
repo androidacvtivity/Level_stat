@@ -91,7 +91,7 @@ public class MyAdapter_dgti extends RecyclerView.Adapter<MyAdapter_dgti.ViewHold
         this.c = mContext;
         this.scientists = scientists;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

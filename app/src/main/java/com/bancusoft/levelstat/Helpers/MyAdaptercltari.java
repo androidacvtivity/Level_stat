@@ -77,7 +77,7 @@ public class MyAdaptercltari extends RecyclerView.Adapter<MyAdaptercltari.ViewHo
         this.c = mContext;
         this.cl_tari = cl_tari;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }
