@@ -88,7 +88,7 @@ public class MyAdapterstr3  extends RecyclerView.Adapter<MyAdapterstr3.ViewHolde
         this.c = mContext;
         this.scientists = scientists;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

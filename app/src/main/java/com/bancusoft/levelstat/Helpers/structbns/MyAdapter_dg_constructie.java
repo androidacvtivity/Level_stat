@@ -93,7 +93,7 @@ public class MyAdapter_dg_constructie extends RecyclerView.Adapter<MyAdapter_dg_
         this.c = mContext;
         this.scientists = scientists;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

@@ -93,7 +93,7 @@ public class MyAdapter_mun_chis_pm extends RecyclerView.Adapter<MyAdapter_mun_ch
         this.c = mContext;
         this.scientists = scientists;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

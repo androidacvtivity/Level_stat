@@ -75,7 +75,7 @@ public class MyAdapterclcaem  extends RecyclerView.Adapter<MyAdapterclcaem.ViewH
         this.c = mContext;
         this.cl_caem = cl_caem;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

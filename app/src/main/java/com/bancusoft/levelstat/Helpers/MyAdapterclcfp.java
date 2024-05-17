@@ -73,7 +73,7 @@ public class MyAdapterclcfp  extends RecyclerView.Adapter<MyAdapterclcfp.ViewHol
         this.c = mContext;
         this.cl_cfp = cl_cfp;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }

@@ -77,7 +77,7 @@ public class MyAdapterclcspm extends RecyclerView.Adapter<MyAdapterclcspm.ViewHo
         this.c = mContext;
         this.cl_servicii = cl_servicii;
         TypedValue mTypedValue = new TypedValue();
-        c.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
+        c.getTheme().resolveAttribute(io.github.inflationx.viewpump.R.attr.selectableItemBackground, mTypedValue, true);
         mMaterialColors = c.getResources().getIntArray(R.array.colors);
         mBackground = mTypedValue.resourceId;
     }
