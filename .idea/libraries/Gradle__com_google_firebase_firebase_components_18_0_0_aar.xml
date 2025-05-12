@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-components:18.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/33c4e7c4aed0d89adb5762e54332a7d1/transformed/jetified-firebase-components-18.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/b9eb83d3bb6c8680702ababca5fba9e0/transformed/jetified-firebase-components-18.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/33c4e7c4aed0d89adb5762e54332a7d1/transformed/jetified-firebase-components-18.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/33c4e7c4aed0d89adb5762e54332a7d1/transformed/jetified-firebase-components-18.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/b9eb83d3bb6c8680702ababca5fba9e0/transformed/jetified-firebase-components-18.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/b9eb83d3bb6c8680702ababca5fba9e0/transformed/jetified-firebase-components-18.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/modules-2/files-2.1/com.google.firebase/firebase-components/18.0.0/578f7e7872fb0f32074ff3fd4946a068a05ab8fb/firebase-components-18.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-components/18.0.0/578f7e7872fb0f32074ff3fd4946a068a05ab8fb/firebase-components-18.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

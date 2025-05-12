@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-base:18.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/7b34a4ccbe9cf462858e5a0dcdd1e108/transformed/jetified-play-services-base-18.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/7b34a4ccbe9cf462858e5a0dcdd1e108/transformed/jetified-play-services-base-18.0.1/res" />
-      <root url="file://$PROJECT_DIR$/../Video-Player-App/caches/transforms-3/7b34a4ccbe9cf462858e5a0dcdd1e108/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/303ecdcc317566cd17677aeb96576517/transformed/jetified-play-services-base-18.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/303ecdcc317566cd17677aeb96576517/transformed/jetified-play-services-base-18.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/303ecdcc317566cd17677aeb96576517/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../Video-Player-App/caches/modules-2/files-2.1/com.google.android.gms/play-services-base/18.0.1/5c3b2e3ce7819eeff73b937ae37741ad2bd88172/play-services-base-18.0.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-base/18.0.1/5c3b2e3ce7819eeff73b937ae37741ad2bd88172/play-services-base-18.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>
