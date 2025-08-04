@@ -6,8 +6,8 @@ android {
         applicationId "com.bancusoft.levelstat"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 11
-        versionName "release 11.0"
+        versionCode 12
+        versionName "release 12.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
